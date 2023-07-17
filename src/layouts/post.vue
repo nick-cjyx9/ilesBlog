@@ -29,7 +29,7 @@
         input-position="top"
         theme="light"
         lang="zh-CN"
-        loading="lazy" client:visible/>
+        loading="lazy" client:only/>
       </div>
     </div>
   </div>
