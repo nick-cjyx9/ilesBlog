@@ -1,0 +1,16 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #dee6ee;
+  height: 52px;
+}
+nav {
+  background-color: #eff3f7;
+}
+body {
+  font-family: "LXGW WenKai LITE", sans-serif;
+  font-size: 108%;
+}
