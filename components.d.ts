@@ -7,7 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    404: typeof import('./src/components/404.vue')['default']
     ArticleCard: typeof import('./src/components/ArticleCard.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
