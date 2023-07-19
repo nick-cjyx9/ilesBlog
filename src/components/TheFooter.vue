@@ -3,7 +3,7 @@
     <span>Made with ❤️ by <a class="font-serif" href="https://github.com/nick-cjyx9" target="_blank">Nick Chen</a></span>
   </footer>
 </template>
-<style>
+<style scoped>
 footer {
   background-color: #eff3f7;
 }

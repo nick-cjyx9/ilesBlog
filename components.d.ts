@@ -9,8 +9,13 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ArticleCard: typeof import('./src/components/ArticleCard.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
+    Dialog: typeof import('./src/components/Dialog.vue')['default']
+    GirlsIntro: typeof import('./src/components/GirlsIntro.mdx')['default']
+    'GirlsIntro.': typeof import('./src/components/GirlsIntro..mdx')['default']
+    GiscusInner: typeof import('./src/components/GiscusInner.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
+    Popup: typeof import('./src/components/Popup.js')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']

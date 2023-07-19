@@ -3,7 +3,7 @@
     <div class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl font-serif">
         <span>Rina Chan's Blog</span>
     </div>
-    <ul class="flex">
+    <ul class="flex flex-wrap flex-row w-full">
       <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
         <a href='/'>主页</a>
       </li>
@@ -20,7 +20,7 @@
         <a href='/about'>关于</a>
       </li>
     </ul>
-    <div class="sm:basis-full"></div>  
+    <!-- <div class="sm:basis-full"></div>   -->
     <ul class="flex">
       <li class="rounded-lg p-3 hover:bg-indigo-100 flex items-center">
         <a href='/search'><i class="fa-solid fa-magnifying-glass"></i></a>

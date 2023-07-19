@@ -16,20 +16,20 @@
         <slot />
       </div>
       <div class="mt-10">
-      <Giscus
-        id="comments"
-        repo="nick-cjyx9/nick-cjyx9.github.io"
-        repo-id="R_kgDOIu_Wyg"
-        category="General"
-        category-id="DIC_kwDOIu_Wys4CXaix"
-        mapping="title"
-        term="Welcome to my blog!"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="zh-CN"
-        loading="lazy" client:only/>
+        <Giscus
+          id="comments"
+          repo="nick-cjyx9/nick-cjyx9.github.io"
+          repo-id="R_kgDOIu_Wyg"
+          category="General"
+          category-id="DIC_kwDOIu_Wys4CXaix"
+          mapping="title"
+          term="Welcome to my blog!"
+          reactions-enabled="1"
+          emit-metadata="0"
+          input-position="top"
+          theme="light"
+          lang="zh-CN"
+          loading="lazy" client:only/>
       </div>
     </div>
   </div>
