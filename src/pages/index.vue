@@ -4,7 +4,7 @@
 </script>
 
 <template layout="base">
-  <article v-for="post of posts">
+  <article v-for="post of posts"  class="w-full">
     <ArticleCard :post="post"></ArticleCard>
   </article>
 </template>

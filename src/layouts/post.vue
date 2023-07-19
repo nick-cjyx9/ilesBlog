@@ -1,6 +1,6 @@
 <template layout="base">
   <div class="flex justify-center">
-    <div class="shadow w-full my-10 lg:mx-72 sm:mx-0 py-10 sm:px-20" style="background-color: #eff3f7;">
+    <div class="shadow w-full py-10 lg:px-20 sm:px-10" style="background-color: #eff3f7;">
       <div class="flex justify-center flex-wrap mt-10">
         <h1 class="text-4xl font-extrabold">{{ frontmatter.title }}</h1>
         <ul class="time-info flex space-x-3 w-full mb-12 mt-10 font-medium text-gray-600 flex-wrap px-3 justify-center" style="font-size: 16px;">

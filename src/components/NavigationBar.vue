@@ -14,6 +14,9 @@
         <a href='/tag'>标签</a>
       </li>
       <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+        <a href='/girls'>老婆们</a>
+      </li>
+      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
         <a href='/about'>关于</a>
       </li>
     </ul>
