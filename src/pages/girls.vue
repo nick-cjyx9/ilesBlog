@@ -1,7 +1,7 @@
 <template layout="base">
     <div class="container bg-slate-100 flex justify-center shadow-md flex-wrap py-6 h-full">
         <del class="w-full text-4xl font-extrabold text-center mt-14">我的二次元老婆们</del>
-        <div class="lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
+        <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
             <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
         </div>
         <div class="w-full flex justify-center p-10 flex-col">
@@ -15,7 +15,7 @@
         repo-id="R_kgDOIu_Wyg"
         category="General"
         category-id="DIC_kwDOIu_Wys4CXaix"
-        mapping="title"
+        mapping="pathname"
         term="Welcome to my blog!"
         reactions-enabled="1"
         emit-metadata="0"

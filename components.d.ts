@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     GirlsIntro: typeof import('./src/components/GirlsIntro.mdx')['default']
     'GirlsIntro.': typeof import('./src/components/GirlsIntro..mdx')['default']
     GiscusInner: typeof import('./src/components/GiscusInner.vue')['default']
+    Heimu: typeof import('./src/components/Heimu.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     Popup: typeof import('./src/components/Popup.js')['default']

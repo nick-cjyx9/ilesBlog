@@ -22,7 +22,7 @@
           repo-id="R_kgDOIu_Wyg"
           category="General"
           category-id="DIC_kwDOIu_Wys4CXaix"
-          mapping="title"
+          mapping="pathname"
           term="Welcome to my blog!"
           reactions-enabled="1"
           emit-metadata="0"
