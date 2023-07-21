@@ -11,5 +11,6 @@ export default defineConfig({
     } else if (filename.includes('/hidden/')) {
       frontmatter.layout ||= 'post';
     }
-  }
+  },
+  siteUrl: 'https://ilesblog.pages.dev/',
 })
