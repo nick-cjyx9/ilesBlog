@@ -1,6 +1,6 @@
 <template>
   <NavigationBar client:load />
-  <main class="flex justify-center lg:px-60 sm:px-10 py-10 flex-wrap">
+  <main class="flex justify-center lg:px-60 sm:px-10 py-8 flex-wrap">
     <slot />
   </main>
   <TheFooter />

@@ -23,3 +23,11 @@ body {
 nav {
   background-color: #eff3f7;
 }
+
+.card {
+  @apply container bg-slate-100 flex shadow-md flex-wrap w-full;
+}
+
+.navtab{
+  @apply rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl;
+}

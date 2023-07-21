@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'wp': '640px',
+        // => @media (min-width: 992px) { ... }
+      },
+    },
   },
   plugins: [],
+  
 }

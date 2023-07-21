@@ -1,22 +1,22 @@
 <template>
   <nav class="flex space-x-4 shadow flex-wrap justify-center whitespace-nowrap lg:px-24 sm:px-5 py-0.5 sm:flex-nowrap">
-    <div class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl font-serif">
-        <span>Rina Chan's Blog</span>
+    <div class="navtab font-serif">
+      <a href='/'>Rina Chan's Blog</a>
     </div>
-    <ul class="flex flex-wrap flex-row w-full">
-      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+    <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
+      <li class="navtab">
         <a href='/'>主页</a>
       </li>
-      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+      <li class="navtab">
         <a href='/archive'>归档</a>
       </li>
-      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+      <li class="navtab">
         <a href='/tag'>标签</a>
       </li>
-      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+      <li class="navtab">
         <a href='/girls'>老婆们</a>
       </li>
-      <li class="rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl">
+      <li class="navtab">
         <a href='/about'>关于</a>
       </li>
     </ul>

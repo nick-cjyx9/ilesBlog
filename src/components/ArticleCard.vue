@@ -5,7 +5,7 @@
   const props = defineProps(['post']);
 </script>
 <template>
-  <div class="shadow rounded-s-md p-8 my-8 flex flex-wrap" style="background-color: #eff3f7;">
+  <div class="card rounded-s-md p-8 my-4 flex flex-wrap">
     <!-- <div v-if="{{ post.frontmatter.img }}"></div> -->
     <a :href="post.href"><h1 class="w-full text-4xl font-extrabold">{{ post.title }}</h1></a>
     <ul class="time-info flex space-x-3 w-full mt-2 font-medium text-gray-600 flex-wrap">
