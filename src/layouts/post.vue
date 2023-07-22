@@ -15,7 +15,7 @@
         </li>
       </ul>
     </div>
-    <div class="px-6">
+    <div class="px-6 w-full">
       <slot />
     </div>
   </div>
@@ -26,6 +26,7 @@
       emit-metadata="0" input-position="top" theme="light" lang="zh-CN" loading="lazy" client:only class="w-full"/>
   </div>
 </template>
+
 <script setup lang="ts">
 import Giscus from '@giscus/vue';
 const page = usePage();
