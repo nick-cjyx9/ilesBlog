@@ -26,7 +26,7 @@
         <a href='/search'><i class="fa-solid fa-magnifying-glass"></i></a>
       </li>
       <li class="rounded-lg p-3 hover:bg-indigo-100 flex items-center">
-        <a href='/feed.xml'><i class="fa-solid fa-square-rss"></i></a>
+        <a href='/feed.rss'><i class="fa-solid fa-square-rss"></i></a>
       </li>
     </ul>
   </nav>

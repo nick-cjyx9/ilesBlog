@@ -1,5 +1,5 @@
 <template layout="base">
-    <div class="card h-full py-6">
+    <div class="card h-full">
         <del class="w-full text-4xl font-extrabold text-center mt-14">我的二次元老婆们</del>
         <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
             <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
@@ -73,7 +73,7 @@ let text_data = `{"characterName": "\u5144\u8d35", "characterId": "20984", "char
 let native_data = text_data.split('\n')
 const dataList: Ref<Array<object>> = ref([]);
 for (let i = 0; i < native_data.length; i++) {
-    console.log(native_data[i]);
+    // console.log(native_data[i]);
     dataList.value[i] = JSON.parse(native_data[i]);
 }
 </script>

@@ -2,8 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&family=Noto+Serif:wght@500&display=swap');
 #app,
 html,
 body {
@@ -12,12 +11,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-body {
   background-color: #dee6ee;
-  font-family: "LXGW WenKai LITE", sans-serif;
-  font-size: 108%;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif SC', serif;
 }
 
 nav {
@@ -25,7 +21,7 @@ nav {
 }
 
 .card {
-  @apply container bg-slate-100 flex shadow-md flex-wrap w-full;
+  @apply container bg-slate-100 flex shadow-md flex-wrap w-full rounded-xl;
 }
 
 .navtab{

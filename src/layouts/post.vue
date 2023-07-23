@@ -4,7 +4,7 @@
       <h1 class="text-4xl font-extrabold">{{ frontmatter.title }}</h1>
       <ul class="time-info flex space-x-3 w-full mb-12 mt-8 font-medium text-gray-600 flex-wrap px-3 justify-center"
         style="font-size: 16px;">
-        <li><i class="fa-solid fa-clock-rotate-left"></i>
+        <li v-if="$meta.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
           <span class="ml-1.5">{{ formatDate(meta.lastUpdated) }}</span>
         </li>
         <li><i class="fa-solid fa-clock"></i>

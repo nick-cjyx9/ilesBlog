@@ -14,9 +14,12 @@ declare module '@vue/runtime-core' {
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
+    RenderFeed: typeof import('./node_modules/.pnpm/registry.npmmirror.com+@islands+feed@0.8.1_iles@0.9.5_vue@3.3.4/node_modules/@islands/feed/dist/render-feed')['RenderFeed']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
+    UsePosts: typeof import('./src/components/composables/usePosts.ts')['default']
+    UseTags: typeof import('./src/components/composables/useTags.ts')['default']
     WaifuCard: typeof import('./src/components/WaifuCard.vue')['default']
   }
 }

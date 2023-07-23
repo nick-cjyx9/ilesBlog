@@ -1,9 +1,16 @@
 // iles.config.ts
-import { defineConfig } from 'iles'
+import feed from '@islands/feed';
+import prism from '@islands/prism';
+import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
+import lastUpdated from './modules/lastUpdated';
+
 export default defineConfig({
   modules: [
     excerpt(),
+    lastUpdated(),
+    feed(),
+    prism,
   ],
   async extendFrontmatter(frontmatter, filename) {
     if (filename.includes('/post/')) {
@@ -11,6 +18,9 @@ export default defineConfig({
     } else if (filename.includes('/hidden/')) {
       frontmatter.layout ||= 'post';
     }
+  },
+  markdown: {
+    remarkPlugins: ['remark-gfm'],
   },
   siteUrl: 'https://ilesblog.pages.dev/',
 })
