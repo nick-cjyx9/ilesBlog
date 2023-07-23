@@ -11,7 +11,7 @@
         <a href='/archive'>归档</a>
       </li>
       <li class="navtab">
-        <a href='/tag'>标签</a>
+        <a href='/tags'>标签</a>
       </li>
       <li class="navtab">
         <a href='/girls'>老婆们</a>

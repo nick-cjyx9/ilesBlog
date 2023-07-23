@@ -1,6 +1,7 @@
 // iles.config.ts
 import feed from '@islands/feed';
 import prism from '@islands/prism';
+import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
@@ -8,6 +9,7 @@ import lastUpdated from './modules/lastUpdated';
 export default defineConfig({
   turbo: true,
   modules: [
+    headings(),
     excerpt(),
     lastUpdated(),
     feed(),
@@ -22,6 +24,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: ['remark-gfm'],
+    rehypePlugins: ['rehype-external-links','rehype-katex'],
   },
   siteUrl: 'https://ilesblog.pages.dev/',
 })
