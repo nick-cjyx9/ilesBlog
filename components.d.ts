@@ -18,8 +18,6 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    UsePosts: typeof import('./src/components/composables/usePosts.ts')['default']
-    UseTags: typeof import('./src/components/composables/useTags.ts')['default']
     WaifuCard: typeof import('./src/components/WaifuCard.vue')['default']
   }
 }

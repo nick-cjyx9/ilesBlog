@@ -2,7 +2,7 @@
   <div class="card justify-center py-16 lg:px-20 sm:px-10">
     <div class="flex justify-center flex-wrap">
       <h1 class="text-4xl font-extrabold">{{ frontmatter.title }}</h1>
-      <ul class="time-info flex space-x-3 w-full mb-12 mt-8 font-medium text-gray-600 flex-wrap px-3 justify-center"
+      <ul class="time-info flex space-x-3 w-full mb-6 mt-8 font-medium text-gray-600 flex-wrap px-3 justify-center"
         style="font-size: 16px;">
         <li v-if="$meta.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
           <span class="ml-1.5">{{ formatDate(meta.lastUpdated) }}</span>
@@ -15,9 +15,9 @@
         </li>
       </ul>
     </div>
-    <div class="px-6 w-full">
+    <article class="px-6 w-full markdown-body">
       <slot />
-    </div>
+    </article>
   </div>
 
   <div class="card mt-12 py-9 px-6">
@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 import Giscus from '@giscus/vue';
+import 'github-markdown-css';
 const page = usePage();
 const { frontmatter, meta } = page;
 frontmatter.description ||= meta.excerpt;

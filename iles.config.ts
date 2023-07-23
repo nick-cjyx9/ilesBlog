@@ -6,11 +6,12 @@ import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
 
 export default defineConfig({
+  turbo: true,
   modules: [
     excerpt(),
     lastUpdated(),
     feed(),
-    prism,
+    prism(),
   ],
   async extendFrontmatter(frontmatter, filename) {
     if (filename.includes('/post/')) {
