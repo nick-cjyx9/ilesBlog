@@ -4,9 +4,9 @@
 </script>
 
 <template layout="base">
-  <ul class="container w-full">
+  <ul class="relative ml-auto mr-auto w-full">
     <li v-for="post of posts">
-        <ArticleCard :post="post" class="w-full flex justify-center"></ArticleCard>
+        <ArticleCard :post="post" class="w-full"></ArticleCard>
     </li>
   </ul>
 </template>

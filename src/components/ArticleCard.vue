@@ -25,25 +25,26 @@ function formatTime(time){
 }
 const props = defineProps(['post']);
 </script>
+
 <template>
-  <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl pb-10 block">
+  <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl block munderline mb-8">
     <a :href="post.href" class="block relative w-full h-full hover:shadow-xl">
-      <div class="absolute top-0 left-0 w-full h-full z-10">
+      <div class="absolute top-0 left-0 w-full h-full z-10" title="post">
         <div :style="'background-image:url(' + post.frontmatter.cover + ')'" 
         class="bg-no-repeat bg-cover bg-center w-full h-full shadow"></div>
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
         text-white w-full h-full space-y-3 nl:space-y-5 
-        munderline border-white">
+         border-white">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <h4 class="font-medium text-base"><component :is="post" excerpt/></h4>
       </div>
     </a>
   </div>
-  <div v-else class="w-full pb-10 max-w-4xl">
-    <a :href="post.href" class="block relative w-full h-full">
-    <div class="card px-6 nl:px-10 shadow hover:shadow-xl munderline 
+  <div v-else class="w-full max-w-4xl munderline mb-8">
+    <a :href="post.href" class="block relative w-full h-full" title="post">
+    <div class="bg-slate-100 w-full px-6 nl:px-10 shadow hover:shadow-xl 
     border-black">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
@@ -54,3 +55,4 @@ const props = defineProps(['post']);
     </a>
   </div>
 </template>
+

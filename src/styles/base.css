@@ -5,7 +5,6 @@
 #app,
 html,
 body {
-  display: block;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -35,7 +34,8 @@ nav {
 .munderline::after {
   content: "";
   border-bottom: solid 4px;
-  position: absolute;
+  position: relative;
+  display: block;
   bottom: 0;
   left: 0;
   width: 100%;

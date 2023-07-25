@@ -14,7 +14,7 @@
       description: '',
       id: url,
       link: url,
-      language: 'zh',
+      language: 'zh-CN',
       image: 'https://avatars.githubusercontent.com/u/119087246',
       favicon: `${url}/favicon.ico`,
       copyright:
