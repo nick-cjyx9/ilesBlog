@@ -34,11 +34,10 @@ const props = defineProps(['post']);
         class="bg-no-repeat bg-cover bg-center w-full h-full shadow"></div>
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
-        text-white w-full h-full space-y-3 nl:space-y-5 
-         border-white">
+        text-white w-full h-full space-y-3 nl:space-y-5 border-white">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
-        <h4 class="font-medium text-base"><component :is="post" excerpt/></h4>
+        <h4 class="font-medium text-base">{{ post.meta.excerpt }}</h4>
       </div>
     </a>
   </div>
@@ -49,7 +48,7 @@ const props = defineProps(['post']);
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
-        <h4 class="font-medium text-base"><component :is="post" excerpt/></h4>
+        <h4 class="font-medium text-base">{{ post.meta.excerpt }}</h4>
       </div>
     </div>
     </a>
