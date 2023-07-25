@@ -2,17 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ilesblog.pages.dev/</loc></url>
   <url><loc>https://ilesblog.pages.dev/about</loc></url>
+  <url><loc>https://ilesblog.pages.dev/archive</loc></url>
   <url><loc>https://ilesblog.pages.dev/girls</loc></url>
   <url><loc>https://ilesblog.pages.dev/post/hello-world</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy2</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy3</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy4</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy5</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy6</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy7</loc></url>
+  <url><loc>https://ilesblog.pages.dev/post/hello-worldcopy8</loc></url>
   <url><loc>https://ilesblog.pages.dev/post/new_blog</loc></url>
   <url><loc>https://ilesblog.pages.dev/post/trip_to_panzhihua</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/Blog</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/eight</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/five</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/four</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/Geography</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/hello%20world</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/homework</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/init</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/seven</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/six</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/test</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/three</loc></url>
   <url><loc>https://ilesblog.pages.dev/tag/trip</loc></url>
+  <url><loc>https://ilesblog.pages.dev/tag/two</loc></url>
   <url><loc>https://ilesblog.pages.dev/tags</loc></url>
 
 </urlset>
