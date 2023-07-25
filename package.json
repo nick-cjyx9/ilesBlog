@@ -12,6 +12,7 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
     "autoprefixer": "^10.4.14",
     "iles": "^0.9.5",
     "postcss": "^8.4.26",
@@ -26,6 +27,7 @@
     "@islands/feed": "^0.8.1",
     "@islands/headings": "^0.8.2",
     "@islands/prism": "^0.8.0",
+    "@umami/api-client": "^0.37.0",
     "@vueuse/core": "^10.2.1",
     "cross-spawn": "^7.0.3",
     "github-markdown-css": "^5.2.0",

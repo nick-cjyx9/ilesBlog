@@ -1,8 +1,10 @@
 <template layout="base">
 <h1 class="text-4xl font-extrabold">{{ page.frontmatter.title }}</h1>
-<article v-for="post of posts_fltd" class="w-full">
-    <ArticleCard :post="post"></ArticleCard>
-</article>
+<ul class="container w-full">
+    <li v-for="post of posts_fltd">
+        <ArticleCard :post="post" class="w-full flex justify-center"></ArticleCard>
+    </li>
+  </ul>
 </template>
 
 <script>

@@ -7,7 +7,7 @@ import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
 
 export default defineConfig({
-  turbo: true,
+  turbo: false,
   modules: [
     headings(),
     excerpt(),

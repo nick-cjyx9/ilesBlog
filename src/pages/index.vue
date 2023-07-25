@@ -4,7 +4,9 @@
 </script>
 
 <template layout="base">
-  <article v-for="post of posts" class="w-full flex justify-center">
-    <ArticleCard :post="post"></ArticleCard>
-  </article>
+  <ul class="container w-full">
+    <li v-for="post of posts">
+        <ArticleCard :post="post" class="w-full flex justify-center"></ArticleCard>
+    </li>
+  </ul>
 </template>
