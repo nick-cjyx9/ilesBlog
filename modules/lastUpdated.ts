@@ -8,9 +8,9 @@ export default () => ({
     if (lastUpdated)
       frontmatter.meta.lastUpdated = lastUpdated
   },
-}) as IlesModule
+})as IlesModule
 
-function lastUpdatedFromGit (filename: string) {
+function lastUpdatedFromGit (filename:string) {
   try {
     const result = spawn('git', ['log', '-1', '--format=%at', filename])
     const date = new Date(parseInt(result.stdout as any) * 1000)

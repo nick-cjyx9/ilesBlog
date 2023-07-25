@@ -7,7 +7,6 @@ html,
 body {
   display: block;
   width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #dee6ee;
@@ -18,11 +17,61 @@ nav {
 }
 
 .card {
-  @apply container bg-slate-100 flex shadow-md flex-wrap w-full rounded-xl;
+  @apply container bg-slate-100 flex shadow-md flex-wrap w-full;
 }
 
-.navtab{
-  @apply rounded-lg p-3 text-slate-700 font-medium hover:bg-indigo-100 flex items-center text-xl;
+.navtab {
+  @apply rounded-lg p-3 text-slate-700 hover:bg-indigo-100 flex items-center;
+}
+
+.cover {
+  background-color: #0000006b;
+  transition: background-color .2s ease;
+}
+
+.cover:hover {
+  background-color: #000000ad;
+}
+.munderline::after {
+  content: "";
+  border-bottom: solid 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.munderline:hover::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+@-webkit-keyframes munderline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes munderline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 /* 

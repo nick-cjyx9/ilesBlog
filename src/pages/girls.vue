@@ -1,5 +1,5 @@
 <template layout="base">
-    <div class="card h-full">
+    <div class="card rounded-xl h-full">
         <del class="w-full text-4xl font-extrabold text-center mt-14">我的二次元老婆们</del>
         <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
             <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
@@ -8,7 +8,7 @@
             <GirlsIntro />
         </div>
     </div>
-    <div class="card mt-12 py-9 px-6">
+    <div class="card rounded-xl mt-12 py-9 px-6">
         <Giscus id="comments" repo="nick-cjyx9/nick-cjyx9.github.io" repo-id="R_kgDOIu_Wyg" category="General"
             category-id="DIC_kwDOIu_Wys4CXaix" mapping="pathname" term="Welcome to my blog!" reactions-enabled="1"
             emit-metadata="0" input-position="top" theme="light" lang="zh-CN" loading="lazy" client:only class="w-full" />

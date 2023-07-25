@@ -5,7 +5,7 @@ if (import.meta.env.PROD)
 
 <template>
   <NavigationBar client:load />
-  <main class="flex justify-center px-4 lg:px-60 py-8 flex-wrap">
+  <main class="flex justify-center px-4 nl:px-52 xlg:px-72 py-8 flex-wrap w-full h-full">
     <slot />
   </main>
   <TheFooter />
