@@ -27,24 +27,25 @@ const props = defineProps(['post']);
 </script>
 
 <template>
-  <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl block munderline mb-8">
+  <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl block munderline mb-8 
+    dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full hover:shadow-xl">
       <div class="absolute top-0 left-0 w-full h-full z-10">
         <div :style="'background-image:url(' + post.frontmatter.cover + ')'" 
         class="bg-no-repeat bg-cover bg-center w-full h-full shadow"></div>
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
-        text-white w-full h-full space-y-3 nl:space-y-5 border-white">
+        text-white w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <h4 class="font-medium text-base">{{ post.meta.excerpt }}</h4>
       </div>
     </a>
   </div>
-  <div v-else class="w-full max-w-4xl munderline mb-8">
+  <div v-else class="w-full max-w-4xl munderline mb-8
+    after:border-black dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full">
-    <div class="bg-slate-100 w-full px-6 nl:px-10 shadow hover:shadow-xl 
-    border-black">
+    <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>

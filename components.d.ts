@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ArticleCard: typeof import('./src/components/ArticleCard.vue')['default']
     ArticleFooter: typeof import('./src/components/ArticleFooter.vue')['default']
+    BackToTop: typeof import('./src/components/BackToTop.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
     GirlsIntro: typeof import('./src/components/GirlsIntro.mdx')['default']
     Heimu: typeof import('./src/components/Heimu.vue')['default']

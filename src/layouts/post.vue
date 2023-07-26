@@ -3,7 +3,7 @@
     <div class="flex justify-center flex-wrap">
       <h1 class="font-bold munderline" role="button" title="我是标题~" style="font-size: 35px;">{{ frontmatter.title }}</h1>
       <ul class="time-info flex space-x-4 w-full mt-8
-       text-gray-600 flex-wrap px-8 justify-center"
+       text-gray-600 flex-wrap px-8 justify-center dark:text-gray-300"
         style="font-size: 14.3px;">
         <li v-if="$meta.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
           <span class="ml-1.5">{{ formatDate(meta.lastUpdated) }}</span>
@@ -17,7 +17,7 @@
         </li>
       </ul>
     </div>
-    <article class="px-8 w-full markdown-body">
+    <article class="px-8 w-full markdown-body" id="artibody">
       <hr/>
       <slot/>
       <hr/>
@@ -29,12 +29,14 @@
   <div class="card mt-12 py-9 px-6 rounded-xl">
     <Giscus id="comments" repo="nick-cjyx9/nick-cjyx9.github.io" repo-id="R_kgDOIu_Wyg" category="General"
       category-id="DIC_kwDOIu_Wys4CXaix" mapping="pathname" term="Welcome to my blog!" reactions-enabled="1"
-      emit-metadata="0" input-position="top" theme="light" lang="zh-CN" loading="lazy" client:only class="w-full"/>
+      emit-metadata="0" input-position="top" lang="zh-CN" loading="lazy" client:only class="w-full"/>
   </div>
 </template>
-
+<style>
+@import '@/styles/github-markdown-light.css';
+@import '@/styles/github-markdown-dark.css';
+</style>
 <script setup lang="ts">
-import 'github-markdown-css';
 import Giscus from '@giscus/vue';
 const page = usePage();
 const { frontmatter, meta } = page;

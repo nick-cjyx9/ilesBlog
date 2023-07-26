@@ -9,16 +9,19 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #dee6ee;
+  @apply dark:!bg-slate-900 bg-slate-200;
+}
+html {
+  height: 100%;
 }
 nav {
-  background-color: #eff3f7;
+  @apply bg-slate-100 dark:bg-slate-800;
 }
 .card {
-  @apply container bg-slate-100 flex shadow-md flex-wrap w-full;
+  @apply container bg-slate-100 flex shadow-lg flex-wrap w-full dark:bg-slate-800 dark:text-white;
 }
 .navtab {
-  @apply rounded-lg p-3 text-slate-700 hover:bg-indigo-100 flex items-center;
+  @apply hover:text-blue-400 rounded-lg p-3 text-black dark:text-white hover:bg-indigo-100 dark:hover:bg-slate-500 flex items-center;
 }
 .cover {
   background-color: #0000006b;
@@ -71,28 +74,29 @@ nav {
 }
 
 
-
-
-
 /* 
   github-markdown
 */
-.markdown-body {
+.markdown-body,
+.markdown-body-dark {
   box-sizing: border-box;
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
   padding: 45px;
-  @apply bg-slate-100 !important;
+  @apply !bg-slate-100 dark:!bg-slate-800;
 }
-.markdown-body > ul {
+.markdown-body > ul,
+.markdown-body-dark > ul {
   list-style: disc !important;
 }
-.markdown-body > ol {
+.markdown-body > ol,
+.markdown-body-dark > ol {
   list-style: decimal !important;
 }
 @media (max-width: 767px) {
-  .markdown-body {
+  .markdown-body,
+  .markdown-body-dark {
     padding: 18px;
   }
 }

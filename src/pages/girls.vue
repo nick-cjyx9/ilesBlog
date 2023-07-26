@@ -1,6 +1,6 @@
 <template layout="base">
     <div class="card rounded-xl h-full">
-        <del class="w-full text-4xl font-extrabold text-center mt-14">我的二次元老婆们</del>
+        <del class="w-full text-4xl font-semibold text-center mt-20 mb-8">我的二次元老婆们</del>
         <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
             <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
         </div>
@@ -11,7 +11,7 @@
     <div class="card rounded-xl mt-12 py-9 px-6">
         <Giscus id="comments" repo="nick-cjyx9/nick-cjyx9.github.io" repo-id="R_kgDOIu_Wyg" category="General"
             category-id="DIC_kwDOIu_Wys4CXaix" mapping="pathname" term="Welcome to my blog!" reactions-enabled="1"
-            emit-metadata="0" input-position="top" theme="light" lang="zh-CN" loading="lazy" client:only class="w-full" />
+            emit-metadata="0" input-position="top" lang="zh-CN" loading="lazy" client:only class="w-full" />
     </div>
 </template>
 
@@ -72,7 +72,7 @@ let text_data = `{"characterName": "\u5144\u8d35", "characterId": "20984", "char
 {"characterName": "\u795e\u697d\u4e03\u5948", "characterId": "71230", "characterAvatar": "https://lain.bgm.tv/pic/crt/g/09/2d/71230_crt_22Gpf.jpg", "characterImg": {"small": "https://lain.bgm.tv/r/100/pic/crt/l/09/2d/71230_crt_22Gpf.jpg", "grid": "https://lain.bgm.tv/r/200/pic/crt/l/09/2d/71230_crt_22Gpf.jpg", "large": "https://lain.bgm.tv/pic/crt/l/09/2d/71230_crt_22Gpf.jpg", "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/2d/71230_crt_22Gpf.jpg"}, "characterSummary": "\u795e\u697d\u4e03\u5948\uff08\u304b\u3050\u3089\u306a\u306a / Kagura Nana\uff09\u662f\u753b\u5e08\u306a\u306a\u304b\u3050\u3089\u7684\u865a\u62df YouTuber \u5f62\u8c61\uff0c\u4e8e2019\u5e742\u67086\u65e5\u5f00\u59cb\u5728YouTube\u4e0a\u6d3b\u52a8\u3002 \u306a\u306a\u304b\u3050\u3089\u4e3a\u4f5c\u4e3a\u753b\u5e08\u4f7f\u7528\u7684\u540d\u5b57\uff0c\u5728\u4f5c\u4e3aVTuebr\u51fa\u9053\u540e\u6362\u4e86\u4e0b\u987a\u5e8f\uff08\u304b\u3050\u3089\u306a\u306a\uff09\u5e76\u786e\u5b9a\u6c49\u5b57\u4e3a\u795e\u697d\u4e03\u5948\u3002\u5173\u4e8e\u201c\u72d7\u5988\u201d\u7684\u79f0\u547c\u6765\u6e90\uff1a\u5728\u4f5c\u4e3a\u795e\u697d\u4e03\u5948\u51fa\u9053\u4e4b\u524d\uff0c\u4f5c\u4e3a\u753b\u5e08\u7684\u306a\u306a\u304b\u3050\u3089\u662f\u767e\u9b3c\u7eeb\u76ee\u5f62\u8c61\u8bbe\u8ba1\u8005\u5373\u5988\u5988\uff0c\u518d\u53c8\u56e0\u4e3a\u5728\u56fd\u5185\u767e\u9b3c\u7eeb\u76ee\u7684\u522b\u79f0\u201c\u72d7\u72d7\u201d\u5341\u5206\u6709\u540d\uff0c\u6240\u4ee5\u88ab\u4eba\u79f0\u4e3a\u201c\u72d7\u5988\u201d\uff08\u5df2\u7ecf\u88ab\u672c\u4eba\u8ba4\u540c\u4e86\uff09\u3002\u4e4b\u540e\u6f14\u53d8\u6210\u88ab\u7c89\u4e1d\u558a\u505a\u5988\u5988\u3002\u975e\u5e38\u975e\u5e38\u559c\u6b22\u5403\u8fa3\u6912\uff0c\u751a\u81f3\u81ea\u79f0\u8f9b\u515a\uff08\u8f9b\u65e5\u8bed\u7684\u610f\u601d\u4e3a\u8fa3\uff09\uff0c\u4e2d\u56fd\u7684\u7c89\u4e1d\u5219\u53eb\u8fa3\u8fa3\u8f9b\u519b\u3002\u5728\u521a\u5f00\u59cb\u7528\u63a8\u7279\u65f6\u6709\u53d1\u5e03\u5f88\u591a\u81ea\u5df1\u753b\u7684\u4e1c\u65b9\u540c\u4eba\u56fe\uff0c\u540e\u6765\u6e10\u6e10\u6c89\u8ff7\u4e8e\u8230C\u3001\u5076\u50cf\u5927\u5e08\u3001FGO\u7b49\u7b49\u3002\u795e\u697d\u4e03\u5948\u7684\u6a21\u578b\u5341\u5206\u7ec6\u81f4\uff0c\u6bd4\u8d77\u5176\u4ed6\u7684VTuber\u76f8\u6bd4\u591a\u4e86\u5f88\u591a\u8868\u60c5\uff0c\u88ab\u5236\u4f5c\u4e86\u5927\u91cf\u8868\u60c5\u5305\uff0c\u5728qq\u7fa4\uff0c\u8d34\u5427\u7b49\u7f51\u7edc\u793e\u4ea4\u573a\u6240\u4e2d\u5927\u91cf\u6d41\u4f20\u53bb\u54ea\u91cc\u90fd\u80fd\u770b\u5230\u72d7\u5988\u8868\u60c5\u5305\uff0c\u88ab\u8ba4\u4e3a\u662f\u72d7\u5988\u4eba\u6c14\u5927\u6da8\u7684\u539f\u56e0\u4e4b\u4e00\u3002", "characterInfo": [{"key": "\u7b80\u4f53\u4e2d\u6587\u540d", "value": "\u795e\u4e50\u4e03\u5948"}, {"key": "\u522b\u540d", "value": [{"v": "\u5988\u5988"}, {"v": "\u72d7\u5988"}, {"k": "\u82f1\u6587\u540d", "v": "Kagura Nana"}, {"k": "\u65e5\u6587\u540d", "v": "\u795e\u697d\u4e03\u5948"}, {"k": "\u7eaf\u5047\u540d", "v": "\u304b\u3050\u3089\u306a\u306a"}, {"k": "\u7f57\u9a6c\u5b57", "v": "Kagura Nana"}]}, {"key": "\u6027\u522b", "value": "\u5973"}, {"key": "\u751f\u65e5", "value": "1\u670812\u65e5"}, {"key": "\u8eab\u9ad8", "value": "151cm"}, {"key": "\u5f15\u7528\u6765\u6e90", "value": "https://zh.moegirl.org/\u795e\u4e50\u4e03\u5948#"}]}`
 let native_data = text_data.split('\n')
 const dataList: Ref<Array<object>> = ref([]);
-for (let i = 0; i < native_data.length; i++) {
+    for (let i = 0; i < native_data.length; i++) {
     // console.log(native_data[i]);
     dataList.value[i] = JSON.parse(native_data[i]);
 }
