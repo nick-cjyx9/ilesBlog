@@ -4,7 +4,7 @@
         <title>Rina Blog-Nick's webspace!</title>
         <link>https://ilesblog.pages.dev</link>
         <description></description>
-        <lastBuildDate>Wed, 26 Jul 2023 07:02:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jul 2023 07:24:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -21,7 +21,7 @@
             <pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[拍照拍的少，就只有多写点字了  多搬点wiki了. 
 ]]></description>
-            <content:encoded><![CDATA[<p>拍照拍的少，就只有多写点字了 <span class="bg-black text-black hover:text-white py-0.5 px-1"> 多搬点wiki了. </span></p>
+            <content:encoded><![CDATA[<p>拍照拍的少，就只有多写点字了 <span class="bg-black text-black hover:text-white py-0.5 px-1" role="button" title="你知道的太多了！"> 多搬点wiki了. </span></p>
 
 <h2 id="第一天：攀枝花-·-26°34′54″n-101°43′06″e" class="heading"><a href="#第一天：攀枝花-·-26°34′54″n-101°43′06″e" class="heading-anchor" aria-label="Permalink for 第一天：攀枝花 · 26°34′54″N 101°43′06″E" tabindex="-1"></a>第一天：攀枝花 · 26°34′54″N 101°43′06″E</h2>
 <img src="https://s2.loli.net/2023/07/24/XqulaAkyDt1dJwW.png" style="width:80%" class="my-6">
