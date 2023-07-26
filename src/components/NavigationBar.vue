@@ -1,12 +1,12 @@
 <template>
-  <nav class="flex space-x-4 shadow flex-wrap justify-center 
+  <nav class="flex space-x-3 shadow flex-wrap justify-center 
   whitespace-nowrap lg:px-24 sm:px-5 py-0.5 sm:flex-nowrap">
-    <div class="navtab font-serif">
-      <a href='/' class="font-medium text-xl">Rina Chan's Blog</a>
+    <div class="navtab font-serif font-medium">
+      <a href='/' class="text-xl">Rina Chan's Blog</a>
     </div>
     <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
       <li v-for="(value,key,index) in nav_data" class="navtab hover:text-blue-400">
-        <a :href='value' class="text-base font-normal">{{ key }}</a>
+        <a :href='value' class="text-base font-medium">{{ key }}</a>
       </li>
     </ul>
     <ul class="flex justify-center">

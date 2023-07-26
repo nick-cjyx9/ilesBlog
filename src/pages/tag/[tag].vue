@@ -1,8 +1,8 @@
 <template layout="base">
-<h1 class="text-4xl font-extrabold">{{ page.frontmatter.title }}</h1>
-<ul class="container w-full">
+<h1 class="text-4xl font-extrabold w-full">{{ page.frontmatter.title }}</h1>
+<ul class="relative ml-auto mr-auto w-full">
     <li v-for="post of posts_fltd">
-        <ArticleCard :post="post" class="w-full flex justify-center"></ArticleCard>
+        <ArticleCard :post="post" class="w-full"></ArticleCard>
     </li>
   </ul>
 </template>

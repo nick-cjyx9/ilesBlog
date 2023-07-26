@@ -8,12 +8,14 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ArticleCard: typeof import('./src/components/ArticleCard.vue')['default']
+    ArticleFooter: typeof import('./src/components/ArticleFooter.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
     GirlsIntro: typeof import('./src/components/GirlsIntro.mdx')['default']
     Heimu: typeof import('./src/components/Heimu.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
+    NotGenerateByAI: typeof import('./src/components/NotGenerateByAI.vue')['default']
     RenderFeed: typeof import('./node_modules/.pnpm/registry.npmmirror.com+@islands+feed@0.8.1_iles@0.9.5_vue@3.3.4/node_modules/@islands/feed/dist/render-feed')['RenderFeed']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
