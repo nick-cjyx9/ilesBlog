@@ -14,11 +14,11 @@
         class="navtab dark:hover:text-white">
         <a :href='value[1]' :aria-label="key"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
-      <li id="toLight"
+      <li id="toLight" @click="theme='light'"
       role="button" class="navtab dark:hover:text-white">
         <i class="fa-solid fa-sun"></i>
       </li>
-      <li id="toDark"
+      <li id="toDark" @click="theme='dark'"
       role="button" class="navtab dark:hover:text-white">
         <i class="fa-solid fa-moon"></i>
       </li>
@@ -28,8 +28,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { onMounted } from "vue";
-import { setDark,setLight } from "@/composables/useTheme";
+import useTheme from "@/composables/useTheme";
+const { store: theme } = useTheme();
 const nav_data = ref({
   "主页":"/",
   "归档":"/archive",
@@ -41,12 +41,5 @@ const icon_data = ref({
   "搜索":["magnifying-glass","/search"],
   "订阅RSS":["square-rss","/feed.rss"],
   // "aria-label":["fa-icon","link"]
-})
-
-onMounted(()=>{
-  const toLight = document.querySelector('#toLight');
-  const toDark = document.querySelector('#toDark');
-  toLight?.addEventListener('click',()=>{setLight()});
-  toDark?.addEventListener('click',()=>{setDark();});
 })
 </script>

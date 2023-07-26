@@ -1,9 +1,11 @@
 <script client:load lang="ts">
 import BackToTop from '@/components/BackToTop.vue';
-import { initTheme } from '@/composables/useTheme';
+import useTheme from "@/composables/useTheme";
+import { toDark, toLight } from "@/composables/useTheme";
 if (import.meta.env.PROD)
   console.log('Powered by îles 🏝', 'https://iles-docs.netlify.app')
-initTheme();
+const { store: theme } = useTheme();
+if(theme.value=='dark'){toDark();}else{toLight();}
 </script>
 
 <template>
