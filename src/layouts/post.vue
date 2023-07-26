@@ -36,7 +36,6 @@
 <script setup lang="ts">
 import 'github-markdown-css';
 import Giscus from '@giscus/vue';
-// import { onMounted } from 'vue';
 const page = usePage();
 const { frontmatter, meta } = page;
 frontmatter.description ||= meta.excerpt;

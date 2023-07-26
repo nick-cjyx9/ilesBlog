@@ -11,24 +11,19 @@ body {
   margin: 0;
   background-color: #dee6ee;
 }
-
 nav {
   background-color: #eff3f7;
 }
-
 .card {
   @apply container bg-slate-100 flex shadow-md flex-wrap w-full;
 }
-
 .navtab {
   @apply rounded-lg p-3 text-slate-700 hover:bg-indigo-100 flex items-center;
 }
-
 .cover {
   background-color: #0000006b;
   transition: background-color .2s ease;
 }
-
 .cover:hover {
   background-color: #000000ad;
 }
@@ -75,10 +70,13 @@ nav {
   }
 }
 
+
+
+
+
 /* 
   github-markdown
 */
-
 .markdown-body {
   box-sizing: border-box;
   min-width: 200px;
@@ -87,24 +85,21 @@ nav {
   padding: 45px;
   @apply bg-slate-100 !important;
 }
-
 .markdown-body > ul {
   list-style: disc !important;
 }
 .markdown-body > ol {
   list-style: decimal !important;
 }
-
-
 @media (max-width: 767px) {
   .markdown-body {
     padding: 18px;
   }
 }
-
 code {
   font-family: 'Encode Sans', sans-serif;
 }
+
 /**
  * One Light theme for prism.js
  * Based on Atom's One Light theme: https://github.com/atom/atom/tree/master/packages/one-light-syntax

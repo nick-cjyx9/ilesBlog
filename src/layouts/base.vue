@@ -11,6 +11,6 @@ if (import.meta.env.PROD)
   <TheFooter />
 </template>
 
-<style lang="scss">
+<style>
 @import '~/styles/base.css';
 </style>

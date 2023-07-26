@@ -28,4 +28,3 @@ dist-ssr
 
 .iles-ssg-temp/
 
-env.*.ts

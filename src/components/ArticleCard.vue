@@ -1,9 +1,9 @@
-<script setup>
-function formatTime(time){
+<script setup lang="ts">
+function formatTime(time:any){
   let currentTime = new Date();
-  let currentTimestamp = parseInt(currentTime.getTime() / 1000);
+  let currentTimestamp = currentTime.getTime() / 1000;
   let t = new Date(time);
-  let oldTimestamp = parseInt(t.getTime() / 1000); let oldY = t.getFullYear();
+  let oldTimestamp = t.getTime() / 1000; let oldY = t.getFullYear();
   let oldM = t.getMonth() + 1; let oldD = t.getDate();
   let oldH = t.getHours(); let oldi = t.getMinutes(); let olds = t.getSeconds();
   // gap unit:(s)
@@ -21,7 +21,7 @@ function formatTime(time){
     return Math.ceil(timestampDiff / 60 / 60 / 24) + '天前'; }
   //beyond 30 days
   return `${oldY}-${zeroize(oldM)}-${zeroize(oldD)}`;
-  function zeroize(num) { return num < 10 ? "0" + num : num; }
+  function zeroize(num:number) { return num < 10 ? "0" + num : num; }
 }
 const props = defineProps(['post']);
 </script>
@@ -29,7 +29,7 @@ const props = defineProps(['post']);
 <template>
   <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl block munderline mb-8">
     <a :href="post.href" class="block relative w-full h-full hover:shadow-xl">
-      <div class="absolute top-0 left-0 w-full h-full z-10" title="post">
+      <div class="absolute top-0 left-0 w-full h-full z-10">
         <div :style="'background-image:url(' + post.frontmatter.cover + ')'" 
         class="bg-no-repeat bg-cover bg-center w-full h-full shadow"></div>
       </div>
@@ -42,7 +42,7 @@ const props = defineProps(['post']);
     </a>
   </div>
   <div v-else class="w-full max-w-4xl munderline mb-8">
-    <a :href="post.href" class="block relative w-full h-full" title="post">
+    <a :href="post.href" class="block relative w-full h-full">
     <div class="bg-slate-100 w-full px-6 nl:px-10 shadow hover:shadow-xl 
     border-black">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
