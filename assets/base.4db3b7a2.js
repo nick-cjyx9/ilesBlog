@@ -1,1 +1,0 @@
-import{t as o,a as e,u as s}from"./useTheme.81ddf7c3.js";import"./vendor-vue.6da4bdc4.js";console.log("Powered by îles 🏝","https://iles-docs.netlify.app");const{store:t}=s();t.value=="dark"?o():e();const i=void 0;export{i as o};
