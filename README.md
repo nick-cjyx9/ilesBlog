@@ -1,5 +1,18 @@
 # RinaBlog
 
+## TODO Board
+- [ ] umami在线人数
+- [ ] 目录
+- [ ] prism.js darkmode && copy btn
+- [ ] Podcast and monument page
+- [ ] umami track events
+- [x] AI summary
+- [ ] Katex
+
+## 备忘录
+新建文件 `blognew.py foo`
+
+
 [îles]: https://github.com/ElMassimo/iles
 [configuration reference]: https://iles-docs.netlify.app/config
 
@@ -37,11 +50,3 @@ npm run dev
 npm run build
 ```
 
-### TODO Board
-- [ ] umami在线人数
-- [ ] 目录
-- [ ] prism.js darkmode && copy btn
-- [ ] Podcast and monument page
-- [ ] umami track events
-- [x] AI summary
-- [ ] Katex

@@ -13,7 +13,10 @@ def get_completion(messages, model="gpt-3.5-turbo", temperature=0):
 
 # {'file':(none|'abstract'), }
 with open('./data.json', 'r', encoding='utf-8') as f:
-    data = eval(f.read())
+    try:
+        data = eval(f.read())
+    except:
+        data = {}
     f.close()
 
 messages = [
@@ -35,7 +38,7 @@ for file in files:
         data[file] = ''
     if data[file] == '' or data[file] == None:
         with open(path+file, 'r', encoding='utf-8') as f:
-            item = f.read()
+            item = f.read()[:2001]
             if(('draft: true' in item) or ('draft:true' in item)): 
                 print('Is Draft. Continue.')
                 continue
