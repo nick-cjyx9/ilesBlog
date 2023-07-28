@@ -38,7 +38,7 @@ const props = defineProps(['post']);
         text-white w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
-        <h4 class="font-medium text-base"  style="word-wrap: break-word;"> {{ post.meta.excerpt }}</h4>
+        <h4 class="font-medium text-base"  style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </a>
   </div>
@@ -49,7 +49,7 @@ const props = defineProps(['post']);
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
-        <h4 class="font-medium text-base" style="word-wrap: break-word;">{{ post.meta.excerpt }}</h4>
+        <h4 class="font-medium text-base" style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </div>
     </a>

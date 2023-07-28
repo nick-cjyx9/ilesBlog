@@ -10,11 +10,11 @@ import AIabstract from "./modules/AIabstract";
 export default defineConfig({
   turbo: false,
   modules: [
-    excerpt(),
     headings(),
     prism(),
     feed(),
     AIabstract(),
+    excerpt(),
     lastUpdated(),
   ],
   async extendFrontmatter(frontmatter, filename) {
