@@ -36,7 +36,7 @@ const props = defineProps(['post']);
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
         text-white w-full h-full space-y-3 nl:space-y-5">
-        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
+        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated==null?post.meta.lastUpdated:post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <h4 class="font-medium text-base">{{ post.meta.excerpt }}</h4>
       </div>
@@ -47,7 +47,7 @@ const props = defineProps(['post']);
     <a :href="post.href" class="block relative w-full h-full">
     <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
-        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
+        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated==null?post.meta.lastUpdated:post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <h4 class="font-medium text-base">{{ post.meta.excerpt }}</h4>
       </div>

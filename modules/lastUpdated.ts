@@ -6,7 +6,7 @@ export default () => ({
   extendFrontmatter (frontmatter, filename) {
     const lastUpdated = lastUpdatedFromGit(filename)
     if (lastUpdated)
-      frontmatter.meta.lastUpdated = lastUpdated
+      frontmatter.lastUpdated = lastUpdated
   },
 })as IlesModule
 

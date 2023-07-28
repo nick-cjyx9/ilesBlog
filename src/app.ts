@@ -10,7 +10,13 @@ export default defineApp({
           content: "width=device-width,initial-scale=1,maximum-scale=1",
         },
       ],
-      script: [],
+      script: [
+        {
+          async: true,
+          src: 'https://umami.kanata-blog.eu.org/script.js',
+          'data-website-id' : 'f1e56e6a-ea92-4228-b77e-e448f719a75b'
+        }
+      ],
       link: [
         {
           rel: "stylesheet",

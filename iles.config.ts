@@ -5,15 +5,17 @@ import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
+import AIabstract from "./modules/AIabstract";
 
 export default defineConfig({
   turbo: false,
   modules: [
-    headings(),
     excerpt(),
-    lastUpdated(),
-    feed(),
+    headings(),
     prism(),
+    feed(),
+    AIabstract(),
+    lastUpdated(),
   ],
   async extendFrontmatter(frontmatter, filename) {
     if (filename.includes('/post/')) {
@@ -26,5 +28,5 @@ export default defineConfig({
     remarkPlugins: ['remark-gfm'],
     rehypePlugins: ['rehype-external-links','rehype-katex'],
   },
-  siteUrl: 'https://ilesblog.pages.dev/',
+  siteUrl: 'https://ikanata.eu.org',
 })

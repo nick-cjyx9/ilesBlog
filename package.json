@@ -27,6 +27,7 @@
     "@islands/prism": "^0.8.0",
     "@types/cross-spawn": "^6.0.2",
     "@vueuse/core": "^10.2.1",
+    "easy-typer-js": "^2.1.0",
     "rehype-external-links": "^2.1.0",
     "rehype-katex": "^6.0.3",
     "remark-gfm": "^3.0.1",

@@ -73,6 +73,19 @@ nav {
   }
 }
 
+/* https://juejin.cn/post/7111272797477240863 */
+
+/* .typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  animation: typing 8s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} */
 
 /* 
   github-markdown
