@@ -11,8 +11,10 @@ def create_mdx_file(filename):
     file_content = f"""---
 title: {filename}
 date: {now}
-tags: 
-cover: 
+tags: ["",]
+licensed: true
+isAIGenerated: false
+cover: ""
 ---
 
 <Excerpt />

@@ -3,7 +3,7 @@ const props = defineProps(['isLight']);
 </script>
 <template>
     <div class="not-by-ai-holder" v-if="isLight">
-        <a href="https://notbyai.fyi" target="_blank">
+        <a href="https://notbyai.fyi" target="_blank" data-umami-event-id="goto notbyai.fyi">
         <svg width="131" height="42" viewBox="0 0 131 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 0.5H116C124.008 0.5 130.5 6.99187 130.5 15V41.5H15C6.99187 41.5 0.5 35.0081 0.5 27V0.5Z" fill="white" stroke="black"></path>
         <path d="M17.9605 24.1575C21.4266 26.9643 26.3836 26.9643 29.8497 24.1575L28.5095 22.5026C25.8248 24.6766 21.9854 24.6766 19.3007 22.5026L17.9605 24.1575Z" fill="black"></path>
@@ -37,7 +37,7 @@ const props = defineProps(['isLight']);
     </a>
   </div>
   <div class="dark-not-by-ai-holder" v-else>
-  <a href="https://notbyai.fyi" target="_blank">
+  <a href="https://notbyai.fyi" target="_blank" data-umami-event-id="goto notbyai.fyi">
     <svg width="131" height="42" viewBox="0 0 131 42" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0.5 0.5H116C124.008 0.5 130.5 6.99187 130.5 15V41.5H15C6.99187 41.5 0.5 35.0081 0.5 27V0.5Z" fill="black" stroke="#ACACAC"></path>
       <path d="M17.9605 24.1575C21.4266 26.9643 26.3836 26.9643 29.8497 24.1575L28.5095 22.5026C25.8248 24.6766 21.9854 24.6766 19.3007 22.5026L17.9605 24.1575Z" fill="white"></path>

@@ -1,6 +1,9 @@
 <template>
     <div class="w-full h-full" id="container"></div>
 </template>
+<script client:load>
+window.umami.track('404');
+</script>
 <style scoped>
 @media only screen and (max-width: 600px) {
     #container {

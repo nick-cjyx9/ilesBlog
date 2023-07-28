@@ -12,7 +12,7 @@
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
         </li>
         <li v-for="tag in frontmatter.tags"><i class="fa-solid fa-tag"></i>
-          <a :href="'../tag/'+tag" target="_blank"><span class="ml-1.5 munderline 
+          <a :href="'../tag/'+tag" :data-umami-event-id="'goto tag:'+tag"><span class="ml-1.5 munderline 
             border-gray-600 after:border-b-2" :title="'跳转到标签：' + tag">{{ tag }}</span></a>
         </li>
       </ul>
@@ -23,7 +23,8 @@
       <hr/>
     </article>
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
-    :is-licensed="frontmatter.noLicense?false:true"/>
+    :is-licensed="frontmatter.licensed"/>
+    <!-- 🤣 -->
   </div>
   <GiscusComment />
 </template>

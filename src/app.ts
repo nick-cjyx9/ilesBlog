@@ -14,7 +14,8 @@ export default defineApp({
         {
           async: true,
           src: 'https://umami.kanata-blog.eu.org/script.js',
-          'data-website-id' : 'f1e56e6a-ea92-4228-b77e-e448f719a75b'
+          'data-website-id' : 'f1e56e6a-ea92-4228-b77e-e448f719a75b',
+          'data-domains' : "ikanata.eu.org,ilesblog.pages.dev",
         }
       ],
       link: [

@@ -2,10 +2,11 @@
 
 ## TODO Board
 - [ ] umami在线人数
-- [ ] 目录
-- [ ] prism.js darkmode && copy btn
+- [ ] TOC
+- [-] prism.js copy btn
 - [ ] Podcast and monument page
-- [ ] umami track events
+- [x] umami track events
+- [ ] front link add to title
 - [x] AI summary
 - [ ] Katex
 
