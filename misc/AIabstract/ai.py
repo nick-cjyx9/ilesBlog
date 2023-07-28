@@ -38,7 +38,7 @@ for file in files:
         data[file] = ''
     if data[file] == '' or data[file] == None:
         with open(path+file, 'r', encoding='utf-8') as f:
-            item = f.read()[:2001]
+            item = f.read()[:3801]
             if(('draft: true' in item) or ('draft:true' in item)): 
                 print('Is Draft. Continue.')
                 continue
