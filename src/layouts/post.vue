@@ -6,7 +6,7 @@
        text-gray-600 flex-wrap px-8 justify-center dark:text-gray-300"
         style="font-size: 14.3px;">
         <li v-if="$meta.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
-          <span class="ml-1.5">{{ formatDate(meta.lastUpdated) }}</span>
+          <span class="ml-1.5">{{ formatDate(frontmatter.lastUpdated) }}</span>
         </li>
         <li><i class="fa-solid fa-clock"></i>
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
