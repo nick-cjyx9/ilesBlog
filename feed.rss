@@ -2,22 +2,35 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Rina Blog-Nick's webspace!</title>
-        <link>https://ilesblog.pages.dev</link>
+        <link>https://ikanata.eu.org</link>
         <description></description>
-        <lastBuildDate>Fri, 28 Jul 2023 03:58:08 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Jul 2023 04:01:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <image>
             <title>Rina Blog-Nick's webspace!</title>
             <url>https://avatars.githubusercontent.com/u/119087246</url>
-            <link>https://ilesblog.pages.dev</link>
+            <link>https://ikanata.eu.org</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
         <item>
+            <title><![CDATA[aitest]]></title>
+            <link>https://ikanata.eu.org/post/ai_abstract</link>
+            <guid>https://ikanata.eu.org/post/ai_abstract</guid>
+            <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+]]></description>
+            <content:encoded><![CDATA[<h1 id="“杜苏芮”再次升级为超强台风，中国气象局启动台风一级响应" class="heading"><a href="#“杜苏芮”再次升级为超强台风，中国气象局启动台风一级响应" class="heading-anchor" aria-label="Permalink for “杜苏芮”再次升级为超强台风，中国气象局启动台风一级响应" tabindex="-1"></a>“杜苏芮”再次升级为超强台风，中国气象局启动台风一级响应</h1>
+
+<p>据中国气象局消息，刚刚，中国气象局启动台风一级应急响应。
+今年第5号台风“杜苏芮”今天（7月27日）下午再次升级为超强台风。
+7月27日17时，台风“杜苏芮”的中心距离福建省厦门市南偏东方向约360公里，中心附近最大风力16级（52米/秒，超强台风级）。预计，“杜苏芮”将以每小时15-20公里的速度向北偏西方向移动，将于28日早晨到上午在福建东山到莆田一带沿海登陆，登陆时强度为强台风级或超强台风级（48-55米/秒，15-16级）。</p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[四川西南2.5日游记]]></title>
-            <link>https://ilesblog.pages.dev/post/trip_to_panzhihua</link>
-            <guid>https://ilesblog.pages.dev/post/trip_to_panzhihua</guid>
+            <link>https://ikanata.eu.org/post/trip_to_panzhihua</link>
+            <guid>https://ikanata.eu.org/post/trip_to_panzhihua</guid>
             <pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[拍照拍的少，就只有多写点字了  多搬点wiki了. 
 ]]></description>
@@ -70,8 +83,8 @@
         </item>
         <item>
             <title><![CDATA[Hello World!(你好！世界！)]]></title>
-            <link>https://ilesblog.pages.dev/post/hello_world</link>
-            <guid>https://ilesblog.pages.dev/post/hello_world</guid>
+            <link>https://ikanata.eu.org/post/hello_world</link>
+            <guid>https://ikanata.eu.org/post/hello_world</guid>
             <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[
 中日英测试文案
