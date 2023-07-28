@@ -12,6 +12,8 @@ declare module '@vue/runtime-core' {
     BackToTop: typeof import('./src/components/BackToTop.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
     GirlsIntro: typeof import('./src/components/GirlsIntro.mdx')['default']
+    GiscusComment: typeof import('./src/components/GiscusComment.vue')['default']
+    GiscusCommentInner: typeof import('./src/components/GiscusCommentInner.vue')['default']
     HeadTitle: typeof import('./src/components/HeadTitle.vue')['default']
     Heimu: typeof import('./src/components/Heimu.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
