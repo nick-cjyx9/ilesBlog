@@ -36,8 +36,8 @@ const props = defineProps(['post']);
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
         text-white w-full h-full space-y-3 nl:space-y-5">
-        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
-        <div class="inline-flex w-full flex-nowrap"><h3 class="font-semibold text-3xl w-2/3">{{ post.title }}</h3><small class="w-1/3 text-end mt-auto mr-12"><i class="fa-solid fa-eye"></i> {{ post.frontmatter.visitors }}</small></div>
+        <div class="inline-flex w-full flex-nowrap"><h3 class="font-semibold text-3xl">{{ post.title }}</h3></div>
+        <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · {{ post.frontmatter.visitors }}次 </div>
         <h4 class="font-medium text-base"  style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </a>
@@ -47,8 +47,8 @@ const props = defineProps(['post']);
     <a :href="post.href" class="block relative w-full h-full">
     <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
-        <time class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }}</time>
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
+        <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · {{ post.frontmatter.visitors }}次 </div>
         <h4 class="font-medium text-base" style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </div>
