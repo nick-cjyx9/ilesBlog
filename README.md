@@ -1,7 +1,7 @@
 # RinaBlog
 
 ## TODO Board
-- [ ] umami在线人数
+- [x] umami在线人数
 - [ ] TOC
 - [-] prism.js copy btn
 - [ ] Podcast and monument page

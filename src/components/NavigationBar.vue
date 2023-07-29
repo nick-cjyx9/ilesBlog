@@ -2,17 +2,17 @@
   <nav class="flex space-x-3 shadow flex-wrap justify-center 
   whitespace-nowrap lg:px-24 sm:px-5 sm:flex-nowrap dark:text-white">
     <div class="navtab font-serif font-medium">
-      <a href='/' class="text-xl" data-umami-event-id="to homepage">Rina Chan's Blog</a>
+      <a href='/' class="text-xl" data-umami-event="to homepage">Rina Chan's Blog</a>
     </div>
     <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
       <li v-for="(value,key,index) in nav_data" class="navtab dark:hover:text-white">
-        <a :href='value' class="text-base font-medium" :data-umami-event-id="'goto '+value">{{ key }}</a>
+        <a :href='value' class="text-base font-medium" :data-umami-event="'goto '+value">{{ key }}</a>
       </li>
     </ul>
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
         class="navtab dark:hover:text-white">
-        <a :href='value[1]' :aria-label="key" :data-umami-event-id="'goto '+value"><i :class="'fa-solid fa-'+value[0]"></i></a>
+        <a :href='value[1]' :title="key" :data-umami-event="'goto '+value"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
       <li id="toLight" @click="theme='light';toLight();"
       role="button" class="navtab dark:hover:text-white">
@@ -41,6 +41,6 @@ const nav_data = ref({
 const icon_data = ref({
   "搜索":["magnifying-glass","/search"],
   "订阅RSS":["square-rss","/feed.rss"],
-  // "aria-label":["fa-icon","link"]
+  // "title":["fa-icon","link"]
 })
 </script>

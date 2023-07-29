@@ -12,7 +12,11 @@
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
         </li>
         <li><i class="fa-solid fa-eye"></i>
-          <span class="ml-1.5">{{ frontmatter.visitors }}</span>
+          <a :href="'https://umami.kanata-blog.eu.org/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" 
+          :data-umami-event-id="'goto umami:'+frontmatter.title" target="_blank">
+          <span class="ml-1.5 munderline 
+            border-gray-600 after:border-b-2">{{ frontmatter.visitors }}</span>
+          </a>
         </li>
         <li v-for="tag in frontmatter.tags"><i class="fa-solid fa-tag"></i>
           <a :href="'../tag/'+tag" :data-umami-event-id="'goto tag:'+tag"><span class="ml-1.5 munderline 
