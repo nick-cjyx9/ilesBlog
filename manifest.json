@@ -875,8 +875,8 @@
     "isEntry": true,
     "src": "virtual_ile_girls_ile-9"
   },
-  "virtual_ile_hidden_test_ile-1": {
-    "file": "assets/virtual_ile_hidden_test_ile-1.6eea06d2.js",
+  "virtual_ile_hidden_trip_to_panzhihua_ile-1": {
+    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-1.6eea06d2.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/components/BackToTop.vue",
@@ -884,10 +884,10 @@
       "_vite.1299367e.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_hidden_test_ile-1"
+    "src": "virtual_ile_hidden_trip_to_panzhihua_ile-1"
   },
-  "virtual_ile_hidden_test_ile-2": {
-    "file": "assets/virtual_ile_hidden_test_ile-2.f07da6eb.js",
+  "virtual_ile_hidden_trip_to_panzhihua_ile-2": {
+    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-2.f07da6eb.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "_NavigationBar.d6e24a06.js",
@@ -896,10 +896,10 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_hidden_test_ile-2"
+    "src": "virtual_ile_hidden_trip_to_panzhihua_ile-2"
   },
-  "virtual_ile_hidden_test_ile-3": {
-    "file": "assets/virtual_ile_hidden_test_ile-3.67bb036e.js",
+  "virtual_ile_hidden_trip_to_panzhihua_ile-3": {
+    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-3.67bb036e.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "_GiscusCommentInner.4ec513fa.js",
@@ -908,10 +908,10 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_hidden_test_ile-3"
+    "src": "virtual_ile_hidden_trip_to_panzhihua_ile-3"
   },
-  "virtual_ile_hidden_test_ile-4": {
-    "file": "assets/virtual_ile_hidden_test_ile-4.044a44ce.js",
+  "virtual_ile_hidden_trip_to_panzhihua_ile-4": {
+    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-4.044a44ce.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
@@ -920,7 +920,7 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_hidden_test_ile-4"
+    "src": "virtual_ile_hidden_trip_to_panzhihua_ile-4"
   },
   "virtual_ile_index_ile-1": {
     "file": "assets/virtual_ile_index_ile-1.6eea06d2.js",
@@ -956,100 +956,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_index_ile-3"
-  },
-  "virtual_ile_post_ai_abstract_ile-1": {
-    "file": "assets/virtual_ile_post_ai_abstract_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_ai_abstract_ile-1"
-  },
-  "virtual_ile_post_ai_abstract_ile-2": {
-    "file": "assets/virtual_ile_post_ai_abstract_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_ai_abstract_ile-2"
-  },
-  "virtual_ile_post_ai_abstract_ile-3": {
-    "file": "assets/virtual_ile_post_ai_abstract_ile-3.67bb036e.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_GiscusCommentInner.4ec513fa.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_ai_abstract_ile-3"
-  },
-  "virtual_ile_post_ai_abstract_ile-4": {
-    "file": "assets/virtual_ile_post_ai_abstract_ile-4.044a44ce.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_ai_abstract_ile-4"
-  },
-  "virtual_ile_post_an_interesting_passage_ile-1": {
-    "file": "assets/virtual_ile_post_an_interesting_passage_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_an_interesting_passage_ile-1"
-  },
-  "virtual_ile_post_an_interesting_passage_ile-2": {
-    "file": "assets/virtual_ile_post_an_interesting_passage_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_an_interesting_passage_ile-2"
-  },
-  "virtual_ile_post_an_interesting_passage_ile-3": {
-    "file": "assets/virtual_ile_post_an_interesting_passage_ile-3.67bb036e.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_GiscusCommentInner.4ec513fa.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_an_interesting_passage_ile-3"
-  },
-  "virtual_ile_post_an_interesting_passage_ile-4": {
-    "file": "assets/virtual_ile_post_an_interesting_passage_ile-4.044a44ce.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_an_interesting_passage_ile-4"
   },
   "virtual_ile_post_hello_world_ile-1": {
     "file": "assets/virtual_ile_post_hello_world_ile-1.6eea06d2.js",
@@ -1098,8 +1004,8 @@
     "isEntry": true,
     "src": "virtual_ile_post_hello_world_ile-4"
   },
-  "virtual_ile_post_trip_to_panzhihua_ile-1": {
-    "file": "assets/virtual_ile_post_trip_to_panzhihua_ile-1.6eea06d2.js",
+  "virtual_ile_post_reset_my_sail_ile-1": {
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-1.6eea06d2.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/components/BackToTop.vue",
@@ -1107,10 +1013,10 @@
       "_vite.1299367e.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_post_trip_to_panzhihua_ile-1"
+    "src": "virtual_ile_post_reset_my_sail_ile-1"
   },
-  "virtual_ile_post_trip_to_panzhihua_ile-2": {
-    "file": "assets/virtual_ile_post_trip_to_panzhihua_ile-2.f07da6eb.js",
+  "virtual_ile_post_reset_my_sail_ile-2": {
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-2.f07da6eb.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "_NavigationBar.d6e24a06.js",
@@ -1119,10 +1025,10 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_post_trip_to_panzhihua_ile-2"
+    "src": "virtual_ile_post_reset_my_sail_ile-2"
   },
-  "virtual_ile_post_trip_to_panzhihua_ile-3": {
-    "file": "assets/virtual_ile_post_trip_to_panzhihua_ile-3.67bb036e.js",
+  "virtual_ile_post_reset_my_sail_ile-3": {
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-3.67bb036e.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "_GiscusCommentInner.4ec513fa.js",
@@ -1131,10 +1037,10 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_post_trip_to_panzhihua_ile-3"
+    "src": "virtual_ile_post_reset_my_sail_ile-3"
   },
-  "virtual_ile_post_trip_to_panzhihua_ile-4": {
-    "file": "assets/virtual_ile_post_trip_to_panzhihua_ile-4.044a44ce.js",
+  "virtual_ile_post_reset_my_sail_ile-4": {
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-4.044a44ce.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
@@ -1143,7 +1049,7 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_post_trip_to_panzhihua_ile-4"
+    "src": "virtual_ile_post_reset_my_sail_ile-4"
   },
   "virtual_ile_search_ile-1": {
     "file": "assets/virtual_ile_search_ile-1.6eea06d2.js",
@@ -1215,8 +1121,8 @@
     "isEntry": true,
     "src": "virtual_ile_tag_Blog_ile-3"
   },
-  "virtual_ile_tag_Geography_ile-1": {
-    "file": "assets/virtual_ile_tag_Geography_ile-1.6eea06d2.js",
+  "virtual_ile_tag_about_ile-1": {
+    "file": "assets/virtual_ile_tag_about_ile-1.6eea06d2.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/components/BackToTop.vue",
@@ -1224,10 +1130,10 @@
       "_vite.1299367e.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_Geography_ile-1"
+    "src": "virtual_ile_tag_about_ile-1"
   },
-  "virtual_ile_tag_Geography_ile-2": {
-    "file": "assets/virtual_ile_tag_Geography_ile-2.f07da6eb.js",
+  "virtual_ile_tag_about_ile-2": {
+    "file": "assets/virtual_ile_tag_about_ile-2.f07da6eb.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "_NavigationBar.d6e24a06.js",
@@ -1236,10 +1142,10 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_Geography_ile-2"
+    "src": "virtual_ile_tag_about_ile-2"
   },
-  "virtual_ile_tag_Geography_ile-3": {
-    "file": "assets/virtual_ile_tag_Geography_ile-3.efa80cec.js",
+  "virtual_ile_tag_about_ile-3": {
+    "file": "assets/virtual_ile_tag_about_ile-3.efa80cec.js",
     "imports": [
       "_iles.dcf0e4e4.js",
       "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
@@ -1248,7 +1154,7 @@
       "_useTheme.f3a49e6d.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_Geography_ile-3"
+    "src": "virtual_ile_tag_about_ile-3"
   },
   "virtual_ile_tag_hello world_ile-1": {
     "file": "assets/virtual_ile_tag_hello world_ile-1.6eea06d2.js",
@@ -1285,41 +1191,6 @@
     "isEntry": true,
     "src": "virtual_ile_tag_hello world_ile-3"
   },
-  "virtual_ile_tag_homework_ile-1": {
-    "file": "assets/virtual_ile_tag_homework_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_homework_ile-1"
-  },
-  "virtual_ile_tag_homework_ile-2": {
-    "file": "assets/virtual_ile_tag_homework_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_homework_ile-2"
-  },
-  "virtual_ile_tag_homework_ile-3": {
-    "file": "assets/virtual_ile_tag_homework_ile-3.efa80cec.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_homework_ile-3"
-  },
   "virtual_ile_tag_init_ile-1": {
     "file": "assets/virtual_ile_tag_init_ile-1.6eea06d2.js",
     "imports": [
@@ -1354,111 +1225,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_tag_init_ile-3"
-  },
-  "virtual_ile_tag_test_ile-1": {
-    "file": "assets/virtual_ile_tag_test_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_test_ile-1"
-  },
-  "virtual_ile_tag_test_ile-2": {
-    "file": "assets/virtual_ile_tag_test_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_test_ile-2"
-  },
-  "virtual_ile_tag_test_ile-3": {
-    "file": "assets/virtual_ile_tag_test_ile-3.efa80cec.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_test_ile-3"
-  },
-  "virtual_ile_tag_trip_ile-1": {
-    "file": "assets/virtual_ile_tag_trip_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_trip_ile-1"
-  },
-  "virtual_ile_tag_trip_ile-2": {
-    "file": "assets/virtual_ile_tag_trip_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_trip_ile-2"
-  },
-  "virtual_ile_tag_trip_ile-3": {
-    "file": "assets/virtual_ile_tag_trip_ile-3.efa80cec.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_trip_ile-3"
-  },
-  "virtual_ile_tag_文摘_ile-1": {
-    "file": "assets/virtual_ile_tag_文摘_ile-1.6eea06d2.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/components/BackToTop.vue",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_文摘_ile-1"
-  },
-  "virtual_ile_tag_文摘_ile-2": {
-    "file": "assets/virtual_ile_tag_文摘_ile-2.f07da6eb.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "_NavigationBar.d6e24a06.js",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_文摘_ile-2"
-  },
-  "virtual_ile_tag_文摘_ile-3": {
-    "file": "assets/virtual_ile_tag_文摘_ile-3.efa80cec.js",
-    "imports": [
-      "_iles.dcf0e4e4.js",
-      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.4a81fcfe.js",
-      "_vite.1299367e.js",
-      "_useTheme.f3a49e6d.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_文摘_ile-3"
   },
   "virtual_ile_tags_ile-1": {
     "file": "assets/virtual_ile_tags_ile-1.6eea06d2.js",
