@@ -15,11 +15,11 @@ const instance = axios.create({
     timeout: 12000,
     headers: headers
 });
-// GET /api/websites/{websiteId}/active
+
 export async function useActive() {
     try {
         const response = await instance.get('websites/' + wid + '/active');
-        return response.data[0]['x'];
+        return response.data[0]['x']>0?response.data[0]['x']:1;
     } catch (error) {
         console.error(error);
         return '-1';
