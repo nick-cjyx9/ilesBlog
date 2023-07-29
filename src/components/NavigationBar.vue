@@ -1,6 +1,6 @@
 <template>
   <nav class="flex space-x-3 shadow flex-wrap justify-center 
-  whitespace-nowrap lg:px-24 sm:px-5 py-0.5 sm:flex-nowrap dark:text-white">
+  whitespace-nowrap lg:px-24 sm:px-5 sm:flex-nowrap dark:text-white">
     <div class="navtab font-serif font-medium">
       <a href='/' class="text-xl" data-umami-event-id="to homepage">Rina Chan's Blog</a>
     </div>

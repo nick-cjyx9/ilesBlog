@@ -12,7 +12,7 @@
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
         </li>
         <li><i class="fa-solid fa-eye"></i>
-          <span class="ml-1.5">{{ frontmatter.visitor }}</span>
+          <span class="ml-1.5">{{ frontmatter.visitors }}</span>
         </li>
         <li v-for="tag in frontmatter.tags"><i class="fa-solid fa-tag"></i>
           <a :href="'../tag/'+tag" :data-umami-event-id="'goto tag:'+tag"><span class="ml-1.5 munderline 
