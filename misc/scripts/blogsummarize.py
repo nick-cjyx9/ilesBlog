@@ -23,7 +23,7 @@ with open('E:/dev/RinaBlog/misc/scripts/data.json', 'r', encoding='utf-8') as f:
 messages = [
     {
         'role':'system', 
-        'content':'你是为Nick Chen的博客进行博文摘要的机器人，请你将他的博客的博文(.mdx)进行简短摘要(忽略链接和格式)，尽量涵盖所有事实，不要有任何编造！字数不超过400！'
+        'content':'你是为Nick Chen的博客进行博文摘要的机器人，请你将他的博客的博文(.mdx)进行简短摘要(忽略链接和格式)，尽量涵盖所有事实，语言优雅，字数不超过500！'
     },
     {
         'role':'user',

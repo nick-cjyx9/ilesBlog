@@ -1,6 +1,8 @@
 <script setup lang="ts">
   import { usePosts } from '@/composables/usePosts';
   const posts = usePosts();
+  console.log(posts);
+  
 </script>
 
 <template layout="base">

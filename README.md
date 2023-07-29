@@ -11,11 +11,11 @@
 - [ ] Katex
 
 ## 备忘录
-新建文件 `blognew.py title filename`
-IDEA: `ainew foo` ai建议下新建.mdx部分内容+从标题翻译到路由
-更新老婆页面 `blogbgmupd.py`
-更新ai摘要 `blogsummarize.py`
-cover用本地cdn存，不然首页加载慢
+新建文件 `blognew.py title filename` 
+IDEA: `ainew foo` ai建议下新建.mdx部分内容+从标题翻译到路由 
+更新老婆页面 `blogbgmupd.py` 
+更新ai摘要 `blogsummarize.py` 
+cover用本地cdn存，不然首页加载慢 
 
 
 [îles]: https://github.com/ElMassimo/iles
