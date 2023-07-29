@@ -56,26 +56,24 @@ export default defineConfig({
     } else if (filename.includes('/hidden/')) {
       frontmatter.layout ||= 'post';
     }
-    if (filename.includes('/pages/')){
+    if (filename.includes('/pages/')) {
       var params = {
         'startAt': start_time,
         'endAt': end_time,
-        'url': filename.substring(filename.lastIndexOf('\/pages/')+6,filename.lastIndexOf('.')),
+        'url': filename.substring(filename.lastIndexOf('\/pages/') + 6, filename.lastIndexOf('.')).toLowerCase(),
         'unit': 'day',
         'timezone': 'Asia/Shanghai',
       };
-      const p = usePageView(params);
-      p.then((visitors)=>{
-          if(!visitors.includes('-1')){
-              let count = 0;
-              for (let i = 0; i < visitors.length; i++) {
-                  const element = visitors[i];
-                  count += element['y'];
-              }
-              console.log(params['url'],':',count);
-              frontmatter.visitors = count;
-          }
-      });
+      const visitors = await usePageView(params);
+      if (!visitors.includes('-1')) {
+        let count = 0;
+        for (let i = 0; i < visitors.length; i++) {
+          const element = visitors[i];
+          count += element['y'];
+        }
+        console.log(params['url'], ':', count);
+        frontmatter.visitors = count;
+      };
     }
   },
   markdown: {
