@@ -12,6 +12,7 @@ body {
   @apply dark:!bg-slate-900 bg-slate-200;
 }
 
+
 html {
   height: 100%;
 }
