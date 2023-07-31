@@ -86,7 +86,7 @@ try:
         f.close()
     with open('E:/dev/RinaBlog/src/pages/girls.vue','w',encoding='utf-8') as f:
         cp = list(origin_girl_page)
-        cp[origin_girl_page.find('// :::DATASTART:::')+19:origin_girl_page.find('// :::DATAEND:::')-1]='let text_data = `'+processed+'`;\n'
+        cp[origin_girl_page.find('// :::DATASTART:::')+19:origin_girl_page.find('// :::DATAEND:::')-1]='let text_data = `'+processed[:-1]+'`;\n'
         foo = ''
         for i in cp:
             foo+=i
