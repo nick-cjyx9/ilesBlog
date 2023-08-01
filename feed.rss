@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Rina Blog-Nick's webspace!</title>
-        <link>https://ikanata.eu.org</link>
+        <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Mon, 31 Jul 2023 14:54:38 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Aug 2023 05:20:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <image>
             <title>Rina Blog-Nick's webspace!</title>
             <url>https://avatars.githubusercontent.com/u/119087246</url>
-            <link>https://ikanata.eu.org</link>
+            <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
         <item>
             <title><![CDATA[重新起航（上）·一些回忆]]></title>
-            <link>https://ikanata.eu.org/post/reset_my_sail</link>
-            <guid>https://ikanata.eu.org/post/reset_my_sail</guid>
+            <link>https://www.nickchen.top/post/reset_my_sail</link>
+            <guid>https://www.nickchen.top/post/reset_my_sail</guid>
             <pubDate>Sat, 29 Jul 2023 19:55:56 GMT</pubDate>
             <description><![CDATA[最近花了一个多星期的时间来用iles重写了这个博客，看着博客功能逐渐完善，但是缺乏一篇拿得出手的内容，
 于是，以此篇文字来当作除了Hello World外的第一篇博文！
@@ -126,8 +126,8 @@ GPT: iles(x) Jekyll(√)😂
         </item>
         <item>
             <title><![CDATA[Hello World!(你好！世界！)]]></title>
-            <link>https://ikanata.eu.org/post/hello_world</link>
-            <guid>https://ikanata.eu.org/post/hello_world</guid>
+            <link>https://www.nickchen.top/post/hello_world</link>
+            <guid>https://www.nickchen.top/post/hello_world</guid>
             <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[
 中日英测试文案
