@@ -2,7 +2,7 @@
   <nav class="flex space-x-3 shadow flex-wrap justify-center 
   whitespace-nowrap lg:px-24 sm:px-5 sm:flex-nowrap dark:text-white">
     <div class="navtab font-serif font-medium">
-      <a href='/' class="text-xl" data-umami-event="to homepage">Rina Chan's Blog</a>
+      <a href='/' class="text-xl" data-umami-event="to homepage">Nick Chen's Blog</a>
     </div>
     <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
       <li v-for="(value,key,index) in nav_data" class="navtab dark:hover:text-white">
