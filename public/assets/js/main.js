@@ -48,7 +48,7 @@
 
 // Memos Start
 var memo = {
-    host: 'http://47.109.61.254:5230/',
+    host: 'https://moe.zeabur.app/',
     limit: '10',
     creatorId: '1',
     domId: '#memos',
