@@ -1,6 +1,18 @@
 <template layout="base">
     <div class="card rounded-xl h-full">
-        <del class="w-full text-4xl font-semibold text-center mt-20 mb-8">我的二次元老婆们</del>
+        <div class="flex justify-center flex-wrap w-full mt-12">
+            <h1 class="font-bold munderline px-3 text-3xl" role="button" title="我是标题~"><del>我的二次元老婆们！</del></h1>
+            <ul class="time-info flex space-x-4 w-full mt-5 mb-3
+       text-gray-600 flex-wrap px-8 justify-center dark:text-gray-300" style="font-size: 14.3px;">
+                <li><i class="fa-solid fa-eye"></i>
+                    <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href"
+                        :data-umami-event-id="'goto umami:' + frontmatter.title" target="_blank">
+                        <span class="ml-1.5 munderline 
+            border-gray-600 after:border-b-2">{{ frontmatter.visitors }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
             <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
         </div>
@@ -14,6 +26,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Ref } from 'vue';
+const page = usePage();
+const { frontmatter, meta } = page;
+frontmatter.description ||= meta.excerpt;
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+}
 // :::DATASTART:::
 let text_data = `{"characterName": "\u81ea\u52a8\u9ebb\u5c06\u59ec", "characterId": "14022", "characterAvatar": "https://lain.bgm.tv/pic/crt/g/21/01/14022_crt_8aCk5.jpg", "characterImg": {"small": "https://lain.bgm.tv/r/100/pic/crt/l/21/01/14022_crt_8aCk5.jpg", "grid": "https://lain.bgm.tv/r/200/pic/crt/l/21/01/14022_crt_8aCk5.jpg", "large": "https://lain.bgm.tv/pic/crt/l/21/01/14022_crt_8aCk5.jpg", "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/01/14022_crt_8aCk5.jpg"}, "characterSummary": "", "characterInfo": [{"key": "\u522b\u540d", "value": []}]}
 {"characterName": "\u7231\u8389\u5e0c\u96c5", "characterId": "114202", "characterAvatar": "https://lain.bgm.tv/pic/crt/g/c5/20/114202_crt_9UDPt.jpg?r=1659852789", "characterImg": {"small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/20/114202_crt_9UDPt.jpg?r=1659852789", "grid": "https://lain.bgm.tv/r/200/pic/crt/l/c5/20/114202_crt_9UDPt.jpg?r=1659852789", "large": "https://lain.bgm.tv/pic/crt/l/c5/20/114202_crt_9UDPt.jpg?r=1659852789", "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/20/114202_crt_9UDPt.jpg?r=1659852789"}, "characterSummary": "\u9010\u706b\u5341\u4e09\u82f1\u6840\u521b\u7acb\u8005\u517c\u7b2c\u4e8c\u4f4d\uff0c\u80cc\u8d1f\u300c\u771f\u6211\u300d\u4e4b\u94ed\u3002\u51e1\u4e8b\u90fd\u542c\u51ed\u5fc3\u610f\u800c\u4e3a\uff0c\u81ea\u7531\u81ea\u5728\uff0c\u4e0e\u300c\u7b2c\u4e8c\u4f4d\u300d\u7684\u8eab\u4efd\u683c\u683c\u4e0d\u5165\u7684\u5c11\u5973\u3002\u82f1\u6840\u4eec\u7684\u53e6\u4e00\u4f4d\u9886\u8896\u3002\u65e0\u8bba\u662f\u5f15\u8d77\u5979\u7684\u6ce8\u610f\uff0c\u4ea6\u6216\u662f\u4ee4\u5979\u5931\u53bb\u5174\u8da3\uff0c\u90fd\u503c\u5f97\u4e3a\u4e4b\u5982\u4e34\u5982\u5c65\u3002\u6ca1\u6709\u4eba\u80fd\u591f\u62d2\u7edd\u5979\u7684\u9080\u8bf7\uff0c\u6ca1\u6709\u4eba\u80fd\u5bf9\u5979\u51b7\u773c\u76f8\u5f85\u3002\u5979\u5c31\u50cf\u4f20\u8bf4\u4e2d\u7684\u5996\u7cbe\u4e00\u6837\uff0c\u4fd8\u83b7\u4e86\u6240\u6709\u4eba\u7684\u5fc3\uff0c\u5c06\u5341\u4e09\u82f1\u6840\u6c47\u805a\u4e8e\u6b64\uff0c\u800c\u540e\u53c8\u8c26\u900a\u5730\u9000\u5c45\u4e8e\u6b21\u5e2d\u3002\u5728\u82f1\u6840\u4eec\u5fc3\u4e2d\uff0c\u7231\u8389\u5e0c\u96c5\u65e0\u7591\u662f\u6700\u503c\u5f97\u4fe1\u8d56\u4e0e\u7231\u6234\u7684\u4f19\u4f34\u3002", "characterInfo": [{"key": "\u522b\u540d", "value": [{"v": "\u7c89\u8272\u5996\u7cbe\u5c0f\u59d0\u266a"}, {"v": "Miss Pink Elf\u266a"}, {"k": "\u82f1\u6587\u540d", "v": "Elysia"}, {"k": "\u65e5\u6587\u540d", "v": "\u30a8\u30ea\u30b7\u30a2"}, {"k": "\u6635\u79f0", "v": "\u7231\u8389"}]}, {"key": "\u6027\u522b", "value": "\u5973"}, {"key": "\u751f\u65e5", "value": "11\u670811\u65e5"}, {"key": "\u8eab\u9ad8", "value": "163cm"}, {"key": "\u4f53\u91cd", "value": "54.8kg"}]}
@@ -68,7 +86,7 @@ let text_data = `{"characterName": "\u81ea\u52a8\u9ebb\u5c06\u59ec", "characterI
 // :::DATAEND:::
 let native_data = text_data.split('\n');
 const dataList: Ref<Array<object>> = ref([]);
-    for (let i = 0; i < native_data.length; i++) {
+for (let i = 0; i < native_data.length; i++) {
     // console.log(native_data[i]);
     dataList.value[i] = JSON.parse(native_data[i]);
 }

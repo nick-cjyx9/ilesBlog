@@ -27,5 +27,6 @@ declare module '@vue/runtime-core' {
     TagCard: typeof import('./src/components/TagCard.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     WaifuCard: typeof import('./src/components/WaifuCard.vue')['default']
+    WaifuList: typeof import('./src/components/WaifuList.vue')['default']
   }
 }

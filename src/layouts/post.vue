@@ -12,7 +12,7 @@
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
         </li>
         <li><i class="fa-solid fa-eye"></i>
-          <a :href="'https://umami.kanata-blog.eu.org/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" 
+          <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" 
           :data-umami-event-id="'goto umami:'+frontmatter.title" target="_blank">
           <span class="ml-1.5 munderline 
             border-gray-600 after:border-b-2">{{ frontmatter.visitors }}</span>

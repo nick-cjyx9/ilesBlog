@@ -2,9 +2,9 @@
   <footer class="footer text-center flex items-center flex-col 
     py-4 shadow mt-4 mb-12 bg-slate-100 dark:bg-slate-800 lg:px-96 nl:px-64 sm:px-36 px-12">
     <nav class="flex flex-wrap text-sm font-medium space-x-6 my-6 dark:text-white opacity-80">
-      <a href="https://nickchen.pages.dev" class="inline-block munderline after:border-b-2 ">
+      <a href="https://home.nickchen.top/" class="inline-block munderline after:border-b-2 ">
         <i class="fa-solid fa-house"></i>
-        主页</a><a href="mailto:cjyx9@outlook.com" class="inline-block munderline after:border-b-2 ">
+        主页</a><a href="mailto:i@nickchen.top" class="inline-block munderline after:border-b-2 ">
         <i class="fa-solid fa-envelope"></i>
         邮箱</a>
       <a href="https://github.com/nick-cjyx9" class="inline-block munderline after:border-b-2 ">
@@ -32,7 +32,7 @@
         </li>
         <li>
           <i class="fa-solid fa-location-dot w-5 text-center"></i> <span>你可以到
-          <a data-umami-event="goto umami share" href="https://umami.kanata-blog.eu.org/share/ofBFLDZwCthMZzRP/blog"
+          <a data-umami-event="goto umami share" href="https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog"
             target="_blank" class="underline">这里</a> 看看博客的数据。</span>
         </li>
       </ul>

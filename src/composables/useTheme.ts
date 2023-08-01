@@ -1,5 +1,5 @@
 import { useColorMode } from '@vueuse/core';
-
+// 脏不脏无所谓了，能跑就行！
 const theme = useColorMode();
 
 export default function useTheme() {

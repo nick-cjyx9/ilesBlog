@@ -1,5 +1,6 @@
 <template>
-    <div class="w-full h-full" id="container"></div>
+    <div class="w-full h-96" id="container"></div>
+    <GiscusComment />
 </template>
 <script client:load>
 window.umami.track('404');

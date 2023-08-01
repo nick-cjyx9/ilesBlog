@@ -13,9 +13,9 @@ export default defineApp({
       script: [
         {
           async: true,
-          src: 'https://umami.kanata-blog.eu.org/script.js',
+          src: 'https://umami.nickchen.top/script.js',
           'data-website-id' : 'f1e56e6a-ea92-4228-b77e-e448f719a75b',
-          'data-domains' : "ikanata.eu.org,ilesblog.pages.dev",
+          'data-domains' : "ikanata.eu.org,ilesblog.pages.dev,nickchen.top",
         }
       ],
       link: [

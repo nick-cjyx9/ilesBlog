@@ -8,7 +8,7 @@ import lastUpdated from './modules/lastUpdated';
 import AIabstract from "./modules/AIabstract";
 import axios from "axios";
 const wid = 'f1e56e6a-ea92-4228-b77e-e448f719a75b';
-const api_base = 'https://umami.kanata-blog.eu.org/api/';
+const api_base = 'https://umami.nickchen.top/api/';
 const start_time = 1688745600000;
 // website start timestamp unit:ms
 // 网站开始统计时间戳，单位毫秒，直接用要修改
@@ -80,5 +80,5 @@ export default defineConfig({
     remarkPlugins: ['remark-gfm'],
     rehypePlugins: ['rehype-external-links', 'rehype-katex'],
   },
-  siteUrl: 'https://ikanata.eu.org',
+  siteUrl: 'https://www.nickchen.top/',
 })
