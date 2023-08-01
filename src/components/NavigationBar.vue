@@ -33,6 +33,7 @@ import { toDark, toLight } from "@/composables/useTheme";
 const { store: theme } = useTheme();
 const nav_data = ref({
   "主页":"/",
+  "哔哔":"/memos",
   "归档":"/archive/updated",
   "标签":"/tags",
   "二次元":"/girls",

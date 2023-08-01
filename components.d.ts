@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     HeadTitle: typeof import('./src/components/HeadTitle.vue')['default']
     Heimu: typeof import('./src/components/Heimu.vue')['default']
     Island: typeof import('./node_modules/.pnpm/registry.npmmirror.com+iles@0.9.5_sass@1.63.6/node_modules/iles/dist/client/app/components/Island.vue')['default']
+    Memos: typeof import('./src/components/Memos.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
     NotGenerateByAI: typeof import('./src/components/NotGenerateByAI.vue')['default']
