@@ -1,6 +1,6 @@
 {
-  "_GiscusCommentInner.4ec513fa.js": {
-    "file": "assets/GiscusCommentInner.4ec513fa.js",
+  "_GiscusCommentInner.bf3334f0.js": {
+    "file": "assets/GiscusCommentInner.bf3334f0.js",
     "imports": [
       "_vendor-vue.4a81fcfe.js",
       "_useTheme.f3a49e6d.js"
@@ -58,9 +58,9 @@
     "src": "src/components/BackToTop.vue"
   },
   "src/components/GiscusCommentInner.vue": {
-    "file": "assets/GiscusCommentInner.888e5503.js",
+    "file": "assets/GiscusCommentInner.38db9296.js",
     "imports": [
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -133,10 +133,10 @@
     "src": "virtual_ile_404_ile-2"
   },
   "virtual_ile_404_ile-3": {
-    "file": "assets/virtual_ile_404_ile-3.5e5f1683.js",
+    "file": "assets/virtual_ile_404_ile-3.6dcdce5b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -191,10 +191,10 @@
     "src": "virtual_ile_about_ile-2"
   },
   "virtual_ile_about_ile-3": {
-    "file": "assets/virtual_ile_about_ile-3.5e5f1683.js",
+    "file": "assets/virtual_ile_about_ile-3.6dcdce5b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -849,10 +849,10 @@
     "src": "virtual_ile_girls_ile-52"
   },
   "virtual_ile_girls_ile-53": {
-    "file": "assets/virtual_ile_girls_ile-53.7bfb74a0.js",
+    "file": "assets/virtual_ile_girls_ile-53.6fc6e0b9.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -940,10 +940,10 @@
     "src": "virtual_ile_hidden_trip_to_panzhihua_ile-2"
   },
   "virtual_ile_hidden_trip_to_panzhihua_ile-3": {
-    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-3.5e5f1683.js",
+    "file": "assets/virtual_ile_hidden_trip_to_panzhihua_ile-3.6dcdce5b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1068,10 +1068,10 @@
     "src": "virtual_ile_post_hello_world_ile-2"
   },
   "virtual_ile_post_hello_world_ile-3": {
-    "file": "assets/virtual_ile_post_hello_world_ile-3.5e5f1683.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-3.6dcdce5b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1115,10 +1115,10 @@
     "src": "virtual_ile_post_reset_my_sail_ile-2"
   },
   "virtual_ile_post_reset_my_sail_ile-3": {
-    "file": "assets/virtual_ile_post_reset_my_sail_ile-3.5e5f1683.js",
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-3.6dcdce5b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_GiscusCommentInner.4ec513fa.js",
+      "_GiscusCommentInner.bf3334f0.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
