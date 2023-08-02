@@ -1,5 +1,5 @@
 <template>
-    <Giscus id="comments" repo="nick-cjyx9/nick-cjyx9.github.io" repo-id="R_kgDOIu_Wyg" category="General"
+    <Giscus id="comments" repo="nick-cjyx9/ilesBlog" repo-id="R_kgDOJ8YYJA" category="General"
           category-id="DIC_kwDOIu_Wys4CXaix" mapping="pathname" term="Welcome to my blog!" reactions-enabled="1"
           emit-metadata="0" input-position="top" :theme="theme" lang="zh-CN" loading="lazy" class="w-full"/>
 </template>

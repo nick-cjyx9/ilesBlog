@@ -48,7 +48,7 @@
 
 // Memos Start
 var memo = {
-    host: 'https://moe.zeabur.app/',
+    host: 'https://memos.nickchen.top/',
     limit: '10',
     creatorId: '1',
     domId: '#memos',
