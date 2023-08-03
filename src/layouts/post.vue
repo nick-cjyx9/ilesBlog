@@ -46,4 +46,10 @@ frontmatter.description ||= meta.excerpt;
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
 }
+useHead({
+  meta:[{
+    property:'og:image',
+    content:'https://api.nickchen.top/get_cover?title=《'+frontmatter.title+'》'
+  }]
+});
 </script>
