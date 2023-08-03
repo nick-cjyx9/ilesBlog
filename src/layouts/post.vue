@@ -50,6 +50,9 @@ useHead({
   meta:[{
     property:'og:image',
     content:'https://api.nickchen.top/get_cover?title=《'+frontmatter.title+'》'
+  },{
+    property:'twitter:image:src',
+    content:'https://api.nickchen.top/get_cover?title=《'+frontmatter.title+'》'
   }]
 });
 </script>
