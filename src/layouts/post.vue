@@ -53,6 +53,15 @@ useHead({
   },{
     property:'twitter:image:src',
     content:'https://api.nickchen.top/get_cover?title=《'+frontmatter.title+'》'
+  },{
+    property:'twitter:card',
+    content:'summary_large_image'
+  },{
+    property:'og:image:width',
+    content:'1200'
+  },{
+    property:'og:image:height',
+    content:'800'
   }]
 });
 </script>
