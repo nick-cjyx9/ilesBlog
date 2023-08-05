@@ -118,6 +118,11 @@ code {
   list-style: decimal !important;
 }
 
+.markdown-body > iframe,
+.markdown-body-dark > iframe {
+  @apply !my-3;
+}
+
 @media (max-width: 767px) {
 
   .markdown-body,
