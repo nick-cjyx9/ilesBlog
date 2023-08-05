@@ -319,7 +319,7 @@ function updateHTMl(data) {
       memo.username + "</div></div><p>" + memoContREG +
       '</p></div><div class="memos__meta"><small class="memos__date">' +
       moment(data[i].createdTs * 1000).twitter() + ' • 来自「<a href="' +
-      memo.host + "m/" + data[i].id +
+      memo.host + "/m/" + data[i].id +
       '" target="_blank">Memos</a>」</small></div></div></li>';
   }
   var memoBefore = '<ul class="">';
