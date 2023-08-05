@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Rina Blog-Nick's webspace!</title>
+        <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Sat, 05 Aug 2023 07:20:34 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 05 Aug 2023 12:20:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <image>
-            <title>Rina Blog-Nick's webspace!</title>
+            <title>Nick's webspace!</title>
             <url>https://avatars.githubusercontent.com/u/119087246</url>
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[重新起航（下）]]></title>
+            <link>https://www.nickchen.top/post/go_further</link>
+            <guid>https://www.nickchen.top/post/go_further</guid>
+            <pubDate>Thu, 03 Aug 2023 15:35:01 GMT</pubDate>
+            <description><![CDATA[天气闷热，最近特别浮躁，总是静不下心来做一件事
+]]></description>
+            <content:encoded><![CDATA[<p>天气闷热，最近特别浮躁，总是静不下心来做一件事</p>
+
+<p>这篇文章的上半部分讲了一点点回忆，距离发布已经一周了，但是这一周，应该说是这几周都一事无成，感觉有些焦虑。
+不知道老是发流水账会不会没人看（（（</p>
+<h2 id="关于意义：" class="heading"><a href="#关于意义：" class="heading-anchor" aria-label="Permalink for 关于意义：" tabindex="-1"></a>关于意义：</h2>
+<p>前几天的博客代码之外， Randy 的观点很有意思，似乎一切的工作，卷高考都是无意义的，即使无意义的事充满了生活，但是总是找得到自己愿意投身去主动做的事情，
+回头想来，算法竞赛算得上是我觉得的一件有意义的事，但是我还是不得不放弃了。前几天，当我怀疑自己是不是其实不喜欢OI时，我注册了国区leetcode，花了1个小时
+用 typescript A了一道字符串的题，看到绿色的<code>通过</code>的时候，我还是会激动不已，我才得以确定我曾经对OI的热爱并不是空穴来风，只不过学校的环境的的确确限制
+住了OI仅仅只能成为爱好，而不能是出路。</p>
+<h2 id="关于技术成长：" class="heading"><a href="#关于技术成长：" class="heading-anchor" aria-label="Permalink for 关于技术成长：" tabindex="-1"></a>关于技术成长：</h2>
+<p><del>感觉自己学东西算是比较快，但是还是想要一个关心人的大佬来指点一下。</del>
+在 8.5 提了这个 Github 号上的第一个被合并的PR， 做开源贡献的感觉真的很不错。越来越敬仰像evan,diy一样的开发者，不知道以后有没有机会能成为那样的人呢。
+现在学习的主要阻碍：越来越搞不懂学习技术的意义，如果只有单纯的自己开心的话，总是会因为影响到高考感到愧疚</p>
+<h2 id="关于规划：" class="heading"><a href="#关于规划：" class="heading-anchor" aria-label="Permalink for 关于规划：" tabindex="-1"></a>关于规划：</h2>
+<ul>
+<li>复盘一下前半个假期都干了些啥：
+<ol>
+<li>重拾博客，学习vue折腾出现在的nickchen.top</li>
+<li>重拾编程，前后端都有在学习，<del>在 Github 上连击了21天</del></li>
+<li>看了点自己喜欢的番和电视剧</li>
+<li>和npy贴贴</li>
+</ol>
+</li>
+<li>除了作业没做多少，其实还挺说得过去。但是为什么会感觉特别浮躁呢，是时候规划下剩下25天了
+<ol>
+<li>把作业写完</li>
+<li>把手上的ai日记项目做出demo</li>
+<li>贴贴</li>
+</ol>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[重新起航（上）·一些回忆]]></title>
             <link>https://www.nickchen.top/post/reset_my_sail</link>
