@@ -12,7 +12,7 @@
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
         class="navtab dark:hover:text-white">
-        <a :href='value[1]' :title="key" :data-umami-event="'goto '+value"><i :class="'fa-solid fa-'+value[0]"></i></a>
+        <a :href='value[1]' :title="key" :data-umami-event="'goto '+value[1]"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
       <li id="toLight" @click="theme='light';toLight();"
       role="button" class="navtab dark:hover:text-white">
@@ -41,7 +41,7 @@ const nav_data = ref({
 });
 const icon_data = ref({
   "搜索":["magnifying-glass","/search"],
-  "订阅RSS":["square-rss","/feed.rss"],
+  "订阅RSS":["square-rss","/feed.xml"],
   // "title":["fa-icon","link"]
 })
 </script>
