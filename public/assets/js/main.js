@@ -65,7 +65,7 @@ if (typeof (memos) !== "undefined") {
 }
 var limit = memo.limit;
 var memos = memo.host.replace(/\/$/, "");
-var memoUrl = memos + "/api/memo?rowStatus=NORMAL&creatorId=1";
+var memoUrl = memos + "/api/v1/memo?rowStatus=NORMAL&creatorId=1";
 var page = 1,
   offset = 0,
   nextLength = 0,
@@ -95,8 +95,8 @@ if (memoDom) {
 function getFirstList() {
   var memoUrl_first = memoUrl + "&limit=" + limit;
   fetch(memoUrl_first).then((res) => res.json()).then((resdata) => {
-    updateHTMl(resdata['data']);
-    var nowLength = resdata['data'].length;
+    updateHTMl(resdata);
+    var nowLength = resdata.length;
     if (nowLength < limit) { // 返回数据条数小于 limit 则直接移除“加载更多”按钮，中断预加载
       document.querySelector("button.button-load").remove();
       btnRemove = 1;
@@ -115,7 +115,7 @@ function getNextList() {
     var memoUrl_next = memoUrl + "&limit=" + limit;
   }
   fetch(memoUrl_next).then((res) => res.json()).then((resdata) => {
-    nextDom = resdata['data'];
+    nextDom = resdata;
     nextLength = nextDom.length;
     page++;
     offset = limit * (page - 1);
@@ -437,7 +437,7 @@ function getTotal() {
   var totalUrl = memos + "/api/memo/stats?creatorId=" + memo.creatorId;
   fetch(totalUrl).then((res) => res.json()).then((resdata) => {
     if (resdata) {
-      var allnums = resdata['data'].length;
+      var allnums = resdata.length;
       var memosCount = document.getElementById("total");
       memosCount.innerHTML = allnums;
     }
