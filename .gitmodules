@@ -1,0 +1,3 @@
+[submodule "src/pages/post"]
+	path = src/pages/post
+	url = https://github.com/nick-cjyx9/posts.git

@@ -12,6 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Update Submodules
+      run: |
+        git submodule update --remote --merge
+        git add .
+        git commit -m "Update submodules"
+        git push
     - name: Setup pnpm
       uses: pnpm/action-setup@v2.2.4
       with:
