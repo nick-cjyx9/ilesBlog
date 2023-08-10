@@ -3,9 +3,9 @@ import openai as o
 from os import getenv, listdir, path
 import re
 
-# o.api_base = 'https://p0.kamiya.dev/api/openai'
-# o.api_key = getenv('KAMIYA_API_KEY')
-o.api_key = getenv('OPENAI_API_KEY')
+o.api_base = 'https://p0.kamiya.dev/api/openai'
+o.api_key = getenv('KAMIYA_API_KEY')
+# o.api_key = getenv('OPENAI_API_KEY')
 def get_completion(messages, model="gpt-3.5-turbo", temperature=0.3):
     response = o.ChatCompletion.create(
         model=model,
