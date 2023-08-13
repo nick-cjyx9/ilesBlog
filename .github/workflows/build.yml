@@ -22,7 +22,7 @@ jobs:
         git push || echo "ignore commit failure, proceed"
       # https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error
     - name: Setup pnpm
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v2.4.0
       with:
           version: 8.6.6
     - name: Install dependencies
