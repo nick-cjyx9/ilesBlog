@@ -1,6 +1,6 @@
 <template>
     <Giscus id="comments" repo="nick-cjyx9/ilesBlog" repo-id="R_kgDOJ8YYJA" category="General"
-          category-id="DIC_kwDOJ8YYJM4CYSYn" mapping="title" reactions-enabled="1"
+          category-id="DIC_kwDOJ8YYJM4CYSYn" mapping="pathname" reactions-enabled="1"
           emit-metadata="0" input-position="top" :theme="theme" lang="zh-CN" loading="lazy" class="w-full"/>
 </template>
 
