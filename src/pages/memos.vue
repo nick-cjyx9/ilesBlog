@@ -13,6 +13,7 @@
             </a>
         </div>
     </div>
+    <GiscusComment />
 </template>
 
 <script setup lang="ts">
