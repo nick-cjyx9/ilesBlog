@@ -4,7 +4,7 @@ import datetime
 import sys
 
 def create_mdx_file(filename,title):
-    file_path = os.path.join('E:/dev/RinaBlog/src/pages/post/', filename + '.mdx')
+    file_path = os.path.join('E:/dev/post/', filename + '.mdx')
     # 获取当前日期和时间
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # 构建MDX文件内容
