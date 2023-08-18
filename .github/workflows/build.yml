@@ -1,7 +1,6 @@
 name: build
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
@@ -12,15 +11,15 @@ jobs:
       with:
         submodules: 'true'
         token: ${{ secrets.ghtoken }}
-    # - name: Update Submodules
-    #   run: |
-    #     git submodule update --init --remote
-    #     git config --global user.name "github-actions[bot]"
-    #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    #     git add .
-    #     git commit -m "Update submodules" || echo "ignore commit failure, proceed"
-    #     git push || echo "ignore commit failure, proceed"
-    #   # https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error
+    - name: Update Submodules
+      run: |
+        git submodule update --init --remote
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update submodules" || echo "ignore commit failure, proceed"
+        git push || echo "ignore commit failure, proceed"
+      # https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error
     - name: Setup pnpm
       uses: pnpm/action-setup@v2.4.0
       with:

@@ -105,6 +105,8 @@ def convert_markdown_to_text(md, options=None):
 path = 'E:/dev/RinaBlog/src/pages/post/'
 files = listdir(path)
 for file in files:
+    if('.mdx' not in file):
+        continue
     print('START:::', file, end=' ')
     if file not in data.keys():
         data[file] = ''

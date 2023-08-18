@@ -10,7 +10,7 @@
       <a href="https://github.com/nick-cjyx9" class="inline-block munderline after:border-b-2 ">
         <i class="fa-brands fa-square-github"></i>
         Github</a>
-      <a href="/feed.rss" class="inline-block munderline after:border-b-2 ">
+      <a href="/feed.xml" class="inline-block munderline after:border-b-2 ">
         <i class="fa-solid fa-square-rss"></i>
         RSS</a>
     </nav>
