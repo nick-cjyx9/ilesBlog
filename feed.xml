@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Sun, 20 Aug 2023 02:45:20 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Aug 2023 13:35:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,6 +14,92 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[GithubActions在一个推送时触发另一个仓库的workflow]]></title>
+            <link>https://www.nickchen.top/post/trigger_another_repos_workflow</link>
+            <guid>https://www.nickchen.top/post/trigger_another_repos_workflow</guid>
+            <pubDate>Sun, 20 Aug 2023 21:14:08 GMT</pubDate>
+            <description><![CDATA[实现思路是在子仓库推送时使用Github的REST api触发某个workflow。
+]]></description>
+            <content:encoded><![CDATA[<p>实现思路是在子仓库推送时使用Github的REST api触发某个workflow。</p>
+
+<h2 id="使用场景：" class="heading"><a href="#使用场景：" class="heading-anchor" aria-label="Permalink for 使用场景：" tabindex="-1"></a>使用场景：</h2>
+<ol>
+<li>将博文和hexo等generator的source code分开，方便管理（<del>不是很方便</del>，且如果博文全公开不建议这样做</li>
+<li>在private的submodule里做修改后，main repo进行构建</li>
+</ol>
+<h2 id="方法：" class="heading"><a href="#方法：" class="heading-anchor" aria-label="Permalink for 方法：" tabindex="-1"></a>方法：</h2>
+<ol>
+<li>首先在private的A仓库根目录中创建<code>scripts/trigger.mjs</code>，填入具有workflow权限的token，本地调试需要运行<code>npm install octokit</code>，<strong>注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发</strong></li>
+</ol>
+<div class="language-js" data-lang="js"><pre class="language-js"><code><span class="token comment">// Octokit.js</span>
+<span class="token comment">// https://github.com/octokit/core.js#readme</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Octokit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"octokit"</span>
+<span class="token keyword">const</span> octokit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Octokit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">auth</span><span class="token operator">:</span> <span class="token string">'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">await</span> octokit<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token string">'POST /repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">owner</span><span class="token operator">:</span> <span class="token string">'YOUR-ID'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">repo</span><span class="token operator">:</span> <span class="token string">'YOUR-REPO'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">workflow_id</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  <span class="token comment">// 这里填写public的B仓库中触发的工作流文件，如 build.yml</span>
+  <span class="token literal-property property">ref</span><span class="token operator">:</span> <span class="token string">'main'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'X-GitHub-Api-Version'</span><span class="token operator">:</span> <span class="token string">'2022-11-28'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<ol start="2">
+<li>创建工作流<code>.github/workflows/push.yml</code>以触发脚本，替换token为至少具有此仓库访问权限的token，你也可以写进secret。</li>
+</ol>
+<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> upstream_trigger
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+    <span class="token key atrule">push</span><span class="token punctuation">:</span> 
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+    <span class="token key atrule">trigger</span><span class="token punctuation">:</span>
+        <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+        <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check out repo content
+            <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
+            <span class="token key atrule">with</span><span class="token punctuation">:</span>
+              <span class="token key atrule">token</span><span class="token punctuation">:</span> <span class="token string">'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
+            <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v3
+            <span class="token key atrule">with</span><span class="token punctuation">:</span>
+              <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.12.1'</span>
+              <span class="token key atrule">cache</span><span class="token punctuation">:</span> npm
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies
+            <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install octokit
+    
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Run script
+            <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+              node scripts/trigger.mjs</span></code></pre></div>
+<ol start="3">
+<li>如果A仓库是B仓库的submodule的话，B仓库的workflow推荐这样写，不过也有缺点，每次得记得在本地<code>git pull</code></li>
+</ol>
+<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> build
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span>
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span> 
+    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">submodules</span><span class="token punctuation">:</span> <span class="token string">'true'</span>
+        <span class="token key atrule">token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ghtoken <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Update Submodules
+      <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+        git submodule update --init --remote
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update submodules" || echo "ignore commit failure, proceed"
+        git push || echo "ignore commit failure, proceed"</span>
+      <span class="token comment"># https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error</span>
+    <span class="token comment"># YOUR BUILD PROCESS HERE</span></code></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[简评：《摇曳露营Δ》]]></title>
             <link>https://www.nickchen.top/post/review_yuru_camp</link>
