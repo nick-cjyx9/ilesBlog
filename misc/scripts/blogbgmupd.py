@@ -46,6 +46,8 @@ if(len(tmp_result)!=1):
 else:
     max_page = tmp_result[0]
 
+max_page=3
+# BUG: can't get a right max page num
 
 print('Max page:',max_page)
 if max_page >= 2:
