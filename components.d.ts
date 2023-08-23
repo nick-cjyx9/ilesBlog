@@ -24,8 +24,10 @@ declare module '@vue/runtime-core' {
     RenderFeed: typeof import('./node_modules/.pnpm/registry.npmmirror.com+@islands+feed@0.8.1_iles@0.9.5_vue@3.3.4_iles@0.9.5_vue@3.3.4/node_modules/@islands/feed/dist/render-feed')['RenderFeed']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TableofContent: typeof import('./src/components/tableofContent.vue')['default']
     TagCard: typeof import('./src/components/TagCard.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
+    Ulink: typeof import('./src/components/Ulink.vue')['default']
     WaifuCard: typeof import('./src/components/WaifuCard.vue')['default']
   }
 }

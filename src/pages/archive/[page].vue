@@ -50,7 +50,9 @@ if(props.sort=='c'){
   }));
 }else if(props.sort=='u'){
   posts = ref(origin_posts.value.sort((lhs,rhs)=>{
-    return rhs.frontmatter.lastUpdated-lhs.frontmatter.lastUpdated;
+    return rhs.meta.lastUpdated-lhs.meta.lastUpdated;
+    // return rhs.frontmatter.lastUpdated-lhs.frontmatter.lastUpdated;
+    // TODO
   }));
 }else{
   posts = ref(origin_posts.value.sort((lhs,rhs)=>{

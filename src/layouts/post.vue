@@ -1,12 +1,16 @@
 <template layout="base">
+  <div>
   <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl">
     <div class="flex justify-center flex-wrap">
       <h1 class="font-bold munderline px-3 text-3xl" role="button" title="我是标题~">{{ frontmatter.title }}</h1>
       <ul class="time-info flex space-x-4 w-full mt-5 mb-3
        text-gray-600 flex-wrap px-8 justify-center dark:text-gray-300"
         style="font-size: 14.3px;">
-        <li v-if="$meta.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
+        <li v-if="$frontmatter.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
           <span class="ml-1.5">{{ formatDate(frontmatter.lastUpdated) }}</span>
+        </li>
+        <li v-else><i class="fa-solid fa-clock-rotate-left"></i>
+          <span class="ml-1.5">{{ formatDate(meta.lastUpdated) }}</span>
         </li>
         <li><i class="fa-solid fa-clock"></i>
           <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
@@ -32,6 +36,11 @@
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed"/>
     <!-- 🤣 -->
+  
+  </div>
+  <div>
+    <TableofContent :meta="meta"/>
+  </div>
   </div>
   <GiscusComment />
 </template>

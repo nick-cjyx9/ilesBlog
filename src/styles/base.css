@@ -131,6 +131,15 @@ code {
   }
 }
 
+.heading-anchor {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzg4ODg4OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0xNC45IDE5LjE0MmwtLjcwOC0uNzA3Yy0yLjEyLTIuMTIxLTIuMTItNC45NSAwLTcuMDcxbDIuODI5LTIuODI4YzIuMTIxLTIuMTIyIDQuOTUtMi4xMjIgNy4wNyAwYzIuMTIyIDIuMTIgMi4xMjIgNC45NSAwIDcuMDdtLTYuMzYzLTIuMTJsLjcwNy43MDZjMi4xMjEgMi4xMjIgMi4xMjEgNC45NSAwIDcuMDcybC0yLjgyOCAyLjgyOGMtMi4xMjIgMi4xMjEtNC45NSAyLjEyMS03LjA3MSAwYy0yLjEyMi0yLjEyMS0yLjEyMi00Ljk1IDAtNy4wNzEiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1.5em;
+  background-position: bottom;
+}
+
 /**
  * Coy without shadows
  * Based on Tim Shedor's Coy theme for prism.js

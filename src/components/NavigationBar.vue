@@ -37,6 +37,7 @@ const nav_data = ref({
   "归档":"/archive/updated",
   "标签":"/tags",
   "二次元":"/girls",
+  "友链":"/links",
   "关于":"/about"
 });
 const icon_data = ref({
