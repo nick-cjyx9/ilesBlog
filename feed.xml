@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Wed, 23 Aug 2023 12:44:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Aug 2023 13:13:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,6 +14,29 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[简评：《BanGDream It's MyGo!!!!!》]]></title>
+            <link>https://www.nickchen.top/post/review_bang_mygo</link>
+            <guid>https://www.nickchen.top/post/review_bang_mygo</guid>
+            <pubDate>Wed, 23 Aug 2023 20:50:46 GMT</pubDate>
+            <description><![CDATA[
+开新坑，如果saki退团能解释清必写千字长文歌颂mygo😤😤😤
+]]></description>
+            <content:encoded><![CDATA[<h1 id="“なんで春日影やったの！！！”" class="heading"><a href="#“なんで春日影やったの！！！”" class="heading-anchor" aria-label="Permalink for “なんで春日影やったの！！！”" tabindex="-1"></a>“なんで春日影やったの！！！”</h1>
+<p>开新坑，如果saki退团能解释清必写千字长文歌颂mygo😤😤😤</p>
+
+<hr>
+<p>TL;Dl: TBD</p>
+<h2 id="信息：" class="heading"><a href="#信息：" class="heading-anchor" aria-label="Permalink for 信息：" tabindex="-1"></a>信息：</h2>
+<div style="width:100%;" class="text-center item-center"><a href="https://bgm.tv/subject/428735" target="_blank"><img src="https://lain.bgm.tv/pic/cover/l/e7/a7/428735_1v11n.jpg?_gl=1*1bmuea4*_ga*MjEyNjEzNzgyOC4xNjg2MDUwMDM0*_ga_1109JLGMHN*MTY5Mjc5NDg4OC4xMDAuMS4xNjkyNzk2MTkzLjAuMC4w" class="ml-auto mr-auto" alt="cover" style="width:50%"></a><hr><ul>
+<li>番剧名称：<strong>BanG Dream It's MyGo!!!!!</strong></li>
+<li>官方网站: <a href="https://anime.bang-dream.com/mygo/" rel="nofollow">https://anime.bang-dream.com/mygo/</a></li>
+<li>我的评分: <strong>9.X/10（至11集）</strong></li>
+<li>多大程度上想要推荐给别人: <strong>因人而异</strong></li>
+<li>标签: <strong>扭曲</strong> 致郁 乐队 摇滚 邦邦</li>
+</ul></div>
+<h2 id="tbd" class="heading"><a href="#tbd" class="heading-anchor" aria-label="Permalink for TBD!!" tabindex="-1"></a>TBD!!</h2>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GithubActions在一个推送时触发另一个仓库的workflow]]></title>
             <link>https://www.nickchen.top/post/trigger_another_repos_workflow</link>
