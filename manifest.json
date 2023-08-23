@@ -6,8 +6,8 @@
       "_useTheme.f3a49e6d.js"
     ]
   },
-  "_NavigationBar.9ff5c7e1.js": {
-    "file": "assets/NavigationBar.9ff5c7e1.js",
+  "_NavigationBar.e33ffd76.js": {
+    "file": "assets/NavigationBar.e33ffd76.js",
     "imports": [
       "_vendor-vue.4a81fcfe.js",
       "_useTheme.f3a49e6d.js"
@@ -69,9 +69,9 @@
     "src": "src/components/GiscusCommentInner.vue"
   },
   "src/components/NavigationBar.vue": {
-    "file": "assets/NavigationBar.24359701.js",
+    "file": "assets/NavigationBar.873e504e.js",
     "imports": [
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -121,10 +121,10 @@
     "src": "virtual_ile_404_ile-1"
   },
   "virtual_ile_404_ile-2": {
-    "file": "assets/virtual_ile_404_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_404_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -179,10 +179,10 @@
     "src": "virtual_ile_about_ile-1"
   },
   "virtual_ile_about_ile-2": {
-    "file": "assets/virtual_ile_about_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_about_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -226,10 +226,10 @@
     "src": "virtual_ile_archive_created_ile-1"
   },
   "virtual_ile_archive_created_ile-2": {
-    "file": "assets/virtual_ile_archive_created_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_archive_created_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -261,10 +261,10 @@
     "src": "virtual_ile_archive_updated_ile-1"
   },
   "virtual_ile_archive_updated_ile-2": {
-    "file": "assets/virtual_ile_archive_updated_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_archive_updated_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -296,10 +296,10 @@
     "src": "virtual_ile_archive_visitors_ile-1"
   },
   "virtual_ile_archive_visitors_ile-2": {
-    "file": "assets/virtual_ile_archive_visitors_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -441,10 +441,10 @@
     "src": "virtual_ile_girls_ile-19"
   },
   "virtual_ile_girls_ile-2": {
-    "file": "assets/virtual_ile_girls_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_girls_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1060,10 +1060,10 @@
     "src": "virtual_ile_index_ile-1"
   },
   "virtual_ile_index_ile-2": {
-    "file": "assets/virtual_ile_index_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_index_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1083,6 +1083,53 @@
     "isEntry": true,
     "src": "virtual_ile_index_ile-3"
   },
+  "virtual_ile_links_ile-1": {
+    "file": "assets/virtual_ile_links_ile-1.2ee0622c.js",
+    "imports": [
+      "_iles.08d6fe97.js",
+      "src/components/BackToTop.vue",
+      "_vendor-vue.4a81fcfe.js",
+      "_vite.1299367e.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_links_ile-1"
+  },
+  "virtual_ile_links_ile-2": {
+    "file": "assets/virtual_ile_links_ile-2.5b18a21b.js",
+    "imports": [
+      "_iles.08d6fe97.js",
+      "_NavigationBar.e33ffd76.js",
+      "_vendor-vue.4a81fcfe.js",
+      "_vite.1299367e.js",
+      "_useTheme.f3a49e6d.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_links_ile-2"
+  },
+  "virtual_ile_links_ile-3": {
+    "file": "assets/virtual_ile_links_ile-3.e11163ca.js",
+    "imports": [
+      "_iles.08d6fe97.js",
+      "_GiscusCommentInner.d3e76df6.js",
+      "_vendor-vue.4a81fcfe.js",
+      "_vite.1299367e.js",
+      "_useTheme.f3a49e6d.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_links_ile-3"
+  },
+  "virtual_ile_links_ile-4": {
+    "file": "assets/virtual_ile_links_ile-4.2df53d28.js",
+    "imports": [
+      "_iles.08d6fe97.js",
+      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.4a81fcfe.js",
+      "_vite.1299367e.js",
+      "_useTheme.f3a49e6d.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_links_ile-4"
+  },
   "virtual_ile_memos_ile-1": {
     "file": "assets/virtual_ile_memos_ile-1.2ee0622c.js",
     "imports": [
@@ -1095,10 +1142,10 @@
     "src": "virtual_ile_memos_ile-1"
   },
   "virtual_ile_memos_ile-2": {
-    "file": "assets/virtual_ile_memos_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_memos_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1153,10 +1200,10 @@
     "src": "virtual_ile_post_hello_world_ile-1"
   },
   "virtual_ile_post_hello_world_ile-2": {
-    "file": "assets/virtual_ile_post_hello_world_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1200,10 +1247,10 @@
     "src": "virtual_ile_post_hidden_trip_to_panzhihua_ile-1"
   },
   "virtual_ile_post_hidden_trip_to_panzhihua_ile-2": {
-    "file": "assets/virtual_ile_post_hidden_trip_to_panzhihua_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_hidden_trip_to_panzhihua_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1247,10 +1294,10 @@
     "src": "virtual_ile_post_music_power_ile-1"
   },
   "virtual_ile_post_music_power_ile-2": {
-    "file": "assets/virtual_ile_post_music_power_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_music_power_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1294,10 +1341,10 @@
     "src": "virtual_ile_post_reset_my_sail_ile-1"
   },
   "virtual_ile_post_reset_my_sail_ile-2": {
-    "file": "assets/virtual_ile_post_reset_my_sail_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_reset_my_sail_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1341,10 +1388,10 @@
     "src": "virtual_ile_post_review_yuru_camp_ile-1"
   },
   "virtual_ile_post_review_yuru_camp_ile-2": {
-    "file": "assets/virtual_ile_post_review_yuru_camp_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_review_yuru_camp_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1388,10 +1435,10 @@
     "src": "virtual_ile_post_trash_go_further_ile-1"
   },
   "virtual_ile_post_trash_go_further_ile-2": {
-    "file": "assets/virtual_ile_post_trash_go_further_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_trash_go_further_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1435,10 +1482,10 @@
     "src": "virtual_ile_post_trash_jotting_ile-1"
   },
   "virtual_ile_post_trash_jotting_ile-2": {
-    "file": "assets/virtual_ile_post_trash_jotting_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_trash_jotting_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1482,10 +1529,10 @@
     "src": "virtual_ile_post_trigger_another_repos_workflow_ile-1"
   },
   "virtual_ile_post_trigger_another_repos_workflow_ile-2": {
-    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1529,10 +1576,10 @@
     "src": "virtual_ile_search_ile-1"
   },
   "virtual_ile_search_ile-2": {
-    "file": "assets/virtual_ile_search_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_search_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1564,10 +1611,10 @@
     "src": "virtual_ile_tag_Github Actions_ile-1"
   },
   "virtual_ile_tag_Github Actions_ile-2": {
-    "file": "assets/virtual_ile_tag_Github Actions_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_Github Actions_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1599,10 +1646,10 @@
     "src": "virtual_ile_tag_about_ile-1"
   },
   "virtual_ile_tag_about_ile-2": {
-    "file": "assets/virtual_ile_tag_about_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_about_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1634,10 +1681,10 @@
     "src": "virtual_ile_tag_anime_ile-1"
   },
   "virtual_ile_tag_anime_ile-2": {
-    "file": "assets/virtual_ile_tag_anime_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_anime_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1669,10 +1716,10 @@
     "src": "virtual_ile_tag_hello world_ile-1"
   },
   "virtual_ile_tag_hello world_ile-2": {
-    "file": "assets/virtual_ile_tag_hello world_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_hello world_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1704,10 +1751,10 @@
     "src": "virtual_ile_tag_jottings_ile-1"
   },
   "virtual_ile_tag_jottings_ile-2": {
-    "file": "assets/virtual_ile_tag_jottings_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_jottings_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1739,10 +1786,10 @@
     "src": "virtual_ile_tag_memories_ile-1"
   },
   "virtual_ile_tag_memories_ile-2": {
-    "file": "assets/virtual_ile_tag_memories_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_memories_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1774,10 +1821,10 @@
     "src": "virtual_ile_tag_music_ile-1"
   },
   "virtual_ile_tag_music_ile-2": {
-    "file": "assets/virtual_ile_tag_music_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_music_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1809,10 +1856,10 @@
     "src": "virtual_ile_tag_review_ile-1"
   },
   "virtual_ile_tag_review_ile-2": {
-    "file": "assets/virtual_ile_tag_review_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_review_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1844,10 +1891,10 @@
     "src": "virtual_ile_tag_test_ile-1"
   },
   "virtual_ile_tag_test_ile-2": {
-    "file": "assets/virtual_ile_tag_test_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tag_test_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
@@ -1879,10 +1926,10 @@
     "src": "virtual_ile_tags_ile-1"
   },
   "virtual_ile_tags_ile-2": {
-    "file": "assets/virtual_ile_tags_ile-2.477ac7d5.js",
+    "file": "assets/virtual_ile_tags_ile-2.5b18a21b.js",
     "imports": [
       "_iles.08d6fe97.js",
-      "_NavigationBar.9ff5c7e1.js",
+      "_NavigationBar.e33ffd76.js",
       "_vendor-vue.4a81fcfe.js",
       "_vite.1299367e.js",
       "_useTheme.f3a49e6d.js"
