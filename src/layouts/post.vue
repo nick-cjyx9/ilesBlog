@@ -1,5 +1,4 @@
 <template layout="base">
-  <div>
   <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl">
     <div class="flex justify-center flex-wrap">
       <h1 class="font-bold munderline px-3 text-3xl" role="button" title="我是标题~">{{ frontmatter.title }}</h1>
@@ -38,10 +37,9 @@
     <!-- 🤣 -->
   
   </div>
-  <div>
+  <!-- <div>
     <TableofContent :meta="meta"/>
-  </div>
-  </div>
+  </div> -->
   <GiscusComment />
 </template>
 <style>

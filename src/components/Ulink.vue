@@ -1,19 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 const props = defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
-onMounted(()=>{
-    const holder = document.querySelector("#holder-"+props.id)
-    const holderText = document.querySelectorAll("#holder-"+props.id+'>p')
-    let color:string
-    if(!props.color)
-        color = "#d9db83"
-    else
-        color = props.color
-    holder?.setAttribute('style','')
-    holderText?.forEach(element => {
-        element.setAttribute('style','color:'+color)
-    });
-})
 </script>
 <template>
 <a :href="url" class="!no-underline">
