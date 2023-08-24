@@ -119,6 +119,8 @@ code {
 }
 
 .markdown-body > iframe,
+.markdown-body > img,
+.markdown-body-dark > img,
 .markdown-body-dark > iframe {
   @apply !my-3;
 }
