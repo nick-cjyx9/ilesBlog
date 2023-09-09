@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Nick's webspace!</title>
+        <link>https://www.nickchen.top</link>
+        <description></description>
+        <lastBuildDate>Sat, 09 Sep 2023 13:16:17 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-CN</language>
+        <image>
+            <title>Nick's webspace!</title>
+            <url>https://avatars.githubusercontent.com/u/119087246</url>
+            <link>https://www.nickchen.top</link>
+        </image>
+        <copyright>Copyright (c) 2023 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[简评：《BanGDream It's MyGo!!!!!》]]></title>
+            <link>https://www.nickchen.top/post/review_bang_mygo</link>
+            <guid>https://www.nickchen.top/post/review_bang_mygo</guid>
+            <pubDate>Wed, 23 Aug 2023 20:50:46 GMT</pubDate>
+            <description><![CDATA[
+开新坑，如果saki退团能解释清必写千字长文歌颂mygo😤😤😤
+]]></description>
+            <content:encoded><![CDATA[<h1 id="“なんで春日影やったの！！！”" class="heading"><a href="#“なんで春日影やったの！！！”" class="heading-anchor" aria-label="Permalink for “なんで春日影やったの！！！”" tabindex="-1"></a>“なんで春日影やったの！！！”</h1>
+<p>开新坑，如果saki退团能解释清必写千字长文歌颂mygo😤😤😤</p>
+
+<hr>
+<p>TL;Dl: TBD</p>
+<h2 id="信息：" class="heading"><a href="#信息：" class="heading-anchor" aria-label="Permalink for 信息：" tabindex="-1"></a>信息：</h2>
+<div style="width:100%;" class="text-center item-center"><a href="https://bgm.tv/subject/428735" target="_blank"><img src="https://lain.bgm.tv/pic/cover/l/e7/a7/428735_1v11n.jpg?_gl=1*1bmuea4*_ga*MjEyNjEzNzgyOC4xNjg2MDUwMDM0*_ga_1109JLGMHN*MTY5Mjc5NDg4OC4xMDAuMS4xNjkyNzk2MTkzLjAuMC4w" class="ml-auto mr-auto" alt="cover" style="width:50%"></a><hr><ul>
+<li>番剧名称：<strong>BanG Dream It's MyGo!!!!!</strong></li>
+<li>官方网站: <a href="https://anime.bang-dream.com/mygo/" rel="nofollow">https://anime.bang-dream.com/mygo/</a></li>
+<li>我的评分: <strong>9.X/10（至11集）</strong></li>
+<li>多大程度上想要推荐给别人: <strong>因人而异</strong></li>
+<li>标签: <strong>扭曲</strong> 致郁 乐队 摇滚 邦邦</li>
+</ul></div>
+<h2 id="tbd" class="heading"><a href="#tbd" class="heading-anchor" aria-label="Permalink for TBD!!" tabindex="-1"></a>TBD!!</h2>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GithubActions在一个推送时触发另一个仓库的workflow]]></title>
+            <link>https://www.nickchen.top/post/trigger_another_repos_workflow</link>
+            <guid>https://www.nickchen.top/post/trigger_another_repos_workflow</guid>
+            <pubDate>Sun, 20 Aug 2023 21:14:08 GMT</pubDate>
+            <description><![CDATA[实现思路是在子仓库推送时使用Github的REST api触发某个workflow。
+]]></description>
+            <content:encoded><![CDATA[<p>实现思路是在子仓库推送时使用Github的REST api触发某个workflow。</p>
+
+<h2 id="使用场景：" class="heading"><a href="#使用场景：" class="heading-anchor" aria-label="Permalink for 使用场景：" tabindex="-1"></a>使用场景：</h2>
+<ol>
+<li>将博文和hexo等generator的source code分开，方便管理（<del>不是很方便</del>，且如果博文全公开不建议这样做</li>
+<li>在private的submodule里做修改后，main repo进行构建</li>
+</ol>
+<h2 id="方法：" class="heading"><a href="#方法：" class="heading-anchor" aria-label="Permalink for 方法：" tabindex="-1"></a>方法：</h2>
+<ol>
+<li>首先在private的A仓库根目录中创建<code>scripts/trigger.mjs</code>，填入具有workflow权限的token，本地调试需要运行<code>npm install octokit</code>，<strong>注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发</strong></li>
+</ol>
+<div class="language-js" data-lang="js"><pre class="language-js"><code><span class="token comment">// Octokit.js</span>
+<span class="token comment">// https://github.com/octokit/core.js#readme</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Octokit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"octokit"</span>
+<span class="token keyword">const</span> octokit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Octokit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">auth</span><span class="token operator">:</span> <span class="token string">'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">await</span> octokit<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token string">'POST /repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">owner</span><span class="token operator">:</span> <span class="token string">'YOUR-ID'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">repo</span><span class="token operator">:</span> <span class="token string">'YOUR-REPO'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">workflow_id</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  <span class="token comment">// 这里填写public的B仓库中触发的工作流文件，如 build.yml</span>
+  <span class="token literal-property property">ref</span><span class="token operator">:</span> <span class="token string">'main'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'X-GitHub-Api-Version'</span><span class="token operator">:</span> <span class="token string">'2022-11-28'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<ol start="2">
+<li>创建工作流<code>.github/workflows/push.yml</code>以触发脚本，替换token为至少具有此仓库访问权限的token，你也可以写进secret。</li>
+</ol>
+<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> upstream_trigger
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+    <span class="token key atrule">push</span><span class="token punctuation">:</span> 
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+    <span class="token key atrule">trigger</span><span class="token punctuation">:</span>
+        <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+        <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check out repo content
+            <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
+            <span class="token key atrule">with</span><span class="token punctuation">:</span>
+              <span class="token key atrule">token</span><span class="token punctuation">:</span> <span class="token string">'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
+            <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v3
+            <span class="token key atrule">with</span><span class="token punctuation">:</span>
+              <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.12.1'</span>
+              <span class="token key atrule">cache</span><span class="token punctuation">:</span> npm
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies
+            <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install octokit
+    
+          <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Run script
+            <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+              node scripts/trigger.mjs</span></code></pre></div>
+<ol start="3">
+<li>如果A仓库是B仓库的submodule的话，B仓库的workflow推荐这样写，不过也有缺点，每次得记得在本地<code>git pull</code></li>
+</ol>
+<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> build
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span>
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span> 
+    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">submodules</span><span class="token punctuation">:</span> <span class="token string">'true'</span>
+        <span class="token key atrule">token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.ghtoken <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Update Submodules
+      <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+        git submodule update --init --remote
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update submodules" || echo "ignore commit failure, proceed"
+        git push || echo "ignore commit failure, proceed"</span>
+      <span class="token comment"># https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error</span>
+    <span class="token comment"># YOUR BUILD PROCESS HERE</span></code></pre></div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[简评：《摇曳露营Δ》]]></title>
+            <link>https://www.nickchen.top/post/review_yuru_camp</link>
+            <guid>https://www.nickchen.top/post/review_yuru_camp</guid>
+            <pubDate>Fri, 18 Aug 2023 12:20:41 GMT</pubDate>
+            <description><![CDATA[tl;dr:
+《摇曳露营Δ》是芳文社的一部剧情轻松愉快的日常番，节奏和气氛会比较接近《相合之物》。音乐好听，节奏舒缓。第一季主要讲了一群女孩因为露营聚在一起几次露营，第二季更偏向讲人与人之间的关系。如果你正处于有很多时间却不知道做什么或者焦虑于当下的状态，那么这部番更值得一看。
+]]></description>
+            <content:encoded><![CDATA[<h2 id="tldr" class="heading"><a href="#tldr" class="heading-anchor" aria-label="Permalink for tl;dr:" tabindex="-1"></a>tl;dr:</h2>
+<p>《摇曳露营Δ》是芳文社的一部剧情轻松愉快的日常番，节奏和气氛会比较接近《相合之物》。音乐好听，节奏舒缓。第一季主要讲了一群女孩因为露营聚在一起几次露营，第二季更偏向讲人与人之间的关系。如果你正处于有很多时间却不知道做什么或者焦虑于当下的状态，那么这部番更值得一看。</p>
+
+<hr>
+<h2 id="信息：" class="heading"><a href="#信息：" class="heading-anchor" aria-label="Permalink for 信息：" tabindex="-1"></a>信息：</h2>
+<div style="width:100%;" class="text-center item-center"><a href="https://bgm.tv/subject/262897" target="_blank"><img src="https://lain.bgm.tv/r/800/pic/cover/l/0f/50/262897_d3555.jpg" class="ml-auto mr-auto" alt="cover" style="width:50%"></a><hr><ul>
+<li>番剧名称：<strong>ゆるキャン△</strong></li>
+<li>官方网站: <strong><a href="https://yurucamp.jp/" rel="nofollow">https://yurucamp.jp/</a></strong></li>
+<li>我的评分: <strong>8.X/10</strong></li>
+<li>多大程度上想要推荐给别人: <strong>11/10</strong></li>
+<li>标签: 日常 治愈 芳文社 <del>女孩子贴贴</del></li>
+</ul></div>
+<h2 id="评价（含剧透）：" class="heading"><a href="#评价（含剧透）：" class="heading-anchor" aria-label="Permalink for 评价（含剧透）：" tabindex="-1"></a>评价（含剧透）：</h2>
+<h3 id="人物：" class="heading"><a href="#人物：" class="heading-anchor" aria-label="Permalink for 人物：" tabindex="-1"></a>人物：</h3>
+<ul>
+<li>芝麻凛：一眼爱上她的气质，平静、独立、很少有表情，但是又对抚子十分关心（联系不上solo camping的抚子，骑着摩托就去探望），喜欢看书、喜欢狗狗、喜欢单人露营，有自己的热爱并去追求。更何况身边都是一群善良的人，让人不得不羡慕。</li>
+<li>抚子：原本只是觉得很萌很萌，之后从她单人露营时招待小孩、花钱给姐姐买暖手宝等等才渐渐喜欢上这个活力、有趣、认真的女孩。</li>
+<li>犬山葵：可爱役！<del>平泽唯的异世界同位体</del>，爱生的声音总是那么可爱。可能是类似<a href="https://zh.moegirl.org.cn/zh/%E8%BF%91%E6%B1%9F%E5%BD%BC%E6%96%B9" rel="nofollow">彼方</a>一样的存在，<del>并且她的妹妹叫akarin，不得不产生联想</del>。</li>
+<li>大垣：迫害役？类似<a href="https://zh.moegirl.org.cn/%E4%B8%AD%E9%A1%BB%E9%9C%9E" rel="nofollow">ksm</a>一样的（<del>学弱</del>）气氛组。印象最深的是给抚子全家做饭，善良而有领导力。</li>
+<li>酒鬼老师：<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">你和<a href="https://bgm.tv/character/470" rel="nofollow">佐和子</a>到底是什么关系？</span></li>
+</ul>
+<h3 id="剧情：" class="heading"><a href="#剧情：" class="heading-anchor" aria-label="Permalink for 剧情：" tabindex="-1"></a>剧情：</h3>
+<a href="https://smms.app/image/8SmlwfaZ4LgK2bA" target="_blank"><img src="https://s2.loli.net/2023/08/18/8SmlwfaZ4LgK2bA.png"></a>
+<p>在沉浸于逃避和自我否定的时候遇到这部番，然后第一次被平淡日常打动。《摇曳露营》的剧情给我带来的不只是富士山的宁静，在感动于人与人之间的互相关心时，我发现了自己似乎越来越“无情”，学校的大家过于专注于自己，我的一切社交似乎都带有增进感情之外的目的。我不会面对自己的朋友，甚至于厌烦他们的分享。原本我认为自己很能理解凛的喜欢独行，但为什么凛遇见抚子之后，她也开始不自觉地和他人分享自己的见闻、和抚子交换星空的照片、从最开始不管躺在地上睡觉的抚子到关心朋友晚上会不会挨冻，这样看来，凛的确变了，我也该试着改变。</p>
+<a href="https://smms.app/image/JfWCUAqQ5k2mn67" target="_blank"><img src="https://s2.loli.net/2023/08/18/JfWCUAqQ5k2mn67.png"></a>
+<p>善待爱你的人、好好生活、拥抱自然。《摇曳露营》传递的，绝对不是用这些文字能描绘的，所以，去看番吧！</p>
+<h2 id="小缺点：" class="heading"><a href="#小缺点：" class="heading-anchor" aria-label="Permalink for 小缺点：" tabindex="-1"></a>小缺点：</h2>
+<h3 id="贴贴不够，我要看百合！" class="heading"><a href="#贴贴不够，我要看百合！" class="heading-anchor" aria-label="Permalink for 贴贴不够，我要看百合！" tabindex="-1"></a><del>贴贴不够，我要看百合！</del></h3>
+<p>看的时候感觉还是有一些的，现在忘了，等想起来再补吧。</p>
+<h2 id="关于文化输出：" class="heading"><a href="#关于文化输出：" class="heading-anchor" aria-label="Permalink for 关于文化输出：" tabindex="-1"></a>关于文化输出：</h2>
+<p>看了这部番真的会让人产生露营甚至去富士山的冲动。番剧里也时常出现景区软广，这就是日本式的文化输出。好的“文化输出”应该也能让本地人也感受到那种冲动，<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">点名《⚪神》</span>。它可以盈利，但不是某些人打着输出的名号赚钱的工具<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">不敢点名</span>。</p>
+<iframe src="//player.bilibili.com/player.html?aid=978642911&amp;bvid=BV1e44y1p7GZ&amp;cid=498605836&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen></iframe>
+<h2 id="？？？？" class="heading"><a href="#？？？？" class="heading-anchor" aria-label="Permalink for ？？？？" tabindex="-1"></a>？？？？</h2>
+<p>我好想做志摩リン小姐的狗啊。
+可是志摩リン小姐说她喜欢的是猫，我哭了。
+我知道既不是狗也不是猫的我为什么要哭的。
+因为我其实是一只老鼠。
+我从没奢望志摩リン小姐能喜欢自己。
+我明白的，所有人都喜欢理解余裕上手天才打钱的萌萌的狗狗或者猫猫，没有人会喜欢阴湿带病的老鼠。
+但我还是问了志摩リン小姐:“我能不能做你的狗？” 我知道我是注定做不了狗的。
+但如果她喜欢狗，我就可以一直在身边看着她了，哪怕她怀里抱着的永远都是狗。
+可是她说喜欢的是猫。
+她现在还在看着我，还在逗我开心，是因为猫还没有出现，只有我这老鼠每天蹑手蹑脚地从洞里爬出来，远远地和她对视。
+等她喜欢的猫来了的时候，我就该重新滚回我的洞了吧。
+但我还是好喜欢她，她能在我还在她身边的时候多看我几眼吗？
+志摩リン小姐说接下来的每个圣诞夜都要和大家一起过。
+我不知道大家指哪些人。
+好希望这个集合能够对我做一次胞吞。</p>
+<p>猫猫还在害怕志摩リン小姐。 我会去把她爱的猫猫引来的。
+我知道稍有不慎，我就会葬身猫口。
+那时候志摩リン小姐大概会把我的身体好好地装起来扔到门外吧。
+那我就成了一包鼠条，嘻嘻。
+我希望她能把我扔得近一点，因为我还是好喜欢她。
+会一直喜欢下去的。</p>
+<p>我的灵魂透过窗户向里面看去，挂着的铃铛在轻轻鸣响，志摩リン小姐慵懒地靠在沙发上，表演得非常温顺的橘猫坐在她的肩膀。
+壁炉的火光照在她的脸庞，我冻僵的心脏在风里微微发烫。</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[音乐的力量]]></title>
+            <link>https://www.nickchen.top/post/music_power</link>
+            <guid>https://www.nickchen.top/post/music_power</guid>
+            <pubDate>Sun, 30 Jul 2023 15:35:57 GMT</pubDate>
+            <description><![CDATA[好久没听过Lube的歌了，前几天天心血来潮去网易云重新听了听《这里的黎明静悄悄》，去年夏天的那种窒息般的情感涌上鼻尖，故作此文（结果两天后就变成vip专享😅）
+]]></description>
+            <content:encoded><![CDATA[<p>好久没听过Lube的歌了，前几天天心血来潮去网易云重新听了听《这里的黎明静悄悄》，去年夏天的那种窒息般的情感涌上鼻尖，故作此文（<del>结果两天后就变成vip专享😅</del>）</p>
+
+<p>住校的晚上，我总是喜欢在耳机里放点歌，让环境不要太安静，这样才不会感到孤独甚至恐惧。
+中考完那个暑假，在前往新高中夏令营时，遭遇疫情。军训，遭遇高温，被困在限电的闷热的宿舍里，一个人远离家乡，也算得上
+心情特别 down 的一段时光了。想起初中时<del>精苏</del>朋友的安利，我开始听 Lube 的歌。</p>
+<h2 id="lube（柳拜）" class="heading"><a href="#lube（柳拜）" class="heading-anchor" aria-label="Permalink for Lube（柳拜）" tabindex="-1"></a>Lube（柳拜）</h2>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Z2QXZRqTdguBQrM8pr4eD?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p>我本来不是很了解苏联的那段历史，就算看着翻译也不能完全理解歌词。但是不知道为何，他们雄厚的嗓音立即使我躁动的心安稳起来。深情、沉稳是我对柳拜的第一感，
+高温被困在学校的那几天，我每天都在循环 Lube 的歌，日复一日的无聊、愧疚、孤独感，承载在这些歌上。音乐的力量就体现在音乐给我
+带来的长久的记忆中了。</p>
+<p>同样的感觉，还有偶然听到《倔强》的时候，这首歌是在中考誓师大会上大家一起唱的歌，一听到前奏，愉快的初中时光就涌入脑中。</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HvAJPhhs2LnNViKxQ7APT?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<h2 id="花谱" class="heading"><a href="#花谱" class="heading-anchor" aria-label="Permalink for 花谱" tabindex="-1"></a>花谱</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2c32JruIkUyfdycHmhIph4?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p>花谱同柳拜一样，都是我喜欢的歌曲特别有表现力的 singer ，我接触到她，最初是2022年春节，日推听到了《不可解》，初听时，只是觉得不一般，便收藏起来，
+很久没听过，知道看到ouuan大佬的 about 里提到这首歌，又去细听了《不可解》和她的其他作品，这次，不管是从歌词还是情感，我都被折服了。</p>
+<p>耳机里循环播放着花谱的歌，这些歌在未来又会给我留下什么样的记忆呢。</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[重新起航（上）·一些回忆]]></title>
+            <link>https://www.nickchen.top/post/reset_my_sail</link>
+            <guid>https://www.nickchen.top/post/reset_my_sail</guid>
+            <pubDate>Sat, 29 Jul 2023 19:55:56 GMT</pubDate>
+            <description><![CDATA[最近花了一个多星期的时间来用iles重写了这个博客，看着博客功能逐渐完善，但是缺乏一篇拿得出手的内容，
+于是，以此篇文字来当作除了Hello World外的第一篇博文！
+]]></description>
+            <content:encoded><![CDATA[<p><span class="w-6 inline-block"></span>最近花了一个多星期的时间来用iles重写了这个博客，看着博客功能逐渐完善，但是缺乏一篇拿得出手的内容，
+于是，以此篇文字来当作除了Hello World外的第一篇博文！</p>
+
+<details><summary>GPT: iles(x) Jekyll(√)😂</summary><img src="https://s2.loli.net/2023/07/30/sAJOUm3LX46ytlK.png"></details>
+<p><span class="w-6 inline-block"></span>这篇文章将会写的像一篇流水账。回忆一下关于我的过去的一些事。图片在国内
+可能加载很慢，文字显示也有毛病，正在解决这些问题~（居然有人在看啊，超过150浏览就hidden起来吧！）</p>
+<h1 id="recall·0x00退出信竞" class="heading"><a href="#recall·0x00退出信竞" class="heading-anchor" aria-label="Permalink for Recall·0x00:退出信竞" tabindex="-1"></a>Recall·0x00:退出信竞</h1>
+<p><span class="w-6 inline-block"></span>2023年对于我来说是一个意义非凡的年份，来到一线城市上学、参加信息竞赛、第一次被记“严重违纪”，过去的
+半年改变了我特别多。进入这所高中之前，我在四五线城市的普通中学中度过了相对舒适和 <del>成功？</del> 的三年，在初中毕业之前，我似乎从来都是以一个 <strong>“好学生”</strong> 的
+形象生活着，凭借成绩，可以很容易的维持这种形象，所以才会觉得自己无忧无虑吧。现在和她聊起初中时，我竞不知道初中三年每天是如何在睡眠不足的情况下<strong>保持动力</strong>的，
+现在想起来，还蛮羡慕曾经对学校富有激情的自己的。</p>
+<p><span class="w-6 inline-block"></span>编程的爱好其实早在六年级就开始，只是初中三年没有丝毫进步就是了，<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">突然很庆幸自己那个充满黑历
+史的Github号被封了， <del>虽然现在的号提交记录也好不了哪里去</del> </span> 稀里糊涂地到了高中，听说学校在找信息竞赛生（OIer），我也是自信于自己的一点点基础，去报
+了名，记得最初的机房人几乎<strong>坐满了</strong>，我们被分成无基础和有初中基础两部分，而我在无基础组内的水平又算是比较出众，所以学起来干劲十足。过了大概两个月，经历了几次文化课
+考试，机房走了很多人（基本都是在考完出分的节点退出），因为我的文化课也考的不是很理想，父母也数次表达出他们的不满，但我依然不想随便放弃。又这样继续了两个月，差不多开始学图论时，机房里从最初坐满到只剩
+下两只“菜鸟”了。我也慢慢意识到：这个学校几乎<strong>一点也不重视OI</strong>，没有练题时间，没有资源，啥也没有，外加文化课施压，所以在这里<strong>省1≈做梦</strong>。<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">这是一个才学到dijkstra的蒟蒻该说的吗(doge)</span>文化课的不如意
+，和有基础的大佬的差距，家里的、老师的压力，让我的状态变得不太好，在训练时频繁摸鱼，学啥都提不起劲，再加上受焦虑风气的影响。那段时间，我几乎快疯了，但还是撑着，
+直到一次晚上打牌被抓后，班主任毫不客气地给我记了“严重违纪”，并要求见家长，一通电话，让我下了一半QuitOI的决心，几个不眠之夜后，我做出了决定，因为OI或许已经<strong>不能为我带来什么了</strong>，吧。</p>
+<p><span class="w-6 inline-block"></span>在这之后，文化课成绩算是有所长进，但还是会数次想起曾经欢笑的牌桌，还有一起摸鱼，看电影的集训时光。
+事到如今，我仍旧会觉得：QuitOI是不是最好的选择呢？OI的确给了我许多欢乐，和一条出路。
+迷茫时，我看了不少Blog（ 像是 <a href="https://ouuan.moe" rel="nofollow">https://ouuan.moe</a> ,羡慕大佬精彩的大学生活 ），听了一些Podcast，开始漫长的思考，
+慢慢地找回了自己的一点激情，但有时候也禁不住会想：当初再努力一点，我是不是也可以在OI干出成绩？我真不明白。</p>
+<h2 id="album：摸鱼记忆" class="heading"><a href="#album：摸鱼记忆" class="heading-anchor" aria-label="Permalink for album：摸鱼记忆" tabindex="-1"></a>album：摸鱼记忆</h2>
+<p>这里有： <del>全自动开盒</del>、<del>嘉心糖</del>、<del>焊武帝</del>、<del>素质麻酱桌</del>、<del>《永劫无间》，启动！</del>、<del>（其实《原神》在咱机房会多一点🤣）</del></p>
+<div class="flex flex-wrap"><img src="https://s2.loli.net/2023/07/29/eCa1o7tVjIvckLw.jpg" class="w-1/2"><img src="https://s2.loli.net/2023/07/30/2Zzadmu1hg4plD5.png" class="w-1/2"><img src="https://s2.loli.net/2023/07/29/cML7sWi1hKIrvX4.png" class="w-1/2"><img src="https://s2.loli.net/2023/07/29/xCnoGO7JNpBirFZ.jpg" class="w-1/2"></div>
+<details><summary>AI玩具:pi.ai</summary><ul>
+<li>Here's a summary by <strong>pi.ai</strong>, although some little bug,but it's really like a real person(but I haven't talked with a native-speaker before,how do I know?lol)</li>
+<li>sharing link: <a href="https://pi.ai/s/1CKNrMo4rnxnsgxE2qbHw" rel="nofollow">https://pi.ai/s/1CKNrMo4rnxnsgxE2qbHw</a></li>
+<li><strong>pi.ai</strong> little bugs in this sample:</li>
+</ul><ol>
+<li>Why “they”? Obviously me single person!</li>
+<li>I haven't mentioned about math !!! */}</li>
+</ol></details>
+<h1 id="recall·0x01住校时光" class="heading"><a href="#recall·0x01住校时光" class="heading-anchor" aria-label="Permalink for Recall·0x01:住校时光" tabindex="-1"></a>Recall·0x01:住校时光</h1>
+<p><span class="w-6 inline-block"></span>曾经因为集训九十多天没有回过老家一趟，最终阳了<del>被迫</del>以连续住校97天成绩遗憾离场，现在想来，
+我这样隔离天日的生活，确实会让我爹妈特别担心，但是学校的周末几乎没人管（<strong>颓废的大好时机</strong>），所以才会管不住地打开游戏，一躺平一天，还和朋友鼓
+吹着：“住校爽啊，我已经xx天了。” 但是如果现在有人和我提到住校有多<del>快乐</del>，我应该会反驳他吧🤣即使学校的时光大部分都是<del>暗无天日</del>的，但还是
+有能令我开怀大笑的moment呢！</p>
+<BlockSummary><h2>乐事一：搞《年度卷狗大赏》</h2><blockquote>
+<p>“现在看来，是我被他们卷成了狗🤡”</p>
+</blockquote><p>拍摄时间： （ 23：07 | 07：00 | 22：55 ）</p><div class="flex flex-wrap"><img src="https://s2.loli.net/2023/07/29/Cg5qLjWyD2k6sEw.jpg" class="w-1/3"><img src="https://s2.loli.net/2023/07/29/NMcFrop7wfX2d6W.jpg" class="w-1/3"><img src="https://s2.loli.net/2023/07/29/mUiaIFpCHRxvXuj.jpg" class="w-1/3"><img src="https://s2.loli.net/2023/07/29/7yTFd1swuL2CReI.png" class="w-full"></div><h2>乐事二：嘲笑《原披》（<del>其实博主也玩原，绷不住了</del>）</h2><p><img src="https://s2.loli.net/2023/07/29/5A2GN9j6o4TZdaS.jpg" alt="1690639564506.jpg"></p><h2>乐事三：男性朋友卡点祝我生日快乐</h2><p><span class="w-6 inline-block"></span>2022年生日的凌晨，初中挚友卡着凌晨0点给我发<code>生日快乐</code>，看着我几乎不存在闲聊消息的QQ列表，草，居然还有人
+记得我的生日。那天躺在学校操场上一边读消息，一边傻笑，留下了这几张照片。</p><p><span class="w-6 inline-block"></span>今年的生日也不例外，第一个祝我生快的也是男性朋友，<del>虽然不是0点</del>。此外，还收到了她的gift，开心！</p><div class="flex flex-wrap"><img src="https://s2.loli.net/2023/07/29/ekbAjSHLCZP46Rd.png" class="w-1/2"><img src="https://s2.loli.net/2023/07/30/TnxMgosX68QGFwU.png" class="w-1/2"></div></BlockSummary>
+<h1 id="recall·0x02琐碎" class="heading"><a href="#recall·0x02琐碎" class="heading-anchor" aria-label="Permalink for Recall·0x02:琐碎" tabindex="-1"></a>Recall·0x02:琐碎</h1>
+<p><span class="w-6 inline-block"></span>不知不觉中已经写了这么多，是时候给回忆录收尾了，这里，讲一讲故事开始的地方，我成长的地方。这里其实连
+四五线城市都够不到，是个（当时）<strong>未脱贫</strong>的县城，一提到这座充满回忆的城市，就不由得总会浮想联翩。但是，我似乎越来越<strong>不敢面对</strong>这个小县城。人走的越高，总会开
+始无意识地蔑视像曾经的自己一样的人啊。（（</p>
+<h2 id="县城之人" class="heading"><a href="#县城之人" class="heading-anchor" aria-label="Permalink for 县城之人" tabindex="-1"></a>县城之人</h2>
+<p><span class="w-6 inline-block"></span>未来，我可能再也没机会回到这里了吧。人总怕忘事，我和ta们的一些细节早已记不清楚，故在此记录一下还能记起的片段。</p>
+<h3 id="同学们" class="heading"><a href="#同学们" class="heading-anchor" aria-label="Permalink for 同学们" tabindex="-1"></a>同学们</h3>
+<p><span class="w-6 inline-block"></span>A是一个开朗的女生，和我从幼儿园开始小学、初中十多年都和我同校同班，<span class="bg-black !text-black hover:!text-white p-0.5 mx-0.5 inline" title="你知道的太多了！">从小学起，我就产生了对她的爱慕之情，</span>，但是从6年级班上有
+人在传“我喜欢A”的话时，我开始故意地远离她，我们之间的交流越来越少，6年级时还会在考试后讨论答案，上了市里的初中后，我们意外地被分到了一个班。
+本以为能继续追求她，但似乎A对我没有表现出一点好感，没过多久，就有人传起小学时一样的话，于是我和A似乎越来越远。初中的前半部分时间，我很贪玩，
+成绩却不是很差，就固步自封起来，没有了进取之心。那时，A的成绩还不如我。从初中第二年开始，A的成绩突飞猛进，她进入年级前十，我居然会感到羞愧和不甘。为此，我开始默默地以他为目标奋斗起来。
+长期的隔绝让我以为我们两个不可能会有任何瓜葛，但是不知为何，同样地从县城来到城市，我不自觉会和A处处比较，会偷偷看她，会躲避她的眼神，但就是不敢
+和他交流，可能我对A的认识还停留在小学，导致我不敢于也不知道以何种关系和她交流。3年很快就过去了，毕业的时候，A来和我合照，我的心脏那是砰砰直跳，
+但在这之后，A和我又如同形同陌路。现在我们到了更大的城市，只是这次就没能这么幸运了。。。</p>
+<p><span class="w-6 inline-block"></span>原以为来到这里会慢慢地忘掉A，但每个孤单的晚上，我还是会想，还是会想起小学时一起来到成都的经历，为
+数不多的和她的美好记忆，明明已经不可能了，为什么会一直想呢。听着她的偶像：周杰伦的歌，我越来越搞不懂一切。现在想起A，和她发生在县城的事还历历在目，
+尽管许多遗憾，但至少我们如今各赴前程，已经成功地 <strong>“从大山走了出来”</strong>。</p>
+
+<hr>
+<p><span class="w-6 inline-block"></span>B从小学到初中和我同校同班，上文说的凌晨祝我生日快乐的人就是他。B的性格起初十分怪异，受人嫌弃，但我知道，
+这一切都是有原因的，他的原生家庭对他产生了太大的影响。虽然成绩不好，但B一直是一个讲义气，幽默的兄弟。</p>
+
+
+<h3 id="长辈们" class="heading"><a href="#长辈们" class="heading-anchor" aria-label="Permalink for 长辈们" tabindex="-1"></a>长辈们</h3>
+<p><span class="w-6 inline-block"></span>在我一路更换城市读书时，我的家人们给了我莫大的帮助，往常我的姥爷还在时，一大家人总会在节日聚在一起。
+直到他去世之后，这种场景就<strong>再也没有过</strong>。我的姥爷生前十分宠爱我，他的离去也是我第一次有意识地经历至亲之人死亡。现在想起来，我还是会觉得悲痛、恐惧。
+现在，他已经离去了好几年了，我也慢慢开始忘记和他的事情。</p>
+<ul>
+<li>我走上编程这个道路完全是因为我的姥爷，我的父母对于我上网管的十分严格，但我一有空就溜去姥爷的屋子偷偷上网，podcast《代码之外》第二期中，Evan说过
+越早找到一个孩子的爱好就越幸运，因为姥爷对我的包容，我开始接触、学习一些代码，并爱上了编程。</li>
+<li>姥爷毫不吝惜地让我花钱买零食，这一点至今仍心存愧疚</li>
+<li>姥爷曾经是个军人，他常常给我讲他之前在炊事营的见闻和曾经时如何作为代表来到人民大会堂见毛主席的事情，这些事熏陶着我，但我当初并没有好好听，细节
+已经不记得一点了，深感愧疚。</li>
+<li>我上初中后，就很少去见他了，那时候正赶上疫情，或许是老人最需要人陪伴的孤独时期吧，我奶奶走的早，一直都是姥爷<strong>一个人生活</strong>。但是我当时竟然没有好好陪陪
+他。那时，姥爷的身体状况一天不如一天，甚至会开着电视睡着，烟头落下把自己烫伤。一天，大概是疫情最严重的21年初，姥爷提着一堆生活用品和食物来看我，只是短短
+地询问了我在城市的学习生活，教导了几句就离开了，我仍记得他说了一句：“我有一天也要去<strong>见马克思</strong>了”，我只是强忍着没有落泪，无言可答。</li>
+</ul>
+<h3 id="可悲之人" class="heading"><a href="#可悲之人" class="heading-anchor" aria-label="Permalink for 可悲之人" tabindex="-1"></a>可悲之人</h3>
+<p><span class="w-6 inline-block"></span>曾经的县城，虽然没有脱贫，但仍有很多有梦想的人在。现在的县城，虽然有了更大的学校，可我看到的是学生
+无心学习，抽烟酗酒，我知道这一切不怪他们，但一想到这些人以后的命运可能已经被定了十有八九，就感到十分可悲。</p>
+<h2 id="县城之景" class="heading"><a href="#县城之景" class="heading-anchor" aria-label="Permalink for 县城之景" tabindex="-1"></a>县城之景</h2>
+<blockquote>
+<p>📷 它不够完美，但是它纯粹而天真。</p>
+</blockquote>
+<p><span class="w-6 inline-block"></span>这个县城除开山区，城区一个半小时就可以走通，但是不管是山还是道路，都是纯粹的，你几乎见不到交警一样的角色或者是“创
+建文明城市😅”的人工干预和现代设施，生活自由而轻松，“走两步路就能遇见认识的人”毫不夸张。<del>本来想找1些能体现这里人文景色的照片，但是没能找到。</del></p>
+<div class="flex flex-wrap"><img src="https://s2.loli.net/2023/07/30/JLb2j3G8hRmgHDM.png" class="w-1/2"><img src="https://s2.loli.net/2023/07/30/9fH2cMuirXNKR5b.png" class="w-1/2"></div>
+<hr>
+<p>十分<strong>感谢</strong>您能读到这里，如果您有什么<strong>意见</strong>和<strong>想法</strong>，欢迎来👇<strong>评论区</strong>发表。The whole world is open for you&#x26;me!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Hello World!(你好！世界！)]]></title>
+            <link>https://www.nickchen.top/post/hello_world</link>
+            <guid>https://www.nickchen.top/post/hello_world</guid>
+            <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+中日英测试文案
+中文：你好，这是一个中文测试文案。
+日文：こんにちは、これは日本語のテスト文書です。
+英文：Hello, this is an English test document.
+]]></description>
+            <content:encoded><![CDATA[<h1 id="markdown语法测试文档generated-by-ai" class="heading"><a href="#markdown语法测试文档generated-by-ai" class="heading-anchor" aria-label="Permalink for Markdown语法测试文档(Generated by AI)" tabindex="-1"></a>Markdown语法测试文档(Generated by AI)</h1>
+<h2 id="中日英测试文案" class="heading"><a href="#中日英测试文案" class="heading-anchor" aria-label="Permalink for 中日英测试文案" tabindex="-1"></a>中日英测试文案</h2>
+<p>中文：你好，这是一个中文测试文案。</p>
+<p>日文：こんにちは、これは日本語のテスト文書です。</p>
+<p>英文：Hello, this is an English test document.</p>
+
+<h1 id="一级标题" class="heading"><a href="#一级标题" class="heading-anchor" aria-label="Permalink for 一级标题" tabindex="-1"></a>一级标题</h1>
+<h2 id="二级标题" class="heading"><a href="#二级标题" class="heading-anchor" aria-label="Permalink for 二级标题" tabindex="-1"></a>二级标题</h2>
+<h3 id="三级标题" class="heading"><a href="#三级标题" class="heading-anchor" aria-label="Permalink for 三级标题" tabindex="-1"></a>三级标题</h3>
+<h4 id="四级标题" class="heading"><a href="#四级标题" class="heading-anchor" aria-label="Permalink for 四级标题" tabindex="-1"></a>四级标题</h4>
+<h5 id="五级标题" class="heading"><a href="#五级标题" class="heading-anchor" aria-label="Permalink for 五级标题" tabindex="-1"></a>五级标题</h5>
+<h6 id="六级标题" class="heading"><a href="#六级标题" class="heading-anchor" aria-label="Permalink for 六级标题" tabindex="-1"></a>六级标题</h6>
+<h2 id="文本样式" class="heading"><a href="#文本样式" class="heading-anchor" aria-label="Permalink for 文本样式" tabindex="-1"></a>文本样式</h2>
+<p><strong>粗体文本</strong><br>
+<em>斜体文本</em><br>
+<del>删除线文本</del><br>
+<code>代码文本</code></p>
+<h2 id="列表" class="heading"><a href="#列表" class="heading-anchor" aria-label="Permalink for 列表" tabindex="-1"></a>列表</h2>
+<h3 id="无序列表" class="heading"><a href="#无序列表" class="heading-anchor" aria-label="Permalink for 无序列表" tabindex="-1"></a>无序列表</h3>
+<ul>
+<li>列表项1</li>
+<li>列表项2</li>
+<li>列表项3</li>
+</ul>
+<h3 id="有序列表" class="heading"><a href="#有序列表" class="heading-anchor" aria-label="Permalink for 有序列表" tabindex="-1"></a>有序列表</h3>
+<ol>
+<li>列表项1</li>
+<li>列表项2</li>
+<li>列表项3</li>
+</ol>
+<h2 id="链接与图片" class="heading"><a href="#链接与图片" class="heading-anchor" aria-label="Permalink for 链接与图片" tabindex="-1"></a>链接与图片</h2>
+<h3 id="链接" class="heading"><a href="#链接" class="heading-anchor" aria-label="Permalink for 链接" tabindex="-1"></a>链接</h3>
+<p><a href="https://www.baidu.com" rel="nofollow">百度</a><br>
+<a href="https://www.google.com" rel="nofollow">谷歌</a></p>
+<h3 id="图片" class="heading"><a href="#图片" class="heading-anchor" aria-label="Permalink for 图片" tabindex="-1"></a>图片</h3>
+<p><img src="https://markdown-here.com/img/icon256.png" alt="Markdown Logo"></p>
+<h2 id="引用" class="heading"><a href="#引用" class="heading-anchor" aria-label="Permalink for 引用" tabindex="-1"></a>引用</h2>
+<blockquote>
+<p>这是一个引用文本。</p>
+</blockquote>
+<h2 id="代码块" class="heading"><a href="#代码块" class="heading-anchor" aria-label="Permalink for 代码块" tabindex="-1"></a>代码块</h2>
+<div class="language-javascript" data-lang="javascript"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="language-python" data-lang="python"><pre class="language-python"><code><span class="token comment"># 仅作长代码高亮演示</span>
+<span class="token keyword">from</span> json <span class="token keyword">import</span> dumps
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+<span class="token keyword">from</span> requests <span class="token keyword">import</span> get
+<span class="token keyword">from</span> re <span class="token keyword">import</span> findall<span class="token punctuation">,</span> <span class="token builtin">compile</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token builtin">len</span><span class="token punctuation">(</span>origin_list<span class="token punctuation">)</span><span class="token operator">//</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    item <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterName'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">str</span> <span class="token operator">=</span> <span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r'title="(.*?)"'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>findall<span class="token punctuation">(</span>origin_list<span class="token punctuation">[</span>i <span class="token operator">*</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token string">'characterName'</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">' Getting...'</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">' '</span><span class="token punctuation">)</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterId'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">str</span> <span class="token operator">=</span> <span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r'/character/(\d+)'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>findall<span class="token punctuation">(</span>origin_list<span class="token punctuation">[</span>i <span class="token operator">*</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterAvatar'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">str</span> <span class="token operator">=</span> <span class="token string">'https:'</span> <span class="token operator">+</span> <span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r'&lt;img src="(.*?)">'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>findall<span class="token punctuation">(</span>origin_list<span class="token punctuation">[</span>i <span class="token operator">*</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    characterInfo <span class="token operator">=</span> get<span class="token punctuation">(</span>api_url <span class="token operator">+</span> <span class="token string">'/v0/characters/'</span> <span class="token operator">+</span> item<span class="token punctuation">[</span><span class="token string">'characterId'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span><span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterImg'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">dict</span> <span class="token operator">=</span> characterInfo<span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterSummary'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">str</span> <span class="token operator">=</span> characterInfo<span class="token punctuation">[</span><span class="token string">'summary'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">r'"'</span><span class="token punctuation">,</span><span class="token string">r'\"'</span><span class="token punctuation">)</span>
+    item<span class="token punctuation">[</span><span class="token string">'characterInfo'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">list</span> <span class="token operator">=</span> characterInfo<span class="token punctuation">[</span><span class="token string">'infobox'</span><span class="token punctuation">]</span>
+    processed <span class="token operator">=</span> processed <span class="token operator">+</span> dumps<span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">r'\n'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">r'\r'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n'</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">' Done.'</span><span class="token punctuation">)</span>
+    sleep<span class="token punctuation">(</span>sleep_time<span class="token punctuation">)</span></code></pre></div>
+<h2 id="表格" class="heading"><a href="#表格" class="heading-anchor" aria-label="Permalink for 表格" tabindex="-1"></a>表格</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商品1</td>
+<td>$10</td>
+</tr>
+<tr>
+<td>商品2</td>
+<td>$20</td>
+</tr>
+<tr>
+<td>商品3</td>
+<td>$30</td>
+</tr>
+</tbody>
+</table>
+<h2 id="分割线" class="heading"><a href="#分割线" class="heading-anchor" aria-label="Permalink for 分割线" tabindex="-1"></a>分割线</h2>
+<hr>
+<h2 id="脚注" class="heading"><a href="#脚注" class="heading-anchor" aria-label="Permalink for 脚注" tabindex="-1"></a>脚注</h2>
+<p>这是一个带脚注的句子<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup>。</p>
+<h2 id="数学公式" class="heading"><a href="#数学公式" class="heading-anchor" aria-label="Permalink for 数学公式" tabindex="-1"></a>数学公式</h2>
+<p>$$
+\int_0^1 x^2 dx
+$$</p>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>这是一个脚注的内容。 <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
