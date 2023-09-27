@@ -30,7 +30,7 @@
     "axios": "^1.4.0",
     "easy-typer-js": "^2.1.0",
     "rehype-external-links": "^3.0.0",
-    "rehype-katex": "^6.0.3",
+    "rehype-katex": "^7.0.0",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1"
   }
