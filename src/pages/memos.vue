@@ -1,5 +1,6 @@
 <template layout="base">
-    <div class="card justify-center p-6 lg:px-20 rounded-xl">
+    寄了
+    <!-- <div class="card justify-center p-6 lg:px-20 rounded-xl">
         <h1 class="text-center font-semibold munderline px-3 text-3xl mt-8" role="button" title="我是标题~"><del>也许是日寄(加载不出来请刷新)</del></h1>
 
         <div id="memos" class="memos">
@@ -13,9 +14,9 @@
             </a>
         </div>
     </div>
-    <GiscusComment />
+    <GiscusComment /> -->
 </template>
-
+<!-- 
 <script setup lang="ts">
 useHead({
     link: [
@@ -45,4 +46,4 @@ scripts.forEach(ele => {
     script.setAttribute('type',ele['type']);
     document.body.appendChild(script);
 });
-</script>
+</script> -->
