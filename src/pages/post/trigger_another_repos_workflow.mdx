@@ -1,0 +1,91 @@
+---
+title: GithubActions在一个推送时触发另一个仓库的workflow
+date: 2023-08-20 21:14:08
+tags: ["Github Actions"]
+licensed: true
+isAIGenerated: false
+cover: ""
+draft: false
+---
+
+实现思路是在子仓库推送时使用Github的REST api触发某个workflow。
+
+<Excerpt />
+
+## 使用场景：
+1. 将博文和hexo等generator的source code分开，方便管理（~~不是很方便~~，且如果博文全公开不建议这样做
+2. 在private的submodule里做修改后，main repo进行构建
+## 方法：
+1. 首先在private的A仓库根目录中创建`scripts/trigger.mjs`，填入具有workflow权限的token，本地调试需要运行`npm install octokit`，**注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发**
+
+```js
+// Octokit.js
+// https://github.com/octokit/core.js#readme
+import { Octokit } from "octokit"
+const octokit = new Octokit({
+  auth: 'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+})
+await octokit.request('POST /repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches', {
+  owner: 'YOUR-ID',
+  repo: 'YOUR-REPO',
+  workflow_id: '',
+  // 这里填写public的B仓库中触发的工作流文件，如 build.yml
+  ref: 'main',
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})
+```
+
+2. 创建工作流`.github/workflows/push.yml`以触发脚本，替换token为至少具有此仓库访问权限的token，你也可以写进secret。
+```yml
+name: upstream_trigger
+on:
+    push: 
+jobs:
+    trigger:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out repo content
+            uses: actions/checkout@v3
+            with:
+              token: 'ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+          - name: Setup Node
+            uses: actions/setup-node@v3
+            with:
+              node-version: '18.12.1'
+              cache: npm
+          - name: Install dependencies
+            run: npm install octokit
+    
+          - name: Run script
+            run: |
+              node scripts/trigger.mjs
+```
+
+3. 如果A仓库是B仓库的submodule的话，B仓库的workflow推荐这样写，不过也有缺点，每次得记得在本地`git pull`
+```yml
+name: build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v3
+      with:
+        submodules: 'true'
+        token: ${{ secrets.ghtoken }}
+    - name: Update Submodules
+      run: |
+        git submodule update --init --remote
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update submodules" || echo "ignore commit failure, proceed"
+        git push || echo "ignore commit failure, proceed"
+      # https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error
+    # YOUR BUILD PROCESS HERE
+```

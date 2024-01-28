@@ -5,7 +5,7 @@ import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
-import AIabstract from "./modules/AIabstract";
+// import AIabstract from "./modules/AIabstract";
 import axios from "axios";
 const wid = 'f1e56e6a-ea92-4228-b77e-e448f719a75b';
 const api_base = 'https://umami.nickchen.top/api/';
@@ -45,7 +45,7 @@ export default defineConfig({
     headings(),
     prism(),
     feed(),
-    AIabstract(),
+    // AIabstract(),
     excerpt(),
     lastUpdated(),
     // the order matters

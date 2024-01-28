@@ -27,7 +27,7 @@ const props = defineProps(['post']);
 </script>
 
 <template>
-  <div v-if="post.frontmatter.cover" class="w-full h-full max-w-4xl block munderline mb-8 
+  <div v-if="post.frontmatter.cover" class="w-full block munderline mb-8 
     dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full hover:shadow-xl">
       <div class="absolute top-0 left-0 w-full h-full z-10">
@@ -43,7 +43,7 @@ const props = defineProps(['post']);
       </div>
     </a>
   </div>
-  <div v-else class="w-full max-w-4xl munderline mb-8
+  <div v-else class="w-full munderline mb-8
     after:border-black dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full">
     <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">

@@ -2,13 +2,12 @@
   import { usePosts } from '@/composables/usePosts';
   const posts = usePosts();
   console.log(posts);
-  
 </script>
 
 <template layout="base">
-  <ul class="relative ml-auto mr-auto w-full">
-    <li v-for="post of posts">
-        <ArticleCard :post="post" class="w-full"></ArticleCard>
+  <ul class="relative justify-center w-full grid">
+    <li v-for="post of posts" class="max-w-5xl">
+        <ArticleCard :post="post"></ArticleCard>
     </li>
   </ul>
 </template>
