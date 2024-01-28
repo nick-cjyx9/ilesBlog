@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    <AIabstract v-if="frontmatter.summary" :content="frontmatter.summary" />
+    <!-- <AIabstract v-if="frontmatter.summary" :content="frontmatter.summary" /> -->
     <article class="px-8 w-full markdown-body" id="artibody">
       <slot/>
       <hr/>

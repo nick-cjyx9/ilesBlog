@@ -80,13 +80,13 @@ for i in range(0,len(origin_list)//5):
     sleep(sleep_time)
 
 try:
-    with open('E:/dev/RinaBlog/misc/waifu/waifu_data.json', 'w', encoding='utf-8') as f:
+    with open('E:/dev/blog/misc/waifu/waifu_data.json', 'w', encoding='utf-8') as f:
         f.write(str(processed))
         f.close()
-    with open('E:/dev/RinaBlog/src/pages/girls.vue','r',encoding='utf-8') as f:
+    with open('E:/dev/blog/src/pages/girls.vue','r',encoding='utf-8') as f:
         origin_girl_page = f.read()
         f.close()
-    with open('E:/dev/RinaBlog/src/pages/girls.vue','w',encoding='utf-8') as f:
+    with open('E:/dev/blog/src/pages/girls.vue','w',encoding='utf-8') as f:
         cp = list(origin_girl_page)
         cp[origin_girl_page.find('// :::DATASTART:::')+19:origin_girl_page.find('// :::DATAEND:::')-1]='let text_data = `'+processed[:-1]+'`;\n'
         foo = ''
