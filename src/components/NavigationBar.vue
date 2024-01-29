@@ -14,22 +14,20 @@
         class="navtab dark:hover:text-white">
         <a :href='value[1]' :title="key" :data-umami-event="'goto '+value[1]"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
-      <li id="toLight" @click="theme='light';toLight();"
+      <li id="toLight" @click="theme='light';"
       role="button" class="navtab dark:hover:text-white">
         <i class="fa-solid fa-sun"></i>
       </li>
-      <li id="toDark" @click="theme='dark';toDark();"
+      <li id="toDark" @click="theme='dark';"
       role="button" class="navtab dark:hover:text-white">
         <i class="fa-solid fa-moon"></i>
       </li>
     </ul>
   </nav>
 </template>
-
 <script setup lang="ts">
 import { ref } from "vue";
 import useTheme from "@/composables/useTheme";
-import { toDark, toLight } from "@/composables/useTheme";
 const { store: theme } = useTheme();
 const nav_data = ref({
   "主页":"/",

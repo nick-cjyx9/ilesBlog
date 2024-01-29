@@ -6,20 +6,6 @@ function formatTime(time:any){
   let oldTimestamp = t.getTime() / 1000; let oldY = t.getFullYear();
   let oldM = t.getMonth() + 1; let oldD = t.getDate();
   let oldH = t.getHours(); let oldi = t.getMinutes(); let olds = t.getSeconds();
-  // gap unit:(s)
-  let timestampDiff = currentTimestamp - oldTimestamp;
-  // console.log(timestampDiff);
-  if (timestampDiff < 60) { // in recent 1 min 
-    return "刚刚";
-  }
-  if (timestampDiff < 60 * 60) { // in recent 1 hr
-    return Math.floor(timestampDiff / 60) + '分钟前'; }
-  //Today
-  if (oldY === currentTime.getFullYear() && oldM === (currentTime.getMonth() + 1) && oldD === currentTime.getDate()) {
-    return `${zeroize(oldH)}:${zeroize(oldi)}`; }
-  if (timestampDiff < 60 * 60 * 24 * 30) { // in recent 30 days
-    return Math.ceil(timestampDiff / 60 / 60 / 24) + '天前'; }
-  //beyond 30 days
   return `${oldY}-${zeroize(oldM)}-${zeroize(oldD)}`;
   function zeroize(num:number) { return num < 10 ? "0" + num : num; }
 }

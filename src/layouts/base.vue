@@ -1,12 +1,6 @@
 <script client:only lang="ts">
 import BackToTop from '@/components/BackToTop.vue';
-import useTheme from "@/composables/useTheme";
-import { toDark, toLight } from "@/composables/useTheme";
 import { useActive, useAllTimeStats } from '@/composables/useUmami';
-console.log('Powered by îles 🏝', 'https://iles-docs.netlify.app')
-const { store: theme } = useTheme();
-console.log(theme.value);
-if(theme.value=='dark'){toDark();}else{toLight();}
 const p = useActive();
 const q = useAllTimeStats();
 p.then((active)=>{

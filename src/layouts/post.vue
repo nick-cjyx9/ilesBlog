@@ -43,8 +43,7 @@
   <GiscusComment />
 </template>
 <style>
-@import '@/styles/github-markdown-light.css';
-@import '@/styles/github-markdown-dark.css';
+@import '@/styles/github-markdown.css';
 </style>
 <script setup lang="ts">
 const page = usePage();

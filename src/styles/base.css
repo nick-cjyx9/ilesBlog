@@ -98,37 +98,31 @@ code {
   font-family: 'Noto Serif SC','Encode Sans', serif !important;
 }
 
-.markdown-body,
-.markdown-body-dark {
+.markdown-body {
   box-sizing: border-box;
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 35px;
   @apply !bg-slate-100 dark:!bg-slate-800;
 }
 
-.markdown-body>ul,
-.markdown-body-dark>ul {
+.markdown-body>ul {
   list-style: disc !important;
 }
 
-.markdown-body>ol,
-.markdown-body-dark>ol {
+.markdown-body>ol {
   list-style: decimal !important;
 }
 
 .markdown-body > iframe,
-.markdown-body > img,
-.markdown-body-dark > img,
-.markdown-body-dark > iframe {
+.markdown-body > img {
   @apply !my-3;
 }
 
 @media (max-width: 767px) {
 
-  .markdown-body,
-  .markdown-body-dark {
+  .markdown-body {
     padding: 18px;
   }
 }
