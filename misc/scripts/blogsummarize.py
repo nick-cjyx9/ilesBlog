@@ -15,7 +15,7 @@ def get_completion(messages, model="gpt-3.5-turbo", temperature=0.3):
     return response.choices[0].message["content"]
 
 # {'file':(none|'abstract'), }
-with open('E:/dev/RinaBlog/misc/scripts/data.json', 'r', encoding='utf-8') as f:
+with open('E:/dev/blog/misc/scripts/data.json', 'r', encoding='utf-8') as f:
     try:
         data = eval(f.read())
     except:
@@ -102,7 +102,7 @@ def convert_markdown_to_text(md, options=None):
     return output
 
 
-path = 'E:/dev/RinaBlog/src/pages/post/'
+path = 'E:/dev/blog/src/pages/post/'
 files = listdir(path)
 for file in files:
     if('.mdx' not in file):
@@ -131,11 +131,11 @@ for file in files:
     else:
         print('Already Generated!')
 
-with open('E:/dev/RinaBlog/misc/scripts/data.json', 'w', encoding='utf-8') as f:
+with open('E:/dev/blog/misc/scripts/data.json', 'w', encoding='utf-8') as f:
     processed = str(data).replace("'",'"')
     f.write(processed)
     f.close()
-with open('E:\dev\RinaBlog\modules\AIabstract.ts','r',encoding='utf-8') as f:
+with open('E:\dev\\blog\modules\AIabstract.ts','r',encoding='utf-8') as f:
     origin_code = f.read()
     f.close()
 cp = list(origin_code)
@@ -144,7 +144,7 @@ foo = ''
 for i in cp:
     foo+=i
 # print(foo)
-with open('E:\dev\RinaBlog\modules\AIabstract.ts','w',encoding='utf-8') as f:
+with open('E:\dev\\blog\modules\AIabstract.ts','w',encoding='utf-8') as f:
     f.write(foo)
     f.close()
 

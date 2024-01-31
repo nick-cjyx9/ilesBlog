@@ -1,5 +1,5 @@
 <template layout="base">
-  <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl">
+  <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl" id="articontainer">
     <div class="flex justify-center flex-wrap">
       <h1 class="font-bold munderline px-3 text-3xl" role="button" title="我是标题~">{{ frontmatter.title }}</h1>
       <ul class="time-info flex space-x-4 w-full mt-5 mb-3

@@ -34,7 +34,7 @@ const nav_data = ref({
   // "哔哔":"/memos",
   "归档":"/archive/updated",
   "标签":"/tags",
-  "二次元":"/girls",
+  "二次元":"/cross",
   "友链":"/links",
   "关于":"/about"
 });
