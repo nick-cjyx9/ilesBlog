@@ -24,20 +24,28 @@
             </div>
         </div>
     </div>
-    <meting-js
-        server="netease"
-        type="playlist"
-        id="9233062244"
-        fixed="true"
-        autoplay="true"
-    >
-    </meting-js>
 </template>
 <style scoped>
 @import url("https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css");
 </style>
-
-<script client:load lang="ts">
-import "https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js";
-import "https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js";
+<script lang="ts" client:load>
+let scripts = [
+    { src: 'https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js', type:'text/javascript' },
+    { src: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js', type:'text/javascript' }
+];
+scripts.forEach(ele => {
+    let script = document.createElement('script');
+    script.setAttribute('src',ele['src']);
+    script.setAttribute('type',ele['type']);
+    document.body.appendChild(script);
+});
+window.setTimeout(() => {
+    let player = document.createElement('meting-js');
+    player.setAttribute("server","netease");
+    player.setAttribute("type","playlist");
+    player.setAttribute("id","9233062244");
+    player.setAttribute("fixed","true");
+    player.setAttribute("autoplay","true");
+    document.querySelector("#app")?.appendChild(player);
+}, 500);
 </script>
