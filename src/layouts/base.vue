@@ -1,34 +1,10 @@
-<script client:only lang="ts">
-import BackToTop from '@/components/BackToTop.vue';
-import { useActive, useAllTimeStats } from '@/composables/useUmami';
-const p = useActive();
-const q = useAllTimeStats();
-p.then((active)=>{
-  let holder = document.querySelector("#active");
-  if(holder){
-    holder.innerHTML = active;
-  }
-  console.log(active);
-});
-q.then((stats)=>{
-  let pv = document.querySelector("#pv");
-  let uv = document.querySelector("#uv");
-  if (pv&&uv) {
-    pv.innerHTML = stats['pageviews']['value'];
-    uv.innerHTML = stats['uniques']['value'];
-  }
-  console.log(stats);
-  
-})
-</script>
-
 <template>
   <BackToTop client:load/>
   <NavigationBar client:load />
-  <main class="flex justify-center flex-wrap px-4 nl:px-52 xlg:px-72 py-8 w-full h-full">
+  <main class="flex justify-center flex-wrap px-4 lg:px-32 xlg:px-52 py-8 w-full h-full">
     <slot />
   </main>
-  <TheFooter/>
+  <TheFooter client:idle/>
 </template>
 
 <style>

@@ -3,9 +3,8 @@ function formatTime(time:any){
   let currentTime = new Date();
   let currentTimestamp = currentTime.getTime() / 1000;
   let t = new Date(time);
-  let oldTimestamp = t.getTime() / 1000; let oldY = t.getFullYear();
+  let oldY = t.getFullYear();
   let oldM = t.getMonth() + 1; let oldD = t.getDate();
-  let oldH = t.getHours(); let oldi = t.getMinutes(); let olds = t.getSeconds();
   return `${oldY}-${zeroize(oldM)}-${zeroize(oldD)}`;
   function zeroize(num:number) { return num < 10 ? "0" + num : num; }
 }
@@ -23,8 +22,8 @@ const props = defineProps(['post']);
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 
         text-white w-full h-full space-y-3 nl:space-y-5">
         <div class="inline-flex w-full flex-nowrap"><h3 class="font-semibold text-3xl">{{ post.title }}</h3></div>
-        <div class="text-sm font-semibold" v-if="post.frontmatter.lastUpdated">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · {{ post.frontmatter.visitors }}次 </div>
-        <div class="text-sm font-semibold" v-else>更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · {{ post.frontmatter.visitors }}次 </div>
+        <div class="text-sm font-semibold" v-if="post.frontmatter.lastUpdated">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
+        <div class="text-sm font-semibold" v-else>更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
         <h4 class="font-medium text-base"  style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </a>
@@ -35,7 +34,7 @@ const props = defineProps(['post']);
     <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
-        <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · {{ post.frontmatter.visitors }}次 </div>
+        <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
         <h4 class="font-medium text-base" style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </div>

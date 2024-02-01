@@ -1,10 +1,7 @@
 <template>
     <div class="w-full h-96" id="container"></div>
-    <GiscusComment />
+    <GiscusComment vlient:idle/>
 </template>
-<script client:load>
-window.umami.track('404');
-</script>
 <style scoped>
 @media only screen and (max-width: 600px) {
     #container {

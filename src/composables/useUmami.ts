@@ -12,7 +12,7 @@ const headers = {
 // This token is only used for api requesting.And it's view only!
 const instance = axios.create({
     baseURL: api_base,
-    timeout: 12000,
+    timeout: 28000,
     headers: headers
 });
 
@@ -63,6 +63,6 @@ export async function usePageView(route: string) {
         return count;
     } catch (error) {
         console.error(error);
-        return '-1';
+        return -1;
     }
 }

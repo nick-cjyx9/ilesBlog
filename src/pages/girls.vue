@@ -8,13 +8,13 @@
                     <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href"
                         :data-umami-event-id="'goto umami:' + frontmatter.title" target="_blank">
                         <span class="ml-1.5 munderline 
-            border-gray-600 after:border-b-2">{{ frontmatter.visitors }}</span>
+            border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid p-6 w-full h-full">
-            <WaifuCard v-for="data in dataList" :waifu_data="data" client:only></WaifuCard>
+            <WaifuCard v-for="data in dataList" :waifu_data="data" client:load></WaifuCard>
         </div>
         <div class="w-full flex justify-center p-10 flex-col">
             <GirlsIntro />

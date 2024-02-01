@@ -7,7 +7,7 @@
         主页</a><a href="mailto:i@nickchen.top" class="inline-block munderline after:border-b-2 ">
         <i class="fa-solid fa-envelope"></i>
         邮箱</a>
-      <a href="https://github.com/nick-cjyx9" class="inline-block munderline after:border-b-2 ">
+      <a href="https://github.com/nick-cjyx9/ilesBlog" class="inline-block munderline after:border-b-2 ">
         <i class="fa-brands fa-square-github"></i>
         Github</a>
       <a href="/feed.xml" class="inline-block munderline after:border-b-2 ">
@@ -17,18 +17,18 @@
 
       <ul class="text-start opacity-80 text-sm dark:text-white w-full space-y-0.5">
         <li>
-          <i class="fa-solid fa-signal w-5 text-center"></i> <span>有 <span id="active"><i class="fa-solid fa-spinner animate-spin"></i></span>
+          <i class="fa-solid fa-signal w-5 text-center"></i> <span>有 <i class="fa-solid fa-spinner animate-spin" v-if="active===null"></i><span v-else>{{ active }}</span>
           个小伙伴在线</span>
         </li>
         <li>
-          <i class="fa-solid fa-eye w-5 text-center"></i> <span>共 <span id="pv">
-            <i class="fa-solid fa-spinner animate-spin"></i> 
-          </span> 次总浏览量</span>
+          <i class="fa-solid fa-eye w-5 text-center"></i> <span>共 
+            <i class="fa-solid fa-spinner animate-spin" v-if="pv===null"></i> 
+            <span v-else>{{ pv }}</span> 次总浏览量</span>
         </li>
         <li>
-          <i class="fa-solid fa-user w-5 text-center"></i> <span>共 <span id="uv">
-            <i class="fa-solid fa-spinner animate-spin"></i>
-          </span> 个访客到达过这里</span>
+          <i class="fa-solid fa-user w-5 text-center"></i> <span>共 
+            <i class="fa-solid fa-spinner animate-spin" v-if="uv===null"></i>
+            <span v-else>{{ uv }}</span> 个访客到达过这里</span>
         </li>
         <li>
           <i class="fa-solid fa-location-dot w-5 text-center"></i> <span>你可以到
@@ -43,3 +43,17 @@
         href="https://github.com/nick-cjyx9" target="_blank">Nick Chen</a></span>
   </footer>
 </template>
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import { useActive, useAllTimeStats } from '@/composables/useUmami';
+const uv = ref<number | null>(null);
+const pv = ref<number | null>(null);
+const active = ref<number | null>(null);
+onMounted(async()=>{
+  const p = await useActive();
+  const q = await useAllTimeStats();
+  active.value = p;
+  pv.value = q['pageviews']['value'];
+  uv.value = q['uniques']['value'];
+});
+</script>

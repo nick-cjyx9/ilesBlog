@@ -115,10 +115,7 @@ code {
   list-style: decimal !important;
 }
 
-.markdown-body > iframe,
-.markdown-body > img {
-  @apply !my-3;
-}
+
 
 @media (max-width: 767px) {
 

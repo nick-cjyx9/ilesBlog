@@ -30,7 +30,7 @@ export default definePageComponent({
             props: { sort: 'c',desc:'按创建时间' },
         }, {
             params: { page: 'visitors' },
-            props: { sort: 'v',desc:'按浏览量' },
+            props: { sort: 'v',desc:'按浏览量(TODO)' },
         }])
     },
 }
@@ -50,9 +50,7 @@ if(props.sort=='c'){
   }));
 }else if(props.sort=='u'){
   posts = ref(origin_posts.value.sort((lhs,rhs)=>{
-    return rhs.meta.lastUpdated-lhs.meta.lastUpdated;
-    // return rhs.frontmatter.lastUpdated-lhs.frontmatter.lastUpdated;
-    // TODO
+    return rhs.frontmatter.lastUpdated-lhs.frontmatter.lastUpdated;
   }));
 }else{
   posts = ref(origin_posts.value.sort((lhs,rhs)=>{

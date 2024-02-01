@@ -18,7 +18,7 @@
           <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" 
           :data-umami-event-id="'goto umami:'+frontmatter.title" target="_blank">
           <span class="ml-1.5 munderline 
-            border-gray-600 after:border-b-2">{{ frontmatter.visitors }}</span>
+            border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
           </a>
         </li>
         <li v-for="tag in frontmatter.tags"><i class="fa-solid fa-tag"></i>
@@ -27,7 +27,6 @@
         </li>
       </ul>
     </div>
-    <!-- <AIabstract v-if="frontmatter.summary" :content="frontmatter.summary" /> -->
     <article class="px-8 w-full markdown-body" id="artibody">
       <slot/>
       <hr/>
