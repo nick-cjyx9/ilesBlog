@@ -6,13 +6,13 @@
     </div>
     <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
       <li v-for="(value,key,index) in nav_data" class="navtab dark:hover:text-white">
-        <a :href='value' class="text-base font-medium" :data-umami-event="'goto '+value">{{ key }}</a>
+        <a :href='value' class="text-base font-medium">{{ key }}</a>
       </li>
     </ul>
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
         class="navtab dark:hover:text-white">
-        <a :href='value[1]' :title="key" :data-umami-event="'goto '+value[1]"><i :class="'fa-solid fa-'+value[0]"></i></a>
+        <a :href='value[1]' :title="key"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
       <li id="toLight" @click="theme='light';"
       role="button" class="navtab dark:hover:text-white">
