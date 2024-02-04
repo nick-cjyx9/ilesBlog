@@ -23,7 +23,7 @@ const props = defineProps(['post']);
         text-white w-full h-full space-y-3 nl:space-y-5">
         <div class="inline-flex w-full flex-nowrap"><h3 class="font-semibold text-3xl">{{ post.title }}</h3></div>
         <div class="text-sm font-semibold" v-if="post.frontmatter.lastUpdated">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
-        <div class="text-sm font-semibold" v-else>更新于 · {{ formatTime(post.meta.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
+        <div class="text-sm font-semibold" v-else>更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>
         <h4 class="font-medium text-base"  style="word-wrap: break-word;"> {{ post.meta.excerpt }} </h4>
       </div>
     </a>

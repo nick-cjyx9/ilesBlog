@@ -38,7 +38,7 @@
       </ul>
       <!-- fontawesome 吃相难看，早日润 iconify -->
 
-    <span class="font-serif dark:text-white w-full text-end opacity-50 pr-2 my-4">&copy; 2023 <a
+    <span class="font-serif dark:text-white w-full text-end opacity-50 pr-2 my-4">&copy; 2024 <a
         data-umami-event="goto my github profile" class="font-serif inline-block munderline after:border-b-2 "
         href="https://github.com/nick-cjyx9" target="_blank">Nick Chen</a></span>
   </footer>

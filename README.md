@@ -11,6 +11,8 @@
 - [ ] Katex
 
 ## 备忘录
+TODO:css加载顺序 图片显示
+
 新建文件 `blognew.py title filename` 
 
 IDEA: `ainew foo` ai建议下新建.mdx部分内容+从标题翻译到路由 

@@ -1,18 +1,16 @@
-// iles.config.ts
 import feed from '@islands/feed';
 import prism from '@islands/prism';
 import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
-// import AIabstract from "./modules/AIabstract";
+
 export default defineConfig({
   turbo: false,
   modules: [
     headings(),
     prism(),
     feed(),
-    // AIabstract(),
     excerpt(),
     lastUpdated(),
     // the order matters
@@ -25,7 +23,7 @@ export default defineConfig({
     }
   },
   markdown: {
-    remarkPlugins: ['remark-gfm'],
+    remarkPlugins: ['remark-gfm','remark-math'],
     rehypePlugins: ['rehype-external-links', 'rehype-katex'],
   },
   siteUrl: 'https://www.nickchen.top/',

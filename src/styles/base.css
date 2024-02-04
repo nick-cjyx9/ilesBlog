@@ -12,6 +12,7 @@ body {
   @apply dark:!bg-slate-900 bg-slate-200;
 }
 
+
 html {
   height: 100%;
   font-family: 'Noto Serif SC', serif;
@@ -96,15 +97,22 @@ code {
 
 .markdown-body {
   font-family: 'Noto Serif SC','Encode Sans', serif !important;
-}
-
-.markdown-body {
   box-sizing: border-box;
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
   padding: 35px;
   @apply !bg-slate-100 dark:!bg-slate-800;
+}
+
+.markdown-body img:hover{
+  cursor: zoom-in;
+}
+
+.markdown-body img{
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .markdown-body>ul {
@@ -118,7 +126,6 @@ code {
 
 
 @media (max-width: 767px) {
-
   .markdown-body {
     padding: 18px;
   }

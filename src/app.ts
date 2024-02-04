@@ -1,6 +1,10 @@
 import { defineApp } from "iles";
+import VueViewer from 'v-viewer'
 
 export default defineApp({
+  enhanceApp ({ app, head, router }) {
+    app.use(VueViewer)
+  },
   head() {
     return {
       htmlAttrs: { lang: 'zh-cn' },

@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    <article class="px-8 w-full markdown-body" id="artibody">
+    <article class="px-8 w-full markdown-body" id="artibody" v-viewer>
       <slot/>
       <hr/>
     </article>
@@ -43,7 +43,10 @@
 </template>
 <style>
 @import '@/styles/github-markdown.css';
+@import '@/styles/viewer.css';
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
 </style>
+
 <script setup lang="ts">
 const page = usePage();
 const { frontmatter, meta } = page;

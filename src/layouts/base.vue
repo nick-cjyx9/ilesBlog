@@ -1,3 +1,6 @@
+<style>
+@import '~/styles/base.css';
+</style>
 <template>
   <BackToTop client:load/>
   <NavigationBar client:load />
@@ -6,7 +9,3 @@
   </main>
   <TheFooter client:idle/>
 </template>
-
-<style>
-@import '~/styles/base.css';
-</style>
