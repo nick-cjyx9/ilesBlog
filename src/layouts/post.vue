@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    <article class="px-8 w-full markdown-body" id="artibody" v-viewer>
+    <article class="px-8 w-full markdown-body" id="artibody">
       <slot/>
       <hr/>
     </article>
@@ -46,7 +46,13 @@
 @import '@/styles/viewer.css';
 @import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
 </style>
-
+<script client:load lang="ts">
+import Viewer from 'viewerjs';
+const container = document.getElementById('artibody')
+if(container!==null){
+  const gallery = new Viewer(container);
+}
+</script>
 <script setup lang="ts">
 const page = usePage();
 const { frontmatter, meta } = page;
