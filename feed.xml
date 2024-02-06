@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Tue, 06 Feb 2024 12:33:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Feb 2024 14:38:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -19,15 +19,19 @@
             <link>https://www.nickchen.top/post/optimization_note</link>
             <guid>https://www.nickchen.top/post/optimization_note</guid>
             <pubDate>Tue, 06 Feb 2024 18:34:45 GMT</pubDate>
-            <description><![CDATA[最近感觉博客访问速度特别慢，故有此文。
+            <description><![CDATA[
+
+最近感觉博客访问速度特别慢，故有此文。
 ]]></description>
-            <content:encoded><![CDATA[<p>最近感觉博客访问速度特别慢，故有此文。</p>
+            <content:encoded><![CDATA[
+
+<p>最近感觉博客访问速度特别慢，故有此文。</p>
 
 <h1 id="lighthouse" class="heading"><a href="#lighthouse" class="heading-anchor" aria-label="Permalink for Lighthouse" tabindex="-1"></a>Lighthouse</h1>
 <blockquote>
 <p>Lighthouse 是一个开源的自动化工具，用于改进网络应用的质量。(一般devtool自带)</p>
 </blockquote>
-<p><img src="https://s2.loli.net/2024/02/06/27xWS6eCtYBFb1O.png" alt="image.png"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/Lighthouse.b6673d82.avif 400w, /assets/Lighthouse.ccfa8600.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/Lighthouse.750c28c7.png 400w, /assets/Lighthouse.f6557cde.png 800w"><source type="image/avif" srcset="/assets/Lighthouse.482e4ec5.avif 800w"><img srcset="/assets/Lighthouse.8b33ea07.png 800w" loading="lazy" class="img post" src="/assets/Lighthouse.8b33ea07.png" alt="image.png"></picture></p>
 <p>我们首先开启chrome无痕窗口，用Lighthouse分析一遍博客加载最慢的页面，对于本博客是<a href="/girls">/girls</a></p>
 <p>等待Lighthouse分析完毕，会给出各项分数及问题所在，我们逐条分析。</p>
 <h1 id="一、减少未使用的css" class="heading"><a href="#一、减少未使用的css" class="heading-anchor" aria-label="Permalink for 一、减少未使用的css" tabindex="-1"></a>一、减少未使用的css</h1>
@@ -40,20 +44,49 @@
 </li>
 <li>
 <p>谷歌字体
-参考了 <a href="https://ouuan.moe/post/2023/01/glyph-segregator,%E8%BF%98%E5%9C%A8%E5%86%99" rel="nofollow">https://ouuan.moe/post/2023/01/glyph-segregator,还在写</a></p>
+参考了 <a href="https://ouuan.moe/post/2023/01/glyph-segregator" rel="nofollow">https://ouuan.moe/post/2023/01/glyph-segregator</a> ,还在写</p>
 </li>
 </ol>
 <h1 id="二、请避免出现大幅度的布局偏移" class="heading"><a href="#二、请避免出现大幅度的布局偏移" class="heading-anchor" aria-label="Permalink for 二、请避免出现大幅度的布局偏移" tabindex="-1"></a>二、请避免出现大幅度的布局偏移</h1>
-<p>这个是因为没有为avatar设置大小，导致加载前后布局偏移过大，把大小写死在css里即可,其余的因为giscus的懒加载无法避免</p>]]></content:encoded>
+<p>这个是因为没有为avatar设置大小，导致加载前后布局偏移过大，把大小写死在css里即可,其余的因为giscus的懒加载无法避免</p>
+<h1 id="三、采用新一代格式提供图片" class="heading"><a href="#三、采用新一代格式提供图片" class="heading-anchor" aria-label="Permalink for 三、采用新一代格式提供图片" tabindex="-1"></a>三、采用新一代格式提供图片</h1>
+<blockquote>
+<p>WebP 和 AVIF 等图片格式的压缩效果通常优于 PNG 或 JPEG，因而下载速度更快，消耗的数据流量更少。</p>
+</blockquote>
+<p>优化思路为在服务器端预处理图片为.avif格式，并且实现一个懒加载优化速度。
+使用插件<a href="https://github.com/ElMassimo/iles/tree/main/packages/images" rel="nofollow">vite-plugin-image-presets</a>，可以解决这两个需求，不过不是iles不能直接用</p>
+<h1 id="总结" class="heading"><a href="#总结" class="heading-anchor" aria-label="Permalink for 总结" tabindex="-1"></a>总结</h1>
+<p>这样子一番下来，挂梯后（忽略cloudflare page服务器影响）各项指标均已十分优秀。</p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/rank.1773234a.avif 400w, /assets/rank.f4fdb98d.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/rank.b6102717.png 400w, /assets/rank.6d2237bc.png 800w"><source type="image/avif" srcset="/assets/rank.d3b553ee.avif 800w"><img srcset="/assets/rank.2c871120.png 800w" loading="lazy" class="img post" src="/assets/rank.2c871120.png" alt="image.png"></picture></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CESO学习笔记]]></title>
             <link>https://www.nickchen.top/post/ceso_note</link>
             <guid>https://www.nickchen.top/post/ceso_note</guid>
             <pubDate>Wed, 31 Jan 2024 15:17:56 GMT</pubDate>
-            <description><![CDATA[2.5就要测试的啥b在1月的最后几天开始学地质学
+            <description><![CDATA[
+
+
+
+
+
+
+
+
+
+2.5就要测试的啥b在1月的最后几天开始学地质学
 ]]></description>
-            <content:encoded><![CDATA[<p>2.5就要测试的啥b在1月的最后几天开始学地质学</p>
+            <content:encoded><![CDATA[
+
+
+
+
+
+
+
+
+
+<p>2.5就要测试的啥b在1月的最后几天开始学地质学</p>
 
 <h1 id="常识（《地理学与生活》这本书翻译很答辩）" class="heading"><a href="#常识（《地理学与生活》这本书翻译很答辩）" class="heading-anchor" aria-label="Permalink for 常识（《地理学与生活》这本书翻译很答辩）" tabindex="-1"></a>常识（《地理学与生活》<strong>这本书翻译很答辩</strong>）</h1>
 <h2 id="地图" class="heading"><a href="#地图" class="heading-anchor" aria-label="Permalink for 地图" tabindex="-1"></a>地图</h2>
@@ -61,7 +94,7 @@
 <li>等积投影：表示正确面积关系的地图总是使区域的形状失真。</li>
 <li>一张地图不可能既是等积的又是正形的。</li>
 </ul>
-<p><img src="/post/ceso_note/map.png" alt="map"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/map.d1ff14f1.avif 400w, /assets/map.184fa33c.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/map.8cb743b9.jpeg 400w, /assets/map.d077dfa8.jpeg 800w"><source type="image/avif" srcset="/assets/map.81de2d69.avif 800w"><img srcset="/assets/map.325934e9.jpeg 800w" loading="lazy" class="img post" src="/assets/map.325934e9.jpeg" alt="map"></picture></p>
 <ul>
 <li>此图使用鲁滨逊投影，是为了以视觉上满意的方式表现世界而设计的，既不是等积的也不是正形的。</li>
 </ul>
@@ -128,7 +161,7 @@
 <li>硬度</li>
 <li>解理：矿物受外力打击时能够沿着一定结晶方向分裂成平面（解理面）的能力。解理面的方向总是沿着面网之间联结力最弱的方向发生</li>
 </ol>
-<p><img src="/post/ceso_note/cleavage.png" alt="解理"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cleavage.a0717ce7.avif 400w, /assets/cleavage.55982a56.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cleavage.8bbb8af4.png 400w, /assets/cleavage.3299242a.png 800w"><source type="image/avif" srcset="/assets/cleavage.15459813.avif 800w"><img srcset="/assets/cleavage.1d4bc8ec.png 800w" loading="lazy" class="img post" src="/assets/cleavage.1d4bc8ec.png" alt="解理"></picture></p>
 <ol>
 <li>断口：矿物受外力打击后不延固定的结晶方向开裂而形成的断裂面，方向无规律</li>
 <li>密度</li>
@@ -152,10 +185,10 @@
 <h4 id="火山喷发物：" class="heading"><a href="#火山喷发物：" class="heading-anchor" aria-label="Permalink for 火山喷发物：" tabindex="-1"></a>火山喷发物：</h4>
 <p>a. 液体喷发物：岩浆</p>
 <p>基性岩浆黏度小，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>i</mi><msub><mi>O</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">SiO_{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">i</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>含量低，快速冷凝收缩，形成柱状节理，绳状构造，麻花构造</p>
-<p><img src="https://pic4.zhimg.com/80/v2-eb5a3ba83fffc955939ed675aa63a47b_720w.webp" alt="柱状节理"></p>
-<p><img src="https://s2.loli.net/2024/02/04/BYgaod8QE2Hic9A.png" alt="绳状构造"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/zhuzhuangjieli.baad9e00.avif 400w, /assets/zhuzhuangjieli.30f5998e.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/zhuzhuangjieli.3a1ff325.webp 400w, /assets/zhuzhuangjieli.d25e2b2b.webp 800w"><source type="image/avif" srcset="/assets/zhuzhuangjieli.dac48e8c.avif 800w"><img srcset="/assets/zhuzhuangjieli.0f1096cc.webp 800w" loading="lazy" class="img post" src="/assets/zhuzhuangjieli.0f1096cc.webp" alt="柱状节理"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/string.e248d37b.avif 400w, /assets/string.5868c89c.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/string.2266454e.png 400w, /assets/string.764558d1.png 800w"><source type="image/avif" srcset="/assets/string.d5dee510.avif 800w"><img srcset="/assets/string.b909731f.png 800w" loading="lazy" class="img post" src="/assets/string.b909731f.png" alt="绳状构造"></picture></p>
 <p>火山多次喷发火山碎屑岩和熔岩互层产生复式火山锥</p>
-<p><img src="https://s2.loli.net/2024/02/04/dTKen6fyjFLPECI.png" alt="火山双锥"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/doublevolcano.fb5e1d59.avif 400w, /assets/doublevolcano.85bf0141.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/doublevolcano.9b66d442.png 400w, /assets/doublevolcano.5031d05b.png 800w"><source type="image/avif" srcset="/assets/doublevolcano.fb277bf1.avif 800w"><img srcset="/assets/doublevolcano.a1547695.png 800w" loading="lazy" class="img post" src="/assets/doublevolcano.a1547695.png" alt="火山双锥"></picture></p>
 <p>两层火山熔岩间的一层沉积岩夹层象征一次火山间歇期</p>
 <p>b. 固体：按颗粒大小分</p>
 <ul>
@@ -185,13 +218,13 @@
 </ol>
 <h5 id="超基性岩熔岩代表：科马提岩" class="heading"><a href="#超基性岩熔岩代表：科马提岩" class="heading-anchor" aria-label="Permalink for 超基性岩熔岩代表：科马提岩" tabindex="-1"></a>超基性岩熔岩代表：科马提岩</h5>
 <p>橄榄石晶体发育被辉石微晶集合体充填的裂缝，形成典型的<strong>鬣刺结构</strong>
-<img src="https://s2.loli.net/2024/02/04/91h5RUPeGm6SYHI.png" alt="科马提岩"></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/komatie.3e2a9f53.avif 400w, /assets/komatie.ed50670a.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/komatie.7d9503b3.png 400w, /assets/komatie.a07d6b2b.png 800w"><source type="image/avif" srcset="/assets/komatie.a0755bdc.avif 800w"><img srcset="/assets/komatie.7c2d65eb.png 800w" loading="lazy" class="img post" src="/assets/komatie.7c2d65eb.png" alt="科马提岩"></picture></p>
 <h5 id="基性熔岩代表：玄武岩" class="heading"><a href="#基性熔岩代表：玄武岩" class="heading-anchor" aria-label="Permalink for 基性熔岩代表：玄武岩" tabindex="-1"></a>基性熔岩代表：玄武岩</h5>
 <p>陆地喷发有柱状节理，海底喷发的枕状构造(地面平的，顶上凸的)
-<img src="https://s2.loli.net/2024/02/04/gmxNyidLsoAcjnU.png" alt="枕状熔岩"></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/pillow.ec1baf0e.avif 400w, /assets/pillow.545a794a.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/pillow.86c672b4.png 400w, /assets/pillow.11a02f66.png 800w"><source type="image/avif" srcset="/assets/pillow.16e7cb6f.avif 800w"><img srcset="/assets/pillow.fa15bde8.png 800w" loading="lazy" class="img post" src="/assets/pillow.fa15bde8.png" alt="枕状熔岩"></picture></p>
 <h5 id="中性熔岩代表：安山岩" class="heading"><a href="#中性熔岩代表：安山岩" class="heading-anchor" aria-label="Permalink for 中性熔岩代表：安山岩" tabindex="-1"></a>中性熔岩代表：安山岩</h5>
 <p>黏性大，发育气孔构造。气孔被矿物充填称杏仁体
-<img src="https://s2.loli.net/2024/02/06/nflAUJH2djq7tkr.png" alt="石英杏仁体"></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/wd40.56f66003.avif 400w, /assets/wd40.5ffdc699.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/wd40.dc731520.png 400w, /assets/wd40.279349d2.png 800w"><source type="image/avif" srcset="/assets/wd40.9461cc53.avif 800w"><img srcset="/assets/wd40.40edc5d8.png 800w" loading="lazy" class="img post" src="/assets/wd40.40edc5d8.png" alt="石英杏仁体"></picture></p>
 <h5 id="酸性岩浆代表：流纹岩" class="heading"><a href="#酸性岩浆代表：流纹岩" class="heading-anchor" aria-label="Permalink for 酸性岩浆代表：流纹岩" tabindex="-1"></a>酸性岩浆代表：流纹岩</h5>
 <p>黏度最大，爆发性，易形成火山锥</p>
 <h4 id="ii-侵入作用与侵入岩" class="heading"><a href="#ii-侵入作用与侵入岩" class="heading-anchor" aria-label="Permalink for II. 侵入作用与侵入岩" tabindex="-1"></a>II. 侵入作用与侵入岩</h4>
@@ -204,7 +237,7 @@
 <li>3~10km 中深成侵入体</li>
 <li>&#x3C;3km 浅成侵入体</li>
 </ol>
-<p><img src="https://s2.loli.net/2024/02/05/18fUJKQhvZsPkx9.png" alt="多样性"></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cheet.fc33c196.avif 400w, /assets/cheet.fbb2212d.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cheet.990036e7.png 400w, /assets/cheet.5632cee7.png 800w"><source type="image/avif" srcset="/assets/cheet.4ade499e.avif 800w"><img srcset="/assets/cheet.cb17eeae.png 800w" loading="lazy" class="img post" src="/assets/cheet.cb17eeae.png" alt="多样性"></picture></p>
 <h5 id="火成岩多样性（基性岩性）原因：" class="heading"><a href="#火成岩多样性（基性岩性）原因：" class="heading-anchor" aria-label="Permalink for 火成岩多样性（基性|岩性）原因：" tabindex="-1"></a>火成岩多样性（基性|岩性）原因：</h5>
 <p>i. 在岩浆通道周围发生</p>
 <ul>
@@ -219,7 +252,7 @@
 <ul>
 <li>熔点高，密度大的矿物先结晶</li>
 <li>导致岩浆成分不断改变，出现垂直分带</li>
-<li><img src="https://s2.loli.net/2024/02/05/mEjnMySJrb5lXPY.png" alt="垂直分带·鲍温反应系列"></li>
+<li><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/bowen.f504753d.avif 400w, /assets/bowen.be021bda.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/bowen.452a4682.png 400w, /assets/bowen.f48cfd39.png 800w"><source type="image/avif" srcset="/assets/bowen.ef415f46.avif 800w"><img srcset="/assets/bowen.18ad2661.png 800w" loading="lazy" class="img post" src="/assets/bowen.18ad2661.png" alt="垂直分带·鲍温反应系列"></picture></li>
 <li>连续系列：浅色 不连续：暗色</li>
 </ul>
 <h4 id="iii-火成岩的结构与构造" class="heading"><a href="#iii-火成岩的结构与构造" class="heading-anchor" aria-label="Permalink for III. 火成岩的结构与构造" tabindex="-1"></a>III. 火成岩的结构与构造</h4>
