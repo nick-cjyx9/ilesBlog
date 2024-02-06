@@ -24,6 +24,7 @@
     "@islands/excerpt": "^0.9.0",
     "@islands/feed": "^0.8.1",
     "@islands/headings": "^0.8.2",
+    "@islands/images": "^0.8.2",
     "@islands/prism": "^0.8.0",
     "@types/cross-spawn": "^6.0.3",
     "@vueuse/core": "^10.4.1",

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 function formatTime(time:any){
   let currentTime = new Date();
-  let currentTimestamp = currentTime.getTime() / 1000;
   let t = new Date(time);
   let oldY = t.getFullYear();
   let oldM = t.getMonth() + 1; let oldD = t.getDate();

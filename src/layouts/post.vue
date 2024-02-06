@@ -27,8 +27,9 @@
     </div>
     <article class="px-8 w-full markdown-body h-fit" id="articleBody">
       <slot/>
+      <hr/>
     </article>
-    <hr/>
+    
     <br/>
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed" client:idle/>

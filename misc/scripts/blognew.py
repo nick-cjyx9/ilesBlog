@@ -31,3 +31,5 @@ title = sys.argv[1]
 filename = sys.argv[2]
 # 调用函数创建MDX文件
 create_mdx_file(filename,title)
+path = os.path.join('E:/dev/blog/src/images/', filename)
+os.makedirs(path, exist_ok=True)
