@@ -3,8 +3,8 @@ title: 我的老婆们！
 date: 2023-07-19
 </page>
 <template layout="post">
-<div v-if="dataList.length==0">Loading... <br><p class="inline" v-if="errLog!==null">{{ errLog }} <a onclick="location.reload();" href="javascript:void(0)">重试</a></p></div>
-<div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid w-full h-full" v-else>
+<!-- <div v-if="dataList.length==0">Loading... <br><p class="inline" v-if="errLog!==null">{{ errLog }} <a onclick="location.reload();" href="javascript:void(0)">重试</a></p></div> -->
+<div class="lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid w-full h-full">
     <WaifuCard v-for="data in dataList" :waifu_data="data" client:visible></WaifuCard>
 </div>
 <hr/>
