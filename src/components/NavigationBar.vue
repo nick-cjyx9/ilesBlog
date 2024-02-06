@@ -12,15 +12,15 @@
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
         class="navtab dark:hover:text-white">
-        <a :href='value[1]' :title="key" class="w-full h-full"><i :class="'fa-solid fa-'+value[0]"></i></a>
+        <a :href='value[1]' :title="key" class="w-full h-full"><i :class="'fa-'+value[0]"></i></a>
       </li>
       <li id="toLight" @click="theme='light';"
       role="button" class="navtab dark:hover:text-white">
-        <i class="fa-solid fa-sun"></i>
+        <i class="fa-sun"></i>
       </li>
       <li id="toDark" @click="theme='dark';"
       role="button" class="navtab dark:hover:text-white">
-        <i class="fa-solid fa-moon"></i>
+        <i class="fa-moon"></i>
       </li>
     </ul>
   </nav>
@@ -39,8 +39,8 @@ const nav_data = ref({
   "关于":"/about"
 });
 const icon_data = ref({
-  "搜索":["magnifying-glass","/search"],
-  "订阅RSS":["square-rss","/feed.xml"],
+  "搜索":["search","/search"],
+  "订阅RSS":["rss-squared","/feed.xml"],
   // "title":["fa-icon","link"]
 })
 </script>

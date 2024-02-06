@@ -115,7 +115,7 @@ html.light .markdown-body{
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 24px;
   @apply !bg-slate-100 dark:!bg-slate-800;
 }
 
@@ -155,12 +155,12 @@ html.light .markdown-body{
   vertical-align: text-bottom;
 }
 
-.markdown-body h1:hover .anchor .octicon-link:before,
-.markdown-body h2:hover .anchor .octicon-link:before,
-.markdown-body h3:hover .anchor .octicon-link:before,
-.markdown-body h4:hover .anchor .octicon-link:before,
-.markdown-body h5:hover .anchor .octicon-link:before,
-.markdown-body h6:hover .anchor .octicon-link:before {
+.markdown-body h1:hover .heading-anchor:before,
+.markdown-body h2:hover .heading-anchor:before,
+.markdown-body h3:hover .heading-anchor:before,
+.markdown-body h4:hover .heading-anchor:before,
+.markdown-body h5:hover .heading-anchor:before,
+.markdown-body h6:hover .heading-anchor:before {
   width: 16px;
   height: 16px;
   content: ' ';
@@ -539,14 +539,15 @@ html.light .markdown-body{
   color: var(--color-danger-fg);
 }
 
-.markdown-body .anchor {
+.markdown-body .heading-anchor {
   float: left;
-  padding-right: 4px;
-  margin-left: -20px;
+  margin-left: -25px;
+  padding-left: 8px;
+  padding-top: 2px;
   line-height: 1;
 }
 
-.markdown-body .anchor:focus {
+.markdown-body .heading-anchor:focus {
   outline: none;
 }
 
@@ -570,32 +571,25 @@ html.light .markdown-body{
   margin-bottom: 0;
 }
 
-.markdown-body h1 .octicon-link,
-.markdown-body h2 .octicon-link,
-.markdown-body h3 .octicon-link,
-.markdown-body h4 .octicon-link,
-.markdown-body h5 .octicon-link,
-.markdown-body h6 .octicon-link {
+.markdown-body h1 .heading-anchor,
+.markdown-body h2 .heading-anchor,
+.markdown-body h3 .heading-anchor,
+.markdown-body h4 .heading-anchor,
+.markdown-body h5 .heading-anchor,
+.markdown-body h6 .heading-anchor {
+
   color: var(--color-fg-default);
   vertical-align: middle;
   visibility: hidden;
 }
 
-.markdown-body h1:hover .anchor,
-.markdown-body h2:hover .anchor,
-.markdown-body h3:hover .anchor,
-.markdown-body h4:hover .anchor,
-.markdown-body h5:hover .anchor,
-.markdown-body h6:hover .anchor {
+.markdown-body h1:hover .heading-anchor,
+.markdown-body h2:hover .heading-anchor,
+.markdown-body h3:hover .heading-anchor,
+.markdown-body h4:hover .heading-anchor,
+.markdown-body h5:hover .heading-anchor,
+.markdown-body h6:hover .heading-anchor {
   text-decoration: none;
-}
-
-.markdown-body h1:hover .anchor .octicon-link,
-.markdown-body h2:hover .anchor .octicon-link,
-.markdown-body h3:hover .anchor .octicon-link,
-.markdown-body h4:hover .anchor .octicon-link,
-.markdown-body h5:hover .anchor .octicon-link,
-.markdown-body h6:hover .anchor .octicon-link {
   visibility: visible;
 }
 
@@ -624,12 +618,12 @@ html.light .markdown-body{
   display: inline-block;
 }
 
-.markdown-body summary h1 .anchor,
-.markdown-body summary h2 .anchor,
-.markdown-body summary h3 .anchor,
-.markdown-body summary h4 .anchor,
-.markdown-body summary h5 .anchor,
-.markdown-body summary h6 .anchor {
+.markdown-body summary h1 .heading-anchor,
+.markdown-body summary h2 .heading-anchor,
+.markdown-body summary h3 .heading-anchor,
+.markdown-body summary h4 .heading-anchor,
+.markdown-body summary h5 .heading-anchor,
+.markdown-body summary h6 .heading-anchor {
   margin-left: -40px;
 }
 

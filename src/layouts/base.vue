@@ -1,5 +1,6 @@
 <style>
 @import '~/styles/base.css';
+@import '~/styles/fontello.css';
 </style>
 <template>
   <BackToTop client:idle/>

@@ -1,25 +1,25 @@
 <template layout="base">
   <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl h-auto">
     <div class="flex justify-center flex-wrap">
-      <h1 class="font-bold munderline px-3 text-3xl" title="我是标题~">{{ frontmatter.title }}</h1>
+      <h1 class="px-3 text-4xl">{{ frontmatter.title }}</h1>
       
       <ul class="time-info flex space-x-4 w-full mt-5 mb-3
        text-gray-600 flex-wrap px-8 justify-center dark:text-gray-300"
         style="font-size: 14.3px;">
-        <li v-if="$frontmatter.lastUpdated"><i class="fa-solid fa-clock-rotate-left"></i>
-          <span class="ml-1.5">{{ formatDate(frontmatter.lastUpdated) }}</span>
+        <li v-if="$frontmatter.lastUpdated"><i class="fa-back-in-time"></i>
+          <span class="ml-1">{{ formatDate(frontmatter.lastUpdated) }}</span>
         </li>
-        <li><i class="fa-solid fa-clock"></i>
-          <span class="ml-1.5">{{ formatDate(frontmatter.date) }}</span>
+        <li><i class="fa-clock"></i>
+          <span class="ml-1">{{ formatDate(frontmatter.date) }}</span>
         </li>
-        <li><i class="fa-solid fa-eye"></i>
+        <li><i class="fa-eye"></i>
           <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" target="_blank">
-          <span class="ml-1.5 munderline 
+          <span class="ml-1  
             border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
           </a>
         </li>
-        <li v-for="tag in frontmatter.tags"><i class="fa-solid fa-tag"></i>
-          <a :href="'../tag/'+tag"><span class="ml-1.5 munderline 
+        <li v-for="tag in frontmatter.tags"><i class="fa-tag"></i>
+          <a :href="'../tag/'+tag"><span class="ml-1 munderline 
             border-gray-600 after:border-b-2" :title="'跳转到标签：' + tag">{{ tag }}</span></a>
         </li>
       </ul>
@@ -28,6 +28,8 @@
     <article class="px-8 w-full markdown-body h-fit" id="articleBody">
       <slot/>
     </article>
+    <hr/>
+    <br/>
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed" client:idle/>
     </div>
