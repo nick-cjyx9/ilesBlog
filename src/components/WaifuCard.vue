@@ -8,9 +8,9 @@
 <template>
     <div class="flex flex-col flex-wrap space-y-1 h-full p-4">
         <div role="button" class="avatar w-full flex justify-center mb-1 mt-2">
-            <img :src="waifu_data['characterAvatar']" class="w-20 rounded-full shadow p-1 hover:shadow-md">
+            <img :src="waifu_data['characterAvatar']" class="w-20 rounded-full shadow p-1 hover:shadow-md" :alt="waifu_data['characterName']">
         </div>
-        <div class="w-full text-center text-2xl font-medium"><a :href="link" target="_blank" :data-umami-event="'goto bgm:'+waifu_data['characterName']">{{ waifu_data['characterName'] }}</a></div>
+        <div class="w-full text-center text-2xl font-medium"><a :href="link" target="_blank">{{ waifu_data['characterName'] }}</a></div>
         <div class="w-full text-center leading-5 font-thin" style="font-size: 16px;"><span>{{ waifu_data['characterSummary'].slice(0,45) }}
         <span v-if="empty">没有介绍哦~</span>
         <span v-if="ml">...</span></span>

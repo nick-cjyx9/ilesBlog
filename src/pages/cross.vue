@@ -6,7 +6,7 @@
         <div class="flex w-full">
             <img src="/rana.png" alt="意义不明的猫猫" class="hidden sm:!block sm:w-1/3">
             <div class="flex h-full w-full p-6 flex-col space-y-3">
-                <span class="sm:text-xl font-bold w-full">⭐ Ciallo~ 你来到了分叉(Mygo)路口，<br/>🎵 你可以在这儿听听歌<br/>🤩 这里有：</span>
+                <span class="sm:text-xl font-bold w-full">⭐ Ciallo~ 你来到了分叉(Mygo)路口，<br/>🤩 这里有：</span>
                 <ul class="list-none flex w-full h-full flex-col space-y-3">
                     <a target="_blank" href="/girls" class="h-1/3 w-full rounded-md border-2 border-slate-300 p-3"><li class="w-full h-full">
                         <span class="sm:text-xl font-medium">🤤 Nick喜欢的二次元角色</span><br/>

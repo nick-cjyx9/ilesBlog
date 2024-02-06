@@ -1,6 +1,11 @@
 <page>
   path: /feed.xml
 </page>
+
+<template>
+  <RenderFeed format="rss" v-bind="{ options, items }"/>
+</template>
+
 <script setup lang="ts">
 import type { FeedOptions, FeedItem } from '@islands/feed'
 import { usePosts } from '@/composables/usePosts';
@@ -33,6 +38,3 @@ const items = $computed(() => posts.map(async (doc) => {
 }))
 </script>
 
-<template>
-  <RenderFeed format="rss" v-bind="{ options, items }"/>
-</template>

@@ -1,28 +1,10 @@
 # RinaBlog
-
-## TODO Board
-- [x] umami在线人数
-- [ ] TOC
-- [-] prism.js copy btn
-- [ ] Podcast and monument page
-- [x] umami track events
-- [ ] front link add to title
-- [x] AI summary
-- [ ] Katex
-
-## 备忘录
-TODO:css加载顺序 图片显示
-
-新建文件 `blognew.py title filename` 
-
-IDEA: `ainew foo` ai建议下新建.mdx部分内容+从标题翻译到路由 
-
-更新老婆页面 `blogbgmupd.py` 
-
-更新ai摘要 `blogsummarize.py` 
-
-cover用本地cdn存，不然首页加载慢 
-
+## perf:
+1. 以压缩的.webp提供图片
+2. 废除fontawesome
+3. 懒加载图片
+4. 异步处理外链资源
+5. 
 
 [îles]: https://github.com/ElMassimo/iles
 [configuration reference]: https://iles-docs.netlify.app/config

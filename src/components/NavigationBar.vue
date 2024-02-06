@@ -12,7 +12,7 @@
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
         class="navtab dark:hover:text-white">
-        <a :href='value[1]' :title="key"><i :class="'fa-solid fa-'+value[0]"></i></a>
+        <a :href='value[1]' :title="key" class="w-full h-full"><i :class="'fa-solid fa-'+value[0]"></i></a>
       </li>
       <li id="toLight" @click="theme='light';"
       role="button" class="navtab dark:hover:text-white">

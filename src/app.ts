@@ -7,7 +7,7 @@ export default defineApp({
       meta: [
         {
           name: "viewport",
-          content: "width=device-width,initial-scale=1,maximum-scale=1",
+          content: "width=device-width",
         }
       ],
       script: [
@@ -19,6 +19,15 @@ export default defineApp({
         }
       ],
       link: [
+        {
+          rel: "preload",
+          as: "style",
+          href: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Source+Code+Pro&display=swap",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Source+Code+Pro&display=swap",
+        },
         {
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
