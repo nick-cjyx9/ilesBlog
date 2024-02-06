@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Tue, 06 Feb 2024 10:23:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Feb 2024 12:33:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,6 +14,38 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[记一次博客性能优化]]></title>
+            <link>https://www.nickchen.top/post/optimization_note</link>
+            <guid>https://www.nickchen.top/post/optimization_note</guid>
+            <pubDate>Tue, 06 Feb 2024 18:34:45 GMT</pubDate>
+            <description><![CDATA[最近感觉博客访问速度特别慢，故有此文。
+]]></description>
+            <content:encoded><![CDATA[<p>最近感觉博客访问速度特别慢，故有此文。</p>
+
+<h1 id="lighthouse" class="heading"><a href="#lighthouse" class="heading-anchor" aria-label="Permalink for Lighthouse" tabindex="-1"></a>Lighthouse</h1>
+<blockquote>
+<p>Lighthouse 是一个开源的自动化工具，用于改进网络应用的质量。(一般devtool自带)</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/02/06/27xWS6eCtYBFb1O.png" alt="image.png"></p>
+<p>我们首先开启chrome无痕窗口，用Lighthouse分析一遍博客加载最慢的页面，对于本博客是<a href="/girls">/girls</a></p>
+<p>等待Lighthouse分析完毕，会给出各项分数及问题所在，我们逐条分析。</p>
+<h1 id="一、减少未使用的css" class="heading"><a href="#一、减少未使用的css" class="heading-anchor" aria-label="Permalink for 一、减少未使用的css" tabindex="-1"></a>一、减少未使用的css</h1>
+<p>工具给出了它认为的可以缩减的css，分别是font awesome的字体和Google Fonts的字体。</p>
+<ol>
+<li>
+<p>很明显，我们没有用到所有的font awesome图标却加载了包含所有图标的字体。于是我选择了<a href="https://fontello.com/" rel="nofollow">fontello</a>来制作图标子集。
+在fontello中挑选好图标后，引入导出包中的<code>/css/fontello.css</code>，稍作修改即可。
+由于打包后字体较小，没有必要使用cdn。如果使用cdn，会遭遇跨域问题，此时可引入<code>*-embedded.css</code></p>
+</li>
+<li>
+<p>谷歌字体
+参考了 <a href="https://ouuan.moe/post/2023/01/glyph-segregator,%E8%BF%98%E5%9C%A8%E5%86%99" rel="nofollow">https://ouuan.moe/post/2023/01/glyph-segregator,还在写</a></p>
+</li>
+</ol>
+<h1 id="二、请避免出现大幅度的布局偏移" class="heading"><a href="#二、请避免出现大幅度的布局偏移" class="heading-anchor" aria-label="Permalink for 二、请避免出现大幅度的布局偏移" tabindex="-1"></a>二、请避免出现大幅度的布局偏移</h1>
+<p>这个是因为没有为avatar设置大小，导致加载前后布局偏移过大，把大小写死在css里即可,其余的因为giscus的懒加载无法避免</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CESO学习笔记]]></title>
             <link>https://www.nickchen.top/post/ceso_note</link>
