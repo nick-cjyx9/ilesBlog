@@ -1,10 +1,14 @@
 # RinaBlog
 ## perf:
-1. 以压缩的.webp提供图片
-2. 废除fontawesome
-3. 懒加载图片
-4. 异步处理外链资源
-5. 
+<!-- 1. 以压缩的.webp提供图片 -->
+<!-- 2. 废除fontawesome -->
+<!-- 3. 懒加载图片 -->
+<!-- 4. 异步处理外链资源 -->
+5. 目录
+6. robot.txt
+7. webfont
+<!-- 8. navbar错位 -->
+<!-- 9. 暗色模式优先加载 -->
 
 [îles]: https://github.com/ElMassimo/iles
 [configuration reference]: https://iles-docs.netlify.app/config

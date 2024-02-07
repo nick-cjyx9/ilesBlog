@@ -124,7 +124,7 @@ html.light .markdown-body{
 }
 
 .markdown-body img {
-  width: 66%;
+  max-width: 66%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -240,7 +240,6 @@ html.light .markdown-body{
 
 .markdown-body img {
   border-style: none;
-  max-width: 100%;
   box-sizing: content-box;
   background-color: var(--color-canvas-default);
 }

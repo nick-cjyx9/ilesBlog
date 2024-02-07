@@ -29,7 +29,7 @@ const props = defineProps(['post']);
   <div v-else class="w-full munderline mb-8
     after:border-black dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full">
-    <div class="bg-slate-100 dark:bg-slate-800 dark:text-white w-full px-6 nl:px-10 shadow hover:shadow-xl">
+    <div class="card w-full px-6 nl:px-10 shadow hover:shadow-xl">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>

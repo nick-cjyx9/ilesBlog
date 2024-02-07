@@ -2,31 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+html.light {
+  --text-important: #000000;
+  --text-normal: #1f2328;
+  --text-minor: #64778b;
+  --text-hint: #60a5fa;
+  --bg-front: #f1f5f9;
+  --bg-back: #e2e8f0;
+  --hover-back: #eceef2;
+}
+
+html.dark {
+  --text-important: #ffffff;
+  --text-normal: #e6edf3;
+  --text-minor: #eeffff;
+  --text-hint: #fff;
+  --bg-front: #1e293b;
+  --bg-back: #0f172a;
+  --hover-back: #64748b;
+}
+
 #app,
 html,
 body {
   width: 100%;
   padding: 0;
   margin: 0;
-  @apply dark:!bg-slate-900 bg-slate-200;
+  background-color: var(--bg-back);
 }
 
-
 html {
-  height: 100%;
   font-family: 'Noto Serif SC' !important;
 }
 
-nav {
-  @apply bg-slate-100 dark:bg-slate-800;
+.text-minor {
+  color: var(--text-minor);
+}
+
+.text-important {
+  color: var(--text-important);
+}
+
+nav,
+footer.footer {
+  color: var(--text-normal);
+  background-color: var(--bg-front);
 }
 
 .card {
-  @apply container bg-slate-100 flex shadow-lg flex-wrap w-full dark:bg-slate-800 dark:text-white;
+  color: var(--text-normal);
+  background-color: var(--bg-front);
+  display: flex;
+  width: 100%;
+  @apply container shadow-lg flex-wrap;
 }
 
 .navtab {
-  @apply hover:text-blue-400 rounded-lg p-3 text-black dark:text-white hover:bg-indigo-100 dark:hover:bg-slate-500 flex items-center;
+  color: var(--text-normal);
+  @apply rounded-lg p-3 flex items-center;
+}
+
+.navtab:hover {
+  background-color: var(--hover-back);
+  color: var(--text-hint);
+}
+
+.hint:hover {
+  color: var(--text-hint);
 }
 
 .cover {
@@ -84,4 +126,21 @@ nav {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+}
+
+.toTop {
+  background-color: var(--bg-front);
+  color: var(--text-important);
+}
+
+.headTitle::before {
+  background-color: var(--text-normal);
+}
+
+.heimu {
+  color: var(--text-important);
+  background-color: var(--text-important);
+}
+.heimu:hover {
+  background-color: var(--bg-front);
 }

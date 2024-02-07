@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     ArticleFooter: typeof import('./src/components/ArticleFooter.vue')['default']
     BackToTop: typeof import('./src/components/BackToTop.vue')['default']
     BaseLayout: typeof import('./src/layouts/base.vue')['default']
+    DarkModeSwitcher: typeof import('./src/components/darkModeSwitcher.vue')['default']
     GiscusComment: typeof import('./src/components/GiscusComment.vue')['default']
     GiscusCommentInner: typeof import('./src/components/GiscusCommentInner.vue')['default']
     HeadTitle: typeof import('./src/components/HeadTitle.vue')['default']

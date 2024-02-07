@@ -1,34 +1,25 @@
 <template>
   <nav class="flex space-x-3 shadow flex-wrap justify-center 
-  whitespace-nowrap lg:px-24 sm:px-5 sm:flex-nowrap dark:text-white">
+  whitespace-nowrap lg:px-24 sm:px-5 sm:flex-nowrap">
     <div class="navtab font-serif font-medium">
-      <a href='/' class="text-xl" data-umami-event="to homepage">Nick Chen's Blog</a>
+      <a href='/' class="text-xl">Nick Chen's Blog</a>
     </div>
     <ul class="flex flex-wrap flex-row w-full justify-center wp:justify-normal">
-      <li v-for="(value,key,index) in nav_data" class="navtab dark:hover:text-white">
+      <li v-for="(value,key,index) in nav_data" class="navtab">
         <a :href='value' class="text-base font-medium">{{ key }}</a>
       </li>
     </ul>
     <ul class="flex justify-center">
       <li v-for="(value,key,index) in icon_data"
-        class="navtab dark:hover:text-white">
-        <a :href='value[1]' :title="key" class="w-full h-full"><i :class="'fa-'+value[0]"></i></a>
+        class="navtab">
+        <a :href='value[1]' :title="key"><i :class="'w-full h-full fa-'+value[0]"></i></a>
       </li>
-      <li id="toLight" @click="theme='light';"
-      role="button" class="navtab dark:hover:text-white">
-        <i class="fa-sun"></i>
-      </li>
-      <li id="toDark" @click="theme='dark';"
-      role="button" class="navtab dark:hover:text-white">
-        <i class="fa-moon"></i>
-      </li>
+      <DarkModeSwitcher class="inline-flex" client:idle/>
     </ul>
   </nav>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-import useTheme from "@/composables/useTheme";
-const { store: theme } = useTheme();
 const nav_data = ref({
   "主页":"/",
   // "哔哔":"/memos",

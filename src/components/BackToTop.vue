@@ -1,6 +1,6 @@
 <template>
-    <div v-if="isShow" class="z-50 fixed right-9 bottom-9 rounded-full p-0.5 lg:p-1.5 shadow-md bg-slate-100 dark:bg-slate-800">
-    <div class="dark:text-white font-semibold p-2.5 rounded-sm bg-accent-success text-primary-lg hover:bg-accent-y cursor-pointer transition" @click="scrollTop">
+    <div v-if="isShow" class="z-50 fixed right-9 bottom-9 rounded-full p-0.5 lg:p-1.5 shadow-md toTop">
+    <div class="font-semibold p-2.5 rounded-sm bg-accent-success text-primary-lg hover:bg-accent-y cursor-pointer transition" @click="scrollTop">
         <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

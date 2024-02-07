@@ -4,9 +4,9 @@
 </style>
 <template>
   <BackToTop client:idle/>
-  <NavigationBar client:load />
+  <NavigationBar />
   <main class="flex justify-center flex-wrap px-4 lg:px-32 xlg:px-52 py-8 w-full h-full">
     <slot />
   </main>
-  <TheFooter client:idle/>
+  <TheFooter client:visible/>
 </template>

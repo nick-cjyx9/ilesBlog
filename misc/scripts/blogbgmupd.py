@@ -80,7 +80,7 @@ for i in range(0,len(origin_list)//5):
     sleep(sleep_time)
 
 try:
-    with open('E:/dev/blog/public/waifu_data.json', 'w', encoding='utf-8') as f:
+    with open('E:/dev/blog/public/cross/waifu_data.json', 'w', encoding='utf-8') as f:
         f.write(str(processed))
         f.close()
     # with open('E:/dev/blog/src/pages/girls.vue','r',encoding='utf-8') as f:

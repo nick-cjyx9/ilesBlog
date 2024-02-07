@@ -12,7 +12,7 @@ const dataList:Ref<Array<object>>=ref([]);
 const errLog:Ref<String|null>=ref(null);
 onMounted(async ()=>{
 try{
-    const r = await fetch('/waifu_data.json');
+    const r = await fetch('/cross/waifu_data.json');
     if (!r.ok) {
         errLog.value=`HTTP 请求错误：${r.status}`;
         throw new Error(`HTTP 请求错误：${r.status}`);

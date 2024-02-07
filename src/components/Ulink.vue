@@ -2,11 +2,10 @@
 const props = defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
 </script>
 <template>
-<a :href="url" class="!no-underline" target="_blank">
-<div class="flex w-1/3 flex-wrap flex-row items-center justify-center text-center px-3" :id="'holder-'+id">
-    <img :src="avatar" alt="avatar" class="w-3/4 my-4 rounded-full">
-    <p class="text-xl">{{ name }}</p><br/>
-    <p>“{{ desc }}”</p>
+<li class="list-none"><a :href="url" target="_blank">
+<div class="w-full flex h-16">
+<img :src="avatar" alt="avatar" loading="lazy" width="64" height="64" class="float-left"/>
+
 </div>
-</a>
+</a></li>
 </template>
