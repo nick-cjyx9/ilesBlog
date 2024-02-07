@@ -22,7 +22,7 @@ const options: FeedOptions = {
   image: 'https://avatars.githubusercontent.com/u/119087246',
   favicon: `${url}/favicon.ico`,
   copyright:
-    'Copyright (c) 2023 Nick Chen.',
+    'Copyright (c) 2024 Nick Chen.',
 }
 
 const posts = $(usePosts())

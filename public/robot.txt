@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /hidden
 Disallow: /test
+Disallow: /draft
 Sitemap: https://www.nickchen.top/sitemap.xml
 
 # DuckDuckGo lists font files in search results
