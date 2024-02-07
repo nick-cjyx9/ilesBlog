@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /hidden
+Disallow: /test
+Sitemap: https://www.nickchen.top/sitemap.xml
+
+# DuckDuckGo lists font files in search results
+User-agent: DuckDuckBot
+Disallow: /*.ttf$
+Disallow: /*.woff$
+Disallow: /*.woff2$
