@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Tue, 06 Feb 2024 14:38:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 04:56:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,51 +14,6 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2023 Nick Chen.</copyright>
-        <item>
-            <title><![CDATA[记一次博客性能优化]]></title>
-            <link>https://www.nickchen.top/post/optimization_note</link>
-            <guid>https://www.nickchen.top/post/optimization_note</guid>
-            <pubDate>Tue, 06 Feb 2024 18:34:45 GMT</pubDate>
-            <description><![CDATA[
-
-最近感觉博客访问速度特别慢，故有此文。
-]]></description>
-            <content:encoded><![CDATA[
-
-<p>最近感觉博客访问速度特别慢，故有此文。</p>
-
-<h1 id="lighthouse" class="heading"><a href="#lighthouse" class="heading-anchor" aria-label="Permalink for Lighthouse" tabindex="-1"></a>Lighthouse</h1>
-<blockquote>
-<p>Lighthouse 是一个开源的自动化工具，用于改进网络应用的质量。(一般devtool自带)</p>
-</blockquote>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/Lighthouse.b6673d82.avif 400w, /assets/Lighthouse.ccfa8600.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/Lighthouse.750c28c7.png 400w, /assets/Lighthouse.f6557cde.png 800w"><source type="image/avif" srcset="/assets/Lighthouse.482e4ec5.avif 800w"><img srcset="/assets/Lighthouse.8b33ea07.png 800w" loading="lazy" class="img post" src="/assets/Lighthouse.8b33ea07.png" alt="image.png"></picture></p>
-<p>我们首先开启chrome无痕窗口，用Lighthouse分析一遍博客加载最慢的页面，对于本博客是<a href="/girls">/girls</a></p>
-<p>等待Lighthouse分析完毕，会给出各项分数及问题所在，我们逐条分析。</p>
-<h1 id="一、减少未使用的css" class="heading"><a href="#一、减少未使用的css" class="heading-anchor" aria-label="Permalink for 一、减少未使用的css" tabindex="-1"></a>一、减少未使用的css</h1>
-<p>工具给出了它认为的可以缩减的css，分别是font awesome的字体和Google Fonts的字体。</p>
-<ol>
-<li>
-<p>很明显，我们没有用到所有的font awesome图标却加载了包含所有图标的字体。于是我选择了<a href="https://fontello.com/" rel="nofollow">fontello</a>来制作图标子集。
-在fontello中挑选好图标后，引入导出包中的<code>/css/fontello.css</code>，稍作修改即可。
-由于打包后字体较小，没有必要使用cdn。如果使用cdn，会遭遇跨域问题，此时可引入<code>*-embedded.css</code></p>
-</li>
-<li>
-<p>谷歌字体
-参考了 <a href="https://ouuan.moe/post/2023/01/glyph-segregator" rel="nofollow">https://ouuan.moe/post/2023/01/glyph-segregator</a> ,还在写</p>
-</li>
-</ol>
-<h1 id="二、请避免出现大幅度的布局偏移" class="heading"><a href="#二、请避免出现大幅度的布局偏移" class="heading-anchor" aria-label="Permalink for 二、请避免出现大幅度的布局偏移" tabindex="-1"></a>二、请避免出现大幅度的布局偏移</h1>
-<p>这个是因为没有为avatar设置大小，导致加载前后布局偏移过大，把大小写死在css里即可,其余的因为giscus的懒加载无法避免</p>
-<h1 id="三、采用新一代格式提供图片" class="heading"><a href="#三、采用新一代格式提供图片" class="heading-anchor" aria-label="Permalink for 三、采用新一代格式提供图片" tabindex="-1"></a>三、采用新一代格式提供图片</h1>
-<blockquote>
-<p>WebP 和 AVIF 等图片格式的压缩效果通常优于 PNG 或 JPEG，因而下载速度更快，消耗的数据流量更少。</p>
-</blockquote>
-<p>优化思路为在服务器端预处理图片为.avif格式，并且实现一个懒加载优化速度。
-使用插件<a href="https://github.com/ElMassimo/iles/tree/main/packages/images" rel="nofollow">vite-plugin-image-presets</a>，可以解决这两个需求，不过不是iles不能直接用</p>
-<h1 id="总结" class="heading"><a href="#总结" class="heading-anchor" aria-label="Permalink for 总结" tabindex="-1"></a>总结</h1>
-<p>这样子一番下来，挂梯后（忽略cloudflare page服务器影响）各项指标均已十分优秀。</p>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/rank.1773234a.avif 400w, /assets/rank.f4fdb98d.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/rank.b6102717.png 400w, /assets/rank.6d2237bc.png 800w"><source type="image/avif" srcset="/assets/rank.d3b553ee.avif 800w"><img srcset="/assets/rank.2c871120.png 800w" loading="lazy" class="img post" src="/assets/rank.2c871120.png" alt="image.png"></picture></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[CESO学习笔记]]></title>
             <link>https://www.nickchen.top/post/ceso_note</link>
@@ -380,10 +335,11 @@
 <h5 id="五级标题" class="heading"><a href="#五级标题" class="heading-anchor" aria-label="Permalink for 五级标题" tabindex="-1"></a>五级标题</h5>
 <h6 id="六级标题" class="heading"><a href="#六级标题" class="heading-anchor" aria-label="Permalink for 六级标题" tabindex="-1"></a>六级标题</h6>
 <h2 id="文本样式" class="heading"><a href="#文本样式" class="heading-anchor" aria-label="Permalink for 文本样式" tabindex="-1"></a>文本样式</h2>
-<p><strong>粗体文本</strong><br>
-<em>斜体文本</em><br>
-<del>删除线文本</del><br>
-<code>代码文本</code></p>
+<p><strong>粗体文本</strong></p>
+<p><em>斜体文本</em></p>
+<p><del>删除线文本</del></p>
+<span class="heimu p-0.5 mx-0.5 inline" title="你知道的太多了！">黑幕</span>
+<p><code>代码文本</code></p>
 <h2 id="列表" class="heading"><a href="#列表" class="heading-anchor" aria-label="Permalink for 列表" tabindex="-1"></a>列表</h2>
 <h3 id="无序列表" class="heading"><a href="#无序列表" class="heading-anchor" aria-label="Permalink for 无序列表" tabindex="-1"></a>无序列表</h3>
 <ul>
