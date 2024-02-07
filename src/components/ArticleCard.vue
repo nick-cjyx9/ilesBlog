@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useCoverUrl } from '@/composables/useCoverUrl';
 function formatTime(time:any){
   let currentTime = new Date();
   let t = new Date(time);
@@ -15,7 +16,7 @@ const props = defineProps(['post']);
     dark:after:border-white">
     <a :href="post.href" class="block relative w-full h-full hover:shadow-xl">
       <div class="absolute top-0 left-0 w-full h-full z-10">
-        <div :style="'background-image:url(' + post.frontmatter.cover + ')'" 
+        <div :style="'background-image:url(' + useCoverUrl(post.frontmatter.cover) + ')'" 
         class="bg-no-repeat bg-cover bg-center w-full h-full shadow"></div>
       </div>
       <div class="cover px-6 nl:px-10 pb-10 pt-32 relative z-20 

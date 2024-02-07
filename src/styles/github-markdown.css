@@ -1215,7 +1215,7 @@ html.light .markdown-body{
   background-color: var(--color-canvas-subtle);
 }
 ::-webkit-scrollbar {
-  width: 5px; 
+  width: 10px; 
   height: 5px;
 }
 /* Change the scrollbar background color here */
@@ -1223,11 +1223,17 @@ html.light .markdown-body{
   background-color: whitesmoke;
 }
 /* Change the scrollbar button color and roundedness here */
-::-webkit-scrollbar-thumb{
-  background-color: rgba(0,0,0,0.2);
-}
-::-webkit-scrollbar-thumb:hover{
+.light ::-webkit-scrollbar-thumb{
   background-color: rgba(0,0,0,0.4);
+}
+.light ::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+.dark ::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.dark ::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(255, 255, 255, 0.6);
 }
 ::-webkit-scrollbar-track{
   background-color: var(--color-fg-muted);
