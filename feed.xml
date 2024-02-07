@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Wed, 07 Feb 2024 04:56:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 11:43:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -49,7 +49,7 @@
 <li>等积投影：表示正确面积关系的地图总是使区域的形状失真。</li>
 <li>一张地图不可能既是等积的又是正形的。</li>
 </ul>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/map.d1ff14f1.avif 400w, /assets/map.184fa33c.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/map.8cb743b9.jpeg 400w, /assets/map.d077dfa8.jpeg 800w"><source type="image/avif" srcset="/assets/map.81de2d69.avif 800w"><img srcset="/assets/map.325934e9.jpeg 800w" loading="lazy" class="img post" src="/assets/map.325934e9.jpeg" alt="map"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/map.449d7ff0.avif 400w, /assets/map.6a52c8f3.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/map.8cb743b9.jpeg 400w, /assets/map.d077dfa8.jpeg 800w"><source type="image/avif" srcset="/assets/map.e25e2784.avif 800w"><img srcset="/assets/map.325934e9.jpeg 800w" loading="lazy" class="img post" src="/assets/map.325934e9.jpeg" alt="map"></picture></p>
 <ul>
 <li>此图使用鲁滨逊投影，是为了以视觉上满意的方式表现世界而设计的，既不是等积的也不是正形的。</li>
 </ul>
@@ -116,7 +116,7 @@
 <li>硬度</li>
 <li>解理：矿物受外力打击时能够沿着一定结晶方向分裂成平面（解理面）的能力。解理面的方向总是沿着面网之间联结力最弱的方向发生</li>
 </ol>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cleavage.a0717ce7.avif 400w, /assets/cleavage.55982a56.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cleavage.8bbb8af4.png 400w, /assets/cleavage.3299242a.png 800w"><source type="image/avif" srcset="/assets/cleavage.15459813.avif 800w"><img srcset="/assets/cleavage.1d4bc8ec.png 800w" loading="lazy" class="img post" src="/assets/cleavage.1d4bc8ec.png" alt="解理"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cleavage.74e0137d.avif 400w, /assets/cleavage.6df7c824.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cleavage.8bbb8af4.png 400w, /assets/cleavage.3299242a.png 800w"><source type="image/avif" srcset="/assets/cleavage.d5a5982c.avif 800w"><img srcset="/assets/cleavage.1d4bc8ec.png 800w" loading="lazy" class="img post" src="/assets/cleavage.1d4bc8ec.png" alt="解理"></picture></p>
 <ol>
 <li>断口：矿物受外力打击后不延固定的结晶方向开裂而形成的断裂面，方向无规律</li>
 <li>密度</li>
@@ -140,10 +140,10 @@
 <h4 id="火山喷发物：" class="heading"><a href="#火山喷发物：" class="heading-anchor" aria-label="Permalink for 火山喷发物：" tabindex="-1"></a>火山喷发物：</h4>
 <p>a. 液体喷发物：岩浆</p>
 <p>基性岩浆黏度小，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>i</mi><msub><mi>O</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">SiO_{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">i</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>含量低，快速冷凝收缩，形成柱状节理，绳状构造，麻花构造</p>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/zhuzhuangjieli.baad9e00.avif 400w, /assets/zhuzhuangjieli.30f5998e.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/zhuzhuangjieli.3a1ff325.webp 400w, /assets/zhuzhuangjieli.d25e2b2b.webp 800w"><source type="image/avif" srcset="/assets/zhuzhuangjieli.dac48e8c.avif 800w"><img srcset="/assets/zhuzhuangjieli.0f1096cc.webp 800w" loading="lazy" class="img post" src="/assets/zhuzhuangjieli.0f1096cc.webp" alt="柱状节理"></picture></p>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/string.e248d37b.avif 400w, /assets/string.5868c89c.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/string.2266454e.png 400w, /assets/string.764558d1.png 800w"><source type="image/avif" srcset="/assets/string.d5dee510.avif 800w"><img srcset="/assets/string.b909731f.png 800w" loading="lazy" class="img post" src="/assets/string.b909731f.png" alt="绳状构造"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/zhuzhuangjieli.dbbb803f.avif 400w, /assets/zhuzhuangjieli.bc583cdf.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/zhuzhuangjieli.3a1ff325.webp 400w, /assets/zhuzhuangjieli.d25e2b2b.webp 800w"><source type="image/avif" srcset="/assets/zhuzhuangjieli.a73878a2.avif 800w"><img srcset="/assets/zhuzhuangjieli.0f1096cc.webp 800w" loading="lazy" class="img post" src="/assets/zhuzhuangjieli.0f1096cc.webp" alt="柱状节理"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/string.f5aef38a.avif 400w, /assets/string.d955403c.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/string.2266454e.png 400w, /assets/string.764558d1.png 800w"><source type="image/avif" srcset="/assets/string.8b4797d2.avif 800w"><img srcset="/assets/string.b909731f.png 800w" loading="lazy" class="img post" src="/assets/string.b909731f.png" alt="绳状构造"></picture></p>
 <p>火山多次喷发火山碎屑岩和熔岩互层产生复式火山锥</p>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/doublevolcano.fb5e1d59.avif 400w, /assets/doublevolcano.85bf0141.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/doublevolcano.9b66d442.png 400w, /assets/doublevolcano.5031d05b.png 800w"><source type="image/avif" srcset="/assets/doublevolcano.fb277bf1.avif 800w"><img srcset="/assets/doublevolcano.a1547695.png 800w" loading="lazy" class="img post" src="/assets/doublevolcano.a1547695.png" alt="火山双锥"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/doublevolcano.c761cd81.avif 400w, /assets/doublevolcano.153ea929.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/doublevolcano.9b66d442.png 400w, /assets/doublevolcano.5031d05b.png 800w"><source type="image/avif" srcset="/assets/doublevolcano.d589b323.avif 800w"><img srcset="/assets/doublevolcano.a1547695.png 800w" loading="lazy" class="img post" src="/assets/doublevolcano.a1547695.png" alt="火山双锥"></picture></p>
 <p>两层火山熔岩间的一层沉积岩夹层象征一次火山间歇期</p>
 <p>b. 固体：按颗粒大小分</p>
 <ul>
@@ -173,13 +173,13 @@
 </ol>
 <h5 id="超基性岩熔岩代表：科马提岩" class="heading"><a href="#超基性岩熔岩代表：科马提岩" class="heading-anchor" aria-label="Permalink for 超基性岩熔岩代表：科马提岩" tabindex="-1"></a>超基性岩熔岩代表：科马提岩</h5>
 <p>橄榄石晶体发育被辉石微晶集合体充填的裂缝，形成典型的<strong>鬣刺结构</strong>
-<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/komatie.3e2a9f53.avif 400w, /assets/komatie.ed50670a.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/komatie.7d9503b3.png 400w, /assets/komatie.a07d6b2b.png 800w"><source type="image/avif" srcset="/assets/komatie.a0755bdc.avif 800w"><img srcset="/assets/komatie.7c2d65eb.png 800w" loading="lazy" class="img post" src="/assets/komatie.7c2d65eb.png" alt="科马提岩"></picture></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/komatie.385f3560.avif 400w, /assets/komatie.8d14eff5.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/komatie.7d9503b3.png 400w, /assets/komatie.a07d6b2b.png 800w"><source type="image/avif" srcset="/assets/komatie.8f3b5e6a.avif 800w"><img srcset="/assets/komatie.7c2d65eb.png 800w" loading="lazy" class="img post" src="/assets/komatie.7c2d65eb.png" alt="科马提岩"></picture></p>
 <h5 id="基性熔岩代表：玄武岩" class="heading"><a href="#基性熔岩代表：玄武岩" class="heading-anchor" aria-label="Permalink for 基性熔岩代表：玄武岩" tabindex="-1"></a>基性熔岩代表：玄武岩</h5>
 <p>陆地喷发有柱状节理，海底喷发的枕状构造(地面平的，顶上凸的)
-<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/pillow.ec1baf0e.avif 400w, /assets/pillow.545a794a.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/pillow.86c672b4.png 400w, /assets/pillow.11a02f66.png 800w"><source type="image/avif" srcset="/assets/pillow.16e7cb6f.avif 800w"><img srcset="/assets/pillow.fa15bde8.png 800w" loading="lazy" class="img post" src="/assets/pillow.fa15bde8.png" alt="枕状熔岩"></picture></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/pillow.648ad7c9.avif 400w, /assets/pillow.899ff34b.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/pillow.86c672b4.png 400w, /assets/pillow.11a02f66.png 800w"><source type="image/avif" srcset="/assets/pillow.94fb9de7.avif 800w"><img srcset="/assets/pillow.fa15bde8.png 800w" loading="lazy" class="img post" src="/assets/pillow.fa15bde8.png" alt="枕状熔岩"></picture></p>
 <h5 id="中性熔岩代表：安山岩" class="heading"><a href="#中性熔岩代表：安山岩" class="heading-anchor" aria-label="Permalink for 中性熔岩代表：安山岩" tabindex="-1"></a>中性熔岩代表：安山岩</h5>
 <p>黏性大，发育气孔构造。气孔被矿物充填称杏仁体
-<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/wd40.56f66003.avif 400w, /assets/wd40.5ffdc699.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/wd40.dc731520.png 400w, /assets/wd40.279349d2.png 800w"><source type="image/avif" srcset="/assets/wd40.9461cc53.avif 800w"><img srcset="/assets/wd40.40edc5d8.png 800w" loading="lazy" class="img post" src="/assets/wd40.40edc5d8.png" alt="石英杏仁体"></picture></p>
+<picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/wd40.a7f2771b.avif 400w, /assets/wd40.5c8c2574.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/wd40.dc731520.png 400w, /assets/wd40.279349d2.png 800w"><source type="image/avif" srcset="/assets/wd40.1925c16c.avif 800w"><img srcset="/assets/wd40.40edc5d8.png 800w" loading="lazy" class="img post" src="/assets/wd40.40edc5d8.png" alt="石英杏仁体"></picture></p>
 <h5 id="酸性岩浆代表：流纹岩" class="heading"><a href="#酸性岩浆代表：流纹岩" class="heading-anchor" aria-label="Permalink for 酸性岩浆代表：流纹岩" tabindex="-1"></a>酸性岩浆代表：流纹岩</h5>
 <p>黏度最大，爆发性，易形成火山锥</p>
 <h4 id="ii-侵入作用与侵入岩" class="heading"><a href="#ii-侵入作用与侵入岩" class="heading-anchor" aria-label="Permalink for II. 侵入作用与侵入岩" tabindex="-1"></a>II. 侵入作用与侵入岩</h4>
@@ -192,7 +192,7 @@
 <li>3~10km 中深成侵入体</li>
 <li>&#x3C;3km 浅成侵入体</li>
 </ol>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cheet.fc33c196.avif 400w, /assets/cheet.fbb2212d.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cheet.990036e7.png 400w, /assets/cheet.5632cee7.png 800w"><source type="image/avif" srcset="/assets/cheet.4ade499e.avif 800w"><img srcset="/assets/cheet.cb17eeae.png 800w" loading="lazy" class="img post" src="/assets/cheet.cb17eeae.png" alt="多样性"></picture></p>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/cheet.9df1fbf8.avif 400w, /assets/cheet.6d43f622.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/cheet.990036e7.png 400w, /assets/cheet.5632cee7.png 800w"><source type="image/avif" srcset="/assets/cheet.441efad9.avif 800w"><img srcset="/assets/cheet.cb17eeae.png 800w" loading="lazy" class="img post" src="/assets/cheet.cb17eeae.png" alt="多样性"></picture></p>
 <h5 id="火成岩多样性（基性岩性）原因：" class="heading"><a href="#火成岩多样性（基性岩性）原因：" class="heading-anchor" aria-label="Permalink for 火成岩多样性（基性|岩性）原因：" tabindex="-1"></a>火成岩多样性（基性|岩性）原因：</h5>
 <p>i. 在岩浆通道周围发生</p>
 <ul>
@@ -207,7 +207,7 @@
 <ul>
 <li>熔点高，密度大的矿物先结晶</li>
 <li>导致岩浆成分不断改变，出现垂直分带</li>
-<li><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/bowen.f504753d.avif 400w, /assets/bowen.be021bda.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/bowen.452a4682.png 400w, /assets/bowen.f48cfd39.png 800w"><source type="image/avif" srcset="/assets/bowen.ef415f46.avif 800w"><img srcset="/assets/bowen.18ad2661.png 800w" loading="lazy" class="img post" src="/assets/bowen.18ad2661.png" alt="垂直分带·鲍温反应系列"></picture></li>
+<li><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/bowen.0ec9e09e.avif 400w, /assets/bowen.ccf4191d.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/bowen.452a4682.png 400w, /assets/bowen.f48cfd39.png 800w"><source type="image/avif" srcset="/assets/bowen.56d49f93.avif 800w"><img srcset="/assets/bowen.18ad2661.png 800w" loading="lazy" class="img post" src="/assets/bowen.18ad2661.png" alt="垂直分带·鲍温反应系列"></picture></li>
 <li>连续系列：浅色 不连续：暗色</li>
 </ul>
 <h4 id="iii-火成岩的结构与构造" class="heading"><a href="#iii-火成岩的结构与构造" class="heading-anchor" aria-label="Permalink for III. 火成岩的结构与构造" tabindex="-1"></a>III. 火成岩的结构与构造</h4>
@@ -243,7 +243,7 @@
 <ol>
 <li>首先在private的A仓库根目录中创建<code>scripts/trigger.mjs</code>，填入具有workflow权限的token，本地调试需要运行<code>npm install octokit</code>，<strong>注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发</strong></li>
 </ol>
-<div class="language-js" data-lang="js"><pre class="language-js"><code><span class="token comment">// Octokit.js</span>
+<div class="language-js line-numbers-mode" data-lang="js"><pre class="language-js"><code><span class="token comment">// Octokit.js</span>
 <span class="token comment">// https://github.com/octokit/core.js#readme</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Octokit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"octokit"</span>
 <span class="token keyword">const</span> octokit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Octokit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
@@ -258,11 +258,11 @@
   <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token string-property property">'X-GitHub-Api-Version'</span><span class="token operator">:</span> <span class="token string">'2022-11-28'</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre><pre class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></pre></div>
 <ol start="2">
 <li>创建工作流<code>.github/workflows/push.yml</code>以触发脚本，替换token为至少具有此仓库访问权限的token，你也可以写进secret。</li>
 </ol>
-<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> upstream_trigger
+<div class="language-yml line-numbers-mode" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> upstream_trigger
 <span class="token key atrule">on</span><span class="token punctuation">:</span>
     <span class="token key atrule">push</span><span class="token punctuation">:</span> 
 <span class="token key atrule">jobs</span><span class="token punctuation">:</span>
@@ -283,11 +283,11 @@
     
           <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Run script
             <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
-              node scripts/trigger.mjs</span></code></pre></div>
+              node scripts/trigger.mjs</span></code></pre><pre class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></pre></div>
 <ol start="3">
 <li>如果A仓库是B仓库的submodule的话，B仓库的workflow推荐这样写，不过也有缺点，每次得记得在本地<code>git pull</code></li>
 </ol>
-<div class="language-yml" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> build
+<div class="language-yml line-numbers-mode" data-lang="yml"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> build
 
 <span class="token key atrule">on</span><span class="token punctuation">:</span>
   <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span>
@@ -309,7 +309,7 @@
         git commit -m "Update submodules" || echo "ignore commit failure, proceed"
         git push || echo "ignore commit failure, proceed"</span>
       <span class="token comment"># https://stackoverflow.com/questions/8123674/how-to-git-commit-nothing-without-an-error</span>
-    <span class="token comment"># YOUR BUILD PROCESS HERE</span></code></pre></div>]]></content:encoded>
+    <span class="token comment"># YOUR BUILD PROCESS HERE</span></code></pre><pre class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></pre></div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Hello World!(你好！世界！)]]></title>
@@ -338,7 +338,7 @@
 <p><strong>粗体文本</strong></p>
 <p><em>斜体文本</em></p>
 <p><del>删除线文本</del></p>
-<span class="heimu p-0.5 mx-0.5 inline" title="你知道的太多了！">黑幕</span>
+<p><span class="heimu p-0.5 mx-0.5 inline" title="你知道的太多了！">黑幕</span></p>
 <p><code>代码文本</code></p>
 <h2 id="列表" class="heading"><a href="#列表" class="heading-anchor" aria-label="Permalink for 列表" tabindex="-1"></a>列表</h2>
 <h3 id="无序列表" class="heading"><a href="#无序列表" class="heading-anchor" aria-label="Permalink for 无序列表" tabindex="-1"></a>无序列表</h3>
@@ -364,10 +364,10 @@
 <p>这是一个引用文本。</p>
 </blockquote>
 <h2 id="代码块" class="heading"><a href="#代码块" class="heading-anchor" aria-label="Permalink for 代码块" tabindex="-1"></a>代码块</h2>
-<div class="language-javascript" data-lang="javascript"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<div class="language-javascript line-numbers-mode" data-lang="javascript"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre></div>
-<div class="language-python" data-lang="python"><pre class="language-python"><code><span class="token comment"># 仅作长代码高亮演示</span>
+<span class="token punctuation">}</span></code></pre><pre class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></pre></div>
+<div class="language-python line-numbers-mode" data-lang="python"><pre class="language-python"><code><span class="token comment"># 仅作长代码高亮演示</span>
 <span class="token keyword">from</span> json <span class="token keyword">import</span> dumps
 <span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
 <span class="token keyword">from</span> requests <span class="token keyword">import</span> get
@@ -384,7 +384,7 @@
     item<span class="token punctuation">[</span><span class="token string">'characterInfo'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token builtin">list</span> <span class="token operator">=</span> characterInfo<span class="token punctuation">[</span><span class="token string">'infobox'</span><span class="token punctuation">]</span>
     processed <span class="token operator">=</span> processed <span class="token operator">+</span> dumps<span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">r'\n'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">r'\r'</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n'</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">' Done.'</span><span class="token punctuation">)</span>
-    sleep<span class="token punctuation">(</span>sleep_time<span class="token punctuation">)</span></code></pre></div>
+    sleep<span class="token punctuation">(</span>sleep_time<span class="token punctuation">)</span></code></pre><pre class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></pre></div>
 <h2 id="表格" class="heading"><a href="#表格" class="heading-anchor" aria-label="Permalink for 表格" tabindex="-1"></a>表格</h2>
 <table>
 <thead>
