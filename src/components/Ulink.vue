@@ -1,11 +1,23 @@
-<script setup lang="ts">
-const props = defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
-</script>
 <template>
-<li class="list-none"><a :href="url" target="_blank">
-<div class="w-full flex h-16">
-<img :src="avatar" alt="avatar" loading="lazy" width="64" height="64" class="float-left"/>
-
+<li class="list-none rounded-lg border-2 shadow-sm" :id="id"><a :href="url" target="_blank" class="hover:!no-underline">
+<div class="h-20 flex">
+<img :src="avatar" alt="avatar" loading="lazy" width="80" height="80" class="float-left rounded-lg"/>
+<div class="w-full px-5 py-3.5 text-left">
+    <p class="text-black text-base dark:text-white font-semibold !mb-1">{{ name }}</p>
+    <p class="text-slate-600 dark:text-slate-400 text-sm !mb-0">{{ desc }}</p>
+</div>
+<div></div>
 </div>
 </a></li>
 </template>
+<script setup lang="ts">
+import { onMounted } from 'vue';
+const props = defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
+onMounted(()=>{
+    let item = document.getElementById(props.id);
+    item?.setAttribute('style',`
+    border-color:${props.color};
+    color:${props.color}
+    `)
+})
+</script>

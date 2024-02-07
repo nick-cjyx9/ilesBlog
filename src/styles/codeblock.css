@@ -2,6 +2,12 @@ code {
   font-family: 'Source Code Pro', monospace;
 }
 
+html.dark {
+  --code-color: #839496;
+}
+html.light {
+  --code-color: #000000;
+}
 
 /**
    * Solarized dark atom theme for `prism.js`
@@ -11,8 +17,8 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #839496;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  color: var(--code-color);
+  /* text-shadow: 0 1px rgba(0, 0, 0, 0.3); */
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
   direction: ltr;
   text-align: left;
@@ -140,4 +146,39 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value {
   color: #F9EE98;
+}
+div[class*='language-'] {
+  position: relative;
+  /* background, font-size, line-height */
+}
+
+pre[class*='language-'] {
+  position: relative; /* position it to allow text selection */
+  overflow: auto;
+}
+
+pre.line-highlight,
+pre.line-numbers {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  user-select: none;
+  overflow: hidden;
+}
+
+div[class*='language-'].line-numbers-mode {
+  --gutter-width: 3.5rem;
+  padding-left: var(--gutter-width);
+}
+
+pre.line-numbers {
+  border-right: 1px solid #627759;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  width: var(--gutter-width);
 }

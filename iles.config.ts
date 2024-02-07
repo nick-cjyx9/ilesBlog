@@ -10,7 +10,9 @@ export default defineConfig({
   turbo: false,
   modules: [
     headings(),
-    prism(),
+    prism({
+      showLineNumbers:true
+    }),
     feed(),
     excerpt(),
     lastUpdated(),
@@ -20,7 +22,7 @@ export default defineConfig({
         loading: 'lazy',
         widths: [400, 800],
         formats: {
-          avif: { quality: 50 },
+          avif: { quality: 40 },
           original: {},
         },
       }),

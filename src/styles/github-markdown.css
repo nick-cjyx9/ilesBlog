@@ -206,10 +206,10 @@ html.light .markdown-body{
 }
 
 .markdown-body h1 {
-  margin: .67em 0;
+  margin: .54em 0;
   font-weight: var(--base-text-weight-semibold, 600);
   padding-bottom: .3em;
-  font-size: 2em;
+  font-size: 1.8em;
   border-bottom: 1px solid var(--color-border-muted);
 }
 
@@ -241,7 +241,6 @@ html.light .markdown-body{
 .markdown-body img {
   border-style: none;
   box-sizing: content-box;
-  background-color: var(--color-canvas-default);
 }
 
 .markdown-body code,
@@ -877,7 +876,7 @@ html.light .markdown-body{
   line-height: 1.45;
   color: var(--color-fg-default);
   background-color: var(--color-canvas-subtle);
-  border-radius: 6px;
+  /* border-radius: 6px; */
 }
 
 .markdown-body pre code,
@@ -1210,4 +1209,40 @@ html.light .markdown-body{
 
 .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-danger-fg);
+}
+
+.markdown-body div[class*='language-'] {
+  background-color: var(--color-canvas-subtle);
+}
+::-webkit-scrollbar {
+  width: 5px; 
+  height: 5px;
+}
+/* Change the scrollbar background color here */
+::-webkit-scrollbar-track{
+  background-color: whitesmoke;
+}
+/* Change the scrollbar button color and roundedness here */
+::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color-fg-muted);
+}
+div[class*='language-'] {
+  position: relative;
+}
+
+div[class*='language-']::before {
+  content: attr(data-lang);
+  letter-spacing: .4px;
+  color: #888;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 1em;
+  bottom: .8em;
+  z-index: 1;
 }
