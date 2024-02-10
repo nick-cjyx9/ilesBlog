@@ -1,5 +1,5 @@
 <template layout="base">
-  <div class="w-full flex space-x-2" id="base-container">
+  <div class="w-full flex lg:space-x-1" id="base-container">
     <TableofContent :nodes="meta.headings" class="h-fit top-8 sticky z-50 flex-1" v-if="needToc" client:load/>
     <div class="card rounded-xl h-fit items-center flex-col py-16">
     <div class="flex justify-center flex-wrap">
@@ -35,6 +35,7 @@
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed" client:idle/>
     </div>
+    <div></div>
   </div>
   <GiscusComment />
 </template>
