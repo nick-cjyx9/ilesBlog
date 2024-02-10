@@ -54,7 +54,7 @@ footer.footer {
   background-color: var(--bg-front);
   display: flex;
   width: 100%;
-  @apply container shadow-lg flex-wrap;
+  @apply shadow-lg flex-wrap;
 }
 
 .navtab {
@@ -143,4 +143,25 @@ footer.footer {
 }
 .heimu:hover {
   background-color: var(--bg-front);
+}
+
+.table-of-contents::-webkit-scrollbar {
+  display: none;
+}
+.table-of-contents ul {
+  list-style-type: none;
+}
+
+.table-of-contents li {
+  margin-bottom: 5px;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+  #base-container {
+    flex-direction: column;
+  }
 }

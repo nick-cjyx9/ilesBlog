@@ -27,6 +27,8 @@ declare module '@vue/runtime-core' {
     TableofContent: typeof import('./src/components/TableofContent.vue')['default']
     TagCard: typeof import('./src/components/TagCard.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
+    TocInner: typeof import('./src/components/TocInner.vue')['default']
+    TocSwitcher: typeof import('./src/components/TocSwitcher.vue')['default']
     Ulink: typeof import('./src/components/Ulink.vue')['default']
     WaifuCard: typeof import('./src/components/WaifuCard.vue')['default']
     WaifuList: typeof import('./src/components/WaifuList.vue')['default']

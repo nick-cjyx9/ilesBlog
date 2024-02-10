@@ -1,0 +1,99 @@
+---
+title: nodejs速记
+date: 2024-02-09 19:14:46
+tags: ["node.js","note"]
+licensed: true
+isAIGenerated: false
+cover: ""
+draft: true
+---
+
+<Excerpt />
+
+## Npm Directives（in common use）
+
+CRUD operations on config:
+`npm config list` ,`npm get ${key}`,`npm config set ${key} ${value}`
+
+List all the global package:
+`npm ls -g`
+
+## The Difference between pnpm and npm
+
+`npx` = `pnpm dlx`
+
+## My Terminal Profile Config
+
+`notepad $PROFILE`
+
+```bash
+Import-Module posh-git
+oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\spaceship.omp.json | Invoke-Expression
+Import-Module PSReadLine
+Import-Module -Name Terminal-Icons
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
+Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit
+Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+$env:PATHEXT += ";.py"
+function MakeThings {
+	nmake.exe $args -nologo
+}
+Set-Alias -Name make -Value MakeThings
+Set-Alias -Name os-update -Value Update-Packages
+function ListDirectory {
+	(Get-ChildItem).Name
+	Write-Host("")
+}
+Set-Alias -Name ll -Value Get-ChildItem
+function OpenCurrentFolder {
+	param($Path = '.')
+	Invoke-Item $Path
+}
+Set-Alias -Name open -Value OpenCurrentFolder
+function clash {
+	$Env:http_proxy="http://127.0.0.1:7890";$Env:https_proxy="http://127.0.0.1:7890"
+}
+
+function unclash {
+	$Env:http_proxy="";$Env:https_proxy=""
+}
+function Get-AllNic {
+	Get-NetAdapter | Sort-Object -Property MacAddress
+}
+Set-Alias -Name getnic -Value Get-AllNic
+function Get-IPv4Routes {
+	Get-NetRoute -AddressFamily IPv4 | Where-Object -FilterScript {$_.NextHop -ne '0.0.0.0'}
+}
+Set-Alias -Name getip -Value Get-IPv4Routes
+function Get-IPv6Routes {
+	Get-NetRoute -AddressFamily IPv6 | Where-Object -FilterScript {$_.NextHop -ne '::'}
+}
+Set-Alias -Name getip6 -Value Get-IPv6Routes
+Import-Module 'C:\Program Files\gsudo\2.1.0\gsudoModule.psd1'
+function i {
+	pnpm install
+}
+function d {
+	pnpm run dev
+}
+function t {
+	pnpm run test
+}
+function b {
+	pnpm run build
+}
+function now {
+	pnpm run build
+	pnpm run preview
+}
+function c {
+	vue-tsc --noEmit
+}
+function cod {
+  python -m uvicorn main:app --reload
+}
+```
+

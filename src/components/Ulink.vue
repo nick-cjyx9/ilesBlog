@@ -1,5 +1,7 @@
 <template>
-<li class="list-none rounded-lg border-2 shadow-sm" :id="id"><a :href="url" target="_blank" class="hover:!no-underline">
+<li class="list-none rounded-lg border-2 shadow-sm" :id="id"
+:style="{borderColor:color}">
+<a :href="url" target="_blank" class="hover:!no-underline">
 <div class="h-20 flex">
 <img :src="avatar" alt="avatar" loading="lazy" width="80" height="80" class="float-left rounded-lg"/>
 <div class="w-full px-5 py-3.5 text-left">
@@ -11,13 +13,5 @@
 </a></li>
 </template>
 <script setup lang="ts">
-import { onMounted } from 'vue';
-const props = defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
-onMounted(()=>{
-    let item = document.getElementById(props.id);
-    item?.setAttribute('style',`
-    border-color:${props.color};
-    color:${props.color}
-    `)
-})
+defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
 </script>

@@ -5,7 +5,7 @@
 <template>
   <BackToTop client:idle/>
   <NavigationBar />
-  <main class="flex justify-center flex-wrap px-4 lg:px-32 xlg:px-52 py-8 w-full h-full">
+  <main class="flex justify-center flex-wrap px-4 lg:px-36 py-8 w-full h-full">
     <slot />
   </main>
   <TheFooter client:visible/>

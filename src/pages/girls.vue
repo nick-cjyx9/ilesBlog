@@ -1,6 +1,9 @@
 <page>
 title: 我的老婆们！
 date: 2023-07-19
+toc: false
+isAIGenerated: true
+
 </page>
 <template layout="post">
 <WaifuList client:only/>

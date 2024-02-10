@@ -1,5 +1,7 @@
 <template layout="base">
-  <div class="card justify-center py-16 lg:px-20 sm:px-10 rounded-xl h-auto">
+  <div class="w-full flex space-x-2" id="base-container">
+    <TableofContent :nodes="meta.headings" class="h-fit top-8 sticky z-50 flex-1" v-if="needToc" client:load/>
+    <div class="card rounded-xl h-fit items-center flex-col py-16">
     <div class="flex justify-center flex-wrap">
       <h1 class="px-6 text-3xl text-important">{{ frontmatter.title }}</h1>
       
@@ -13,7 +15,7 @@
         </li>
         <li><i class="fa-eye"></i>
           <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" target="_blank">
-          <span class="ml-1  
+          <span class="ml-1
             border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
           </a>
         </li>
@@ -24,7 +26,7 @@
       </ul>
       
     </div>
-    <article class="px-8 w-full markdown-body h-fit" id="articleBody">
+    <article class="!px-8 w-full markdown-body h-fit" id="articleBody">
       <slot/>
       <hr/>
     </article>
@@ -33,11 +35,10 @@
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed" client:idle/>
     </div>
-  <!-- <div>
-    <TableofContent :meta="meta"/>
-  </div> -->
+  </div>
   <GiscusComment />
 </template>
+
 <style>
 @import '@/styles/github-markdown.css';
 @import '@/styles/codeblock.css';
@@ -47,14 +48,14 @@
 <script client:load lang="ts">
 import Viewer from 'viewerjs';
 const container = document.getElementById('articleBody')
-if(container!==null){
-  const gallery = new Viewer(container);
-}
+if(container!==null){new Viewer(container);}
 </script>
 <script setup lang="ts">
 const page = usePage();
 const { frontmatter, meta } = page;
+const needToc = $computed(()=> frontmatter.toc==false?false:true);
 frontmatter.description ||= meta.excerpt;
+//-----------------------------------------------//
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
 }

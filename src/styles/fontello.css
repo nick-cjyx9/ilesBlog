@@ -66,6 +66,7 @@
   .fa-mail-alt:before { content: '\f0e0'; } /* '' */
   .fa-spinner:before { content: '\f110'; } /* '' */
   .fa-github:before { content: '\f113'; } /* '' */
+  .fa-menu:before { content: '\f0c9'; } /* '' */
   .fa-rss-squared:before { content: '\f143'; } /* '' */
   .fa-link:before { content: '\e80b'; } /* '' */
   .heading-anchor:before { content: '\e80b'; } /* '' */

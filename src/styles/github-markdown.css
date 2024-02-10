@@ -1215,8 +1215,9 @@ html.light .markdown-body{
   background-color: var(--color-canvas-subtle);
 }
 ::-webkit-scrollbar {
-  width: 10px; 
+  width: 5px; 
   height: 5px;
+  border-radius: 0.5rem;
 }
 /* Change the scrollbar background color here */
 ::-webkit-scrollbar-track{
