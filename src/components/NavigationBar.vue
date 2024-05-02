@@ -4,9 +4,9 @@
     <div id="profile" class="text-center space-y-0.5">
       <img src="https://cravatar.cn/avatar/74ea31416d68b8ecbb828bba878327a2.png?s=200"
         class="w-24 rounded-full ml-auto mr-auto my-2" />
-      <div class="animate-bounce inline-block text-xl mr-0.5">👋</div>
-      <font class="text-important text-xl">Hi there! I'm <b class="font-serif"><font class="text-red-400">N</font>ick <font class="text-red-400">C</font>hen</b></font>
-      <p class="text-minor text-sm mx-4">僕らは命に嫌われている</p>
+      <div class="text-important text-xl">
+      <div class="animate-bounce inline-block text-xl mr-0.5">👋</div>Hi there! I'm <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b></div>
+      <div class="text-minor text-sm mx-4">僕らは命に嫌われている</div>
     </div>
     <ul class="space-y-0.5 md:justify-start justify-center flex md:flex-col md:px-6 w-full">
       <li></li><li v-for="(k, v) in nav_data" class="inline-block py-0.5">
@@ -16,10 +16,10 @@
         </a>
       </li>
     </ul>
-    <ul class="badges !mt-0.5 flex px-2 justify-center">
-      <DarkModeSwitcher />
-      <li role="button" class="badge text-minor-link"><a href="/feed.xml"><i class="fa-rss-squared"></i></a></li>
-    </ul>
+    <div class="flex justify-center">  
+      <DarkModeSwitcher client:idle class=" inline-flex"/>
+      <a href="/feed.xml" class="fa-rss-squared badge inline-block text-minor-link w-[32px] h-[32px] text-center"></a>
+    </div>
   </aside>
 </template>
 
