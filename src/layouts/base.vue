@@ -3,10 +3,12 @@
 @import '~/styles/fontello.css';
 </style>
 <template>
-  <BackToTop client:idle/>
-  <NavigationBar />
-  <main class="flex justify-center flex-wrap px-4 lg:px-36 py-8 w-full h-full">
-    <slot />
-  </main>
-  <TheFooter client:visible/>
+  <div class="content-holder md:grid md:px-12 lg:px-16">
+    <NavigationBar />
+    <main class="pl-3 py-6 w-full h-full">
+      <slot />
+    </main>
+  </div>
+  <BackToTop client:idle />
+  <TheFooter client:visible />
 </template>

@@ -1,5 +1,5 @@
 <template layout="base">
-    <div class="w-full flex space-x-4 flex-wrap card p-6 lg:p-12 rounded-lg">
+    <div class="w-full flex space-x-4 flex-wrap holder dark:text-white p-6 lg:p-12">
         <HeadTitle>标签</HeadTitle>
         <div v-for="tag in tags">
             <TagCard :tag="tag" />

@@ -13,7 +13,7 @@ const props = defineProps(['post']);
 
 <template>
   <div v-if="post.frontmatter.cover" class="w-full block mb-8 ">
-    <a :href="post.href" class="block relative w-full h-full shadow-sm hover:shadow dark:shadow-slate-800">
+    <a :href="post.href" class="block relative w-full h-full">
       <div class="absolute top-0 left-0 w-full h-full z-10">
         <div :style="'background-image:url(' + useCoverUrl(post.frontmatter.cover) + ')'" 
         class="bg-no-repeat bg-cover bg-center w-full h-full"></div>
@@ -26,9 +26,9 @@ const props = defineProps(['post']);
       </div>
     </a>
   </div>
-  <div v-else class="w-full mb-8">
+  <div v-else class="w-full mb-8 dark:text-white border-black dark:border-white border-[1.2px]">
     <a :href="post.href" class="block relative w-full h-full">
-    <div class="card w-full px-6 nl:px-10 shadow  hover:shadow-sm">
+    <div class="holder w-full px-6 nl:px-10">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">
         <h3 class="font-semibold text-3xl">{{ post.title }}</h3>
         <div class="text-sm font-semibold">更新于 · {{ formatTime(post.frontmatter.lastUpdated) }} - 发布于 · {{ formatTime(post.date) }} - 浏览量 · <PostVisitorCounter :link="post.meta.href" client:idle/> 次 </div>

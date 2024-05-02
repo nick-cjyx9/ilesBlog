@@ -1,5 +1,5 @@
 <template layout="base">
-    <div class="card flex justify-center w-full ml-auto mr-auto p-6 lg:p-12 rounded-lg space-y-3">
+    <div class="holder dark:text-white w-full ml-auto mr-auto p-6 lg:p-12 space-y-3">
         <header class="flex w-full mb-2">
             <HeadTitle class="!w-1/2 float-left">{{ props.desc }}分类</HeadTitle>
             <div class="float-right w-1/2 text-end text-sm space-x-1 p-3 mt-auto">

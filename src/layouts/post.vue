@@ -1,36 +1,33 @@
 <template layout="base">
-  <div class="w-full flex lg:space-x-1" id="base-container">
-    <TableofContent :nodes="meta.headings" class="h-fit top-8 sticky z-50 flex-1" v-if="needToc" client:load/>
-    <div class="card rounded-xl h-fit items-center flex-col py-16">
-    <div class="flex justify-center flex-wrap">
-      <h1 class="px-6 text-3xl text-important">{{ frontmatter.title }}</h1>
-      
-      <ul class="text-minor flex space-x-4 w-full mt-5 mb-3 flex-wrap px-8 justify-center"
-        style="font-size: 14.3px;">
-        <li v-if="$frontmatter.lastUpdated"><i class="fa-back-in-time"></i>
-          <span class="ml-1">{{ formatDate(frontmatter.lastUpdated) }}</span>
-        </li>
-        <li><i class="fa-clock"></i>
-          <span class="ml-1">{{ formatDate(frontmatter.date) }}</span>
-        </li>
-        <li><i class="fa-eye"></i>
-          <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" target="_blank">
-          <span class="ml-1
-            border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
-          </a>
-        </li>
-        <li v-for="tag in frontmatter.tags"><i class="fa-tag"></i>
-          <a :href="'../tag/'+tag"><span class="ml-1 munderline 
-            border-gray-600 after:border-b-2" :title="'跳转到标签：' + tag">{{ tag }}</span></a>
-        </li>
-      </ul>
-      
-    </div>
-    <article class="!px-8 w-full markdown-body h-fit" id="articleBody">
+  <div class="w-full flex">
+    <!-- <TableofContent :nodes="meta.headings" class="h-fit top-8 sticky z-50 flex-1" v-if="needToc" client:load/> -->
+    <div class="holder dark:text-white h-fit flex-col py-12 w-full">
+      <div class="flex justify-center flex-wrap">
+        <h1 class="px-6 text-[24pt] text-important">{{ frontmatter.title }}</h1>
+        <ul class="text-minor flex space-x-4 w-full my-3 
+        text-[10.5pt] flex-wrap px-8 justify-center">
+          <li v-if="$frontmatter.lastUpdated"><i class="fa-back-in-time"></i>
+            <span class="ml-1">{{ formatDate(frontmatter.lastUpdated) }}</span>
+          </li>
+          <li><i class="fa-clock"></i>
+            <span class="ml-1">{{ formatDate(frontmatter.date) }}</span>
+          </li>
+          <li><i class="fa-eye"></i>
+            <a :href="'https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog?url=' + meta.href" target="_blank">
+            <span class="ml-1
+              border-gray-600 after:border-b-2"><PostVisitorCounter :link="meta.href" client:idle/></span>
+            </a>
+          </li>
+          <li v-for="tag in frontmatter.tags"><i class="fa-tag"></i>
+            <a :href="'../tag/'+tag"><span class="ml-1 munderline 
+              border-gray-600 after:border-b-2" :title="'跳转到标签：' + tag">{{ tag }}</span></a>
+          </li>
+        </ul>
+      </div>
+    <div class="md:px-10 markdown-body h-fit" id="articleBody">
       <slot/>
       <hr/>
-    </article>
-    
+    </div>
     <br/>
     <ArticleFooter :is-a-i-generated="frontmatter.isAIGenerated?true:false" 
     :is-licensed="frontmatter.licensed" client:idle/>

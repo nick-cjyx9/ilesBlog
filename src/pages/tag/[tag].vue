@@ -1,7 +1,7 @@
 <template layout="base">
-<div class="card flex justify-center w-full ml-auto mr-auto p-6 lg:p-12 rounded-lg space-y-3">
+<div class="holder dark:text-white w-full ml-auto mr-auto p-6 lg:p-12 rounded-lg">
   <headTitle>{{ page.frontmatter.title }}</headTitle>
-  <ul class="relative ml-auto mr-auto w-full">
+  <ul class="relative mt-6 w-full space-y-3">
     <li v-for="post of posts_fltd">
       <ArticleCard :post="post" class="w-full"></ArticleCard>
     </li>

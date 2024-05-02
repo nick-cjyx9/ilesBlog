@@ -1,6 +1,6 @@
 <template layout="base">
   <ul class="relative justify-center w-full grid">
-    <li v-for="post of posts" class="max-w-5xl">
+    <li v-for="post of posts" class="w-full">
         <ArticleCard :post="post"></ArticleCard>
     </li>
   </ul>

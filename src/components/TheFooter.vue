@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer text-center flex items-center flex-col 
-    py-4 shadow mt-4 mb-12 lg:px-80 nl:px-56 px-16">
+  <footer class="text-center flex items-center flex-col 
+    py-4 holder mt-4 mb-12 lg:px-80 nl:px-56 px-16">
     <nav class="flex flex-wrap text-sm font-medium space-x-6 my-6 opacity-80">
       <a href="https://home.nickchen.top/" class="inline-block munderline after:border-b-2 ">
         <i class="fa-home"></i>
@@ -15,7 +15,7 @@
         RSS</a>
     </nav>
 
-      <ul class="text-start opacity-80 text-sm w-full space-y-0.5">
+      <ul class="text-start dark:text-white opacity-80 text-sm w-full space-y-0.5">
         <li>
           <i class="fa-signal w-5 text-center"></i> <span>有 <i class="fa-spinner animate-spin" v-if="active===null"></i><span v-else>{{ active }}</span>
           个小伙伴在线</span>

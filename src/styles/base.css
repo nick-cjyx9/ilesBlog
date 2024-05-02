@@ -6,6 +6,7 @@ html.light {
   --text-important: #000000;
   --text-normal: #1f2328;
   --text-minor: #64778b;
+  --text-minor-link: #495463;
   --text-hint: #60a5fa;
   --bg-front: #f1f5f9;
   --bg-back: #e2e8f0;
@@ -16,6 +17,7 @@ html.dark {
   --text-important: #ffffff;
   --text-normal: #e6edf3;
   --text-minor: #eeffff;
+  --text-minor-link: #e0e0e0;
   --text-hint: #fff;
   --bg-front: #1e293b;
   --bg-back: #0f172a;
@@ -43,28 +45,18 @@ html {
   color: var(--text-important);
 }
 
+.text-minor-link{
+  color: var(--text-minor-link);
+}
+.text-minor-link:hover{
+  color: var(--text-important);
+  background-color: var(--bg-back);
+}
+
 nav,
 footer.footer {
   color: var(--text-normal);
   background-color: var(--bg-front);
-}
-
-.card {
-  color: var(--text-normal);
-  background-color: var(--bg-front);
-  display: flex;
-  width: 100%;
-  @apply shadow-lg flex-wrap;
-}
-
-.navtab {
-  color: var(--text-normal);
-  @apply rounded-lg p-3 flex items-center;
-}
-
-.navtab:hover {
-  background-color: var(--hover-back);
-  color: var(--text-hint);
 }
 
 .hint:hover {
@@ -160,8 +152,25 @@ footer.footer {
   text-decoration: none;
 }
 
-@media (max-width: 1023px) {
-  #base-container {
-    flex-direction: column;
+
+@media (min-width: 768px) {
+  .content-holder{
+    grid-template-columns: 1.4fr 3.4fr;
   }
+}
+
+@media (min-width: 1024px) {
+  .content-holder{
+    grid-template-columns: 1.1fr 3.4fr;
+  }
+}
+
+#sidebar {
+  background-color: var(--bg-front);
+}
+.badges > .badge {
+  @apply p-1.5 inline-block
+}
+.holder{
+  background-color: var(--bg-front);
 }
