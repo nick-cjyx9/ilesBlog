@@ -26,7 +26,7 @@ const props = defineProps(['post']);
       </div>
     </a>
   </div>
-  <div v-else class="w-full mb-8 dark:text-white border-black dark:border-white border-[1.2px]">
+  <div v-else class="w-full mb-8 dark:text-white shadow dark:shadow-none dark:border-white border-[1.2px]">
     <a :href="post.href" class="block relative w-full h-full">
     <div class="holder w-full px-6 nl:px-10">
       <div class="pb-8 pt-10 relative z-20 w-full h-full space-y-3 nl:space-y-5">

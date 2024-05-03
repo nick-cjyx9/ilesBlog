@@ -45,10 +45,11 @@ html {
   color: var(--text-important);
 }
 
-.text-minor-link{
+.text-minor-link {
   color: var(--text-minor-link);
 }
-.text-minor-link:hover{
+
+.text-minor-link:hover {
   color: var(--text-important);
   background-color: var(--bg-back);
 }
@@ -133,6 +134,7 @@ footer.footer {
   color: var(--text-important);
   background-color: var(--text-important);
 }
+
 .heimu:hover {
   background-color: var(--bg-front);
 }
@@ -140,6 +142,7 @@ footer.footer {
 .table-of-contents::-webkit-scrollbar {
   display: none;
 }
+
 .table-of-contents ul {
   list-style-type: none;
 }
@@ -152,25 +155,26 @@ footer.footer {
   text-decoration: none;
 }
 
-
 @media (min-width: 768px) {
-  .content-holder{
+  .content-holder {
     grid-template-columns: 1.4fr 3.4fr;
   }
 }
 
 @media (min-width: 1024px) {
-  .content-holder{
-    grid-template-columns: 1.1fr 3.4fr;
+  .content-holder {
+    grid-template-columns: 1.5fr 4fr;
   }
 }
 
 #sidebar {
   background-color: var(--bg-front);
 }
-.badges > .badge {
+
+.badges>.badge {
   @apply p-1.5 inline-block
 }
-.holder{
+
+.holder {
   background-color: var(--bg-front);
 }

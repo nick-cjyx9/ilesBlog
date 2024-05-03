@@ -1,7 +1,7 @@
 <template layout="base">
   <div class="w-full flex">
     <!-- <TableofContent :nodes="meta.headings" class="h-fit top-8 sticky z-50 flex-1" v-if="needToc" client:load/> -->
-    <div class="holder dark:text-white h-fit flex-col py-12 w-full">
+    <div class="holder shadow dark:text-white h-fit flex-col py-12 w-full">
       <div class="flex justify-center flex-wrap">
         <h1 class="px-6 text-[24pt] text-important">{{ frontmatter.title }}</h1>
         <ul class="text-minor flex space-x-4 w-full my-3 
@@ -34,7 +34,7 @@
     </div>
     <div></div>
   </div>
-  <GiscusComment />
+  <GiscusComment class="shadow"/>
 </template>
 
 <style>

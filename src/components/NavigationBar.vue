@@ -1,5 +1,5 @@
 <template>
-  <aside id="sidebar" class="w-full h-fit py-4 justify-center
+  <aside id="sidebar" class="shadow w-full h-fit py-4 justify-center
   md:sticky md:top-6 flex flex-col space-y-1">
     <div id="profile" class="text-center space-y-0.5">
       <img src="https://cravatar.cn/avatar/74ea31416d68b8ecbb828bba878327a2.png?s=200"

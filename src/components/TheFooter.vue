@@ -1,6 +1,6 @@
 <template>
   <footer class="text-center flex items-center flex-col 
-    py-4 holder mt-4 mb-12 lg:px-80 nl:px-56 px-16">
+    py-4 holder mt-4 mb-12 lg:px-80 nl:px-56 px-16 shadow">
     <nav class="flex flex-wrap text-sm font-medium space-x-6 my-6 opacity-80">
       <a href="https://home.nickchen.top/" class="inline-block munderline after:border-b-2 ">
         <i class="fa-home"></i>
