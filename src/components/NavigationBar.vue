@@ -1,6 +1,6 @@
 <template>
   <aside id="sidebar" class="shadow w-full h-fit py-4 justify-center
-  md:sticky md:top-6 flex flex-col space-y-1">
+  md:sticky md:top-6 flex flex-col space-y-1 min-w-[300px]">
     <div id="profile" class="text-center space-y-0.5">
       <img src="https://cravatar.cn/avatar/74ea31416d68b8ecbb828bba878327a2.png?s=200"
         class="w-24 rounded-full ml-auto mr-auto my-2" alt="avatar"/>
@@ -18,7 +18,8 @@
     </ul>
     <div class="flex justify-center">  
       <DarkModeSwitcher client:idle class=" inline-flex"/>
-      <a href="/feed.xml" class="fa-rss-squared badge inline-block text-minor-link w-[32px] h-[32px] text-center" aria-label="subscribe RSS here"></a>
+      <a href="/feed.xml" class="fa-rss-squared badge" aria-label="subscribe RSS here"></a>
+      <ReadingLocationController />
     </div>
   </aside>
 </template>

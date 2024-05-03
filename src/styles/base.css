@@ -163,7 +163,7 @@ footer.footer {
 
 @media (min-width: 1024px) {
   .content-holder {
-    grid-template-columns: 1.5fr 4fr;
+    grid-template-columns: 1.4fr 4fr;
   }
 }
 
@@ -171,8 +171,8 @@ footer.footer {
   background-color: var(--bg-front);
 }
 
-.badges>.badge {
-  @apply p-1.5 inline-block
+.badge {
+  @apply p-1.5 inline-flex text-minor-link w-[36px] h-[36px] items-center justify-center
 }
 
 .holder {

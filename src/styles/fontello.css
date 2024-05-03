@@ -73,7 +73,7 @@
   .fa-spinner:before { content: '\f110'; } /* '' */
   .fa-github:before { content: '\f113'; } /* '' */
   .fa-rss-squared:before { content: '\f143'; } /* '' */
-
+  .fa-up-circle:before { content: '\e810'; } /* '' */
   .heading-anchor:before { content: '\e80b'; } /* '' */
   .animate-spin {
     -moz-animation: spin 2s infinite linear;
