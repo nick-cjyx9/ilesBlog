@@ -23,6 +23,8 @@ export default function generateData() {
     })
     const json_outputs = JSON.stringify(outputs)
     fs.writeFileSync('./public/fuse/data.json',json_outputs)
+    console.log(`✔ generating fuse.js data\n`);
+    
 }
 
 function readFolder(folderPath: fs.PathLike) {

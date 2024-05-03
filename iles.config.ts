@@ -3,7 +3,6 @@ import prism from '@islands/prism';
 import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
-import generateData from './modules/fuseProvider';
 import lastUpdated from './modules/lastUpdated';
 import images, { hdPreset } from '@islands/images'
 
@@ -56,7 +55,4 @@ export default defineConfig({
     rehypePlugins: ['rehype-external-links', 'rehype-katex'],
   },
   siteUrl: 'https://www.nickchen.top/',
-  ssg:{
-    onSiteRendered: generateData
-  }
 })
