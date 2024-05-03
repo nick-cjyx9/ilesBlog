@@ -131,6 +131,12 @@
       "css": "guidedog",
       "code": 59407,
       "src": "elusive"
+    },
+    {
+      "uid": "a7e3ce91275bb77c0f4ec44a548b325c",
+      "css": "up-circle",
+      "code": 59408,
+      "src": "websymbols"
     }
   ]
 }
