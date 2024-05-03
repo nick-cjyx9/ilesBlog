@@ -167,12 +167,8 @@ footer.footer {
   }
 }
 
-#sidebar {
-  background-color: var(--bg-front);
-}
-
 .badge {
-  @apply p-1.5 inline-flex text-minor-link w-[36px] h-[36px] items-center justify-center
+  @apply p-1.5 inline-flex text-minor-link w-[30px] h-[30px] items-center justify-center
 }
 
 .holder {

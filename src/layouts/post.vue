@@ -1,6 +1,5 @@
 <template layout="base">
   <div class="w-full flex">
-    <TableofContent2 client:load />
     <div class="holder shadow dark:text-white h-fit flex-col py-12 w-full">
       <div class="flex justify-center flex-wrap">
         <h1 class="px-6 text-[24pt] text-important">{{ frontmatter.title }}</h1>

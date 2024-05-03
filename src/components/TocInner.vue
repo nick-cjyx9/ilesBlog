@@ -1,42 +1,37 @@
 <template>
-    <ul class="table-of-contents card py-5 pl-5 rounded-lg h-fit
- max-h-[450px] text-[14px] overflow-auto space-y-1">
-        <span class="w-full mr-72"></span>
-        <span @click="close" role="button" class="top-5 right-2 absolute hint float-right mr-2 mt-0.5">关闭目录</span>
-        <li class="w-full">
-            <HeadTitle class="!text-base !ml-1.5 w-fit">目录</HeadTitle>
-        </li>
-        <li v-for="node in nodes" :key="node.slug" class="w-full" :id="'toc-' + node.slug"
-            :style="{ marginLeft: (node.level - 1.5) * 17 + 'px' }">
-            <a :style="{ color: currentSection === node.slug ? '#1f6dda' : 'inherit' }" :href="'#' + node.slug"
-                @click.prevent="scrollToNode(node)">{{ node.title }}</a>
-        </li>
-    </ul>
+  <ul class="py-4 overflow-auto h-full">
+    <span class="ml-4">文章目录</span>
+    <li v-for="node in nodes" :key="node.slug" class="list-none text-minor-link px-6 py-1 text-sm"
+      :id="'toc-' + node.slug" :style="{ marginLeft: (node.level - 1) * 12 + 'px' }"
+      @click.prevent="scrollToNode(node)">
+      <a :style="{ color: currentSection === node.slug ? '#47a2e0' : 'inherit' }" :href="'#' + node.slug">{{ node.title
+        }}</a>
+    </li>
+  </ul>
 </template>
-  
+
 <script setup lang="ts">
 import Node from '@/type/node';
+import { useWindowScroll } from '@vueuse/core';
 import { ref, onMounted } from 'vue';
 const props = defineProps(['nodes']);
 function scrollToNode(node: Node) {
-    const targetElement = document.getElementById(node.slug);
-    if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  const targetElement = document.getElementById(node.slug);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }
-const emit = defineEmits<{(e: 'close'): void}>();
-function close() {emit('close');}
-const currentSection = ref<string|null>(null);
-onMounted(()=>{
-  const handleScroll = ()=>{
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    if(props.nodes){
-      for(const node of props.nodes){
+const { x, y } = useWindowScroll();
+const currentSection = ref('');
+onMounted(() => {
+  const handleScroll = () => {
+    if (props.nodes) {
+      for (const node of props.nodes) {
         const targetElement = document.getElementById(node.slug);
         if (targetElement) {
-          const offsetTop = targetElement.offsetTop;
+          const offsetTop = targetElement.offsetTop - 1;
           const offsetBottom = offsetTop + targetElement.offsetHeight;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+          if (y.value >= offsetTop && y.value < offsetBottom) {
             currentSection.value = node.slug;
             break;
           }
@@ -46,4 +41,4 @@ onMounted(()=>{
   }
   window.addEventListener('scroll', handleScroll);
 });
-</script> 
+</script>

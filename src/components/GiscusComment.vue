@@ -1,5 +1,5 @@
 <template>
-    <div class="holder mt-12 py-9 px-6">
+    <div class="holder mt-2 py-9 px-6">
         <GiscusCommentInner client:only class="w-full"/>
     </div>
 </template>
