@@ -26,8 +26,8 @@
       "_vendor-vue.746631c3.js"
     ]
   },
-  "_useUmami.daa6ddc5.js": {
-    "file": "assets/useUmami.daa6ddc5.js"
+  "_useUmami.e03cb388.js": {
+    "file": "assets/useUmami.e03cb388.js"
   },
   "_vendor-vue.746631c3.js": {
     "dynamicImports": [
@@ -78,10 +78,10 @@
     "src": "src/components/GiscusCommentInner.vue"
   },
   "src/components/TheFooter.vue": {
-    "file": "assets/TheFooter.f0795c6c.js",
+    "file": "assets/TheFooter.bca726e8.js",
     "imports": [
       "_vendor-vue.746631c3.js",
-      "_useUmami.daa6ddc5.js",
+      "_useUmami.e03cb388.js",
       "_vite.1299367e.js"
     ],
     "isDynamicEntry": true,
@@ -99,7 +99,7 @@
     "src": "src/components/WaifuList.vue"
   },
   "src/components/darkModeSwitcher.vue": {
-    "file": "assets/darkModeSwitcher.481e485e.js",
+    "file": "assets/darkModeSwitcher.8ccd764f.js",
     "imports": [
       "_vendor-vue.746631c3.js",
       "_useTheme.16aa9a0f.js",
@@ -110,10 +110,10 @@
     "src": "src/components/darkModeSwitcher.vue"
   },
   "src/components/postVisitorCounter.vue": {
-    "file": "assets/postVisitorCounter.c64115bb.js",
+    "file": "assets/postVisitorCounter.8cd1bd06.js",
     "imports": [
       "_vendor-vue.746631c3.js",
-      "_useUmami.daa6ddc5.js",
+      "_useUmami.e03cb388.js",
       "_vite.1299367e.js"
     ],
     "isDynamicEntry": true,
@@ -138,7 +138,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_404_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_404_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -178,7 +178,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_404_ile-4.19532b4c.js",
+    "file": "assets/virtual_ile_404_ile-4.32bba865.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -192,7 +192,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_about_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_about_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -206,7 +206,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_about_ile-2.f4c85800.js",
+    "file": "assets/virtual_ile_about_ile-2.d4163012.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -271,7 +271,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_about_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_about_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -285,7 +285,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_archive_created_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -299,7 +299,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_archive_created_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -313,7 +313,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-3.776f5659.js",
+    "file": "assets/virtual_ile_archive_created_ile-3.06f8dd28.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -327,7 +327,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-4.ca3bfd22.js",
+    "file": "assets/virtual_ile_archive_created_ile-4.42030043.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -341,7 +341,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-5.3c50d930.js",
+    "file": "assets/virtual_ile_archive_created_ile-5.23a9fc99.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -369,7 +369,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_archive_created_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -383,7 +383,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_archive_updated_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -397,7 +397,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_archive_updated_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -411,7 +411,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-3.776f5659.js",
+    "file": "assets/virtual_ile_archive_updated_ile-3.06f8dd28.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -425,7 +425,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-4.ca3bfd22.js",
+    "file": "assets/virtual_ile_archive_updated_ile-4.42030043.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -439,7 +439,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-5.3c50d930.js",
+    "file": "assets/virtual_ile_archive_updated_ile-5.23a9fc99.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -467,7 +467,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_archive_updated_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -481,7 +481,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -495,7 +495,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -509,7 +509,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-3.776f5659.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-3.06f8dd28.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -523,7 +523,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-4.ca3bfd22.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-4.42030043.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -537,7 +537,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-5.3c50d930.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-5.23a9fc99.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -565,7 +565,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_archive_visitors_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_archive_visitors_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -579,7 +579,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_girls_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_girls_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -593,7 +593,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_girls_ile-2.c7b2a11c.js",
+    "file": "assets/virtual_ile_girls_ile-2.71942516.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -669,7 +669,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_girls_ile-8.21b3062e.js",
+    "file": "assets/virtual_ile_girls_ile-8.2a838409.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -683,7 +683,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_index_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -697,7 +697,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_index_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -711,7 +711,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-3.776f5659.js",
+    "file": "assets/virtual_ile_index_ile-3.06f8dd28.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -725,7 +725,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-4.ca3bfd22.js",
+    "file": "assets/virtual_ile_index_ile-4.42030043.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -739,7 +739,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-5.3c50d930.js",
+    "file": "assets/virtual_ile_index_ile-5.23a9fc99.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -767,7 +767,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_index_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -781,7 +781,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_links_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_links_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -795,7 +795,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_links_ile-2.cc7e1f29.js",
+    "file": "assets/virtual_ile_links_ile-2.fe22c53d.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -860,7 +860,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_links_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_links_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -874,7 +874,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_ceso_note_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_ceso_note_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -888,7 +888,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_ceso_note_ile-2.e1d3ce53.js",
+    "file": "assets/virtual_ile_post_ceso_note_ile-2.ca3ed81e.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -953,7 +953,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_ceso_note_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_ceso_note_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -967,7 +967,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_draft_optimization_note_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -981,7 +981,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-2.28139e4d.js",
+    "file": "assets/virtual_ile_post_draft_optimization_note_ile-2.7536a43a.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1046,7 +1046,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_draft_optimization_note_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1060,7 +1060,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_hello_world_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1074,7 +1074,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_hello_world_ile-2.ded493f3.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-2.7e278e14.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1139,7 +1139,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_hello_world_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1153,7 +1153,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1167,7 +1167,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-2.fad71a58.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-2.af001130.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1232,7 +1232,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1246,7 +1246,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1260,7 +1260,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-2.f4237496.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-2.a75b3c26.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1325,7 +1325,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1339,7 +1339,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_japanese_note_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_japanese_note_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1353,7 +1353,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_japanese_note_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_post_japanese_note_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1418,7 +1418,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_japanese_note_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_japanese_note_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1432,7 +1432,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1446,7 +1446,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-2.8920c4bc.js",
+    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-2.30a92a91.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1511,7 +1511,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-7.4b85d32e.js",
+    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-7.161b2191.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1525,7 +1525,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_search_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_search_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1553,7 +1553,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_search_ile-3.c464ca4c.js",
+    "file": "assets/virtual_ile_search_ile-3.796a6d87.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1567,7 +1567,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tag_CESO_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tag_CESO_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1581,7 +1581,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_CESO_ile-2.e1d3ce53.js",
+    "file": "assets/virtual_ile_tag_CESO_ile-2.ca3ed81e.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1609,7 +1609,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_CESO_ile-4.19532b4c.js",
+    "file": "assets/virtual_ile_tag_CESO_ile-4.32bba865.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1623,7 +1623,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tag_Github Actions_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tag_Github Actions_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1637,7 +1637,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_Github Actions_ile-2.8920c4bc.js",
+    "file": "assets/virtual_ile_tag_Github Actions_ile-2.30a92a91.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1665,7 +1665,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_Github Actions_ile-4.19532b4c.js",
+    "file": "assets/virtual_ile_tag_Github Actions_ile-4.32bba865.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1679,7 +1679,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tag_hello world_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tag_hello world_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1693,7 +1693,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_hello world_ile-2.ded493f3.js",
+    "file": "assets/virtual_ile_tag_hello world_ile-2.7e278e14.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1721,7 +1721,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_hello world_ile-4.19532b4c.js",
+    "file": "assets/virtual_ile_tag_hello world_ile-4.32bba865.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1735,7 +1735,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tag_note_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1749,7 +1749,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-2.b5d85d1d.js",
+    "file": "assets/virtual_ile_tag_note_ile-2.974ef1f8.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1763,7 +1763,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-3.776f5659.js",
+    "file": "assets/virtual_ile_tag_note_ile-3.06f8dd28.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1791,7 +1791,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-5.8ef92a18.js",
+    "file": "assets/virtual_ile_tag_note_ile-5.7fa5d72f.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1805,7 +1805,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tag_test_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tag_test_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1819,7 +1819,7 @@
       "_iles.67fc4c26.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_test_ile-2.ded493f3.js",
+    "file": "assets/virtual_ile_tag_test_ile-2.7e278e14.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1847,7 +1847,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_test_ile-4.19532b4c.js",
+    "file": "assets/virtual_ile_tag_test_ile-4.32bba865.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1861,7 +1861,7 @@
       "_iles.67fc4c26.js",
       "src/components/darkModeSwitcher.vue"
     ],
-    "file": "assets/virtual_ile_tags_ile-1.cdaac84e.js",
+    "file": "assets/virtual_ile_tags_ile-1.7a8b8f8c.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
@@ -1889,7 +1889,7 @@
       "_iles.67fc4c26.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tags_ile-3.c464ca4c.js",
+    "file": "assets/virtual_ile_tags_ile-3.796a6d87.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.67fc4c26.js",
