@@ -174,3 +174,6 @@ footer.footer {
 .holder {
   background-color: var(--bg-front);
 }
+.text-link{
+  @apply underline text-blue-400
+}
