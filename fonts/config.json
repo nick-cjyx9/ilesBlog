@@ -107,36 +107,6 @@
       "css": "menu",
       "code": 61641,
       "src": "fontawesome"
-    },
-    {
-      "uid": "f7f29824b6c2d0a9645adc48297f41f4",
-      "css": "archive",
-      "code": 59404,
-      "src": "typicons"
-    },
-    {
-      "uid": "99qmwsnyl7d1848xayggtcwaysc4e415",
-      "css": "user-woman",
-      "code": 59405,
-      "src": "modernpics"
-    },
-    {
-      "uid": "31972e4e9d080eaa796290349ae6c1fd",
-      "css": "users",
-      "code": 59406,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "88ae7d00391a440ac7ccd009bcb34e4e",
-      "css": "guidedog",
-      "code": 59407,
-      "src": "elusive"
-    },
-    {
-      "uid": "a7e3ce91275bb77c0f4ec44a548b325c",
-      "css": "up-circle",
-      "code": 59408,
-      "src": "websymbols"
     }
   ]
 }
