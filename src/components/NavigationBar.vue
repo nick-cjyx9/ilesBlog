@@ -3,7 +3,7 @@
   md:sticky md:top-6 flex flex-col space-y-1">
     <div id="profile" class="text-center space-y-0.5">
       <img src="https://cravatar.cn/avatar/74ea31416d68b8ecbb828bba878327a2.png?s=200"
-        class="w-24 rounded-full ml-auto mr-auto my-2" />
+        class="w-24 rounded-full ml-auto mr-auto my-2" alt="avatar"/>
       <div class="text-important text-xl">
       <div class="animate-bounce inline-block text-xl mr-0.5">👋</div>Hi there! I'm <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b></div>
       <div class="text-minor text-sm mx-4">僕らは命に嫌われている</div>
@@ -18,7 +18,7 @@
     </ul>
     <div class="flex justify-center">  
       <DarkModeSwitcher client:idle class=" inline-flex"/>
-      <a href="/feed.xml" class="fa-rss-squared badge inline-block text-minor-link w-[32px] h-[32px] text-center"></a>
+      <a href="/feed.xml" class="fa-rss-squared badge inline-block text-minor-link w-[32px] h-[32px] text-center" aria-label="subscribe RSS here"></a>
     </div>
   </aside>
 </template>

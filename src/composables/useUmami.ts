@@ -16,7 +16,7 @@ export async function useActive() {
       throw new Error('Network response was not OK');
     }
     const data = await response.json();
-    return data[0]['x'] > 0 ? data[0]['x'] : 1;
+    return data['x'] > 0 ? data['x'] : 1;
   } catch (error) {
     console.error(error);
     return '-1';

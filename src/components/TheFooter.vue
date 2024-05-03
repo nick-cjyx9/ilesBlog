@@ -53,6 +53,6 @@ onMounted(async()=>{
   const q = await useAllTimeStats();
   active.value = p;
   pv.value = q['pageviews']['value'];
-  uv.value = q['uniques']['value'];
+  uv.value = q['visitors']['value'];
 });
 </script>
