@@ -1,5 +1,5 @@
 <template layout="base">
-<div class="holder dark:text-white w-full ml-auto mr-auto p-6 lg:p-12 rounded-lg">
+<div class="holder dark:text-white w-full ml-auto mr-auto p-6 lg:p-12">
   <headTitle>{{ page.frontmatter.title }}</headTitle>
   <ul class="relative mt-6 w-full space-y-3">
     <li v-for="post of posts_fltd">

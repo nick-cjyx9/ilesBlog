@@ -10,7 +10,7 @@ const dataHolder = document.getElementById('scrollHolder')
 document.addEventListener('scroll',()=>{
     let percenLoc = window.scrollY/documentHeight*100
     dataHolder!.innerText = Math.round(percenLoc>=100?100:percenLoc).toString()+'%'
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
 })
 document.getElementById('topper')!.addEventListener('click', ()=>{
     window.scrollTo({top:0,behavior:'smooth'});
