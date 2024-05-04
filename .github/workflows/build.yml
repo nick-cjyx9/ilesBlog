@@ -36,7 +36,7 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Generate Fuse.js data
-      run: mkdir ./public/fuse && node ./misc/scripts/fuseProvider.js
+      run: node ./misc/scripts/fuseProvider.js
     - name: build
       run: pnpm run build
     - name: Deploy
