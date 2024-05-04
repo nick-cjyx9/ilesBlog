@@ -40,7 +40,9 @@ html {
 .text-minor {
   color: var(--text-minor);
 }
-
+.text-link{
+  @apply underline text-blue-400
+}
 .text-important {
   color: var(--text-important);
 }

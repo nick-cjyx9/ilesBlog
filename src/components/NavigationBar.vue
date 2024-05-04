@@ -19,10 +19,11 @@
     <div class="flex justify-center !-mt-1">
       <DarkModeSwitcher client:idle class=" inline-flex"/>
       <a href="/feed.xml" class="fa-rss-squared badge" aria-label="subscribe RSS here"></a>
+      <a href="/search" class="fa-search badge" aria-label="searching"></a>
       <ReadingLocationController />
     </div>
   </div>
-  <TableofContent v-if="$frontmatter.title" :nodes="$meta.headings" client:load class="h-[250px]"/>
+  <TableofContent v-if="$meta.href.search(/\/(post|about)/)!==-1" :nodes="$meta.headings" client:load class="h-[250px]"/>
   </aside>
 </template>
 
