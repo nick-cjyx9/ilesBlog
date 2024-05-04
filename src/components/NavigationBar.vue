@@ -2,8 +2,8 @@
   <aside id="sidebar" class="md:sticky md:top-3 flex flex-col mb-4">
   <div class="shadow w-full h-fit py-2 space-y-1 justify-center min-w-[300px] holder">
     <div id="profile" class="text-center space-y-0.5">
-      <img src="https://cravatar.cn/avatar/74ea31416d68b8ecbb828bba878327a2.png?s=200"
-        class="w-24 rounded-full ml-auto mr-auto my-2" alt="avatar"/>
+      <img src="/avatar.png" width=120
+        class="rounded-full ml-auto mr-auto my-2" id="avatar" alt="avatar"/>
       <div class="text-important text-xl">
       <div class="animate-bounce inline-block text-xl mr-0.5">👋</div>Hi there! I'm <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b></div>
       <div class="text-minor text-sm mx-4">僕らは命に嫌われている</div>
@@ -37,4 +37,12 @@ const nav_data = ref({
   "友链": { link: "/links", icon: "fa-users" },
   "关于": { link: "/about", icon: "fa-guidedog" },
 });
+</script>
+
+<script client:load lang="ts">
+if(window.location.search.includes('uwu')||window.location.search.includes('kawaii')){
+  let avatar = document.getElementById('avatar') as HTMLImageElement;
+  avatar.src = '/uwu.png'
+  avatar.width = 200;
+}
 </script>
