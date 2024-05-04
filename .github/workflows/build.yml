@@ -18,7 +18,6 @@ jobs:
     #     fi
     - uses: actions/checkout@v4
       with:
-        submodules: 'true'
         token: ${{ secrets.ghtoken }}
     # - name: Update Submodules
     #   run: |
@@ -38,7 +37,7 @@ jobs:
     - name: Generate Fuse.js data
       run: node ./misc/scripts/fuseProvider.js
     - name: build
-      run: pnpm run build
+      run: pnpm run build&&ls
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
