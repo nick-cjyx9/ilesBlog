@@ -1,0 +1,1 @@
+const o=document.documentElement.offsetHeight-window.innerHeight,t=document.getElementById("scrollHolder");document.addEventListener("scroll",()=>{let e=window.scrollY/o*100;t.innerText=Math.round(e>=100?100:e).toString()+"%"});document.getElementById("topper").addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});const n=void 0;export{n as o};
