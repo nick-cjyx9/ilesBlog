@@ -18,8 +18,8 @@
     </ul>
     <div class="flex justify-center !-mt-1">
       <DarkModeSwitcher client:idle class=" inline-flex"/>
-      <a href="/search" class="fa-search badge" aria-label="subscribe RSS here"></a>
       <a href="/feed.xml" class="fa-rss-squared badge" aria-label="subscribe RSS here"></a>
+      <a href="/search" class="fa-search badge" aria-label="searching"></a>
       <ReadingLocationController />
     </div>
   </div>
