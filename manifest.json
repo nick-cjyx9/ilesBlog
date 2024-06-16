@@ -758,6 +758,107 @@
     "isEntry": true,
     "src": "virtual_ile_girls_ile-9"
   },
+  "virtual_ile_hidden_main_ile-1": {
+    "dynamicImports": [
+      "_iles.737c270a.js",
+      "src/components/darkModeSwitcher.vue"
+    ],
+    "file": "assets/virtual_ile_hidden_main_ile-1.ef8a1904.js",
+    "imports": [
+      "_vite.bb3ebe06.js",
+      "_iles.737c270a.js",
+      "_vendor-vue.5532a326.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-1"
+  },
+  "virtual_ile_hidden_main_ile-2": {
+    "file": "assets/virtual_ile_hidden_main_ile-2.50648b49.js",
+    "imports": [
+      "_iles.737c270a.js",
+      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.5532a326.js",
+      "_vite.bb3ebe06.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-2"
+  },
+  "virtual_ile_hidden_main_ile-3": {
+    "file": "assets/virtual_ile_hidden_main_ile-3.f07a232a.js",
+    "imports": [
+      "_iles.737c270a.js",
+      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.5532a326.js",
+      "_vite.bb3ebe06.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-3"
+  },
+  "virtual_ile_hidden_main_ile-4": {
+    "dynamicImports": [
+      "_iles.737c270a.js",
+      "src/components/postVisitorCounter.vue"
+    ],
+    "file": "assets/virtual_ile_hidden_main_ile-4.53a84e32.js",
+    "imports": [
+      "_vite.bb3ebe06.js",
+      "_iles.737c270a.js",
+      "_vendor-vue.5532a326.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-4"
+  },
+  "virtual_ile_hidden_main_ile-5": {
+    "dynamicImports": [
+      "_iles.737c270a.js",
+      "src/components/ArticleFooter.vue"
+    ],
+    "file": "assets/virtual_ile_hidden_main_ile-5.eccf9c1b.js",
+    "imports": [
+      "_vite.bb3ebe06.js",
+      "_iles.737c270a.js",
+      "_vendor-vue.5532a326.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-5"
+  },
+  "virtual_ile_hidden_main_ile-6": {
+    "file": "assets/virtual_ile_hidden_main_ile-6.db9bdf37.js",
+    "imports": [
+      "_iles.737c270a.js",
+      "_GiscusCommentInner.adab49c4.js",
+      "_vendor-vue.5532a326.js",
+      "_vite.bb3ebe06.js",
+      "_useTheme.a68f2bed.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-6"
+  },
+  "virtual_ile_hidden_main_ile-7": {
+    "file": "assets/virtual_ile_hidden_main_ile-7.e892c21f.js",
+    "imports": [
+      "_iles.737c270a.js",
+      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.5532a326.js",
+      "_vite.bb3ebe06.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-7"
+  },
+  "virtual_ile_hidden_main_ile-8": {
+    "dynamicImports": [
+      "_iles.737c270a.js",
+      "src/components/TheFooter.vue"
+    ],
+    "file": "assets/virtual_ile_hidden_main_ile-8.28a8eaaa.js",
+    "imports": [
+      "_vite.bb3ebe06.js",
+      "_iles.737c270a.js",
+      "_vendor-vue.5532a326.js"
+    ],
+    "isEntry": true,
+    "src": "virtual_ile_hidden_main_ile-8"
+  },
   "virtual_ile_index_ile-1": {
     "dynamicImports": [
       "_iles.737c270a.js",
@@ -1300,230 +1401,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_post_hello_world_ile-9"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-1": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-1.ef8a1904.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-1"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-2": {
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-2.50648b49.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-2"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-3": {
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-3.9185cfee.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "_tableofContent.746c94fb.js",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-3"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-4": {
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-4.5703f204.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-4"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-5": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-5.2a6d142a.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-5"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-6": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-6.dff5e421.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-6"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-7": {
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-7.ac514165.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "_GiscusCommentInner.adab49c4.js",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js",
-      "_useTheme.a68f2bed.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-7"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-8": {
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-8.49551049.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-8"
-  },
-  "virtual_ile_post_hidden_diary_2402_ile-9": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2402_ile-9.7a20160f.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2402_ile-9"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-1": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-1.ef8a1904.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-1"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-2": {
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-2.50648b49.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-2"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-3": {
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-3.fe37ea63.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "_tableofContent.746c94fb.js",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-3"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-4": {
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-4.5703f204.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-4"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-5": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-5.70e84115.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-5"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-6": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-6.dff5e421.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-6"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-7": {
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-7.ac514165.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "_GiscusCommentInner.adab49c4.js",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js",
-      "_useTheme.a68f2bed.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-7"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-8": {
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-8.49551049.js",
-    "imports": [
-      "_iles.737c270a.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.5532a326.js",
-      "_vite.bb3ebe06.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-8"
-  },
-  "virtual_ile_post_hidden_diary_2405_ile-9": {
-    "dynamicImports": [
-      "_iles.737c270a.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_hidden_diary_2405_ile-9.7a20160f.js",
-    "imports": [
-      "_vite.bb3ebe06.js",
-      "_iles.737c270a.js",
-      "_vendor-vue.5532a326.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_hidden_diary_2405_ile-9"
   },
   "virtual_ile_post_japanese_note_ile-1": {
     "dynamicImports": [
