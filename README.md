@@ -1,9 +1,9 @@
-# RinaBlog
+# ilesBlog
+
+personal blog project using iles + tailwindcss + umami.
 
 [îles]: https://github.com/ElMassimo/iles
 [configuration reference]: https://iles-docs.netlify.app/config
-
-This template should help get you started developing with [îles].
 
 ## Recommended IDE Setup
 
