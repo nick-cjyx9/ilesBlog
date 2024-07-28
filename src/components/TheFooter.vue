@@ -30,11 +30,11 @@
             <i class="fa-spinner animate-spin" v-if="uv===null"></i>
             <span v-else>{{ uv }}</span> 个访客到达过这里</span>
         </li>
-        <li>
+        <!-- <li>
           <i class="fa-location w-5 text-center"></i> <span>你可以到
           <a href="https://umami.nickchen.top/share/ofBFLDZwCthMZzRP/blog"
             target="_blank" class="underline">这里</a> 看看博客的数据。</span>
-        </li>
+        </li> -->
       </ul>
       <!-- fuck font awesome -->
     <span class="text-minor font-serif w-full text-end opacity-50 pr-2 my-4">&copy; 2024 <a

@@ -179,3 +179,20 @@ footer.footer {
 .text-link{
   @apply underline text-blue-400
 }
+
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  /* 可选，用于定义字体样式 */
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+.shiki {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: .9em !important;
+  border-radius: 8px;
+  padding: 3px;
+}

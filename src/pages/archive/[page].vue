@@ -1,11 +1,11 @@
 <template layout="base">
-    <div class="holder dark:text-white w-full ml-auto mr-auto p-6 lg:p-12 space-y-3">
+    <div class="dark:text-white w-full ml-auto mr-auto p-6 space-y-3">
         <header class="flex w-full mb-2">
             <HeadTitle class="!w-1/2 float-left">{{ props.desc }}分类</HeadTitle>
             <div class="float-right w-1/2 text-end text-sm space-x-1 p-3 mt-auto">
                 <a href="./updated" v-if="props.sort!='u'" class="munderline after:border-b-2 inline-block hint">按更新时间</a>
                 <a href="./created" v-if="props.sort!='c'" class="munderline after:border-b-2 inline-block hint">按创建时间</a>
-                <a href="./visitors" v-if="props.sort!='v'" class="munderline after:border-b-2 inline-block hint">按浏览量</a>
+                <!-- <a href="./visitors" v-if="props.sort!='v'" class="munderline after:border-b-2 inline-block hint">按浏览量</a> -->
             </div>
         </header>
         <div class="w-full justify-center">
@@ -28,10 +28,8 @@ export default definePageComponent({
         }, {
             params: { page: 'created' },
             props: { sort: 'c',desc:'按创建时间' },
-        }, {
-            params: { page: 'visitors' },
-            props: { sort: 'v',desc:'按浏览量(TODO)' },
-        }])
+        }
+    ])
     },
 }
 )

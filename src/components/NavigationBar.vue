@@ -1,11 +1,13 @@
 <template>
   <aside id="sidebar" class="md:sticky md:top-3 flex flex-col mb-4">
-  <div class="shadow w-full h-fit py-2 space-y-1 justify-center min-w-[300px] holder">
+  <div class="shadow w-full h-fit py-2 md:py-3 space-y-1 justify-center min-w-[350px] holder">
     <div id="profile" class="text-center space-y-0.5">
       <img src="/avatar.png" width=120
-        class="rounded-full ml-auto mr-auto my-2" id="avatar" alt="avatar"/>
-      <div class="text-important text-xl">
-      <div class="animate-bounce inline-block text-xl mr-0.5">👋</div>Hi there! I'm <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b></div>
+        class="rounded-full ml-auto mr-auto my-2 md:block hidden" id="avatar" alt="avatar"/>
+      <div class="text-important text-xl md:p-0 p-1">
+      <!-- <div class="animate-bounce inline-block text-xl mr-0.5">👋</div> -->
+      Hey! It's <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b>'s Blog!
+      </div>
       <div class="text-minor text-sm mx-4">僕らは命に嫌われている</div>
     </div>
     <ul class="md:justify-start justify-center flex md:flex-col md:px-6 w-full">
@@ -16,14 +18,14 @@
         </a>
       </li>
     </ul>
-    <div class="flex justify-center !-mt-1">
+    <div class="flex justify-center !-mt-1 md:!mt-0">
       <DarkModeSwitcher client:idle class=" inline-flex"/>
-      <a href="/feed.xml" class="fa-rss-squared badge" aria-label="subscribe RSS here"></a>
-      <a href="/search" class="fa-search badge" aria-label="searching"></a>
+      <a href="/feed.xml" class="fa-rss-squared badge mt-[1.2px]" aria-label="subscribe RSS here"></a>
+      <a href="/search" class="fa-search badge mt-[1px]" aria-label="searching"></a>
       <ReadingLocationController />
     </div>
   </div>
-  <TableofContent v-if="$meta.href.search(/\/(post|about)/)!==-1" :nodes="$meta.headings" client:load class="h-[250px]"/>
+  <TableofContent v-if="$meta.href.search(/\/(post|about|hidden)/)!==-1" :nodes="$meta.headings" client:load class="h-[250px]"/>
   </aside>
 </template>
 

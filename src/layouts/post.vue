@@ -38,7 +38,6 @@
 
 <style>
 @import '@/styles/github-markdown.css';
-@import '@/styles/codeblock.css';
 @import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
 @import '@/styles/viewer.css';
 </style>
@@ -50,7 +49,6 @@ if(container!==null){new Viewer(container);}
 <script setup lang="ts">
 const page = usePage();
 const { frontmatter, meta } = page;
-const needToc = $computed(()=> frontmatter.toc==false?false:true);
 frontmatter.description ||= meta.excerpt;
 //-----------------------------------------------//
 function formatDate(date: string) {

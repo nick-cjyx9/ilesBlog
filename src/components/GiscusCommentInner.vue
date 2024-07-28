@@ -6,6 +6,6 @@
 
 <script setup lang="ts">
 import Giscus from '@giscus/vue';
-import useTheme from "@/composables/useTheme";
+import { useTheme } from "@/composables/useTheme";
 const theme = useTheme();
 </script>

@@ -5,8 +5,6 @@
 </template>
   
 <script setup lang="ts">
-const page = usePage();
-
 useHead({
     link: [
         {

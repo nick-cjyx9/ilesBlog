@@ -1,5 +1,4 @@
 import feed from '@islands/feed';
-import prism from '@islands/prism';
 import headings from '@islands/headings';
 import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
@@ -10,9 +9,6 @@ export default defineConfig({
   turbo: false,
   modules: [
     headings(),
-    prism({
-      showLineNumbers:true
-    }),
     feed(),
     excerpt(),
     lastUpdated(),
@@ -52,7 +48,12 @@ export default defineConfig({
         return `${src}?preset=post`
     },
     remarkPlugins: ['remark-gfm', 'remark-math'],
-    rehypePlugins: ['rehype-external-links', 'rehype-katex'],
+    rehypePlugins: ['rehype-external-links', 'rehype-katex', ['@shikijs/rehype', {
+      themes: {
+        light: 'rose-pine-dawn',
+        dark: 'material-theme-ocean',
+      }
+    }]],
   },
   siteUrl: 'https://www.nickchen.top/',
 })

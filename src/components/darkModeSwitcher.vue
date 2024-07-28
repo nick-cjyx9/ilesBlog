@@ -1,12 +1,11 @@
 <template>
-  <div @click="theme = 'light';" role="button" aria-label="light mode" class="badge">
-    <i class="fa-sun"></i>
-  </div>
-  <div @click="theme = 'dark';" role="button" aria-label="dark mode" class="badge">
-    <i class="fa-moon"></i>
+  <div @click="toggleDark" role="button" class="badge">
+    <i class="fa-sun" v-if="isLight"></i>
+    <i class="fa-moon" v-else></i>
   </div>
 </template>
 <script setup lang="ts">
-import useTheme from "@/composables/useTheme";
-const { store: theme } = useTheme();
+import { toggleDark, useTheme } from "@/composables/useTheme";
+import { computed } from 'vue'
+const isLight = computed(()=>useTheme().store.value==='light')
 </script>

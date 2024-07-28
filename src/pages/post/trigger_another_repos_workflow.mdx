@@ -13,10 +13,10 @@ draft: false
 
 <Excerpt />
 
-## 使用场景：
+## 使用场景
 1. 将博文和hexo等generator的source code分开，方便管理（~~不是很方便~~，且如果博文全公开不建议这样做
 2. 在private的submodule里做修改后，main repo进行构建
-## 方法：
+## 方法
 1. 首先在private的A仓库根目录中创建`scripts/trigger.mjs`，填入具有workflow权限的token，本地调试需要运行`npm install octokit`，**注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发**
 
 ```js
