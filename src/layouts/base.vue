@@ -9,5 +9,6 @@
       <slot />
     </main>
   </div>
+  <div class="Canvas" style="position: fixed; right: 0px; bottom: 0px;z-index: 99999999; margin-bottom: -168px;" id="L2dCanvas"></div>
   <TheFooter client:visible />
 </template>

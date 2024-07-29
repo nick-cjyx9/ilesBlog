@@ -17,7 +17,11 @@ export default defineApp({
           'data-website-id': 'f1e56e6a-ea92-4228-b77e-e448f719a75b',
           'data-domains': "ikanata.eu.org,ilesblog.pages.dev,nickchen.top",
         },{
+          async: true,
+          src: 'https://cdn.jsdelivr.net/gh/nick-cjyx9/Live2D-Shima-Rin@latest/loadShimaRin.min.js'
+        },{
           children: `(() => {
+            window.onload = () => window.loadShimaRin(document.getElementById('L2dCanvas'));
             let dark;
             try {
               const theme = localStorage && localStorage.getItem('vueuse-color-scheme');
