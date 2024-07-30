@@ -4,6 +4,7 @@ import { defineConfig } from 'iles';
 import excerpt from '@islands/excerpt';
 import lastUpdated from './modules/lastUpdated';
 import images, { hdPreset } from '@islands/images'
+import remarkBiliLink from './src/unified/remarkBili';
 
 export default defineConfig({
   turbo: false,
@@ -47,7 +48,7 @@ export default defineConfig({
       if (!src.includes('?'))
         return `${src}?preset=post`
     },
-    remarkPlugins: ['remark-gfm', 'remark-math'],
+    remarkPlugins: ['remark-gfm', 'remark-math', remarkBiliLink],
     rehypePlugins: ['rehype-external-links', 'rehype-katex', ['@shikijs/rehype', {
       themes: {
         light: 'rose-pine-dawn',

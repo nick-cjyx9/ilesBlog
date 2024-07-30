@@ -21,7 +21,6 @@ declare module '@vue/runtime-core' {
     NotGenerateByAI: typeof import('./src/components/NotGenerateByAI.vue')['default']
     PostVisitorCounter: typeof import('./src/components/PostVisitorCounter.vue')['default']
     ReadingLocationController: typeof import('./src/components/ReadingLocationController.vue')['default']
-    RenderFeed: typeof import('./node_modules/.pnpm/@islands+feed@0.8.1_iles@0.9.5_vue@3.3.4/node_modules/@islands/feed/dist/render-feed')['RenderFeed']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TableofContent: typeof import('./src/components/TableofContent.vue')['default']
