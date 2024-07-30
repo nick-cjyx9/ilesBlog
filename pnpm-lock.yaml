@@ -20,9 +20,6 @@ dependencies:
   '@islands/images':
     specifier: ^0.8.2
     version: 0.8.2
-  '@islands/modules':
-    specifier: ^0.1.0
-    version: 0.1.0
   '@islands/prism':
     specifier: ^0.8.0
     version: 0.8.0
@@ -351,10 +348,6 @@ packages:
       unist-util-visit: 4.1.2
     transitivePeerDependencies:
       - supports-color
-
-  /@islands/modules@0.1.0:
-    resolution: {integrity: sha512-dpEXUgTvAaGdq6l1bAjhpQ2wWd+XP8kklHmN4w8izxydG5KJQuxAQI6ENhY28/CBEmVg2MlkkPT7vtOQNp/EBw==}
-    dev: false
 
   /@islands/pages@0.8.1(vue@3.3.4):
     resolution: {integrity: sha512-G84OdwtyViDVqUjXDC8+cEyjIRgS4lxvRZnP05jHa5NS4Mc6I9ul+sz5I85H3D+qwA7NswoJiq1ni28r0D9lrg==}
