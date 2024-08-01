@@ -1,14 +1,9 @@
 <script lang="ts">
 import { ref } from 'vue'
 import { useTags } from '@/composables/useTags'
-</script>
 
-<script setup lang="ts">
-import { usePosts } from '@/composables/usePosts'
-
-const props = defineProps(['tag'])
 const tags = useTags()
-definePageComponent({
+export default definePageComponent({
   getStaticPaths() {
     return tags.map(tag => ({
       params: { tag },
@@ -16,6 +11,13 @@ definePageComponent({
     }))
   },
 })
+</script>
+
+<script setup lang="ts">
+// eslint-disable-next-line import/first
+import { usePosts } from '@/composables/usePosts'
+
+const props = defineProps(['tag'])
 const page = usePage()
 page.frontmatter.title = `标签: ${props.tag} 下的文章`
 const posts = usePosts().value

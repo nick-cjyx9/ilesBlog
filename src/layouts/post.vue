@@ -1,6 +1,6 @@
 <script client:load lang="ts">
+import { useFetch } from '@vueuse/core'
 import Viewer from 'viewerjs'
-import AiSummary from '@/components/AiSummary.vue'
 
 let mviewer
 const container = document.getElementById('articleBody')
@@ -11,7 +11,7 @@ if (container !== null)
 
 <script setup lang="ts">
 // eslint-disable-next-line import/first
-import { useFetch } from '@vueuse/core'
+import { type Ref, onMounted } from 'vue'
 
 const page = usePage()
 const { frontmatter, meta } = page
@@ -40,7 +40,7 @@ useHead({
 })
 
 const id = frontmatter.id
-const api_base = `https://dynablog.nickchen.top/api/blog/${id}/context`
+const api_base = `https://dynablog.nickchen.top/api/blog/${id}/`
 
 interface DataType {
   title: string
@@ -50,7 +50,16 @@ interface DataType {
   aiSummary: string
   comments: object[]
 }
-const { isFetching, data } = useFetch<DataType>(api_base)
+let isFetching: Ref<boolean>
+let data: Ref<DataType>
+
+onMounted(() => {
+  // 😅😅😅😅😅😅😅
+  // eslint-disable-next-line ts/ban-ts-comment
+  // @ts-ignore
+  data = useFetch<DataType>(api_base).data
+  isFetching = useFetch<DataType>(api_base).isFetching
+})
 </script>
 
 <template layout="base">
@@ -90,13 +99,12 @@ const { isFetching, data } = useFetch<DataType>(api_base)
           </li>
         </ul>
       </div>
-      <AiSummary v-if="!isFetching" :content="data!.aiSummary" />
+      <AiSummary v-if="!isFetching && data" :content="data!.aiSummary" />
       <div id="articleBody" class="md:px-10 markdown-body h-fit">
         <slot />
         <hr>
       </div>
       <br>
-
       <ArticleFooter
         :is-a-i-generated="frontmatter.isAIGenerated ? true : false"
         :is-licensed="frontmatter.licensed" client:idle
