@@ -1,8 +1,8 @@
 import { useColorMode } from '@vueuse/core'
-import { nextTick } from 'vue';
+import { nextTick } from 'vue'
 
 export function useTheme() {
-  return useColorMode();
+  return useColorMode()
 }
 
 /**
@@ -15,7 +15,7 @@ export function toggleDark(event: MouseEvent) {
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
-    useTheme().store.value = useTheme().store.value==='dark'?'light':'dark'
+    useTheme().store.value = useTheme().store.value === 'dark' ? 'light' : 'dark'
     return
   }
 
@@ -27,7 +27,7 @@ export function toggleDark(event: MouseEvent) {
   )
   // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
-    useTheme().store.value = useTheme().store.value==='dark'?'light':'dark'
+    useTheme().store.value = useTheme().store.value === 'dark' ? 'light' : 'dark'
     await nextTick()
   })
   transition.ready
@@ -38,14 +38,14 @@ export function toggleDark(event: MouseEvent) {
       ]
       document.documentElement.animate(
         {
-          clipPath: useTheme().store.value==='dark'
+          clipPath: useTheme().store.value === 'dark'
             ? [...clipPath].reverse()
             : clipPath,
         },
         {
           duration: 400,
           easing: 'ease-out',
-          pseudoElement: useTheme().store.value==='dark'
+          pseudoElement: useTheme().store.value === 'dark'
             ? '::view-transition-old(root)'
             : '::view-transition-new(root)',
         },

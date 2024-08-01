@@ -27,5 +27,3 @@ dist-ssr
 *.sw?
 
 .iles-ssg-temp/
-
-public/fuse/*

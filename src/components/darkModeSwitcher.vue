@@ -1,11 +1,13 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { toggleDark, useTheme } from '@/composables/useTheme'
+
+const isLight = computed(() => useTheme().store.value === 'light')
+</script>
+
 <template>
-  <div @click="toggleDark" role="button" class="badge">
-    <i class="fa-sun" v-if="isLight"></i>
-    <i class="fa-moon" v-else></i>
+  <div role="button" class="badge" @click="toggleDark">
+    <i v-if="isLight" class="fa-sun" />
+    <i v-else class="fa-moon" />
   </div>
 </template>
-<script setup lang="ts">
-import { toggleDark, useTheme } from "@/composables/useTheme";
-import { computed } from 'vue'
-const isLight = computed(()=>useTheme().store.value==='light')
-</script>

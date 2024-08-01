@@ -1,7 +1,8 @@
 <template>
-    <div class="w-full h-96" id="container"></div>
-    <GiscusComment vlient:idle/>
+  <div id="container" class="w-full h-96" />
+  <GiscusComment vlient:idle />
 </template>
+
 <style scoped>
 @media only screen and (max-width: 600px) {
     #container {

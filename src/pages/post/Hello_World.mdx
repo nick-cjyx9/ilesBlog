@@ -71,6 +71,7 @@ _斜体文本_
 ## 代码块
 
 ```javascript
+// [!code word:Hello]
 function greet() {
   console.log('Hello World!');
 }
@@ -79,16 +80,17 @@ function greet() {
 ``` python
 # 仅作长代码高亮演示
 from json import dumps
-from time import sleep
+import time // [!code --]
+from time import sleep // [!code ++]
 from requests import get
 from re import findall, compile
 for i in range(0,len(origin_list)//5):
-    item = {}
+    item = {} # [!code error]
     item['characterName']:str = compile(r'title="(.*?)"').findall(origin_list[i * 5 + 1])[0]
     print(item['characterName'] + ' Getting...', end=' ')
     item['characterId']:str = compile(r'/character/(\d+)').findall(origin_list[i * 5 + 1])[0]
     item['characterAvatar']:str = 'https:' + compile(r'<img src="(.*?)">').findall(origin_list[i * 5 + 1])[0]
-    characterInfo = get(api_url + '/v0/characters/' + item['characterId'], headers=headers).json()
+    characterInfo = get(api_url + '/v0/characters/' + item['characterId'], headers=headers).json() 
     item['characterImg']:dict = characterInfo['images']
     item['characterSummary']:str = characterInfo['summary'].replace(r'"',r'\"')
     item['characterInfo']:list = characterInfo['infobox']
@@ -120,10 +122,6 @@ for i in range(0,len(origin_list)//5):
 $a^2 + b^2 = c^2$
 
 ## remarkBili
-
-[bilibili|BV1Ex4y1z7FU]
-
-`[bilibili|BV1qm421s7MR]`
 
 [bilibili|BV1qm421s7MR]
 

@@ -8,4 +8,4 @@ export default {
   startedAt: new Date('2023-07-19T00:00:00Z'),
   repo: 'nick-cjyx9/ilesBlog',
   branch: 'master',
-} as const;
+} as const

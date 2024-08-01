@@ -2,19 +2,15 @@
   path: /feed.xml
 </page>
 
-<template>
-  <RenderFeed format="rss" v-bind="{ options, items }"/>
-</template>
-
 <script setup lang="ts">
-import type { FeedOptions, FeedItem } from '@islands/feed'
-import { usePosts } from '@/composables/usePosts';
+import type { FeedItem, FeedOptions } from '@islands/feed'
+import { usePosts } from '@/composables/usePosts'
 
 const { site } = usePage()
 const url = site.url
 
 const options: FeedOptions = {
-  title: "Nick's webspace!",
+  title: 'Nick\'s webspace!',
   description: '',
   id: url,
   link: url,
@@ -38,3 +34,6 @@ const items = $computed(() => posts.map(async (doc) => {
 }))
 </script>
 
+<template>
+  <RenderFeed format="rss" v-bind="{ options, items }" />
+</template>
