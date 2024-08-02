@@ -116,6 +116,7 @@ html.light .markdown-body{
   max-width: 980px;
   margin: 0 auto;
   padding: 24px;
+  text-spacing-trim: space-first;
   @apply !bg-slate-100 dark:!bg-slate-800;
 }
 
