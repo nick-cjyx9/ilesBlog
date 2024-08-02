@@ -6,6 +6,7 @@
     </main>
   </div>
   <div id="L2dCanvas" class="Canvas" style="position: fixed; right: 0px; bottom: 0px;z-index: 99999999; margin-bottom: -168px;" />
+  <FunctionButtons client:load />
   <TheFooter client:visible />
 </template>
 

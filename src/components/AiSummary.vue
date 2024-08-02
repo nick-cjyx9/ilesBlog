@@ -19,6 +19,6 @@ onMounted(async () => {
     <HeadTitle class="!text-lg">
       AI 生成的摘要
     </HeadTitle><br>
-    <span class="w-full text-gray-600 dark:text-gray-300" style="font-size: 14.5px;">{{ data?.aiSummary }}</span>
+    <span class="block text-gray-600 dark:text-gray-300 max-w-[95%] mx-auto mt-2" style="font-size: 14.5px;">{{ data ? (data?.aiSummary) : `Loading...` }}</span>
   </div>
 </template>

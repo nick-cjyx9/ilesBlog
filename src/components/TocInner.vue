@@ -33,8 +33,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <ul class="py-4 overflow-auto h-full">
-    <span class="ml-4">文章目录</span>
+  <ul id="toc" class="py-4 overflow-auto h-full">
+    <li class="w-full py-3 -mt-3 pl-4 sticky -top-4 holder">
+      文章目录
+    </li>
     <li
       v-for="node in nodes" :id="`toc-${node.slug}`" :key="node.slug"
       class="list-none text-minor-link px-6 py-1 text-sm" :style="{ marginLeft: `${(node.level - 1) * 12}px` }"
