@@ -1,22 +1,18 @@
-<script client:load lang="ts">
-import { useFetch } from '@vueuse/core'
+<!-- eslint-disable import/first -->
+<script lang="ts" client:load>
 import Viewer from 'viewerjs'
 
 let mviewer
 const container = document.getElementById('articleBody')
 if (container !== null)
-  // eslint-disable-next-line unused-imports/no-unused-vars
+// eslint-disable-next-line unused-imports/no-unused-vars
   mviewer = new Viewer(container)
 </script>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/first
-import { type Ref, onMounted } from 'vue'
-
 const page = usePage()
 const { frontmatter, meta } = page
 frontmatter.description ||= meta.excerpt
-// -----------------------------------------------//
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })
 }
@@ -37,28 +33,6 @@ useHead({
     property: 'og:image:height',
     content: '800',
   }],
-})
-
-const id = frontmatter.id
-const api_base = `https://dynablog.nickchen.top/api/blog/${id}/`
-
-interface DataType {
-  title: string
-  id: number
-  postLink: string
-  likes: string
-  aiSummary: string
-  comments: object[]
-}
-let isFetching: Ref<boolean>
-let data: Ref<DataType>
-
-onMounted(() => {
-  // 😅😅😅😅😅😅😅
-  // eslint-disable-next-line ts/ban-ts-comment
-  // @ts-ignore
-  data = useFetch<DataType>(api_base).data
-  isFetching = useFetch<DataType>(api_base).isFetching
 })
 </script>
 
@@ -87,7 +61,8 @@ onMounted(() => {
               <span
                 class="ml-1
               border-gray-600 after:border-b-2"
-              ><PostVisitorCounter :link="meta.href" client:idle /></span>
+              >
+                <PostVisitorCounter :link="meta.href" client:idle /></span>
             </a>
           </li>
           <li v-for="tag in frontmatter.tags" :key="tag">
@@ -99,7 +74,7 @@ onMounted(() => {
           </li>
         </ul>
       </div>
-      <AiSummary v-if="!isFetching && data" :content="data!.aiSummary" />
+      <AiSummary :content="frontmatter.id" client:idle />
       <div id="articleBody" class="md:px-10 markdown-body h-fit">
         <slot />
         <hr>
