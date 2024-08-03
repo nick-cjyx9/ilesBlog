@@ -1,0 +1,1 @@
+async function c(t){const a=`https://dynablog.nickchen.top/api/blog/${t}/context`;try{return await(await fetch(a)).json()}catch{return null}}async function o(t){const a=`https://dynablog.nickchen.top/api/blog/${t}/like`;try{return await(await fetch(a,{method:"POST"})).json()}catch{return null}}export{c as g,o as l};
