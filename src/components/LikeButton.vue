@@ -12,8 +12,12 @@ const likes = ref(0)
 const liked = ref(-1)
 
 async function handleLike() {
+  if (liked.value === 1) {
+    // eslint-disable-next-line no-alert
+    alert('You have already liked this post')
+  }
   const result = await like(props.id as number)
-  if (result.success && liked.value !== 1) {
+  if (result.success) {
     liked.value = 1
     likes.value++
   }
