@@ -79,6 +79,7 @@ useHead({
         <slot />
         <hr>
       </div>
+      <LikeButton v-if="frontmatter.id" :id="frontmatter.id" client:idle />
       <br>
       <ArticleFooter
         :is-a-i-generated="frontmatter.isAIGenerated ? true : false"
