@@ -7,7 +7,7 @@ export interface ContextDataType {
   comments: object[]
 }
 
-export async function getBlogContext(id: number): Promise<ContextDataType | null> {
+export async function getBlogContext(id: number) {
   const api_base = `https://dynablog.nickchen.top/api/blog/${id}/context`
   try {
     return await ((await fetch(api_base)).json())

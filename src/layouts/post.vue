@@ -74,7 +74,7 @@ useHead({
           </li>
         </ul>
       </div>
-      <AiSummary :content="frontmatter.id" client:load />
+      <AiSummary v-if="frontmatter.id" :id="frontmatter.id" client:idle />
       <div id="articleBody" class="md:px-10 markdown-body h-fit">
         <slot />
         <hr>

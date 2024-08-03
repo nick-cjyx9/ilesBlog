@@ -197,11 +197,11 @@ html.dark .shiki span {
   padding: 3px;
 }
 
-.toc-slide-down {
+#sidebar.toc-slide-down {
   animation: tocSlideDown 0.4s ease-in-out forwards;
   top: -150px;
   position: sticky;
-
+  @apply !shadow-2xl
 }
 
 @keyframes tocSlideDown {

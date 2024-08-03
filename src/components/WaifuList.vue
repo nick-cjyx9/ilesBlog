@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import type { Ref } from 'vue'
 
@@ -13,7 +13,7 @@ const dataList: Ref<Array<{
   }
   characterSummary: string
   characterInfo: object[]
-}>> = ref([])
+} | null>> = ref([])
 const errLog: Ref<string | null> = ref(null)
 onMounted(async () => {
   try {
@@ -25,22 +25,28 @@ onMounted(async () => {
     const text_data = await r.text()
     const native_data = text_data.split('\n')
     for (let i = 0; i < native_data.length; i++) {
-      dataList.value[i] = JSON.parse(native_data[i])
+      try {
+        dataList.value[i] = JSON.parse(native_data[i])
+      }
+      catch {
+        dataList.value[i] = null
+      }
     }
   }
   catch (err) {
     console.error(err)
   }
 })
-</script>
+</script> -->
 
 <template>
-  <div v-if="dataList.length === 0">
+  <!-- <div v-if="dataList.length === 0">
     Loading... <br><p v-if="errLog !== null" class="inline">
       {{ errLog }} <a onclick="location.reload();" href="javascript:void(0)">重试</a>
     </p>
   </div>
   <div v-else class="grid-cols-2 md:grid-cols-4 grid w-full h-full">
-    <WaifuCard v-for="data in dataList" :key="data.characterId" :waifu_data="data" />
-  </div>
+    <WaifuCard v-for="data in dataList" :key="data?.characterId" :waifu_data="data" />
+  </div> -->
+  This page is under construction.
 </template>

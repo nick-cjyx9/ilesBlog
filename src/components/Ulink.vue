@@ -18,4 +18,5 @@ defineProps(['url', 'avatar', 'name', 'desc', 'color', 'id'])
       </div>
     </a>
   </li>
+  <br>
 </template>

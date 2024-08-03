@@ -15,7 +15,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="rounded-lg mx-auto max-w-[90%] mt-6 p-5 w-full border-gray-300 border-2">
+  <div class="rounded-lg mx-auto max-w-[95%] mt-6 p-5 w-full border-gray-300 border-2">
     <HeadTitle class="!text-lg">
       AI 生成的摘要
     </HeadTitle><br>

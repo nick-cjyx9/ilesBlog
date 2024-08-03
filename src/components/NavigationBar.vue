@@ -20,7 +20,7 @@ if (window.location.search.includes('uwu') || window.location.search.includes('k
 </script>
 
 <template>
-  <aside id="sidebar" class="sticky z-50 shadow-2xl md:shadow md:top-3 flex flex-col mb-4">
+  <aside id="sidebar" class="sticky z-50 shadow-lg md:top-3 flex flex-col mb-4">
     <div class="shadow w-full h-fit py-2 md:py-3 space-y-1 justify-center min-w-[350px] holder">
       <div id="profile" class="text-center space-y-0.5">
         <img
@@ -50,6 +50,6 @@ if (window.location.search.includes('uwu') || window.location.search.includes('k
         <ReadingLocationController />
       </div>
     </div>
-    <TableofContent v-if="$meta.href.search(/\/(post|about|hidden)/) !== -1" :nodes="$meta.headings" client:load class="h-[400px] md:h-[250px]" />
+    <TableofContent v-if="$meta.href.search(/\/(post|about|hidden)/) !== -1" :nodes="$meta.headings" client:load class="h-[320px] md:h-[250px]" />
   </aside>
 </template>
