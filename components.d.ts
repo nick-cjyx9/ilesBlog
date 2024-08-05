@@ -17,7 +17,7 @@ declare module '@vue/runtime-core' {
     GiscusCommentInner: typeof import('./src/components/GiscusCommentInner.vue')['default']
     HeadTitle: typeof import('./src/components/HeadTitle.vue')['default']
     Heimu: typeof import('./src/components/Heimu.vue')['default']
-    Island: typeof import('./node_modules/.pnpm/iles@0.9.5_sass@1.77.8/node_modules/iles/dist/client/app/components/Island.vue')['default']
+    Island: typeof import('./node_modules/.pnpm/iles@0.9.5/node_modules/iles/dist/client/app/components/Island.vue')['default']
     LikeButton: typeof import('./src/components/LikeButton.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
