@@ -5,7 +5,8 @@ const nav_data = ref({
   主页: { link: '/', icon: 'fa-home' },
   归档: { link: '/archive/updated', icon: 'fa-archive' },
   标签: { link: '/tags', icon: 'fa-tag' },
-  二次元: { link: '/girls', icon: 'fa-user-woman' },
+  // 二次元: { link: '/girls', icon: 'fa-user-woman' },
+  频道: { link: 'https://memos.nickchen.top/', icon: 'fa-home' },
   友链: { link: '/links', icon: 'fa-users' },
   关于: { link: '/about', icon: 'fa-guidedog' },
 })
