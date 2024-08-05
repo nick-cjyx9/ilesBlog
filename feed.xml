@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Sun, 04 Aug 2024 15:04:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Aug 2024 01:18:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -19,23 +19,21 @@
             <link>https://www.nickchen.top/post/reply_to_deer_stranger</link>
             <guid>https://www.nickchen.top/post/reply_to_deer_stranger</guid>
             <pubDate>Sun, 04 Aug 2024 22:56:38 GMT</pubDate>
-            <description><![CDATA[今天看到一篇文章（https://www.saroprock.com/blog/the-world-past），很好地把我避免思考的一些东西蛮横地甩在我面前，
-于是我开始写下这些文字作为回复，但也不仅仅是回复。
+            <description><![CDATA[今天看到一篇文章 (https://www.saroprock.com/blog/the-world-past) ，很好地把我避免思考的一些东西蛮横地甩在我面前，
+于是我开始写下这些文字作为回复，但也不仅仅是回复。Route 为什么是 deer 而不是 dear 呢？因为我打错了
 ]]></description>
-            <content:encoded><![CDATA[<p>今天看到一篇文章（<a href="https://www.saroprock.com/blog/the-world-past%EF%BC%89%EF%BC%8C%E5%BE%88%E5%A5%BD%E5%9C%B0%E6%8A%8A%E6%88%91%E9%81%BF%E5%85%8D%E6%80%9D%E8%80%83%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF%E8%9B%AE%E6%A8%AA%E5%9C%B0%E7%94%A9%E5%9C%A8%E6%88%91%E9%9D%A2%E5%89%8D%EF%BC%8C" rel="nofollow">https://www.saroprock.com/blog/the-world-past），很好地把我避免思考的一些东西蛮横地甩在我面前，</a>
-于是我开始写下这些文字作为回复，但也不仅仅是回复。</p>
+            <content:encoded><![CDATA[<p>今天看到一篇文章 (<a href="https://www.saroprock.com/blog/the-world-past" rel="nofollow">https://www.saroprock.com/blog/the-world-past</a>) ，很好地把我避免思考的一些东西蛮横地甩在我面前，
+于是我开始写下这些文字作为回复，但也不仅仅是回复。<del>Route 为什么是 deer 而不是 dear 呢？因为我打错了</del></p>
 
 <h2 id="一些回应" class="heading"><a href="#一些回应" class="heading-anchor" aria-label="Permalink for 一些回应" tabindex="-1"></a>一些回应</h2>
 <h3 id="和平的世界是保护弱者的吗？" class="heading"><a href="#和平的世界是保护弱者的吗？" class="heading-anchor" aria-label="Permalink for 和平的世界是保护弱者的吗？" tabindex="-1"></a>和平的世界是保护弱者的吗？</h3>
-<p>和平的世界不存在你所谓的”弱者“，在理想的共产主义的生活中，人人平等，人们各得其所，个人的创造力和潜能得到充分发挥。
+<p>理想的和平的世界不存在你所谓的“弱者”，在理想的共产主义的生活中，人人平等，人们各得其所，个人的创造力和潜能得到充分发挥。
 每个人不仅是经济上的平等者，也是文化和精神上的平等者。现在的社会之所以存在这些现象，其因在于不能公平、有效地分配资
 源和财富以及生产力不够发达，上层建筑处于过渡阶段。</p>
 <h3 id="互联网贩卖情绪的现象何以存在？" class="heading"><a href="#互联网贩卖情绪的现象何以存在？" class="heading-anchor" aria-label="Permalink for 互联网贩卖情绪的现象何以存在？" tabindex="-1"></a>互联网贩卖情绪的现象何以存在？</h3>
 <p>或许的确如你我观察，这种现象（尤以‘望周知’为甚）在今年的网络上开始泛滥。</p>
-<p>但并不是哪个社区环境变得怎样的缘故，上网的都是同一批人，在不同的圈子发布不同的内容。
-现象学中强调主体的意向性，即意识总是指向某物。所以排除部分的“乐子人”，
-这种现象表明的确有焦虑、困境存在，并且之前“默默无闻”的“人群”此时选择了将其传递，
-进一步表明了</p>
+<p>但并不是哪个社区环境变得怎样的缘故，上网的都是同一批人，在不同的圈子发布不同的内容。排除部分的“乐子人”，
+这种现象表明的确有焦虑、困境存在，并且之前“默默无闻”的“人群”此时选择了将其传递，</p>
 <h3 id="那这是为什么呢？" class="heading"><a href="#那这是为什么呢？" class="heading-anchor" aria-label="Permalink for 那这是为什么呢？" tabindex="-1"></a>那这是为什么呢？</h3>
 <p>在这种相互关系中，发布者获得归属感，观察者获得情绪价值，平台获得数据和流量。“破防的”只有理性思考者，
 那还有什么理由阻止这种 win-win-win 的传播呢？（笑）</p>
@@ -43,7 +41,7 @@
 <blockquote>
 <p>“今天的年轻人，最在乎的就是你能不能给我‘情绪价值’，这对于老一辈人来说是不可理喻的。”许纪霖说。在研究年轻一代时，他发现，这一代人推崇“后物质主义”</p>
 </blockquote>
-<p>它们很敏锐的意识到了自己处身于后真相的时代，一切不可相信，意识到了自己对抗潮流的渺小，但是不愿意融入这个“集体”的时代</p>
+<p>它们很敏锐的意识到了自己处身于后真相的时代，一切不可相信，意识到了自己对抗潮流的渺小，但是不愿意融入这个“集体”的时代，成为“反抗者”</p>
 <blockquote>
 <p>呵呵，我怎么可能不共情，只是我自己一次又一次地压抑。为什么？因为……</p>
 </blockquote>
@@ -70,12 +68,12 @@
 网络和孤独会夺取人理性的一面，这一课我实在在他身上领教得深刻。这一切总是需要“人”来打破，
 而不是由创造这一环境的网络本身，这一“伪人”来根治。就是这样，或许不需要太多解释，那天下午，
 他奇迹般地给我开了门，我们奇迹般地一起哭了一场，奇迹般地看到了他哭着又笑地吃泡面，认真地
-给我说他会好好地和自己的母亲继续活下去。朋友，这样粗犷而原始的情绪，即便事到如今我还不知道
+给我说他会好好地和自己的母亲继续活下去。<sup><a href="#user-content-fn-0" id="user-content-fnref-0" data-footnote-ref aria-describedby="footnote-label">1</a></sup>朋友，这样粗犷而原始的情绪，即便事到如今我还不知道
 这是怎么回事，这不正是你批驳的“廉价情绪”的对立吗？</p>
 <p>我笑着和他挥手告别，感到“恶心”走了，即便我还是没有认识他，即便他是个成绩不好的“水货”，那也只是存在在我脑袋的
 一些概念罢了，我狰狞着面目离开，水滴荒诞地从眼角滑落。让“自我”任性地把浊秽扫开，用以取而代之的那东西，
-他可能被叫做信仰。</p>
-<p>你说的很对，人的情感的确是可以逐步简单化到 AI 程度的。AI 不需要向我们靠拢，而是我们向它靠拢。
+他可能被叫做信仰。<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">2</a></sup></p>
+<p>你说的很对，人的情感的确是可以逐步廉价到 AI 程度的。AI 不需要向我们靠拢，而是我们向它靠拢。
 等技术发展到一定程度，一定会有这种服务出现吧：
 花费十分钟和你的一些隐私，为你制作《父母离异，他是怎么靠着自己生活下去的，共勉！》视频，“人们”从评论区抽取者
 声张，叫骂，共情的廉价情感，你从中获得利益。</p>
@@ -84,31 +82,39 @@
 <p>但你也不用堵住人的嘴。我宁愿相信真的有老庄所言的“道”主宰着，
 举我们的教育为例，“存在人自己本身的属性太差了，或者是练了一堆不适合自己的连招”就意味着接受这一切吗，
 职高的存在一直被污名化着，它本来会成为不适格者的另一个游戏，却排斥着他们，有人嘴里的“改革”也不知道改善了谁和谁的生活，
-“你有什么资格去指出不适格者的的不足？” 如你所说，从老师们的角度来看，他们过于害怕自身行为产生的后果，表现出来就是“无奈”与“努力”了。
-但需要被“拯救”的却不是老师，而是千千万万“不适格者”，天晓得他们独特的情绪会不会成为改革的契机。</p>
+但需要被“拯救”的却不是老师，而是千千万万“不适格者”，天晓得他们独特的情绪会不会成为改革的契机。
+而从老师们的角度来看，他们（并不全是）过于害怕自身行为产生的后果，表现出来就是“无奈”与“努力”了。</p>
 <h2 id="离题" class="heading"><a href="#离题" class="heading-anchor" aria-label="Permalink for 离题" tabindex="-1"></a>离题</h2>
 <blockquote>
 <p>我经常觉得和有些人聊天很累，因为你不知道他们到底是怎么想的。发一个笑脸，他到底是笑呢还是嘲讽呢；你自己发一个哈哈还不够，万一别人觉得你是在敷衍他怎么办。我小时候就看到一个例子：以前发“哈哈哈”就是大笑，现在不发个三行就不算笑了。</p>
 </blockquote>
-<p>的确，会有这种感觉。我在一边写这篇文章的时候一边在想自己是否被网线那头的陌生人厌恶了，这篇文章会不会被看完。
-所以我喜欢在开源社区和人交流，人们不管是开发者还是用户都在为了一个目的交流，不用太过矫饰文字，不必担心指责与被指责。</p>
+<p>的确，会有这种感觉。我在一边写这篇文章的时候一边在想自己是否被网线那头的陌生人厌恶了，这篇文章会不会被看完。</p>
+<p>所以我很喜欢在开源社区和人交流，人们不管是开发者还是用户都在为了一个目的交流，用户可能某天变成开发者，开发者同时也是用户，关系对等，
+不用太过矫饰文字，不必担心指责与被指责，因为几乎不会有人因为开源无关的事情认真地指责你的人品。</p>
 <blockquote>
 <p>Cause he said "U can feel free to close this PR!".</p>
 </blockquote>
-<p><img src="https://s2.loli.net/2024/08/04/Hg1wNkEGquxicdy.png" alt="image.png"></p>
 <p>我在社区找到了位置，有人写 app，有人测试，有人写文档，而我找到了自己的位置，写前端。我不敢说“这就是共产主义了”。但是这里的“不适格者”即便在<code>fix: typo</code>的 PR 里
-也能收获到作者最真挚的感谢。所以人会自发进步，会去挑战自己曾经做不到的东西，所以我会抱着热情，不怕被人厌烦地去 show off。所以我放弃了在一些社交平台上塑造自己的人设，</p>
+也能收获到作者最真挚的感谢。</p>
+<p><img src="https://s2.loli.net/2024/08/04/Hg1wNkEGquxicdy.png" alt="image.png" loading="lazy"></p>
+<p>所以人会自发进步，会去挑战自己曾经做不到的东西，所以我会抱着热情，不怕被人厌烦地去 show off。所以我放弃了在一些社交平台上塑造自己的人设，</p>
 <p>嗯，我写的很快，原谅我很多观点都不成熟，或没有表达得太清楚，如果有人看到了这里，留下你的评论吧，
 虽然如果太恶劣的话我会删掉（，但是你的心意都会被我好好收下的！</p>
 <h2 id="真的是最后了" class="heading"><a href="#真的是最后了" class="heading-anchor" aria-label="Permalink for 真的是最后了" tabindex="-1"></a>真的是最后了</h2>
 <blockquote>
 <p>Let the world changes you and you can change the world -- Che Guevara</p>
 </blockquote>
-<p>希望你能从这难以理解的世界“趁火打劫”出独特的情感！<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
+<p>高考很重要，但是并没有重要到让你失去思考，希望你能从这难以理解的世界“趁火打劫”出独特的情感！<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">3</a></sup></p>
 <section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
 <ol>
+<li id="user-content-fn-0">
+<p>是奇迹，但我想写的也是“荒谬” ref:(<a href="https://m.thepaper.cn/baijiahao_8821798" rel="nofollow">https://m.thepaper.cn/baijiahao_8821798</a>) <a href="#user-content-fnref-0" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
 <li id="user-content-fn-1">
-<p>ref: (<a href="https://nickchen.top/post/my_sight_of_education" rel="nofollow">https://nickchen.top/post/my_sight_of_education</a>) <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+<p>原谅我最近看太多《恶心》，为了表意稍微虚构了一下自己的感受。 ref: (<a href="https://weread.qq.com/web/reader/4e132f50811e1a3bcg016b5b" rel="nofollow">https://weread.qq.com/web/reader/4e132f50811e1a3bcg016b5b</a>) <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>ref: (<a href="https://nickchen.top/post/my_sight_of_education" rel="nofollow">https://nickchen.top/post/my_sight_of_education</a>) <a href="#user-content-fnref-2" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
 </li>
 </ol>
 </section>]]></content:encoded>
@@ -223,7 +229,6 @@
 <p>到了这个地步，读书与入学，完全是两件事了，去原意远矣。我所希望者，是诸位早日觉悟，在明知被卖之下，仍旧不忘其初，不背读
 书之本意，不失读书的快乐，不昧于真正读书的艺术。并希望诸位趁火打劫，虽然被卖。钱也要拿，书也要读，如此就两得其便了。</p>
 <h2 id="结语" class="heading"><a href="#结语" class="heading-anchor" aria-label="Permalink for 结语" tabindex="-1"></a>结语</h2>
-
 <p>“趁火打劫”就是对于我现在的态度的完美概括了。</p>]]></content:encoded>
         </item>
         <item>
@@ -572,7 +577,7 @@
 <p><a href="https://www.baidu.com" rel="nofollow">百度</a><br>
 <a href="https://www.google.com" rel="nofollow">谷歌</a></p>
 <h3 id="图片" class="heading"><a href="#图片" class="heading-anchor" aria-label="Permalink for 图片" tabindex="-1"></a>图片</h3>
-<p><img src="https://markdown-here.com/img/icon256.png" alt="Markdown Logo"></p>
+<p><img src="https://markdown-here.com/img/icon256.png" alt="Markdown Logo" loading="lazy"></p>
 <h2 id="引用" class="heading"><a href="#引用" class="heading-anchor" aria-label="Permalink for 引用" tabindex="-1"></a>引用</h2>
 <blockquote>
 <p>这是一个引用文本。</p>
