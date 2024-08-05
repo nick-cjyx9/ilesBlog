@@ -1,7 +1,8 @@
 /* eslint-disable regexp/no-super-linear-backtracking */
 /* eslint-disable regexp/no-misleading-capturing-group */
 /* eslint-disable regexp/optimal-quantifier-concatenation */
-import { readFile } from 'node:fs/promises'
+
+import { readFile, stat } from 'node:fs/promises'
 import feed from '@islands/feed'
 import headings from '@islands/headings'
 import { defineConfig } from 'iles'
@@ -13,7 +14,7 @@ import images, { hdPreset } from '@islands/images'
 //   transformerNotationHighlight,
 // } from '@shikijs/transformers'
 import rehypeShiki from '@shikijs/rehype'
-import lastUpdated from './modules/lastUpdated'
+import { simpleGit } from 'simple-git'
 import remarkBiliLink from './src/unified/remarkBili'
 
 function removeMd(md: string) {
@@ -87,7 +88,6 @@ export default defineConfig({
     headings(),
     feed(),
     excerpt(),
-    lastUpdated(),
     images({
       post: hdPreset({
         class: 'img post',
@@ -117,7 +117,7 @@ export default defineConfig({
         return `${src}?preset=post`
     },
     remarkPlugins: ['remark-gfm', 'remark-math', remarkBiliLink],
-    rehypePlugins: ['rehype-external-links', 'rehype-katex', [rehypeShiki, {
+    rehypePlugins: ['rehype-external-links', 'rehype-plugin-image-native-lazy-loading', 'rehype-katex', [rehypeShiki, {
       // transformers: [
       //   transformerNotationErrorLevel(),
       //   transformerNotationDiff(),
@@ -132,6 +132,26 @@ export default defineConfig({
   async extendFrontmatter(frontmatter, filename) {
     if (filename.includes('/post/') || filename.includes('/hidden/')) {
       frontmatter.layout ||= 'post'
+
+      const log = (await simpleGit().log({
+        file: filename,
+        strictDate: true,
+      })).all.filter(commit => !commit.body.includes('[log skip]'))
+
+      const latestCommit = log[0]
+      const firstCommit = log.at(-1)
+
+      if (latestCommit && firstCommit) {
+        frontmatter.lastUpdated = new Date(latestCommit.date)
+        frontmatter.published = new Date(firstCommit.date)
+      }
+      else {
+        const { birthtime, mtime } = await stat(filename)
+        frontmatter.lastUpdated = mtime
+        frontmatter.published = birthtime
+      }
+      // https://github.com/ouuan/iles-blog/blob/master/iles.config.ts
+
       let withSummary = false
       const resp: any = await (await fetch(`${api_base}blog/context?path=${frontmatter.title}`)).json()
       if (resp.exist) {
