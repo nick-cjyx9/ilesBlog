@@ -1,0 +1,24 @@
+---
+title: Windows 下 Bun install 很慢解决方法
+date: 2024-08-08 16:03:28
+tags: ["solution",]
+licensed: true
+isAIGenerated: false
+cover: ""
+draft: false
+---
+
+由于设置代理后 Bun 会报错，只能全局换成国内源。
+
+<Excerpt />
+
+```powershell
+notepad $HOME\.bunfig.toml
+```
+
+新建文件 -> 粘贴以下内容
+
+```toml
+[install]
+registry = "https://registry.npmmirror.com/"
+```
