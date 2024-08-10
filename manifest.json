@@ -431,8 +431,8 @@
     "file": "assets/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTEUc-d4723083.woff2",
     "src": "HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTEUc.woff2"
   },
-  "_FunctionButtons.c456f9ca.js": {
-    "file": "assets/FunctionButtons.c456f9ca.js",
+  "_FunctionButtons.ef43678c.js": {
+    "file": "assets/FunctionButtons.ef43678c.js",
     "imports": [
       "_vendor-vue.b95f88b6.js"
     ]
@@ -508,9 +508,9 @@
     "src": "src/components/ArticleFooter.vue"
   },
   "src/components/FunctionButtons.vue": {
-    "file": "assets/FunctionButtons.c95da4cc.js",
+    "file": "assets/FunctionButtons.81345cb9.js",
     "imports": [
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -664,10 +664,10 @@
     "src": "virtual_ile_404_ile-4"
   },
   "virtual_ile_404_ile-5": {
-    "file": "assets/virtual_ile_404_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_404_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -801,10 +801,10 @@
     "src": "virtual_ile_about_ile-8"
   },
   "virtual_ile_about_ile-9": {
-    "file": "assets/virtual_ile_about_ile-9.aa1bb5cb.js",
+    "file": "assets/virtual_ile_about_ile-9.2cb4e4a3.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -840,10 +840,10 @@
     "src": "virtual_ile_archive_created_ile-10"
   },
   "virtual_ile_archive_created_ile-11": {
-    "file": "assets/virtual_ile_archive_created_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_archive_created_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -999,10 +999,10 @@
     "src": "virtual_ile_archive_updated_ile-10"
   },
   "virtual_ile_archive_updated_ile-11": {
-    "file": "assets/virtual_ile_archive_updated_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_archive_updated_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1242,10 +1242,10 @@
     "src": "virtual_ile_girls_ile-8"
   },
   "virtual_ile_girls_ile-9": {
-    "file": "assets/virtual_ile_girls_ile-9.aa1bb5cb.js",
+    "file": "assets/virtual_ile_girls_ile-9.2cb4e4a3.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1278,10 +1278,10 @@
     "src": "virtual_ile_hidden_main_ile-10"
   },
   "virtual_ile_hidden_main_ile-11": {
-    "file": "assets/virtual_ile_hidden_main_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_hidden_main_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1432,10 +1432,10 @@
     "src": "virtual_ile_index_ile-10"
   },
   "virtual_ile_index_ile-11": {
-    "file": "assets/virtual_ile_index_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_index_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1650,10 +1650,10 @@
     "src": "virtual_ile_links_ile-7"
   },
   "virtual_ile_links_ile-8": {
-    "file": "assets/virtual_ile_links_ile-8.12c0a772.js",
+    "file": "assets/virtual_ile_links_ile-8.d10ba412.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1700,10 +1700,10 @@
     "src": "virtual_ile_post_ceso_note_ile-10"
   },
   "virtual_ile_post_ceso_note_ile-11": {
-    "file": "assets/virtual_ile_post_ceso_note_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_ceso_note_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -1851,10 +1851,10 @@
     "src": "virtual_ile_post_draft_optimization_note_ile-10"
   },
   "virtual_ile_post_draft_optimization_note_ile-11": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_draft_optimization_note_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2002,10 +2002,10 @@
     "src": "virtual_ile_post_full_stack_note_ile-10"
   },
   "virtual_ile_post_full_stack_note_ile-11": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_full_stack_note_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2153,10 +2153,10 @@
     "src": "virtual_ile_post_hello_world_ile-10"
   },
   "virtual_ile_post_hello_world_ile-11": {
-    "file": "assets/virtual_ile_post_hello_world_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_hello_world_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2304,10 +2304,10 @@
     "src": "virtual_ile_post_my_sight_of_education_ile-10"
   },
   "virtual_ile_post_my_sight_of_education_ile-11": {
-    "file": "assets/virtual_ile_post_my_sight_of_education_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_my_sight_of_education_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2455,10 +2455,10 @@
     "src": "virtual_ile_post_reply_to_deer_stranger_ile-10"
   },
   "virtual_ile_post_reply_to_deer_stranger_ile-11": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2606,10 +2606,10 @@
     "src": "virtual_ile_post_slow_bun_ile-10"
   },
   "virtual_ile_post_slow_bun_ile-11": {
-    "file": "assets/virtual_ile_post_slow_bun_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_slow_bun_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2757,10 +2757,10 @@
     "src": "virtual_ile_post_trigger_another_repos_workflow_ile-10"
   },
   "virtual_ile_post_trigger_another_repos_workflow_ile-11": {
-    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-11.24a79248.js",
+    "file": "assets/virtual_ile_post_trigger_another_repos_workflow_ile-11.16972661.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -2930,10 +2930,10 @@
     "src": "virtual_ile_search_ile-4"
   },
   "virtual_ile_search_ile-5": {
-    "file": "assets/virtual_ile_search_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_search_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3005,10 +3005,10 @@
     "src": "virtual_ile_tag_CESO_ile-4"
   },
   "virtual_ile_tag_CESO_ile-5": {
-    "file": "assets/virtual_ile_tag_CESO_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_tag_CESO_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3080,10 +3080,10 @@
     "src": "virtual_ile_tag_Github Actions_ile-4"
   },
   "virtual_ile_tag_Github Actions_ile-5": {
-    "file": "assets/virtual_ile_tag_Github Actions_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_tag_Github Actions_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3155,10 +3155,10 @@
     "src": "virtual_ile_tag_hello world_ile-4"
   },
   "virtual_ile_tag_hello world_ile-5": {
-    "file": "assets/virtual_ile_tag_hello world_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_tag_hello world_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3244,10 +3244,10 @@
     "src": "virtual_ile_tag_note_ile-5"
   },
   "virtual_ile_tag_note_ile-6": {
-    "file": "assets/virtual_ile_tag_note_ile-6.b7340a54.js",
+    "file": "assets/virtual_ile_tag_note_ile-6.d418f77c.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3319,10 +3319,10 @@
     "src": "virtual_ile_tag_solution_ile-4"
   },
   "virtual_ile_tag_solution_ile-5": {
-    "file": "assets/virtual_ile_tag_solution_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_tag_solution_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3394,10 +3394,10 @@
     "src": "virtual_ile_tag_test_ile-4"
   },
   "virtual_ile_tag_test_ile-5": {
-    "file": "assets/virtual_ile_tag_test_ile-5.c258c646.js",
+    "file": "assets/virtual_ile_tag_test_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3483,10 +3483,10 @@
     "src": "virtual_ile_tag_thoughts_ile-5"
   },
   "virtual_ile_tag_thoughts_ile-6": {
-    "file": "assets/virtual_ile_tag_thoughts_ile-6.b7340a54.js",
+    "file": "assets/virtual_ile_tag_thoughts_ile-6.d418f77c.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
@@ -3544,10 +3544,10 @@
     "src": "virtual_ile_tags_ile-3"
   },
   "virtual_ile_tags_ile-4": {
-    "file": "assets/virtual_ile_tags_ile-4.557396fe.js",
+    "file": "assets/virtual_ile_tags_ile-4.ef2517de.js",
     "imports": [
       "_iles.b8ad475e.js",
-      "_FunctionButtons.c456f9ca.js",
+      "_FunctionButtons.ef43678c.js",
       "_vendor-vue.b95f88b6.js",
       "_vite.1299367e.js"
     ],
