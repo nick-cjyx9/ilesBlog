@@ -33,7 +33,7 @@ onMounted(() => {
           }, 1000)
         }
       }
-      const debounced = _.debounce(scrollHandler, 80)
+      const debounced = _.debounce(scrollHandler, 80, {'leading': true })
       window.addEventListener('scroll', debounced)
     }
   }
