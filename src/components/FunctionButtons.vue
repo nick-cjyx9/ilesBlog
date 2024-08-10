@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import _ from 'lodash'
 
 function toTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -21,7 +22,7 @@ onMounted(() => {
       b.value?.addEventListener('click', () => {
         aside.classList.toggle('toc-slide-down')
       })
-      window.addEventListener('scroll', () => {
+      const scrollHandler = () => {
         if (!isElementInViewport(toc)) {
           a.value?.classList.add('btn-slide-up')
         }
@@ -31,7 +32,9 @@ onMounted(() => {
             aside.classList.remove('toc-slide-down')
           }, 1000)
         }
-      })
+      }
+      const debounced = _.debounce(scrollHandler, 80)
+      window.addEventListener('scroll', debounced)
     }
   }
 })

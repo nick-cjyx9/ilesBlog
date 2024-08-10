@@ -1,0 +1,80 @@
+---
+title: Typescript 全栈学习笔记
+date: 2024-08-10 15:39:07
+tags: ["note",]
+licensed: true
+isAIGenerated: false
+cover: ""
+draft: false
+---
+
+这里记一些容易忘掉的内容，之前都是放在 tg 上，但是存不了多久。
+
+<Excerpt />
+
+## Lodash 库之防抖和节流
+
+ref: https://css-tricks.com/debouncing-throttling-explained-examples/
+
+### 防抖
+
+
+防抖保证了函数在一段时间内不会连续地发生, (https://www.lodashjs.com/docs/lodash.debounce/)
+
+```ts
+import _ from "lodash";
+...
+// 返回一个防抖函数
+const debounced = _.debounce(eventHandler, 250, { 'maxWait': 1000 });
+// 调用防抖函数
+addEventListener('event', debounced);
+// 取消防抖
+debounced.cancel();
+```
+
+接受三个参数：
+1. 要防抖的函数
+2. 延迟时间 wait(ms)
+3. 
+
+```json
+{
+    leading: Boolean,
+    trailing: Boolean,
+    maxWait: number, // func 允许被延迟的最大值 (ms)
+}
+```
+
+1. leading
+
+![leading](~/images/full_stack_note/leading_debounce.png)
+
+2. trailing
+
+![trailing](~/images/full_stack_note/trailing_debounce.png)
+
+### 节流
+
+节流 throttle 函数是使用 _.debounce 和 maxWait 定义的。保证函数在一段时间内不会连续地发生，但延迟不超过 maxWait 毫秒。
+(https://www.lodashjs.com/docs/lodash.throttle)
+
+```ts
+import _ from "lodash";
+...
+// 返回一个节流函数
+const throttled = _.throttle(eventHandler, 250, {'leading': false, 'trailing': true});
+// 调用节流函数
+addEventListener('event', throttled);
+// 取消节流
+throttled.cancel();
+```
+
+### requestAnimationFrame
+
+它可以被认为是 `_.throttle(dosomething, 16)`, 在每次浏览器渲染时调用 dosomething 函数，使动画更加流畅。
+
+composale: https://vueuse.nodejs.cn/core/useRafFn/
+
+MDN: https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
+
+应用: https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110

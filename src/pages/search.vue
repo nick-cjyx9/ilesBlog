@@ -6,7 +6,7 @@ fetch('/fuse/data.json').then((fresponse) => {
   return fresponse.json()
 }).then((list) => {
   const fuse = new Fuse(list, fuseOptions)
-  document.getElementById('searchForm').addEventListener('submit', (event) => {
+  const searchHandler = (event) => {
     event.preventDefault()
     const searchPattern = document.getElementById('searchBox').value
     const consults = fuse.search(searchPattern)
@@ -31,26 +31,24 @@ fetch('/fuse/data.json').then((fresponse) => {
       if (!hasDiff)
         processedContent = ''
       else processedContent = `<div class="px-4 break-all h-[100px] overflow-hidden text-ellipsis">${processedContent}</div>`
-      injectHtml += `\n<li class="w-full text-minor-link px-3 py-1" role="button"><a href="/post/${consult.item.pathName.replace('.mdx', '')}" class="w-full">${counter} - <span class="underline">${processedTitle}</span></a></li>${processedContent}`
+      injectHtml += `\n<li class="w-full text-minor-link px-3 py-1" role="button"><a href="/post/${consult.item.pathName.replace('.mdx', '').toLowerCase()}" class="w-full">${counter} - <span class="underline">${processedTitle}</span></a></li>${processedContent}`
       counter++
     })
     container.innerHTML = injectHtml.trim() === '' ? '暂无内容' : injectHtml
-  })
+  }
+  document.getElementById('searchForm').addEventListener('submit', searchHandler)
 })
 </script>
 
 <template layout="base">
   <div class="holder w-full min-h-[500px] p-8">
     <form id="searchForm" class="w-full mx-auto">
-      <label
-        for="default-search"
-        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-      >Search</label>
+      <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
       <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <svg
-            class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+            class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 20 20"
           >
             <path stroke="currentColor" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
           </svg>
@@ -86,8 +84,6 @@ fetch('/fuse/data.json').then((fresponse) => {
   <!-- tailwind -->
   <div class="hidden px-4 break-all h-[100px] overflow-hidden text-ellipsis" />
   <li class="hidden w-full text-minor-link px-3 py-1" role="button">
-    <a class="w-full"><span
-      class="underline"
-    /></a>
+    <a class="w-full"><span class="underline" /></a>
   </li>
 </template>

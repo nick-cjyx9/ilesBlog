@@ -10,8 +10,10 @@ const props = defineProps({
 const data: Ref<ContextDataType | null> = ref(null)
 const likes = ref(0)
 const liked = ref(-1)
+const isLoading = ref(false)
 
 async function handleLike() {
+  isLoading.value = true
   if (liked.value === 1) {
     // eslint-disable-next-line no-alert
     alert('You have already liked this post')
@@ -25,6 +27,7 @@ async function handleLike() {
     // eslint-disable-next-line no-alert
     alert('You have already liked this post')
   }
+  isLoading.value = false
 }
 
 onMounted(async () => {
@@ -39,12 +42,12 @@ onMounted(async () => {
 
 <template>
   <!-- https://codepen.io/aaroniker/pen/NWqRRLq -->
-  <div role="button" class="float-right mr-10 hover flex rounded-sm w-[80px] h-[35px] border-[1px] dark:border-white border-zinc-600 items-center px-1 hover:bg-red-200" @click="handleLike">
+  <button :disabled="isLoading" class="px-2 disabled:animate-pulse float-right mr-10 hover flex rounded-sm w-[80px] h-[35px] border-[1px] dark:border-white border-zinc-600 items-center px-1 hover:bg-red-200" @click="handleLike">
     <div class="w-3/4 text-center">
       Like
     </div>
     <div class="w-1/4">
       {{ likes }}
     </div>
-  </div>
+  </button>
 </template>
