@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Thu, 08 Aug 2024 12:11:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Aug 2024 08:32:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,6 +14,70 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2024 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[Typescript 全栈学习笔记]]></title>
+            <link>https://www.nickchen.top/post/full_stack_note</link>
+            <guid>https://www.nickchen.top/post/full_stack_note</guid>
+            <pubDate>Sat, 10 Aug 2024 15:39:07 GMT</pubDate>
+            <description><![CDATA[
+
+这里记一些容易忘掉的内容，之前都是放在 tg 上，但是存不了多久。
+]]></description>
+            <content:encoded><![CDATA[
+
+<p>这里记一些容易忘掉的内容，之前都是放在 tg 上，但是存不了多久。</p>
+
+<h2 id="lodash-库之防抖和节流" class="heading"><a href="#lodash-库之防抖和节流" class="heading-anchor" aria-label="Permalink for Lodash 库之防抖和节流" tabindex="-1"></a>Lodash 库之防抖和节流</h2>
+<p>ref: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="nofollow">https://css-tricks.com/debouncing-throttling-explained-examples/</a></p>
+<h3 id="防抖" class="heading"><a href="#防抖" class="heading-anchor" aria-label="Permalink for 防抖" tabindex="-1"></a>防抖</h3>
+<p>防抖保证了函数在一段时间内不会连续地发生, (<a href="https://www.lodashjs.com/docs/lodash.debounce/" rel="nofollow">https://www.lodashjs.com/docs/lodash.debounce/</a>)</p>
+<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic">import</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic"> from</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> "</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">lodash</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">"</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#286983;--shiki-dark:#89DDFF">...</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 返回一个防抖函数</span></span>
+<span class="line"><span style="color:#286983;--shiki-dark:#C792EA">const</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> debounced</span><span style="color:#286983;--shiki-dark:#89DDFF"> =</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">debounce</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">eventHandler</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 250</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#89DDFF"> {</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> '</span><span style="color:#EA9D34;--shiki-dark:#F07178">maxWait</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 1000</span><span style="color:#797593;--shiki-dark:#89DDFF"> }</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 调用防抖函数</span></span>
+<span class="line"><span style="color:#D7827E;--shiki-dark:#82AAFF">addEventListener</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">event</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> debounced</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 取消防抖</span></span>
+<span class="line"><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">debounced</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">cancel</span><span style="color:#575279;--shiki-dark:#BABED8">()</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"></span></code></pre>
+<p>接受三个参数：</p>
+<ol>
+<li>要防抖的函数</li>
+<li>延迟时间 wait(ms)</li>
+<li></li>
+</ol>
+<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#797593;--shiki-dark:#89DDFF">{</span></span>
+<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    leading</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> Boolean</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    trailing</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> Boolean</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    maxWait</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> number</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> //</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> func 允许被延迟的最大值 (ms)</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#89DDFF">}</span></span>
+<span class="line"></span></code></pre>
+<ol>
+<li>leading</li>
+</ol>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/leading_debounce.19799027.avif 400w, /assets/leading_debounce.406f4364.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/leading_debounce.e078d600.png 400w, /assets/leading_debounce.69307129.png 800w"><source type="image/avif" srcset="/assets/leading_debounce.10b55494.avif 800w"><img srcset="/assets/leading_debounce.d8ec36e2.png 800w" loading="lazy" class="img post" src="/assets/leading_debounce.d8ec36e2.png" alt="leading"></picture></p>
+<ol start="2">
+<li>trailing</li>
+</ol>
+<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/trailing_debounce.22900312.avif 400w, /assets/trailing_debounce.45b0a777.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/trailing_debounce.1d09e491.png 400w, /assets/trailing_debounce.924f441a.png 800w"><source type="image/avif" srcset="/assets/trailing_debounce.955e266c.avif 800w"><img srcset="/assets/trailing_debounce.3adb1abd.png 800w" loading="lazy" class="img post" src="/assets/trailing_debounce.3adb1abd.png" alt="trailing"></picture></p>
+<h3 id="节流" class="heading"><a href="#节流" class="heading-anchor" aria-label="Permalink for 节流" tabindex="-1"></a>节流</h3>
+<p>节流 throttle 函数是使用 _.debounce 和 maxWait 定义的。保证函数在一段时间内不会连续地发生，但延迟不超过 maxWait 毫秒。
+(<a href="https://www.lodashjs.com/docs/lodash.throttle" rel="nofollow">https://www.lodashjs.com/docs/lodash.throttle</a>)</p>
+<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic">import</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic"> from</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> "</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">lodash</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">"</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#286983;--shiki-dark:#89DDFF">...</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 返回一个节流函数</span></span>
+<span class="line"><span style="color:#286983;--shiki-dark:#C792EA">const</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> throttled</span><span style="color:#286983;--shiki-dark:#89DDFF"> =</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">throttle</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">eventHandler</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 250</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#89DDFF"> {</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#F07178">leading</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#FF9CAC"> false</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> '</span><span style="color:#EA9D34;--shiki-dark:#F07178">trailing</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#FF9CAC"> true</span><span style="color:#797593;--shiki-dark:#89DDFF">}</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 调用节流函数</span></span>
+<span class="line"><span style="color:#D7827E;--shiki-dark:#82AAFF">addEventListener</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">event</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> throttled</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 取消节流</span></span>
+<span class="line"><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">throttled</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">cancel</span><span style="color:#575279;--shiki-dark:#BABED8">()</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
+<span class="line"></span></code></pre>
+<h3 id="requestanimationframe" class="heading"><a href="#requestanimationframe" class="heading-anchor" aria-label="Permalink for requestAnimationFrame" tabindex="-1"></a>requestAnimationFrame</h3>
+<p>它可以被认为是 <code>_.throttle(dosomething, 16)</code>, 在每次浏览器渲染时调用 dosomething 函数，使动画更加流畅。</p>
+<p>composale: <a href="https://vueuse.nodejs.cn/core/useRafFn/" rel="nofollow">https://vueuse.nodejs.cn/core/useRafFn/</a></p>
+<p>MDN: <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame</a></p>
+<p>应用: <a href="https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110" rel="nofollow">https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Windows 下 Bun install 很慢解决方法]]></title>
             <link>https://www.nickchen.top/post/slow_bun</link>
