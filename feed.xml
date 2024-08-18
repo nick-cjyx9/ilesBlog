@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Sat, 10 Aug 2024 15:58:11 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 07:19:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -76,7 +76,9 @@
 <p>它可以被认为是 <code>_.throttle(dosomething, 16)</code>, 在每次浏览器渲染时调用 dosomething 函数，使动画更加流畅。</p>
 <p>composale: <a href="https://vueuse.nodejs.cn/core/useRafFn/" rel="nofollow">https://vueuse.nodejs.cn/core/useRafFn/</a></p>
 <p>MDN: <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame</a></p>
-<p>应用: <a href="https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110" rel="nofollow">https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110</a></p>]]></content:encoded>
+<p>应用: <a href="https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110" rel="nofollow">https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110</a></p>
+<h2 id="oauth-2-0" class="heading"><a href="#oauth-2-0" class="heading-anchor" aria-label="Permalink for Oauth 2.0" tabindex="-1"></a>Oauth 2.0</h2>
+<p>ref: <a href="https://annotate.dev/p/hello-world/learn-oauth-2-0-by-building-your-own-oauth-client-U2HaZNtvQojn4F" rel="nofollow">https://annotate.dev/p/hello-world/learn-oauth-2-0-by-building-your-own-oauth-client-U2HaZNtvQojn4F</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Windows 下 Bun install 很慢解决方法]]></title>
