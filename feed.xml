@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Sat, 28 Dec 2024 10:08:34 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 04:41:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,72 +14,6 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2024 Nick Chen.</copyright>
-        <item>
-            <title><![CDATA[Typescript 全栈学习笔记]]></title>
-            <link>https://www.nickchen.top/post/full_stack_note</link>
-            <guid>https://www.nickchen.top/post/full_stack_note</guid>
-            <pubDate>Sat, 10 Aug 2024 15:39:07 GMT</pubDate>
-            <description><![CDATA[
-
-这里记一些容易忘掉的内容，之前都是放在 tg 上，但是存不了多久。
-]]></description>
-            <content:encoded><![CDATA[
-
-<p>这里记一些容易忘掉的内容，之前都是放在 tg 上，但是存不了多久。</p>
-
-<h2 id="lodash-库之防抖和节流" class="heading"><a href="#lodash-库之防抖和节流" class="heading-anchor" aria-label="Permalink for Lodash 库之防抖和节流" tabindex="-1"></a>Lodash 库之防抖和节流</h2>
-<p>ref: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="nofollow">https://css-tricks.com/debouncing-throttling-explained-examples/</a></p>
-<h3 id="防抖" class="heading"><a href="#防抖" class="heading-anchor" aria-label="Permalink for 防抖" tabindex="-1"></a>防抖</h3>
-<p>防抖保证了函数在一段时间内不会连续地发生, (<a href="https://www.lodashjs.com/docs/lodash.debounce/" rel="nofollow">https://www.lodashjs.com/docs/lodash.debounce/</a>)</p>
-<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic">import</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic"> from</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> "</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">lodash</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">"</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#286983;--shiki-dark:#89DDFF">...</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 返回一个防抖函数</span></span>
-<span class="line"><span style="color:#286983;--shiki-dark:#C792EA">const</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> debounced</span><span style="color:#286983;--shiki-dark:#89DDFF"> =</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">debounce</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">eventHandler</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 250</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#89DDFF"> {</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> '</span><span style="color:#EA9D34;--shiki-dark:#F07178">maxWait</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 1000</span><span style="color:#797593;--shiki-dark:#89DDFF"> }</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 调用防抖函数</span></span>
-<span class="line"><span style="color:#D7827E;--shiki-dark:#82AAFF">addEventListener</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">event</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> debounced</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 取消防抖</span></span>
-<span class="line"><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">debounced</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">cancel</span><span style="color:#575279;--shiki-dark:#BABED8">()</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"></span></code></pre>
-<p>接受三个参数：</p>
-<ol>
-<li>要防抖的函数</li>
-<li>延迟时间 wait(ms)</li>
-<li></li>
-</ol>
-<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#797593;--shiki-dark:#89DDFF">{</span></span>
-<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    leading</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> Boolean</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span></span>
-<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    trailing</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> Boolean</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span></span>
-<span class="line"><span style="color:#B4637A;--shiki-dark:#BABED8">    maxWait</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#B4637A;--shiki-dark:#BABED8"> number</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> //</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> func 允许被延迟的最大值 (ms)</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#89DDFF">}</span></span>
-<span class="line"></span></code></pre>
-<ol>
-<li>leading</li>
-</ol>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/leading_debounce.19799027.avif 400w, /assets/leading_debounce.406f4364.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/leading_debounce.e078d600.png 400w, /assets/leading_debounce.69307129.png 800w"><source type="image/avif" srcset="/assets/leading_debounce.10b55494.avif 800w"><img srcset="/assets/leading_debounce.d8ec36e2.png 800w" loading="lazy" class="img post" src="/assets/leading_debounce.d8ec36e2.png" alt="leading"></picture></p>
-<ol start="2">
-<li>trailing</li>
-</ol>
-<p><picture><source media="(-webkit-min-device-pixel-ratio: 1.5)" type="image/avif" srcset="/assets/trailing_debounce.22900312.avif 400w, /assets/trailing_debounce.45b0a777.avif 800w"><source media="(-webkit-min-device-pixel-ratio: 1.5)" srcset="/assets/trailing_debounce.1d09e491.png 400w, /assets/trailing_debounce.924f441a.png 800w"><source type="image/avif" srcset="/assets/trailing_debounce.955e266c.avif 800w"><img srcset="/assets/trailing_debounce.3adb1abd.png 800w" loading="lazy" class="img post" src="/assets/trailing_debounce.3adb1abd.png" alt="trailing"></picture></p>
-<h3 id="节流" class="heading"><a href="#节流" class="heading-anchor" aria-label="Permalink for 节流" tabindex="-1"></a>节流</h3>
-<p>节流 throttle 函数是使用 _.debounce 和 maxWait 定义的。保证函数在一段时间内不会连续地发生，但延迟不超过 maxWait 毫秒。
-(<a href="https://www.lodashjs.com/docs/lodash.throttle" rel="nofollow">https://www.lodashjs.com/docs/lodash.throttle</a>)</p>
-<pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic">import</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF;font-style:inherit;--shiki-dark-font-style:italic"> from</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> "</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">lodash</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">"</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#286983;--shiki-dark:#89DDFF">...</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 返回一个节流函数</span></span>
-<span class="line"><span style="color:#286983;--shiki-dark:#C792EA">const</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> throttled</span><span style="color:#286983;--shiki-dark:#89DDFF"> =</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> _</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">throttle</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">eventHandler</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#D7827E;--shiki-dark:#F78C6C"> 250</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#797593;--shiki-dark:#89DDFF"> {</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#F07178">leading</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#FF9CAC"> false</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#EA9D34;--shiki-dark:#89DDFF"> '</span><span style="color:#EA9D34;--shiki-dark:#F07178">trailing</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#D7827E;--shiki-dark:#FF9CAC"> true</span><span style="color:#797593;--shiki-dark:#89DDFF">}</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 调用节流函数</span></span>
-<span class="line"><span style="color:#D7827E;--shiki-dark:#82AAFF">addEventListener</span><span style="color:#575279;--shiki-dark:#BABED8">(</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#EA9D34;--shiki-dark:#C3E88D">event</span><span style="color:#EA9D34;--shiki-dark:#89DDFF">'</span><span style="color:#797593;--shiki-dark:#89DDFF">,</span><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit"> throttled</span><span style="color:#575279;--shiki-dark:#BABED8">)</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> 取消节流</span></span>
-<span class="line"><span style="color:#575279;--shiki-dark:#BABED8;font-style:italic;--shiki-dark-font-style:inherit">throttled</span><span style="color:#286983;--shiki-dark:#89DDFF">.</span><span style="color:#D7827E;--shiki-dark:#82AAFF">cancel</span><span style="color:#575279;--shiki-dark:#BABED8">()</span><span style="color:#797593;--shiki-dark:#89DDFF">;</span></span>
-<span class="line"></span></code></pre>
-<h3 id="requestanimationframe" class="heading"><a href="#requestanimationframe" class="heading-anchor" aria-label="Permalink for requestAnimationFrame" tabindex="-1"></a>requestAnimationFrame</h3>
-<p>它可以被认为是 <code>_.throttle(dosomething, 16)</code>, 在每次浏览器渲染时调用 dosomething 函数，使动画更加流畅。</p>
-<p>composale: <a href="https://vueuse.nodejs.cn/core/useRafFn/" rel="nofollow">https://vueuse.nodejs.cn/core/useRafFn/</a></p>
-<p>MDN: <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame</a></p>
-<p>应用: <a href="https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110" rel="nofollow">https://github.com/antfu/antfu.me/blob/f7d66d0076677712f82022fe644135a0cb9eb926/src/components/ArtPlum.vue#L110</a></p>
-<h2 id="oauth-2-0" class="heading"><a href="#oauth-2-0" class="heading-anchor" aria-label="Permalink for Oauth 2.0" tabindex="-1"></a>Oauth 2.0</h2>
-<p>ref: <a href="https://annotate.dev/p/hello-world/learn-oauth-2-0-by-building-your-own-oauth-client-U2HaZNtvQojn4F" rel="nofollow">https://annotate.dev/p/hello-world/learn-oauth-2-0-by-building-your-own-oauth-client-U2HaZNtvQojn4F</a></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[Windows 下 Bun install 很慢解决方法]]></title>
             <link>https://www.nickchen.top/post/slow_bun</link>
@@ -97,127 +31,14 @@
 <span class="line"></span></code></pre>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[一封回信]]></title>
-            <link>https://www.nickchen.top/post/reply_to_deer_stranger</link>
-            <guid>https://www.nickchen.top/post/reply_to_deer_stranger</guid>
-            <pubDate>Sun, 04 Aug 2024 22:56:38 GMT</pubDate>
-            <description><![CDATA[今天看到一篇文章 (https://www.saroprock.com/blog/the-world-past) ，很好地把我避免思考的一些东西蛮横地甩在我面前，
-于是我开始写下这些文字作为回复，但也不仅仅是回复。Route 为什么是 deer 而不是 dear 呢？因为我打错了
-]]></description>
-            <content:encoded><![CDATA[<p>今天看到一篇文章 (<a href="https://www.saroprock.com/blog/the-world-past" rel="nofollow">https://www.saroprock.com/blog/the-world-past</a>) ，很好地把我避免思考的一些东西蛮横地甩在我面前，
-于是我开始写下这些文字作为回复，但也不仅仅是回复。<del>Route 为什么是 deer 而不是 dear 呢？因为我打错了</del></p>
-
-<h2 id="一些回应" class="heading"><a href="#一些回应" class="heading-anchor" aria-label="Permalink for 一些回应" tabindex="-1"></a>一些回应</h2>
-<h3 id="和平的世界是保护弱者的吗？" class="heading"><a href="#和平的世界是保护弱者的吗？" class="heading-anchor" aria-label="Permalink for 和平的世界是保护弱者的吗？" tabindex="-1"></a>和平的世界是保护弱者的吗？</h3>
-<p>理想的和平的世界不存在你所谓的“弱者”，在理想的共产主义的生活中，人人平等，人们各得其所，个人的创造力和潜能得到充分发挥。
-每个人不仅是经济上的平等者，也是文化和精神上的平等者。现在的社会之所以存在这些现象，其因在于不能公平、有效地分配资
-源和财富以及生产力不够发达，上层建筑处于过渡阶段。</p>
-<h3 id="互联网贩卖情绪的现象何以存在？" class="heading"><a href="#互联网贩卖情绪的现象何以存在？" class="heading-anchor" aria-label="Permalink for 互联网贩卖情绪的现象何以存在？" tabindex="-1"></a>互联网贩卖情绪的现象何以存在？</h3>
-<p>或许的确如你我观察，这种现象（尤以‘望周知’为甚）在今年的网络上开始泛滥。</p>
-<p>但并不是哪个社区环境变得怎样的缘故，上网的都是同一批人，在不同的圈子发布不同的内容。排除部分的“乐子人”，
-这种现象表明的确有焦虑、困境存在，并且之前“默默无闻”的“人群”此时选择了将其传递，</p>
-<h3 id="那这是为什么呢？" class="heading"><a href="#那这是为什么呢？" class="heading-anchor" aria-label="Permalink for 那这是为什么呢？" tabindex="-1"></a>那这是为什么呢？</h3>
-<p>在这种相互关系中，发布者获得归属感，观察者获得情绪价值，平台获得数据和流量。“破防的”只有理性思考者，
-那还有什么理由阻止这种 win-win-win 的传播呢？（笑）</p>
-<h3 id="关于“理性思考者”" class="heading"><a href="#关于“理性思考者”" class="heading-anchor" aria-label="Permalink for 关于“理性思考者”" tabindex="-1"></a>关于“理性思考者”</h3>
-<blockquote>
-<p>“今天的年轻人，最在乎的就是你能不能给我‘情绪价值’，这对于老一辈人来说是不可理喻的。”许纪霖说。在研究年轻一代时，他发现，这一代人推崇“后物质主义”</p>
-</blockquote>
-<p>它们很敏锐的意识到了自己处身于后真相的时代，一切不可相信，意识到了自己对抗潮流的渺小，但是不愿意融入这个“集体”的时代，成为“反抗者”</p>
-<blockquote>
-<p>呵呵，我怎么可能不共情，只是我自己一次又一次地压抑。为什么？因为……</p>
-</blockquote>
-<p>哈哈，其实你根本没有共情的责任，他们（绝大多数）向陌生人寻求的已经有人（？）满足了。
-要不要为了满足道德的媚俗的“自我”而加上一句飘渺的“抱抱”其实已经没那么所谓了，对吧。
-（代码这种东西还真是美妙，我有空也得写一个抱抱机器人。（笑））</p>
-<h3 id="你已经失去人性了，不去安慰，你难道想指出他的不足，破坏他所寻求的吗！！！他们那些遭受的、经历的，你体会过吗？怎么能如此“大言不惭”呢？" class="heading"><a href="#你已经失去人性了，不去安慰，你难道想指出他的不足，破坏他所寻求的吗！！！他们那些遭受的、经历的，你体会过吗？怎么能如此“大言不惭”呢？" class="heading-anchor" aria-label="Permalink for 你已经失去人性了，不去安慰，你难道想指出他的不足，破坏他所寻求的吗！！！他们那些遭受的、经历的，你体会过吗？怎么能如此“大言不惭”呢？" tabindex="-1"></a>你已经失去人性了，不去安慰，你难道想指出他的不足，破坏他所寻求的吗！！！他们那些遭受的、经历的，你体会过吗？怎么能如此“大言不惭”呢？</h3>
-<p>等等，有什么东西被搞错了。请不要这么恶心地说这种正论好吗？</p>
-<blockquote>
-<p>我不能让你忘记你的那些痛苦的回忆，也不能改变你所身处的环境，我又不是超人。</p>
-</blockquote>
-<p>你能，而且你应该如此。我知道你无法相信，来听我讲个故事吧：</p>
-<p>我的确见识过这种遭受的人，他是我的小学以及初中同学，父母离异后，把自己闭锁，偶尔在网上蔓延自己的情绪。
-所幸人这种生物的“自我”还存在着“不想死”的理性，就像《罪与罚》中摧毁了自己生活的马尔梅拉
-多夫向拉斯柯尔尼科夫诉说一般，他荒谬地在空间发了一张自己被刀刻过的手背的照片。我下意识地
-私信了一句“你没事吧？”，划开去浏览其他内容。十分钟后，他没回，我害怕了。二十分钟，“恶心”感
-袭来，催促我去介入这件事。我又去看了看那条说说，还没有一个人点赞、回复...
-我感到双目有些涣散，断网躺了一会儿，但是脑袋里涌入的却是和他的回忆和对他的“印象”。
-“恶心”又来了：你了解他吗？你已经和他分开一年，你能认识现在他是怎样的存在吗？
-不对，不对。你之前也天真的认为你了解他呢。他不过可能是一个可怜的施暴者，不然怎么解释之前的传言？
-他为什么这样存在着？我为什么一直都搞不清楚？真是“恶心”。但我仍有去“确认”的自由，不是吗？
-天晓得，我循着回忆就到了他的家门口。他的父母都不在家，他两眼通红地站在我面前，似乎刚从床上起来，
-床上，手机的抖音视频还在放着，几桶泡面和一把小刀列在茶几上，刻意地向我展现着他们的存在。
-网络和孤独会夺取人理性的一面，这一课我实在在他身上领教得深刻。这一切总是需要“人”来打破，
-而不是由创造这一环境的网络本身，这一“伪人”来根治。就是这样，或许不需要太多解释，那天下午，
-他奇迹般地给我开了门，我们奇迹般地一起哭了一场，奇迹般地看到了他哭着又笑地吃泡面，认真地
-给我说他会好好地和自己的母亲继续活下去。<sup><a href="#user-content-fn-0" id="user-content-fnref-0" data-footnote-ref aria-describedby="footnote-label">1</a></sup>朋友，这样粗犷而原始的情绪，即便事到如今我还不知道
-这是怎么回事，这不正是你批驳的“廉价情绪”的对立吗？</p>
-<p>我笑着和他挥手告别，感到“恶心”走了，即便我还是没有认识他，即便他是个成绩不好的“水货”，那也只是存在在我脑袋的
-一些概念罢了，我狰狞着面目离开，水滴荒诞地从眼角滑落。让“自我”任性地把浊秽扫开，用以取而代之的那东西，
-他可能被叫做信仰。<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">2</a></sup></p>
-<p>你说的很对，人的情感的确是可以逐步廉价到 AI 程度的。AI 不需要向我们靠拢，而是我们向它靠拢。
-等技术发展到一定程度，一定会有这种服务出现吧：
-花费十分钟和你的一些隐私，为你制作《父母离异，他是怎么靠着自己生活下去的，共勉！》视频，“人们”从评论区抽取者
-声张，叫骂，共情的廉价情感，你从中获得利益。</p>
-<h2 id="最后" class="heading"><a href="#最后" class="heading-anchor" aria-label="Permalink for 最后" tabindex="-1"></a>最后</h2>
-<p>没错，你堵不住 AI 的嘴，因为他消耗电和带宽发声。（笑）</p>
-<p>但你也不用堵住人的嘴。我宁愿相信真的有老庄所言的“道”主宰着，
-举我们的教育为例，“存在人自己本身的属性太差了，或者是练了一堆不适合自己的连招”就意味着接受这一切吗，
-职高的存在一直被污名化着，它本来会成为不适格者的另一个游戏，却排斥着他们，有人嘴里的“改革”也不知道改善了谁和谁的生活，
-但需要被“拯救”的却不是老师，而是千千万万“不适格者”，天晓得他们独特的情绪会不会成为改革的契机。
-而从老师们的角度来看，他们（并不全是）过于害怕自身行为产生的后果，表现出来就是“无奈”与“努力”了。</p>
-<h2 id="离题" class="heading"><a href="#离题" class="heading-anchor" aria-label="Permalink for 离题" tabindex="-1"></a>离题</h2>
-<blockquote>
-<p>我经常觉得和有些人聊天很累，因为你不知道他们到底是怎么想的。发一个笑脸，他到底是笑呢还是嘲讽呢；你自己发一个哈哈还不够，万一别人觉得你是在敷衍他怎么办。我小时候就看到一个例子：以前发“哈哈哈”就是大笑，现在不发个三行就不算笑了。</p>
-</blockquote>
-<p>的确，会有这种感觉。我在一边写这篇文章的时候一边在想自己是否被网线那头的陌生人厌恶了，这篇文章会不会被看完。</p>
-<p>所以我很喜欢在开源社区和人交流，人们不管是开发者还是用户都在为了一个目的交流，用户可能某天变成开发者，开发者同时也是用户，关系对等，
-不用太过矫饰文字，不必担心指责与被指责，因为几乎不会有人因为开源无关的事情认真地指责你的人品。</p>
-<blockquote>
-<p>Cause he said "U can feel free to close this PR!".</p>
-</blockquote>
-<p>我在社区找到了位置，有人写 app，有人测试，有人写文档，而我找到了自己的位置，写前端。我不敢说“这就是共产主义了”。但是这里的“不适格者”即便在<code>fix: typo</code>的 PR 里
-也能收获到作者最真挚的感谢。</p>
-<p><img src="https://s2.loli.net/2024/08/04/Hg1wNkEGquxicdy.png" alt="image.png" loading="lazy"></p>
-<p>所以人会自发进步，会去挑战自己曾经做不到的东西，所以我会抱着热情，不怕被人厌烦地去 show off。所以我放弃了在一些社交平台上塑造自己的人设，</p>
-<p>嗯，我写的很快，原谅我很多观点都不成熟，或没有表达得太清楚，如果有人看到了这里，留下你的评论吧，
-虽然如果太恶劣的话我会删掉（，但是你的心意都会被我好好收下的！</p>
-<h2 id="真的是最后了" class="heading"><a href="#真的是最后了" class="heading-anchor" aria-label="Permalink for 真的是最后了" tabindex="-1"></a>真的是最后了</h2>
-<blockquote>
-<p>Let the world changes you and you can change the world -- Che Guevara</p>
-</blockquote>
-<p>高考很重要，但是并没有重要到让你失去思考，希望你能从这难以理解的世界“趁火打劫”出独特的情感！<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">3</a></sup></p>
-<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
-<ol>
-<li id="user-content-fn-0">
-<p>是奇迹，但我想写的也是“荒谬” ref:(<a href="https://m.thepaper.cn/baijiahao_8821798" rel="nofollow">https://m.thepaper.cn/baijiahao_8821798</a>) <a href="#user-content-fnref-0" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
-</li>
-<li id="user-content-fn-1">
-<p>原谅我最近看太多《恶心》，为了表意稍微虚构了一下自己的感受。 ref: (<a href="https://weread.qq.com/web/reader/4e132f50811e1a3bcg016b5b" rel="nofollow">https://weread.qq.com/web/reader/4e132f50811e1a3bcg016b5b</a>) <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
-</li>
-<li id="user-content-fn-2">
-<p>ref: (<a href="https://nickchen.top/post/my_sight_of_education" rel="nofollow">https://nickchen.top/post/my_sight_of_education</a>) <a href="#user-content-fnref-2" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
-</li>
-</ol>
-</section>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[我对我现在所处教育的看法]]></title>
+            <title><![CDATA[读书的艺术]]></title>
             <link>https://www.nickchen.top/post/my_sight_of_education</link>
             <guid>https://www.nickchen.top/post/my_sight_of_education</guid>
             <pubDate>Sat, 03 Aug 2024 22:19:20 GMT</pubDate>
-            <description><![CDATA[这或许是我第一次也是最后一次在博客记录关于高考的看法了，怨天尤人的话还是不说为好，
-我认为凭这篇文章就能表达清楚我的看法，并且这样的看法到我毕业，乃至十年内都不会改变。
+            <description><![CDATA[偶然间读到了这篇林语堂先生做的文章，觉得经过了这么几十年，其思想还是特别贴切，故转载如下
 ]]></description>
-            <content:encoded><![CDATA[<p>这或许是我第一次也是最后一次在博客记录关于高考的看法了，怨天尤人的话还是不说为好，
-我认为凭这篇文章就能表达清楚我的看法，并且这样的看法到我毕业，乃至十年内都不会改变。</p>
+            <content:encoded><![CDATA[<p>偶然间读到了这篇林语堂先生做的文章，觉得经过了这么几十年，其思想还是特别贴切，故转载如下</p>
 
-<h2 id="前言" class="heading"><a href="#前言" class="heading-anchor" aria-label="Permalink for 前言" tabindex="-1"></a>前言</h2>
-<p>前段时间想要了解胡适时，在多抓鱼上购了一本《如何读书》（当时并没有发现作者一栏写的是：胡适 等）</p>
-<p>随手翻了一遍，关于读书观点大多一致，剩下的也只是分享经历和方法论的差别。令人大失所望，直到
-翻到最后时，这才遇见了我们的“老朋友”林语堂，熟悉的幽默诙谐的语言，好一篇《读书的艺术》！慢慢看完，
-越来越觉得“这不就是我所想的吗”，几十年林先生时前如此的，到现在差不多也一样，所以在这里摘录这篇文章的原文，
-以表明表明自己的态度，<del>给自己摸鱼找个理由</del>。</p>
 <h2 id="读书的艺术" class="heading"><a href="#读书的艺术" class="heading-anchor" aria-label="Permalink for 读书的艺术" tabindex="-1"></a>读书的艺术</h2>
 <p>诸位，兄弟今日重游旧地，以前学生生活苦乐酸甜的滋味，都一一涌上心头。不但诸位所享弦诵的快乐，我能了解，就是诸位有时所受教员的委曲磨折，
 注册部的挑剔为难，我也能表同情。兄弟今日仍在读书时期，所不同者，不怕教员的考试，无虑分数之高低，更无注册部来定我的及格不及格，升级不升级而已。
@@ -309,9 +130,7 @@
 产品之一，自然也不能不“划定”一下。其实这种以学问为交易之事，自古已然。子张学干禄；子曰“三年学，不至于谷，未易得也。”
 （关于往时“生员”在社会所作的孽，可参观《亭林文集·生员论》上中下三篇。）</p>
 <p>到了这个地步，读书与入学，完全是两件事了，去原意远矣。我所希望者，是诸位早日觉悟，在明知被卖之下，仍旧不忘其初，不背读
-书之本意，不失读书的快乐，不昧于真正读书的艺术。并希望诸位趁火打劫，虽然被卖。钱也要拿，书也要读，如此就两得其便了。</p>
-<h2 id="结语" class="heading"><a href="#结语" class="heading-anchor" aria-label="Permalink for 结语" tabindex="-1"></a>结语</h2>
-<p>“趁火打劫”就是对于我现在的态度的完美概括了。</p>]]></content:encoded>
+书之本意，不失读书的快乐，不昧于真正读书的艺术。并希望诸位趁火打劫，虽然被卖。钱也要拿，书也要读，如此就两得其便了。</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CESO学习笔记]]></title>
@@ -529,18 +348,18 @@
             <link>https://www.nickchen.top/post/trigger_another_repos_workflow</link>
             <guid>https://www.nickchen.top/post/trigger_another_repos_workflow</guid>
             <pubDate>Sun, 20 Aug 2023 21:14:08 GMT</pubDate>
-            <description><![CDATA[实现思路是在子仓库推送时使用Github的REST api触发某个workflow。
+            <description><![CDATA[实现思路是在子仓库推送时使用 Github 的 REST api 触发某个 workflow。
 ]]></description>
-            <content:encoded><![CDATA[<p>实现思路是在子仓库推送时使用Github的REST api触发某个workflow。</p>
+            <content:encoded><![CDATA[<p>实现思路是在子仓库推送时使用 Github 的 REST api 触发某个 workflow。</p>
 
 <h2 id="使用场景" class="heading"><a href="#使用场景" class="heading-anchor" aria-label="Permalink for 使用场景" tabindex="-1"></a>使用场景</h2>
 <ol>
-<li>将博文和hexo等generator的source code分开，方便管理（<del>不是很方便</del>，且如果博文全公开不建议这样做</li>
-<li>在private的submodule里做修改后，main repo进行构建</li>
+<li>将博文和 hexo 等 generator 的 source code 分开，方便管理（<del>不是很方便</del>，且如果博文全公开不建议这样做</li>
+<li>在 private 的 submodule 里做修改后，main repo 进行构建</li>
 </ol>
 <h2 id="方法" class="heading"><a href="#方法" class="heading-anchor" aria-label="Permalink for 方法" tabindex="-1"></a>方法</h2>
 <ol>
-<li>首先在private的A仓库根目录中创建<code>scripts/trigger.mjs</code>，填入具有workflow权限的token，本地调试需要运行<code>npm install octokit</code>，<strong>注意：被触发的workflow中必须带有workflow_dispatch:以保证能被主动触发</strong></li>
+<li>首先在 private 的 A 仓库根目录中创建<code>scripts/trigger.mjs</code>，填入具有 workflow 权限的 token，本地调试需要运行<code>npm install octokit</code>，<strong>注意：被触发的 workflow 中必须带有<code>workflow_dispatch:</code>以保证能被主动触发</strong></li>
 </ol>
 <pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> Octokit.js</span></span>
 <span class="line"><span style="color:#797593;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic">//</span><span style="color:#9893A5;--shiki-dark:#464B5D;font-style:italic;--shiki-dark-font-style:italic"> https://github.com/octokit/core.js#readme</span></span>
@@ -560,7 +379,7 @@
 <span class="line"><span style="color:#797593;--shiki-dark:#89DDFF">}</span><span style="color:#575279;--shiki-dark:#BABED8">)</span></span>
 <span class="line"></span></code></pre>
 <ol start="2">
-<li>创建工作流<code>.github/workflows/push.yml</code>以触发脚本，替换token为至少具有此仓库访问权限的token，你也可以写进secret。</li>
+<li>创建工作流<code>.github/workflows/push.yml</code>以触发脚本，替换 token 为至少具有此仓库访问权限的 token，你也可以写进 secret。</li>
 </ol>
 <pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#56949F;--shiki-dark:#F07178">name</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#EA9D34;--shiki-dark:#C3E88D"> upstream_trigger</span></span>
 <span class="line"><span style="color:#D7827E;--shiki-dark:#FF9CAC">on</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span></span>
@@ -586,7 +405,7 @@
 <span class="line"><span style="color:#EA9D34;--shiki-dark:#C3E88D">              node scripts/trigger.mjs</span></span>
 <span class="line"></span></code></pre>
 <ol start="3">
-<li>如果A仓库是B仓库的submodule的话，B仓库的workflow推荐这样写，不过也有缺点，每次得记得在本地<code>git pull</code></li>
+<li>如果 A 仓库是 B 仓库的 submodule 的话，B 仓库的 workflow 推荐这样写，不过也有缺点，每次得记得在本地<code>git pull</code></li>
 </ol>
 <pre class="shiki shiki-themes rose-pine-dawn material-theme-ocean" style="background-color:#faf4ed;--shiki-dark-bg:#0F111A;color:#575279;--shiki-dark:#babed8" tabindex="0"><code><span class="line"><span style="color:#56949F;--shiki-dark:#F07178">name</span><span style="color:#797593;--shiki-dark:#89DDFF">:</span><span style="color:#EA9D34;--shiki-dark:#C3E88D"> build</span></span>
 <span class="line"></span>

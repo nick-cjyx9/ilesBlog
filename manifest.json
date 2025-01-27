@@ -728,7 +728,7 @@
     "src": "virtual_ile_about_ile-2"
   },
   "virtual_ile_about_ile-3": {
-    "file": "assets/virtual_ile_about_ile-3.fd2defe7.js",
+    "file": "assets/virtual_ile_about_ile-3.644d5e8c.js",
     "imports": [
       "_iles.b8ad475e.js",
       "_tableofContent.dfa8c6a0.js",
@@ -828,9 +828,9 @@
   "virtual_ile_archive_created_ile-10": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
+      "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-10.ae6e6372.js",
+    "file": "assets/virtual_ile_archive_created_ile-10.8cef41cb.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -838,31 +838,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_archive_created_ile-10"
-  },
-  "virtual_ile_archive_created_ile-11": {
-    "file": "assets/virtual_ile_archive_created_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_archive_created_ile-11"
-  },
-  "virtual_ile_archive_created_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_archive_created_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_archive_created_ile-12"
   },
   "virtual_ile_archive_created_ile-2": {
     "file": "assets/virtual_ile_archive_created_ile-2.f6e3ecb8.js",
@@ -891,7 +866,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-4.530fc3bc.js",
+    "file": "assets/virtual_ile_archive_created_ile-4.5d5076a2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -905,7 +880,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-5.e91f9f8a.js",
+    "file": "assets/virtual_ile_archive_created_ile-5.c1f1e8d3.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -919,7 +894,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-6.3148147d.js",
+    "file": "assets/virtual_ile_archive_created_ile-6.52a4294a.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -933,7 +908,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-7.c56c3ddc.js",
+    "file": "assets/virtual_ile_archive_created_ile-7.06dfcd95.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -947,7 +922,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_created_ile-8.908651f2.js",
+    "file": "assets/virtual_ile_archive_created_ile-8.65fae6d2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -957,15 +932,12 @@
     "src": "virtual_ile_archive_created_ile-8"
   },
   "virtual_ile_archive_created_ile-9": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_archive_created_ile-9.7315254d.js",
+    "file": "assets/virtual_ile_archive_created_ile-9.2cb4e4a3.js",
     "imports": [
-      "_vite.1299367e.js",
       "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
+      "_FunctionButtons.ef43678c.js",
+      "_vendor-vue.b95f88b6.js",
+      "_vite.1299367e.js"
     ],
     "isEntry": true,
     "src": "virtual_ile_archive_created_ile-9"
@@ -987,9 +959,9 @@
   "virtual_ile_archive_updated_ile-10": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
+      "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-10.ae6e6372.js",
+    "file": "assets/virtual_ile_archive_updated_ile-10.8cef41cb.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -997,31 +969,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_archive_updated_ile-10"
-  },
-  "virtual_ile_archive_updated_ile-11": {
-    "file": "assets/virtual_ile_archive_updated_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_archive_updated_ile-11"
-  },
-  "virtual_ile_archive_updated_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_archive_updated_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_archive_updated_ile-12"
   },
   "virtual_ile_archive_updated_ile-2": {
     "file": "assets/virtual_ile_archive_updated_ile-2.f6e3ecb8.js",
@@ -1050,7 +997,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-4.530fc3bc.js",
+    "file": "assets/virtual_ile_archive_updated_ile-4.5d5076a2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1064,7 +1011,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-5.e91f9f8a.js",
+    "file": "assets/virtual_ile_archive_updated_ile-5.c1f1e8d3.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1078,7 +1025,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-6.3148147d.js",
+    "file": "assets/virtual_ile_archive_updated_ile-6.52a4294a.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1092,7 +1039,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-7.c56c3ddc.js",
+    "file": "assets/virtual_ile_archive_updated_ile-7.06dfcd95.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1106,7 +1053,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_archive_updated_ile-8.908651f2.js",
+    "file": "assets/virtual_ile_archive_updated_ile-8.65fae6d2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1116,15 +1063,12 @@
     "src": "virtual_ile_archive_updated_ile-8"
   },
   "virtual_ile_archive_updated_ile-9": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_archive_updated_ile-9.7315254d.js",
+    "file": "assets/virtual_ile_archive_updated_ile-9.2cb4e4a3.js",
     "imports": [
-      "_vite.1299367e.js",
       "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
+      "_FunctionButtons.ef43678c.js",
+      "_vendor-vue.b95f88b6.js",
+      "_vite.1299367e.js"
     ],
     "isEntry": true,
     "src": "virtual_ile_archive_updated_ile-9"
@@ -1252,157 +1196,6 @@
     "isEntry": true,
     "src": "virtual_ile_girls_ile-9"
   },
-  "virtual_ile_hidden_main_ile-1": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-1.96a0f403.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-1"
-  },
-  "virtual_ile_hidden_main_ile-10": {
-    "file": "assets/virtual_ile_hidden_main_ile-10.ac39cfda.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-10"
-  },
-  "virtual_ile_hidden_main_ile-11": {
-    "file": "assets/virtual_ile_hidden_main_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-11"
-  },
-  "virtual_ile_hidden_main_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-12"
-  },
-  "virtual_ile_hidden_main_ile-2": {
-    "file": "assets/virtual_ile_hidden_main_ile-2.f6e3ecb8.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-2"
-  },
-  "virtual_ile_hidden_main_ile-3": {
-    "file": "assets/virtual_ile_hidden_main_ile-3.e0d6e87d.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_tableofContent.dfa8c6a0.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-3"
-  },
-  "virtual_ile_hidden_main_ile-4": {
-    "file": "assets/virtual_ile_hidden_main_ile-4.01b9ad43.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-4"
-  },
-  "virtual_ile_hidden_main_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-5.542bd6fe.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-5"
-  },
-  "virtual_ile_hidden_main_ile-6": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/AiSummary.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-6.fc938586.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-6"
-  },
-  "virtual_ile_hidden_main_ile-7": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/LikeButton.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-7.c8fd4638.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-7"
-  },
-  "virtual_ile_hidden_main_ile-8": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_hidden_main_ile-8.26e47e37.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-8"
-  },
-  "virtual_ile_hidden_main_ile-9": {
-    "file": "assets/virtual_ile_hidden_main_ile-9.03c9169a.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_GiscusCommentInner.ffe4115c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js",
-      "_useTheme.f9ed18f8.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_hidden_main_ile-9"
-  },
   "virtual_ile_index_ile-1": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
@@ -1420,9 +1213,9 @@
   "virtual_ile_index_ile-10": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
+      "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-10.ae6e6372.js",
+    "file": "assets/virtual_ile_index_ile-10.8cef41cb.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1430,31 +1223,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_index_ile-10"
-  },
-  "virtual_ile_index_ile-11": {
-    "file": "assets/virtual_ile_index_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_index_ile-11"
-  },
-  "virtual_ile_index_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_index_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_index_ile-12"
   },
   "virtual_ile_index_ile-2": {
     "file": "assets/virtual_ile_index_ile-2.f6e3ecb8.js",
@@ -1483,7 +1251,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-4.530fc3bc.js",
+    "file": "assets/virtual_ile_index_ile-4.5d5076a2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1497,7 +1265,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-5.e91f9f8a.js",
+    "file": "assets/virtual_ile_index_ile-5.c1f1e8d3.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1511,7 +1279,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-6.3148147d.js",
+    "file": "assets/virtual_ile_index_ile-6.52a4294a.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1525,7 +1293,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-7.c56c3ddc.js",
+    "file": "assets/virtual_ile_index_ile-7.06dfcd95.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1539,7 +1307,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_index_ile-8.908651f2.js",
+    "file": "assets/virtual_ile_index_ile-8.65fae6d2.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -1549,15 +1317,12 @@
     "src": "virtual_ile_index_ile-8"
   },
   "virtual_ile_index_ile-9": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_index_ile-9.7315254d.js",
+    "file": "assets/virtual_ile_index_ile-9.2cb4e4a3.js",
     "imports": [
-      "_vite.1299367e.js",
       "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
+      "_FunctionButtons.ef43678c.js",
+      "_vendor-vue.b95f88b6.js",
+      "_vite.1299367e.js"
     ],
     "isEntry": true,
     "src": "virtual_ile_index_ile-9"
@@ -1825,308 +1590,6 @@
     "isEntry": true,
     "src": "virtual_ile_post_ceso_note_ile-9"
   },
-  "virtual_ile_post_draft_optimization_note_ile-1": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-1.96a0f403.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-1"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-10": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-10.ac39cfda.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-10"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-11": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-11"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-12"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-2": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-2.f6e3ecb8.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-2"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-3": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-3.38de65bb.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_tableofContent.dfa8c6a0.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-3"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-4": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-4.01b9ad43.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-4"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-5.d9515611.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-5"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-6": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/AiSummary.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-6.078a1d88.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-6"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-7": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/LikeButton.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-7.d0b413fd.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-7"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-8": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-8.26e47e37.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-8"
-  },
-  "virtual_ile_post_draft_optimization_note_ile-9": {
-    "file": "assets/virtual_ile_post_draft_optimization_note_ile-9.03c9169a.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_GiscusCommentInner.ffe4115c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js",
-      "_useTheme.f9ed18f8.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_draft_optimization_note_ile-9"
-  },
-  "virtual_ile_post_full_stack_note_ile-1": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-1.96a0f403.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-1"
-  },
-  "virtual_ile_post_full_stack_note_ile-10": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-10.ac39cfda.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-10"
-  },
-  "virtual_ile_post_full_stack_note_ile-11": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-11"
-  },
-  "virtual_ile_post_full_stack_note_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-12"
-  },
-  "virtual_ile_post_full_stack_note_ile-2": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-2.f6e3ecb8.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-2"
-  },
-  "virtual_ile_post_full_stack_note_ile-3": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-3.748ad29a.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_tableofContent.dfa8c6a0.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-3"
-  },
-  "virtual_ile_post_full_stack_note_ile-4": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-4.01b9ad43.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-4"
-  },
-  "virtual_ile_post_full_stack_note_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-5.31417cfe.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-5"
-  },
-  "virtual_ile_post_full_stack_note_ile-6": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/AiSummary.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-6.97c17800.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-6"
-  },
-  "virtual_ile_post_full_stack_note_ile-7": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/LikeButton.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-7.8c1c8c0a.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-7"
-  },
-  "virtual_ile_post_full_stack_note_ile-8": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_full_stack_note_ile-8.26e47e37.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-8"
-  },
-  "virtual_ile_post_full_stack_note_ile-9": {
-    "file": "assets/virtual_ile_post_full_stack_note_ile-9.03c9169a.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_GiscusCommentInner.ffe4115c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js",
-      "_useTheme.f9ed18f8.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_full_stack_note_ile-9"
-  },
   "virtual_ile_post_hello_world_ile-1": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
@@ -2340,7 +1803,7 @@
     "src": "virtual_ile_post_my_sight_of_education_ile-2"
   },
   "virtual_ile_post_my_sight_of_education_ile-3": {
-    "file": "assets/virtual_ile_post_my_sight_of_education_ile-3.63c2e7e2.js",
+    "file": "assets/virtual_ile_post_my_sight_of_education_ile-3.6fc9c7a7.js",
     "imports": [
       "_iles.b8ad475e.js",
       "_tableofContent.dfa8c6a0.js",
@@ -2380,7 +1843,7 @@
       "_iles.b8ad475e.js",
       "src/components/AiSummary.vue"
     ],
-    "file": "assets/virtual_ile_post_my_sight_of_education_ile-6.a5ec342c.js",
+    "file": "assets/virtual_ile_post_my_sight_of_education_ile-6.033eb650.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -2394,7 +1857,7 @@
       "_iles.b8ad475e.js",
       "src/components/LikeButton.vue"
     ],
-    "file": "assets/virtual_ile_post_my_sight_of_education_ile-7.909c12ae.js",
+    "file": "assets/virtual_ile_post_my_sight_of_education_ile-7.767dd7d0.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -2428,157 +1891,6 @@
     ],
     "isEntry": true,
     "src": "virtual_ile_post_my_sight_of_education_ile-9"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-1": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/darkModeSwitcher.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-1.96a0f403.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-1"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-10": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-10.ac39cfda.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/layouts/post.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-10"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-11": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-11.16972661.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_FunctionButtons.ef43678c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-11"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-12": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/TheFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-12.4d0afe2f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-12"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-2": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-2.f6e3ecb8.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/readingLocationController.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-2"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-3": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-3.18b37a7c.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_tableofContent.dfa8c6a0.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-3"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-4": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-4.01b9ad43.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "src/components/NavigationBar.vue?vue&index=0&clientScript=true&lang.ts",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-4"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-5.b9091638.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-5"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-6": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/AiSummary.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-6.567f541f.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-6"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-7": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/LikeButton.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-7.b43891cb.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-7"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-8": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/ArticleFooter.vue"
-    ],
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-8.26e47e37.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-8"
-  },
-  "virtual_ile_post_reply_to_deer_stranger_ile-9": {
-    "file": "assets/virtual_ile_post_reply_to_deer_stranger_ile-9.03c9169a.js",
-    "imports": [
-      "_iles.b8ad475e.js",
-      "_GiscusCommentInner.ffe4115c.js",
-      "_vendor-vue.b95f88b6.js",
-      "_vite.1299367e.js",
-      "_useTheme.f9ed18f8.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_post_reply_to_deer_stranger_ile-9"
   },
   "virtual_ile_post_slow_bun_ile-1": {
     "dynamicImports": [
@@ -3220,7 +2532,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-4.530fc3bc.js",
+    "file": "assets/virtual_ile_tag_note_ile-4.2b8fc4a5.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -3230,21 +2542,7 @@
     "src": "virtual_ile_tag_note_ile-4"
   },
   "virtual_ile_tag_note_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_tag_note_ile-5.6c7c8c7d.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_note_ile-5"
-  },
-  "virtual_ile_tag_note_ile-6": {
-    "file": "assets/virtual_ile_tag_note_ile-6.d418f77c.js",
+    "file": "assets/virtual_ile_tag_note_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
       "_FunctionButtons.ef43678c.js",
@@ -3252,21 +2550,21 @@
       "_vite.1299367e.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_note_ile-6"
+    "src": "virtual_ile_tag_note_ile-5"
   },
-  "virtual_ile_tag_note_ile-7": {
+  "virtual_ile_tag_note_ile-6": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_note_ile-7.1702282d.js",
+    "file": "assets/virtual_ile_tag_note_ile-6.3e3c8936.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
       "_vendor-vue.b95f88b6.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_note_ile-7"
+    "src": "virtual_ile_tag_note_ile-6"
   },
   "virtual_ile_tag_solution_ile-1": {
     "dynamicImports": [
@@ -3459,7 +2757,7 @@
       "_iles.b8ad475e.js",
       "src/components/postVisitorCounter.vue"
     ],
-    "file": "assets/virtual_ile_tag_thoughts_ile-4.322279ae.js",
+    "file": "assets/virtual_ile_tag_thoughts_ile-4.a9bbc562.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
@@ -3469,21 +2767,7 @@
     "src": "virtual_ile_tag_thoughts_ile-4"
   },
   "virtual_ile_tag_thoughts_ile-5": {
-    "dynamicImports": [
-      "_iles.b8ad475e.js",
-      "src/components/postVisitorCounter.vue"
-    ],
-    "file": "assets/virtual_ile_tag_thoughts_ile-5.c1f1e8d3.js",
-    "imports": [
-      "_vite.1299367e.js",
-      "_iles.b8ad475e.js",
-      "_vendor-vue.b95f88b6.js"
-    ],
-    "isEntry": true,
-    "src": "virtual_ile_tag_thoughts_ile-5"
-  },
-  "virtual_ile_tag_thoughts_ile-6": {
-    "file": "assets/virtual_ile_tag_thoughts_ile-6.d418f77c.js",
+    "file": "assets/virtual_ile_tag_thoughts_ile-5.c8503350.js",
     "imports": [
       "_iles.b8ad475e.js",
       "_FunctionButtons.ef43678c.js",
@@ -3491,21 +2775,21 @@
       "_vite.1299367e.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_thoughts_ile-6"
+    "src": "virtual_ile_tag_thoughts_ile-5"
   },
-  "virtual_ile_tag_thoughts_ile-7": {
+  "virtual_ile_tag_thoughts_ile-6": {
     "dynamicImports": [
       "_iles.b8ad475e.js",
       "src/components/TheFooter.vue"
     ],
-    "file": "assets/virtual_ile_tag_thoughts_ile-7.1702282d.js",
+    "file": "assets/virtual_ile_tag_thoughts_ile-6.3e3c8936.js",
     "imports": [
       "_vite.1299367e.js",
       "_iles.b8ad475e.js",
       "_vendor-vue.b95f88b6.js"
     ],
     "isEntry": true,
-    "src": "virtual_ile_tag_thoughts_ile-7"
+    "src": "virtual_ile_tag_thoughts_ile-6"
   },
   "virtual_ile_tags_ile-1": {
     "dynamicImports": [
