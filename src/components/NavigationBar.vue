@@ -30,10 +30,10 @@ if (window.location.search.includes('uwu') || window.location.search.includes('k
         >
         <div class="text-important text-xl md:p-0 p-1">
           <!-- <div class="animate-bounce inline-block text-xl mr-0.5">👋</div> -->
-          Hey! It's <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b>'s Blog!
+          <b class="font-serif"><div class="text-red-400 inline-block">N</div>ick <div class="text-red-400 inline-block">C</div>hen</b>'s Blog!
         </div>
         <div class="text-minor text-sm mx-4">
-          僕らは命に嫌われている
+          感受生命与艺术之美
         </div>
       </div>
       <ul class="md:justify-start justify-center flex md:flex-col md:px-6 w-full">
