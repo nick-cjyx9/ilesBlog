@@ -4,7 +4,7 @@
         <title>Nick's webspace!</title>
         <link>https://www.nickchen.top</link>
         <description></description>
-        <lastBuildDate>Tue, 28 Jan 2025 00:52:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 01:05:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -14,6 +14,25 @@
             <link>https://www.nickchen.top</link>
         </image>
         <copyright>Copyright (c) 2024 Nick Chen.</copyright>
+        <item>
+            <title><![CDATA[吉他练习谱]]></title>
+            <link>https://www.nickchen.top/post/guitar</link>
+            <guid>https://www.nickchen.top/post/guitar</guid>
+            <pubDate>Mon, 27 Jan 2025 19:14:47 GMT</pubDate>
+            <description><![CDATA[]]></description>
+            <content:encoded><![CDATA[<Excerpt></Excerpt>
+<h2 id="day-1-右手拨片拨弦练习" class="heading"><a href="#day-1-右手拨片拨弦练习" class="heading-anchor" aria-label="Permalink for Day 1 右手拨片拨弦练习" tabindex="-1"></a>Day 1 右手拨片拨弦练习</h2>
+<p>【木吉他新手 右手拨片专项训练课】 <a href="https://www.bilibili.com/video/BV1XywNeNESe/" rel="nofollow">https://www.bilibili.com/video/BV1XywNeNESe/</a></p>
+<p>Tempo = 60</p>
+<ol>
+<li>在两个音换弦</li>
+</ol>
+<p><img src="https://s2.loli.net/2025/01/27/9brS1QajwBlOysW.png" alt="image.png" loading="lazy"></p>
+<ol start="2">
+<li>在三个音换弦</li>
+</ol>
+<p><img src="https://s2.loli.net/2025/01/27/iMfSUGu3rK7cBNx.png" alt="image.png" loading="lazy"></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Windows 下 Bun install 很慢解决方法]]></title>
             <link>https://www.nickchen.top/post/slow_bun</link>
