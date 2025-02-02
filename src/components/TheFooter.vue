@@ -55,7 +55,7 @@ onMounted(async () => {
         </li> -->
     </ul>
     <!-- fuck font awesome -->
-    <span class="text-minor font-serif w-full text-end opacity-50 pr-2 my-4">&copy; 2024 <a
+    <span class="text-minor font-serif w-full text-end opacity-50 pr-2 my-4"><a href="https://icp.gov.moe/?keyword=20251023" target="_blank">萌ICP备20251023号</a>&nbsp;&nbsp;&copy; 2024 <a
       class="font-serif inline-block munderline after:border-b-2 "
       href="https://github.com/nick-cjyx9" target="_blank"
     >Nick Chen</a></span>
